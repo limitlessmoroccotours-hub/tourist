@@ -156,8 +156,7 @@ export default function Header() {
           className="group flex shrink-0 items-center"
         >
           <span className="font-[family-name:var(--font-cormorant)] text-[30px] font-semibold leading-none tracking-[-0.04em] text-[hsl(var(--heading))]">
-            Moroccan
-          </span>
+            karrakevh          </span>
 
           <span className="font-[family-name:var(--font-cormorant)] text-[30px] font-semibold leading-none tracking-[-0.04em] text-[hsl(var(--primary))]">
             Trip
