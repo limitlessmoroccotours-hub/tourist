@@ -29,7 +29,7 @@ const navItems = [
   },
 
   {
-    label: "Custom Morocco Tours",
+    label: "Custom Tours",
     href: "/custom-tour",
   },
 
