@@ -106,17 +106,17 @@ export const shopProducts: ShopProduct[] = [
 
 
     image:
-      "/images/shop/moroccan-trilobite.jpg",
+      "/images/shop/moroccan-trilobite.webp",
 
 
 
     gallery: [
 
-      "/images/shop/moroccan-trilobite-1.jpg",
+      "/images/shop/moroccan-trilobite-1.webp",
 
-      "/images/shop/moroccan-trilobite-2.jpg",
+      "/images/shop/moroccan-trilobite-2.webp",
 
-      "/images/shop/moroccan-trilobite-3.jpg"
+      "/images/shop/moroccan-trilobite-3.webp"
 
     ],
 
@@ -286,16 +286,16 @@ export const shopProducts: ShopProduct[] = [
   
   
     image:
-      "/images/shop/moroccan-fossil-decor.jpg",
+      "/images/shop/moroccan-fossil-decor.webp",
   
   
     gallery: [
   
-      "/images/shop/moroccan-fossil-decor-1.jpg",
+      "/images/shop/moroccan-fossil-decor-1.webp",
   
-      "/images/shop/moroccan-fossil-decor-2.jpg",
+      "/images/shop/moroccan-fossil-decor-2.webp",
   
-      "/images/shop/moroccan-fossil-decor-3.jpg"
+      "/images/shop/moroccan-fossil-decor-3.webp"
   
     ],
   
@@ -472,17 +472,17 @@ export const shopProducts: ShopProduct[] = [
   
   
     image:
-      "/images/shop/moroccan-culinary-argan-oil.jpg",
+      "/images/shop/moroccan-culinary-argan-oil.webp",
   
   
   
     gallery: [
   
-      "/images/shop/moroccan-culinary-argan-oil-1.jpg",
+      "/images/shop/moroccan-culinary-argan-oil-1.webp",
   
-      "/images/shop/moroccan-culinary-argan-oil-2.jpg",
+      "/images/shop/moroccan-culinary-argan-oil-2.webp",
   
-      "/images/shop/moroccan-culinary-argan-oil-3.jpg"
+      "/images/shop/moroccan-culinary-argan-oil-3.webp"
   
     ],
   

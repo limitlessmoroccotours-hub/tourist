@@ -1,135 +1,595 @@
 import Link from "next/link";
 
-export default function Footer() {
-  return (
-    <footer className="bg-[hsl(var(--footer))] text-[hsl(var(--footer-foreground))]">
 
-      {/* Main Footer */}
-      <div className="mx-auto max-w-[1280px] px-5 py-16 sm:px-8 lg:px-10 lg:py-20">
+const footerLinks = {
+  explore: [
+    {
+      name: "Morocco Tours",
+      href: "/tours",
+    },
+    {
+      name: "Day Trips",
+      href: "/day-trips",
+    },
+    {
+      name: "Custom Tours",
+      href: "/custom-tour",
+    },
+    {
+      name: "Special Offers",
+      href: "/special-offers",
+    },
+  ],
 
-        <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr]">
 
-          {/* Brand */}
-          <div>
-            <Link
-              href="/"
-              className="inline-flex items-center"
-            >
-              <span className="font-[family-name:var(--font-cormorant)] text-[32px] font-semibold tracking-[-0.03em]">
-                Moroccan
-              </span>
+  company: [
+    {
+      name: "About Us",
+      href: "/about",
+    },
+    {
+      name: "Travel Blog",
+      href: "/blog",
+    },
+    {
+      name: "FAQ",
+      href: "/faq",
+    },
+    {
+      name: "Contact",
+      href: "/contact",
+    },
+  ],
 
-              <span className="font-[family-name:var(--font-cormorant)] text-[32px] font-semibold tracking-[-0.03em] text-[hsl(var(--primary))]">
-                Trip
-              </span>
-            </Link>
 
-            <p className="mt-5 max-w-[350px] text-[14px] leading-7 text-[hsl(var(--footer-muted))]">
-              Thoughtfully designed journeys across Morocco,
-              created for travelers who want to experience the
-              country beyond the ordinary.
-            </p>
-          </div>
+  departures: [
+    {
+      name: "Marrakech",
+      href: "/tours/from-marrakech",
+    },
+    {
+      name: "Casablanca",
+      href: "/tours/from-casablanca",
+    },
+    {
+      name: "Fes",
+      href: "/tours/from-fes",
+    },
+    {
+      name: "Tangier",
+      href: "/tours/from-tangier",
+    },
+    {
+      name: "Agadir",
+      href: "/tours/from-agadir",
+    },
+    {
+      name: "Errachidia",
+      href: "/tours/from-errachidia",
+    },
+  ],
+};
 
-          {/* Explore */}
-          <div>
-            <h3 className="font-[family-name:var(--font-manrope)] text-sm font-bold uppercase tracking-[0.12em]">
-              Explore
-            </h3>
 
-            <div className="mt-5 space-y-3">
-              <Link
-                href="/tours"
-                className="block text-sm text-[hsl(var(--footer-muted))] transition-colors hover:text-[hsl(var(--primary-foreground))]"
-              >
-                Morocco Tours
-              </Link>
 
-              <Link
-                href="/destinations"
-                className="block text-sm text-[hsl(var(--footer-muted))] transition-colors hover:text-[hsl(var(--primary-foreground))]"
-              >
-                Destinations
-              </Link>
+export default function Footer(){
 
-              <Link
-                href="/blog"
-                className="block text-sm text-[hsl(var(--footer-muted))] transition-colors hover:text-[hsl(var(--primary-foreground))]"
-              >
-                Travel Journal
-              </Link>
-            </div>
-          </div>
 
-          {/* Company */}
-          <div>
-            <h3 className="font-[family-name:var(--font-manrope)] text-sm font-bold uppercase tracking-[0.12em]">
-              Company
-            </h3>
+return (
 
-            <div className="mt-5 space-y-3">
-              <Link
-                href="/about"
-                className="block text-sm text-[hsl(var(--footer-muted))] transition-colors hover:text-[hsl(var(--primary-foreground))]"
-              >
-                About Us
-              </Link>
+<footer
+className="
+bg-[hsl(var(--footer))]
+text-white
+"
+>
 
-              <Link
-                href="/contact"
-                className="block text-sm text-[hsl(var(--footer-muted))] transition-colors hover:text-[hsl(var(--primary-foreground))]"
-              >
-                Contact
-              </Link>
 
-              <Link
-                href="/privacy-policy"
-                className="block text-sm text-[hsl(var(--footer-muted))] transition-colors hover:text-[hsl(var(--primary-foreground))]"
-              >
-                Privacy Policy
-              </Link>
-            </div>
-          </div>
+<div
+className="
+mx-auto
+max-w-7xl
 
-          {/* Contact */}
-          <div>
-            <h3 className="font-[family-name:var(--font-manrope)] text-sm font-bold uppercase tracking-[0.12em]">
-              Start Your Journey
-            </h3>
+px-5
+py-16
 
-            <p className="mt-5 text-sm leading-6 text-[hsl(var(--footer-muted))]">
-              Tell us what you want to experience in Morocco.
-              We will help you create the right journey.
-            </p>
+sm:px-8
 
-            <Link
-              href="/contact"
-              className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-[hsl(var(--primary))] transition-colors hover:text-[hsl(var(--primary-foreground))]"
-            >
-              Plan Your Trip
+lg:px-10
+lg:py-20
+"
+>
 
-              <span aria-hidden="true">→</span>
-            </Link>
-          </div>
 
-        </div>
-      </div>
 
-      {/* Bottom */}
-      <div className="border-t border-[hsl(var(--footer-border))]">
-        <div className="mx-auto flex max-w-[1280px] flex-col gap-3 px-5 py-6 text-xs text-[hsl(var(--footer-muted))] sm:px-8 md:flex-row md:items-center md:justify-between lg:px-10">
+{/* Main Footer */}
 
-          <p>
-            © {new Date().getFullYear()} MoroccanTrip. All rights reserved.
-          </p>
+<div
+className="
+grid
+gap-12
 
-          <p>
-            Crafted for meaningful journeys across Morocco.
-          </p>
+lg:grid-cols-5
+"
+>
 
-        </div>
-      </div>
 
-    </footer>
-  );
+
+{/* Brand */}
+
+<div
+className="
+lg:col-span-2
+"
+>
+
+
+<Link
+href="/"
+className="
+font-[family-name:var(--font-cormorant)]
+
+text-4xl
+
+font-semibold
+"
+>
+
+Moroccan
+<span
+className="
+text-[hsl(var(--primary))]
+"
+>
+Trip
+</span>
+
+</Link>
+
+
+
+<p
+className="
+mt-6
+
+max-w-sm
+
+text-sm
+
+leading-7
+
+text-white/65
+"
+>
+Discover Morocco through private tours, Sahara adventures
+and authentic travel experiences created by local experts.
+</p>
+
+
+
+{/* Trust */}
+
+<div
+className="
+mt-6
+flex
+items-center
+gap-3
+"
+>
+
+
+<div
+className="
+rounded-full
+
+border
+
+border-white/20
+
+px-4
+
+py-2
+"
+>
+
+<span
+className="
+text-xs
+font-semibold
+text-white/80
+"
+>
+★★★★★
+</span>
+
+</div>
+
+
+
+<p
+className="
+text-xs
+text-white/60
+"
+>
+Tripadvisor Rated Experience
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+{/* Explore */}
+
+<div>
+
+
+<h3
+className="
+mb-5
+
+text-xs
+
+font-bold
+
+uppercase
+
+tracking-[0.25em]
+
+text-[hsl(var(--gold-muted))]
+"
+>
+Explore
+</h3>
+
+
+
+<ul
+className="
+space-y-3
+"
+>
+
+{
+footerLinks.explore.map((item)=>(
+<li key={item.name}>
+
+<Link
+href={item.href}
+className="
+text-sm
+
+text-white/70
+
+transition
+
+hover:text-white
+"
+>
+{item.name}
+</Link>
+
+</li>
+))
+}
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+{/* Company */}
+
+<div>
+
+
+<h3
+className="
+mb-5
+
+text-xs
+
+font-bold
+
+uppercase
+
+tracking-[0.25em]
+
+text-[hsl(var(--gold-muted))]
+"
+>
+Company
+</h3>
+
+
+
+<ul
+className="
+space-y-3
+"
+>
+
+{
+footerLinks.company.map((item)=>(
+<li key={item.name}>
+
+<Link
+href={item.href}
+className="
+text-sm
+
+text-white/70
+
+transition
+
+hover:text-white
+"
+>
+{item.name}
+</Link>
+
+</li>
+))
+}
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+{/* Departures */}
+
+<div>
+
+
+<h3
+className="
+mb-5
+
+text-xs
+
+font-bold
+
+uppercase
+
+tracking-[0.25em]
+
+text-[hsl(var(--gold-muted))]
+"
+>
+Start From
+</h3>
+
+
+
+<ul
+className="
+space-y-3
+"
+>
+
+{
+footerLinks.departures.map((item)=>(
+<li key={item.name}>
+
+<Link
+href={item.href}
+className="
+text-sm
+
+text-white/70
+
+transition
+
+hover:text-white
+"
+>
+{item.name}
+</Link>
+
+</li>
+))
+}
+
+</ul>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+{/* CTA */}
+
+<div
+className="
+mt-16
+
+rounded-3xl
+
+border
+
+border-white/10
+
+bg-white/5
+
+p-8
+
+flex
+
+flex-col
+
+gap-6
+
+
+sm:flex-row
+
+sm:items-center
+
+sm:justify-between
+"
+>
+
+
+<div>
+
+<h3
+className="
+font-[family-name:var(--font-cormorant)]
+
+text-3xl
+
+font-semibold
+"
+>
+Ready to explore Morocco?
+</h3>
+
+
+<p
+className="
+mt-2
+
+text-sm
+
+text-white/60
+"
+>
+Create your personalized Morocco journey with our local team.
+</p>
+
+
+</div>
+
+
+
+<Link
+href="/contact"
+
+className="
+inline-flex
+
+rounded-full
+
+bg-[hsl(var(--primary))]
+
+px-7
+
+py-3
+
+text-sm
+
+font-semibold
+
+transition
+
+hover:bg-[hsl(var(--primary-hover))]
+"
+>
+Plan Your Trip →
+</Link>
+
+
+</div>
+
+
+
+
+
+
+
+
+{/* Bottom */}
+
+<div
+className="
+mt-10
+
+border-t
+
+border-white/10
+
+pt-6
+
+flex
+
+flex-col
+
+gap-4
+
+text-xs
+
+text-white/50
+
+
+sm:flex-row
+
+sm:items-center
+
+sm:justify-between
+"
+>
+
+
+<p>
+© {new Date().getFullYear()} MoroccanTrip. All rights reserved.
+</p>
+
+
+
+<div
+className="
+flex
+
+gap-5
+"
+>
+
+<Link href="/privacy-policy">
+Privacy Policy
+</Link>
+
+<Link href="/terms">
+Terms
+</Link>
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</footer>
+
+);
+
 }

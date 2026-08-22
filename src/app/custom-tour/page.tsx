@@ -140,7 +140,7 @@ JSON.stringify(breadcrumbJsonLd),
 
 <Image
 
-src="/images/custom-tour.jpg"
+src="/images/custom-tour.webp"
 
 alt="Custom Morocco Tour Experience"
 

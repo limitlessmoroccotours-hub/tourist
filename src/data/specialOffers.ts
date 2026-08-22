@@ -74,7 +74,7 @@ export type SpecialOffer = {
   
   
       image:
-        "/images/special-offers/morocco-desert-tour.jpg",
+        "/images/special-offers/morocco-desert-tour.webp",
   
   
       badge:
@@ -315,7 +315,7 @@ export type SpecialOffer = {
       
       
         image:
-          "/images/special-offers/morocco-honeymoon-package.jpg",
+          "/images/special-offers/morocco-honeymoon-package.webp",
       
       
         badge:
@@ -581,7 +581,7 @@ export type SpecialOffer = {
       
       
         image:
-          "/images/special-offers/morocco-family-tours.jpg",
+          "/images/special-offers/morocco-family-tours.webp",
       
       
         badge:
@@ -881,7 +881,7 @@ export type SpecialOffer = {
       
       
         image:
-          "/images/special-offers/morocco-luxury-tours.jpg",
+          "/images/special-offers/morocco-luxury-tours.webp",
       
       
         badge:

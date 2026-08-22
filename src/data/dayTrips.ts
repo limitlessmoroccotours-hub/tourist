@@ -63,7 +63,7 @@ export type DayTrip = {
       shortDescription:
         "Discover the beauty of the Ourika Valley on a private day trip from Marrakech. Travel through the Atlas Mountains, visit Berber villages, enjoy riverside landscapes and explore the famous Setti Fatma area.",
     
-      image: "/images/day-trips/ourika-valley-day-trip-from-marrakech.jpg",
+      image: "/images/day-trips/ourika-valley-day-trip-from-marrakech.webp",
     
       badge: "Popular Day Trip",
     
@@ -188,7 +188,7 @@ export type DayTrip = {
     
     
       gallery: [
-        "/images/day-trips/ourika-valley-day-trip-from-marrakech.jpg",
+        "/images/day-trips/ourika-valley-day-trip-from-marrakech.webp",
       ],
     
     
@@ -272,7 +272,7 @@ export type DayTrip = {
   shortDescription:
     "Explore the High Atlas Mountains on a private Imlil day trip from Marrakech. Discover a traditional mountain village, Berber culture, scenic valleys and the landscapes surrounding the Toubkal region.",
 
-  image: "/images/day-trips/imlil-day-trip-from-marrakech.jpg",
+  image: "/images/day-trips/imlil-day-trip-from-marrakech.webp",
 
   badge: "Mountain Experience",
 
@@ -399,7 +399,7 @@ export type DayTrip = {
 
 
   gallery: [
-    "/images/day-trips/imlil-day-trip-from-marrakech.jpg",
+    "/images/day-trips/imlil-day-trip-from-marrakech.webp",
   ],
 
 
@@ -483,7 +483,7 @@ export type DayTrip = {
   shortDescription:
     "Enjoy a private day trip to Ouzoud Waterfalls from Marrakech and discover Morocco's famous cascades, natural landscapes, scenic viewpoints and the peaceful countryside surrounding one of the country's most beautiful waterfalls.",
 
-  image: "/images/day-trips/ouzoud-waterfalls-day-trip-from-marrakech.jpg",
+  image: "/images/day-trips/ouzoud-waterfalls-day-trip-from-marrakech.webp",
 
   badge: "Nature Escape",
 
@@ -609,7 +609,7 @@ export type DayTrip = {
 
 
   gallery: [
-    "/images/day-trips/ouzoud-waterfalls-day-trip-from-marrakech.jpg",
+    "/images/day-trips/ouzoud-waterfalls-day-trip-from-marrakech.webp",
   ],
 
 
@@ -693,7 +693,7 @@ export type DayTrip = {
   shortDescription:
     "Discover the Agafay Desert on a private day trip from Marrakech. Enjoy rocky desert landscapes, peaceful surroundings, sunset views and a unique desert experience just outside the city.",
 
-  image: "/images/day-trips/agafay-desert-day-trip-from-marrakech.jpg",
+  image: "/images/day-trips/agafay-desert-day-trip-from-marrakech.webp",
 
   badge: "Desert Experience",
 
@@ -818,7 +818,7 @@ export type DayTrip = {
 
 
   gallery: [
-    "/images/day-trips/agafay-desert-day-trip-from-marrakech.jpg",
+    "/images/day-trips/agafay-desert-day-trip-from-marrakech.webp",
   ],
 
 

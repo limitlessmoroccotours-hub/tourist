@@ -134,7 +134,7 @@ export const tours: Tour[] = [
   shortDescription:
     "Travel from Marrakech to Merzouga on a private 3-day desert tour through the Atlas Mountains, ancient kasbahs, dramatic valleys and the Sahara dunes.",
 
-  image: "/images/tours/3-day-desert-tour-marrakech-merzouga.jpg",
+  image: "/images/tours/3-day-desert-tour-marrakech-merzouga.webp",
 
   badge: "Most Booked",
 
@@ -385,7 +385,7 @@ export const tours: Tour[] = [
   // ─────────────────────────────
 
   gallery: [
-    "/images/tours/3-day-desert-tour-marrakech-merzouga.jpg",
+    "/images/tours/3-day-desert-tour-marrakech-merzouga.webp",
   ],
 
   // ─────────────────────────────
@@ -519,7 +519,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Travel from Marrakech to Fes on a private 3-day desert tour through the High Atlas Mountains, ancient kasbahs, dramatic valleys and the golden dunes of Merzouga.",
   
-    image: "/images/tours/3-day-marrakech-fes-desert-tour.jpg",
+    image: "/images/tours/3-day-marrakech-fes-desert-tour.webp",
   
     badge: "Marrakech to Fes",
   
@@ -791,7 +791,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/3-day-marrakech-fes-desert-tour.jpg",
+      "/images/tours/3-day-marrakech-fes-desert-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -937,7 +937,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Enjoy a private 4-day journey from Marrakech to Fes with more time in Merzouga, including the Atlas Mountains, Dades Valley, Todra Gorges and the Sahara Desert.",
   
-    image: "/images/tours/4-day-marrakech-fes-desert-tour.jpg",
+    image: "/images/tours/4-day-marrakech-fes-desert-tour.webp",
   
     badge: "More Time in the Sahara",
   
@@ -1262,7 +1262,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/4-day-marrakech-fes-desert-tour.jpg",
+      "/images/tours/4-day-marrakech-fes-desert-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -1423,7 +1423,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Explore southern Morocco on a private 4-day desert tour from Marrakech, with the High Atlas Mountains, Dades Valley, Merzouga, a Sahara camp and the Draa Valley.",
   
-    image: "/images/tours/4-day-sahara-desert-tour-from-marrakech.jpg",
+    image: "/images/tours/4-day-sahara-desert-tour-from-marrakech.webp",
   
     badge: "Sahara Adventure",
   
@@ -1741,7 +1741,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/4-day-sahara-desert-tour-from-marrakech.jpg",
+      "/images/tours/4-day-sahara-desert-tour-from-marrakech.webp",
     ],
   
     // ─────────────────────────────
@@ -1902,7 +1902,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Travel from Marrakech to Fes on a private 5-day desert tour with more time in Merzouga, a Sahara camel trek, desert camp and a relaxed journey through the Middle Atlas.",
   
-    image: "/images/tours/5-day-marrakech-fes-desert-tour.jpg",
+    image: "/images/tours/5-day-marrakech-fes-desert-tour.webp",
   
     badge: "Slow Travel",
   
@@ -2263,7 +2263,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/5-day-marrakech-fes-desert-tour.jpg",
+      "/images/tours/5-day-marrakech-fes-desert-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -2431,7 +2431,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Discover Morocco's imperial cities on a private 7-day tour from Marrakech through Casablanca, Rabat, Meknes, Fes and the Middle Atlas before returning to Marrakech.",
   
-    image: "/images/tours/7-day-morocco-imperial-cities-tour.jpg",
+    image: "/images/tours/7-day-morocco-imperial-cities-tour.webp",
   
     badge: "Cultural Journey",
   
@@ -2846,7 +2846,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/7-day-morocco-imperial-cities-tour.jpg",
+      "/images/tours/7-day-morocco-imperial-cities-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -3007,7 +3007,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Travel from Casablanca to Marrakech on a private 4-day desert tour through Rabat, Fes, the Middle Atlas Mountains, Merzouga, Todra Gorges and the High Atlas.",
   
-    image: "/images/tours/4-day-casablanca-marrakech-desert-tour.jpg",
+    image: "/images/tours/4-day-casablanca-marrakech-desert-tour.webp",
   
     badge: "Casablanca to Marrakech",
   
@@ -3353,7 +3353,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/4-day-casablanca-marrakech-desert-tour.jpg",
+      "/images/tours/4-day-casablanca-marrakech-desert-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -3521,7 +3521,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Travel from Casablanca to Marrakech on a private five-day journey through Rabat, Fes, the Middle Atlas Mountains, Merzouga, Todra Gorges, Dades Valley and Ait Ben Haddou.",
   
-    image: "/images/tours/5-day-morocco-tour-from-casablanca.jpg",
+    image: "/images/tours/5-day-morocco-tour-from-casablanca.webp",
   
     badge: "Morocco Highlights",
   
@@ -3927,7 +3927,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/5-day-morocco-tour-from-casablanca.jpg",
+      "/images/tours/5-day-morocco-tour-from-casablanca.webp",
     ],
   
     // ─────────────────────────────
@@ -4093,7 +4093,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Explore Marrakech, the Sahara and Fes on a private 7-day journey from Casablanca, with the High Atlas Mountains, Dades Valley, Merzouga and a desert camp.",
   
-    image: "/images/tours/7-day-sahara-tour-from-casablanca.jpg",
+    image: "/images/tours/7-day-sahara-tour-from-casablanca.webp",
   
     badge: "Cities & Sahara",
   
@@ -4557,7 +4557,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/7-day-sahara-tour-from-casablanca.jpg",
+      "/images/tours/7-day-sahara-tour-from-casablanca.webp",
     ],
   
     // ─────────────────────────────
@@ -4729,7 +4729,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Discover northern Morocco and its historic cities on a private 8-day journey from Casablanca through Rabat, Chefchaouen, Tangier, Asilah, Meknes, Volubilis and Fes.",
   
-    image: "/images/tours/8-day-imperial-cities-tour-from-casablanca.jpg",
+    image: "/images/tours/8-day-imperial-cities-tour-from-casablanca.webp",
   
     badge: "Culture & Imperial Cities",
   
@@ -5218,7 +5218,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/8-day-imperial-cities-tour-from-casablanca.jpg",
+      "/images/tours/8-day-imperial-cities-tour-from-casablanca.webp",
     ],
   
     // ─────────────────────────────
@@ -5389,7 +5389,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Discover Morocco on a private 10-day tour from Casablanca through Rabat, Fes, the Sahara Desert, Marrakech and Essaouira, with imperial cities, mountain scenery and the Atlantic coast.",
   
-    image: "/images/tours/10-day-morocco-tour-from-casablanca.jpg",
+    image: "/images/tours/10-day-morocco-tour-from-casablanca.webp",
   
     badge: "Cities, Sahara & Coast",
   
@@ -6007,7 +6007,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/10-day-morocco-tour-from-casablanca.jpg",
+      "/images/tours/10-day-morocco-tour-from-casablanca.webp",
     ],
   
     // ─────────────────────────────
@@ -6196,7 +6196,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Experience Morocco on a private 14-day tour from Casablanca through Rabat, Tangier, Chefchaouen, Fes, the Sahara Desert, Marrakech and Essaouira.",
   
-    image: "/images/tours/14-day-morocco-tour-from-casablanca.jpg",
+    image: "/images/tours/14-day-morocco-tour-from-casablanca.webp",
   
     badge: "Two Weeks in Morocco",
   
@@ -6981,7 +6981,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/14-day-morocco-tour-from-casablanca.jpg",
+      "/images/tours/14-day-morocco-tour-from-casablanca.webp",
     ],
   
     // ─────────────────────────────
@@ -7185,7 +7185,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Discover Morocco on a private 12-day tour through Casablanca, Tangier, Chefchaouen, Fes, the Sahara Desert, Marrakech and Essaouira, with cities, mountains, desert landscapes and the Atlantic coast.",
   
-    image: "/images/tours/12-day-morocco-tour.jpg",
+    image: "/images/tours/12-day-morocco-tour.webp",
   
     badge: "Grand Morocco Adventure",
   
@@ -7886,7 +7886,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/12-day-morocco-tour.jpg",
+      "/images/tours/12-day-morocco-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -8085,7 +8085,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Explore northern Morocco on a private 4-day Tangier to Chefchaouen tour through the Rif Mountains, Fes, Meknes and Rabat before returning to Tangier.",
   
-    image: "/images/tours/4-day-tangier-chefchaouen-tour.jpg",
+    image: "/images/tours/4-day-tangier-chefchaouen-tour.webp",
   
     badge: "Northern Morocco",
   
@@ -8410,7 +8410,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/4-day-tangier-chefchaouen-tour.jpg",
+      "/images/tours/4-day-tangier-chefchaouen-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -8574,7 +8574,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Travel from Tangier to Marrakech on a private 6-day tour through Chefchaouen, Fes, the Middle Atlas Mountains, Merzouga and the Sahara Desert.",
   
-    image: "/images/tours/6-day-tangier-marrakech-tour.jpg",
+    image: "/images/tours/6-day-tangier-marrakech-tour.webp",
   
     badge: "Tangier to Marrakech",
   
@@ -9028,7 +9028,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/6-day-tangier-marrakech-tour.jpg",
+      "/images/tours/6-day-tangier-marrakech-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -9208,7 +9208,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Travel through Morocco on a private 7-day journey from Tangier, with Chefchaouen, a full day in Fes, the Sahara dunes of Merzouga and the High Atlas before finishing in Marrakech.",
   
-    image: "/images/tours/7-day-tangier-fes-sahara-tour.jpg",
+    image: "/images/tours/7-day-tangier-fes-sahara-tour.webp",
   
     badge: "Fes & Sahara Journey",
   
@@ -9700,7 +9700,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/7-day-tangier-fes-sahara-tour.jpg",
+      "/images/tours/7-day-tangier-fes-sahara-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -9879,7 +9879,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Travel across Morocco on a private 10-day journey from Tangier to Casablanca through Chefchaouen, Fes, the Sahara Desert, Ait Ben Haddou and Marrakech.",
   
-    image: "/images/tours/10-day-tangier-casablanca-tour.jpg",
+    image: "/images/tours/10-day-tangier-casablanca-tour.webp",
   
     badge: "Tangier to Casablanca",
   
@@ -10500,7 +10500,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/10-day-tangier-casablanca-tour.jpg",
+      "/images/tours/10-day-tangier-casablanca-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -10695,7 +10695,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Discover the best of Morocco on a private 12-day journey from Tangier through Chefchaouen, Fes, the Sahara Desert, Ait Ben Haddou and Marrakech before finishing in Casablanca.",
   
-    image: "/images/tours/12-day-best-of-morocco-tour.jpg",
+    image: "/images/tours/12-day-best-of-morocco-tour.webp",
   
     badge: "Best of Morocco",
   
@@ -11394,7 +11394,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/12-day-best-of-morocco-tour.jpg",
+      "/images/tours/12-day-best-of-morocco-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -11595,7 +11595,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Travel from Fes to Marrakech on a private 3-day desert tour through the Middle Atlas, Merzouga, the Sahara, Todra Gorges and Ait Ben Haddou.",
   
-    image: "/images/tours/3-day-fes-marrakech-desert-tour.jpg",
+    image: "/images/tours/3-day-fes-marrakech-desert-tour.webp",
   
     badge: "Fes to Marrakech",
   
@@ -11920,7 +11920,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/3-day-fes-marrakech-desert-tour.jpg",
+      "/images/tours/3-day-fes-marrakech-desert-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -12108,7 +12108,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Escape from Fes to the Sahara on a private 3-day Merzouga desert tour through the Middle Atlas, Ziz Valley and Erg Chebbi, with a camel ride and desert camp.",
   
-    image: "/images/tours/3-day-fes-merzouga-desert-tour.jpg",
+    image: "/images/tours/3-day-fes-merzouga-desert-tour.webp",
   
     badge: "Fes to Merzouga",
   
@@ -12421,7 +12421,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/3-day-fes-merzouga-desert-tour.jpg",
+      "/images/tours/3-day-fes-merzouga-desert-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -12610,7 +12610,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Travel from Fes to Marrakech on a private 4-day desert tour with extra time in Merzouga, a camel trek across Erg Chebbi, a Sahara camp, Todra Gorges and Ait Ben Haddou.",
   
-    image: "/images/tours/4-day-fes-marrakech-desert-tour.jpg",
+    image: "/images/tours/4-day-fes-marrakech-desert-tour.webp",
   
     badge: "Extended Sahara Journey",
   
@@ -12993,7 +12993,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/4-day-fes-marrakech-desert-tour.jpg",
+      "/images/tours/4-day-fes-marrakech-desert-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -13193,7 +13193,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Travel from Fes to Marrakech on a private 5-day desert journey with extra time in Merzouga, a Sahara camp, Todra Gorges, Dades Valley, Ouarzazate and Ait Ben Haddou.",
   
-    image: "/images/tours/5-day-fes-marrakech-desert-tour.jpg",
+    image: "/images/tours/5-day-fes-marrakech-desert-tour.webp",
   
     badge: "Extended Desert Journey",
   
@@ -13627,7 +13627,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/5-day-fes-marrakech-desert-tour.jpg",
+      "/images/tours/5-day-fes-marrakech-desert-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -13837,7 +13837,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Travel from Fes to Rabat on a private 7-day Morocco tour through Merzouga, the Sahara Desert, Todra Gorges, Ait Ben Haddou, Marrakech and Casablanca.",
   
-    image: "/images/tours/7-day-fes-rabat-morocco-tour.jpg",
+    image: "/images/tours/7-day-fes-rabat-morocco-tour.webp",
   
     badge: "Fes to Rabat",
   
@@ -14324,7 +14324,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/7-day-fes-rabat-morocco-tour.jpg",
+      "/images/tours/7-day-fes-rabat-morocco-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -14528,7 +14528,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Explore Morocco on a private 8-day tour from Fes through Meknes, Rabat, Casablanca, Tangier, Tetouan and Chefchaouen before returning to Fes.",
   
-    image: "/images/tours/8-day-morocco-tour-from-fes.jpg",
+    image: "/images/tours/8-day-morocco-tour-from-fes.webp",
   
     badge: "Imperial Cities & North",
   
@@ -15021,7 +15021,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/8-day-morocco-tour-from-fes.jpg",
+      "/images/tours/8-day-morocco-tour-from-fes.webp",
     ],
   
     // ─────────────────────────────
@@ -15226,7 +15226,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Discover the Sahara on a private 3-day journey from Errachidia to Merzouga through the Ziz Valley and Erfoud, with desert exploration, nomad encounters and Gnawa culture.",
   
-    image: "/images/tours/3-day-errachidia-merzouga-desert-tour.jpg",
+    image: "/images/tours/3-day-errachidia-merzouga-desert-tour.webp",
   
     badge: "Errachidia to Merzouga",
   
@@ -15515,7 +15515,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/3-day-errachidia-merzouga-desert-tour.jpg",
+      "/images/tours/3-day-errachidia-merzouga-desert-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -15702,7 +15702,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Travel from Agadir to Marrakech on a private 4-day desert journey through Ait Ben Haddou, Dades Valley, Todra Gorges, Merzouga, the Draa Valley and the High Atlas Mountains.",
   
-    image: "/images/tours/4-day-agadir-marrakech-desert-tour.jpg",
+    image: "/images/tours/4-day-agadir-marrakech-desert-tour.webp",
   
     badge: "Agadir to Marrakech",
   
@@ -16068,7 +16068,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/4-day-agadir-marrakech-desert-tour.jpg",
+      "/images/tours/4-day-agadir-marrakech-desert-tour.webp",
     ],
   
     // ─────────────────────────────
@@ -16274,7 +16274,7 @@ export const tours: Tour[] = [
     shortDescription:
       "Enjoy an 8-day Morocco surf trip with accommodation, surf lessons or guiding, daily surf transport, Taghazout, Tamraght, Imsouane and a relaxing Paradise Valley day.",
   
-    image: "/images/tours/8-day-taghazout-surf-camp.jpg",
+    image: "/images/tours/8-day-taghazout-surf-camp.webp",
   
     badge: "Surf Camp Package",
   
@@ -16854,7 +16854,7 @@ export const tours: Tour[] = [
     // ─────────────────────────────
   
     gallery: [
-      "/images/tours/8-day-taghazout-surf-camp.jpg",
+      "/images/tours/8-day-taghazout-surf-camp.webp",
     ],
   
     // ─────────────────────────────

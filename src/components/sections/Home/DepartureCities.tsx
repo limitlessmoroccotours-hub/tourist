@@ -1,167 +1,471 @@
 import Image from "next/image";
 import Link from "next/link";
 
+
 const destinations = [
   {
     city: "Marrakech",
     tours: 13,
-    image: "/images/marrakech.jpg",
-    description: "Desert adventures, Atlas Mountains & southern Morocco",
+    image: "/images/marrakech.webp",
+    description:
+      "Sahara adventures & Atlas Mountains journeys",
     href: "/tours/from-marrakech",
   },
-  {
-    city: "Fes",
-    tours: 12,
-    image: "/images/fes.jpg",
-    description: "Imperial cities, culture & authentic Moroccan experiences",
-    href: "/tours/from-fes",
-  },
+
   {
     city: "Casablanca",
     tours: 10,
-    image: "/images/casablanca.jpg",
-    description: "Atlantic coast, Rabat & journeys across Morocco",
+    image: "/images/casablanca.webp",
+    description:
+      "Atlantic coast & Morocco private journeys",
     href: "/tours/from-casablanca",
   },
+
+  {
+    city: "Fes",
+    tours: 12,
+    image: "/images/fes.webp",
+    description:
+      "Imperial cities & cultural experiences",
+    href: "/tours/from-fes",
+  },
+
   {
     city: "Tangier",
     tours: 6,
-    image: "/images/tangier.jpg",
-    description: "Northern Morocco, Chefchaouen & Mediterranean escapes",
+    image: "/images/tangier.webp",
+    description:
+      "Northern Morocco & Mediterranean escapes",
     href: "/tours/from-tangier",
   },
 ];
 
+
+
+const extraDepartures = [
+  {
+    name: "Agadir",
+    href: "/tours/from-agadir",
+  },
+  {
+    name: "Errachidia",
+    href: "/tours/from-errachidia",
+  },
+];
+
+
+
 export default function DepartureCities() {
-  return (
-    <section className="bg-[hsl(var(--background))] px-5 py-20 sm:px-8 lg:px-10 lg:py-15">
-      <div className="mx-auto max-w-[1280px]">
 
-        {/* Section Heading */}
-        <div className="mx-auto mb-12 max-w-[720px] text-center lg:mb-16">
 
-          <div className="mb-4 flex items-center justify-center gap-3">
-            <span className="h-px w-8 bg-[hsl(var(--primary))]" />
+return (
 
-            <span className="text-[10px] font-bold uppercase tracking-[0.28em] text-[hsl(var(--primary))]">
-              Start Your Journey
-            </span>
+<section
+className="
+bg-[hsl(var(--background))]
+"
+>
 
-            <span className="h-px w-8 bg-[hsl(var(--primary))]" />
-          </div>
 
-          <h2 className="font-[family-name:var(--font-cormorant)] text-[clamp(2.5rem,5vw,4.2rem)] font-semibold leading-[0.95] tracking-[-0.035em] text-[hsl(var(--heading))]">
-            Explore Morocco by
-            <span className="text-[hsl(var(--primary))]"> Departure City</span>
-          </h2>
+<div
+className="
+mx-auto
+max-w-7xl
+px-5
+py-20
 
-          <p className="mx-auto mt-5 max-w-[580px] text-sm leading-7 text-[hsl(var(--text-secondary))] sm:text-base">
-            Choose where your journey begins and discover carefully crafted
-            private tours designed to show you the very best of Morocco.
-          </p>
+sm:px-8
+lg:px-10
+lg:py-24
+"
+>
 
-        </div>
 
-        {/* Destination Cards */}
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
 
-          {destinations.map((destination) => (
-            <Link
-              key={destination.city}
-              href={destination.href}
-              className="group relative h-[430px] overflow-hidden rounded-[24px] bg-[hsl(var(--secondary))] shadow-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-xl"
-            >
+{/* Heading */}
 
-              {/* Image */}
-              <Image
-                src={destination.image}
-                alt={`${destination.city} Morocco tours`}
-                fill
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-              />
+<div
+className="
+max-w-3xl
+mb-14
+"
+>
 
-              {/* Base Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/5" />
 
-              {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-[hsl(var(--primary)/0.08)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+<p
+className="
+mb-4
+text-xs
+font-bold
+uppercase
+tracking-[0.28em]
+text-[hsl(var(--primary))]
+"
+>
+Start Your Journey
+</p>
 
-              {/* Tour Count */}
-              <div className="absolute right-4 top-4 rounded-full border border-white/20 bg-black/20 px-3 py-1.5 backdrop-blur-md">
-                <span className="text-[11px] font-semibold tracking-wide text-white">
-                  {destination.tours} tours
-                </span>
-              </div>
 
-              {/* Content */}
-              <div className="absolute inset-x-0 bottom-0 p-6">
 
-                <div className="mb-3 flex items-center gap-2">
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full border border-white/25 bg-white/10 backdrop-blur-sm">
-                    <svg
-                      width="13"
-                      height="13"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.8"
-                      className="text-white"
-                    >
-                      <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
-                      <circle cx="12" cy="10" r="2.5" />
-                    </svg>
-                  </span>
+<h2
+className="
+font-[family-name:var(--font-cormorant)]
+text-5xl
+font-semibold
+leading-tight
+tracking-tight
+text-[hsl(var(--heading))]
 
-                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/70">
-                    From
-                  </span>
-                </div>
+sm:text-6xl
+"
+>
+Explore Morocco From
+<span
+className="
+text-[hsl(var(--primary))]
+"
+>
+ Your Departure City
+</span>
+</h2>
 
-                <h3 className="font-[family-name:var(--font-cormorant)] text-[34px] font-semibold leading-none tracking-[-0.02em] text-white">
-                  {destination.city}
-                </h3>
 
-                <p className="mt-3 max-w-[260px] text-[12px] leading-5 text-white/65">
-                  {destination.description}
-                </p>
 
-                {/* Explore Link */}
-                <div className="mt-5 flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.16em] text-[hsl(var(--gold-muted))] transition-all duration-300 group-hover:gap-3">
-                  Explore tours
+<p
+className="
+mt-5
+max-w-2xl
+text-base
+leading-7
+text-[hsl(var(--text-secondary))]
+"
+>
+Choose your starting point and discover private Morocco tours
+created around your travel style and interests.
+</p>
 
-                  <svg
-                    width="15"
-                    height="15"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path d="M5 12h14" />
-                    <path d="m13 6 6 6-6 6" />
-                  </svg>
-                </div>
 
-              </div>
-            </Link>
-          ))}
+</div>
 
-        </div>
 
-        {/* Bottom Link */}
-        <div className="mt-10 text-center">
-          <Link
-            href="/tours"
-            className="inline-flex items-center gap-2 text-sm font-bold text-[hsl(var(--heading))] transition-colors hover:text-[hsl(var(--primary))]"
-          >
-            View all Morocco tours
 
-            <span className="text-[hsl(var(--primary))]">→</span>
-          </Link>
-        </div>
 
-      </div>
-    </section>
-  );
+
+{/* Cards */}
+
+<div
+className="
+grid
+gap-6
+
+sm:grid-cols-2
+lg:grid-cols-4
+"
+>
+
+
+{
+destinations.map((destination)=>(
+
+
+<Link
+key={destination.city}
+href={destination.href}
+
+className="
+group
+relative
+h-[410px]
+overflow-hidden
+rounded-3xl
+
+transition-all
+duration-500
+
+hover:-translate-y-1
+hover:shadow-xl
+"
+
+>
+
+
+<Image
+
+src={destination.image}
+
+alt={`${destination.city} Morocco tours`}
+
+fill
+
+sizes="
+(max-width:768px) 100vw,
+25vw
+"
+
+className="
+object-cover
+transition-transform
+duration-700
+
+group-hover:scale-110
+"
+
+/>
+
+
+
+{/* Elegant Overlay */}
+
+<div
+className="
+absolute
+inset-0
+
+bg-gradient-to-t
+from-black/80
+via-black/20
+to-transparent
+"
+/>
+
+
+
+
+
+{/* Tour badge */}
+
+<div
+className="
+absolute
+right-5
+top-5
+
+rounded-full
+
+border
+border-white/20
+
+bg-black/20
+
+px-4
+py-2
+
+backdrop-blur-md
+"
+>
+
+<span
+className="
+text-[10px]
+font-bold
+uppercase
+tracking-wider
+text-white
+"
+>
+{destination.tours} Tours
+</span>
+
+
+</div>
+
+
+
+
+
+{/* Content */}
+
+<div
+className="
+absolute
+bottom-0
+left-0
+right-0
+
+p-6
+"
+>
+
+
+<p
+className="
+text-[10px]
+font-bold
+uppercase
+tracking-[0.25em]
+text-white/60
+"
+>
+Starting Point
+</p>
+
+
+
+<h3
+className="
+mt-2
+
+font-[family-name:var(--font-cormorant)]
+
+text-5xl
+
+font-semibold
+
+leading-none
+
+text-white
+"
+>
+{destination.city}
+</h3>
+
+
+
+
+<p
+className="
+mt-4
+
+text-sm
+
+leading-5
+
+text-white/75
+"
+>
+{destination.description}
+</p>
+
+
+
+
+<div
+className="
+mt-5
+
+text-xs
+
+font-bold
+
+uppercase
+
+tracking-[0.18em]
+
+text-[hsl(var(--gold-muted))]
+"
+>
+Explore Tours →
+</div>
+
+
+
+</div>
+
+
+
+</Link>
+
+
+))
+}
+
+
+</div>
+
+
+
+
+
+
+{/* Additional cities */}
+
+<div
+className="
+mt-12
+
+flex
+
+justify-center
+
+flex-wrap
+
+gap-4
+"
+>
+
+
+{
+extraDepartures.map((city)=>(
+
+
+<Link
+
+key={city.name}
+
+href={city.href}
+
+className="
+inline-flex
+
+items-center
+
+rounded-full
+
+border
+
+border-[hsl(var(--border))]
+
+bg-[hsl(var(--card))]
+
+px-7
+
+py-3
+
+text-sm
+
+font-semibold
+
+text-[hsl(var(--heading))]
+
+transition-all
+
+hover:border-[hsl(var(--primary))]
+
+hover:text-[hsl(var(--primary))]
+"
+
+>
+
+Tours From {city.name}
+
+<span
+className="
+ml-2
+text-[hsl(var(--primary))]
+"
+>
+→
+</span>
+
+
+</Link>
+
+
+))
+}
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+);
+
+
 }
