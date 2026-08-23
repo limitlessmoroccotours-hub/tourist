@@ -124,13 +124,13 @@ useState(false);
 const [dropdown,setDropdown] =
 useState<string|null>(null);
 
-const closeMenus = () => {
-  setMobileOpen(false);
-  setDropdown(null);
-};
+
 
 useEffect(() => {
-  closeMenus();
+  const closeMenus = () => {
+    setMobileOpen(false);
+    setDropdown(null);
+  };
 }, [pathname]);
 
 
@@ -329,10 +329,10 @@ lg:px-6
 <Image
   src="/images/home/Moroccan-Trip-Logo.svg"
   alt="Moroccan Trip"
-  width={150}
-  height={48}
+  width={90}
+  height={40}
   priority
-  className="h-auto w-[120px] lg:w-[170px]"
+  className="h-auto w-[100px] lg:w-[130px]"
 />
 
 </Link>
@@ -663,7 +663,10 @@ item.href ?
 
 <Link
 href={item.href}
-onClick={closeMenus}
+onClick={() => {
+  setMobileOpen(false);
+  setDropdown(null);
+}}
 className="font-semibold"
 >
 
@@ -694,7 +697,10 @@ className="font-semibold"
 <Link
 
 href="/contact"
-onClick={closeMenus}
+onClick={() => {
+  setMobileOpen(false);
+  setDropdown(null);
+}}
 
 className="
 mt-5
@@ -706,7 +712,6 @@ py-3
 font-bold
 text-white
 "
-
 >
 
 Plan Your Trip
