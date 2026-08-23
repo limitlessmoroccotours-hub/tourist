@@ -17056,3 +17056,8 @@ export const tours: Tour[] = [
   },
 ];
 
+
+
+export function getTourSlugs(): string[] {
+  return tours.map((tour) => tour.slug);
+}

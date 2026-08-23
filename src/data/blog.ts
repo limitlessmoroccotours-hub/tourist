@@ -2719,3 +2719,8 @@ export type BlogPost = {
       },
       
   ];
+
+
+  export function getBlogSlugs(): string[] {
+    return blogPosts.map((post) => post.slug);
+  }

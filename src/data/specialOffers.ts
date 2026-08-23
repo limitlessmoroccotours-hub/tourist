@@ -1178,3 +1178,8 @@ export type SpecialOffer = {
       },
   
   ];
+
+
+  export function getSpecialOfferSlugs(): string[] {
+    return specialOffers.map((offer) => offer.slug);
+  }

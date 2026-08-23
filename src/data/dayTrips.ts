@@ -894,3 +894,9 @@ export type DayTrip = {
 }
 
   ];
+
+
+
+  export function getDayTripSlugs(): string[] {
+    return dayTrips.map((trip) => trip.slug);
+  }

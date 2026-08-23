@@ -833,3 +833,8 @@ export const shopProducts: ShopProduct[] = [
 
 
 ];
+
+
+export function getShopProductSlugs(): string[] {
+  return shopProducts.map((product) => product.slug);
+}
