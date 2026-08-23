@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 const tripadvisorUrl =
@@ -116,12 +116,22 @@ export default function Header(){
 const pathname = usePathname();
 
 
+
 const [mobileOpen,setMobileOpen] =
 useState(false);
 
 
 const [dropdown,setDropdown] =
 useState<string|null>(null);
+
+const closeMenus = () => {
+  setMobileOpen(false);
+  setDropdown(null);
+};
+
+useEffect(() => {
+  closeMenus();
+}, [pathname]);
 
 
 
@@ -309,28 +319,23 @@ lg:px-6
 >
 
 
-
 {/* LOGO */}
 
-<Link href="/">
+<Link
+  href="/"
+  className="flex items-center"
+>
 
 <Image
-
-src="/images/home/Moroccan-Trip-Logo.svg"
-
-alt="MoroccanTrip"
-
-width={170}
-
-height={55}
-
-priority
-
+  src="/images/home/Moroccan-Trip-Logo.svg"
+  alt="Moroccan Trip"
+  width={150}
+  height={48}
+  priority
+  className="h-auto w-[120px] lg:w-[170px]"
 />
 
 </Link>
-
-
 
 
 
@@ -658,6 +663,7 @@ item.href ?
 
 <Link
 href={item.href}
+onClick={closeMenus}
 className="font-semibold"
 >
 
@@ -688,6 +694,7 @@ className="font-semibold"
 <Link
 
 href="/contact"
+onClick={closeMenus}
 
 className="
 mt-5
