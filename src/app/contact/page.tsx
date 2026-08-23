@@ -15,7 +15,7 @@ import ContactForm from "@/components/sections/contact/ContactForm";
 const SITE_URL = "https://moroccan-trip.com";
 
 const CONTACT_EMAIL =
-  "contact@limitlessmoroccotours.com";
+  "contact@moroccan-trip.com";
 
 const WHATSAPP_NUMBER =
   "212607747056";
@@ -267,8 +267,7 @@ export default function ContactPage() {
             </h2>
 
             <p className="mt-2 text-sm leading-6 text-text-secondary">
-              Fill in the form and continue the conversation directly on
-              WhatsApp.
+            Fill in the form and our Morocco travel team will contact you shortly.
             </p>
 
            <ContactForm />

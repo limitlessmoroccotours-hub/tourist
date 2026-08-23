@@ -15,7 +15,7 @@ const destinations = [
   {
     city: "Casablanca",
     tours: 10,
-    image: "/images/casablanca.webp",
+    image: "/images/Casablanca.webp",
     description:
       "Atlantic coast & Morocco private journeys",
     href: "/tours/from-casablanca",
@@ -24,7 +24,7 @@ const destinations = [
   {
     city: "Fes",
     tours: 12,
-    image: "/images/fes.webp",
+    image: "/images/Fes.webp",
     description:
       "Imperial cities & cultural experiences",
     href: "/tours/from-fes",
@@ -33,7 +33,7 @@ const destinations = [
   {
     city: "Tangier",
     tours: 6,
-    image: "/images/tangier.webp",
+    image: "/images/Tangier.webp",
     description:
       "Northern Morocco & Mediterranean escapes",
     href: "/tours/from-tangier",

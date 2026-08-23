@@ -5,6 +5,7 @@ import "./globals.css";
 
 import Footer from "@/components/Layout/Footer";
 import Header from "@/components/Layout/Header";
+import { Toaster } from "sonner";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -91,6 +92,12 @@ export default function RootLayout({
         </main>
 
         <Footer />
+        <Toaster
+  position="bottom-left"
+  toastOptions={{
+    duration: 4000,
+  }}
+/>
       </body>
     </html>
   );
