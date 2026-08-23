@@ -329,6 +329,10 @@ lg:px-6
 <Image
   src="/images/home/Moroccan-Trip-Logo.svg"
   alt="Moroccan Trip"
+  onClick={() => {
+    setMobileOpen(false);
+    setDropdown(null);
+  }}
   width={90}
   height={40}
   priority
