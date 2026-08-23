@@ -41,22 +41,45 @@ export const metadata: Metadata = {
   creator: "Moroccan Trip",
 
   publisher: "Moroccan Trip",
+  icons: {
+    icon: "/favicon.ico",
+  },
 
   openGraph: {
     title: "Moroccan Trip | Private Morocco Tours & Desert Trips",
+  
     description:
       "Discover Morocco with private tours, Sahara desert trips and personalized journeys. Explore Marrakech, Merzouga, the Atlas Mountains and more with Moroccan Trip.",
+  
     siteName: "Moroccan Trip",
+  
     locale: "en_US",
+  
     type: "website",
+  
+    images: [
+      {
+        url: "/images/home/og-home.webp",
+        width: 1200,
+        height: 630,
+        alt: "Moroccan Trip - Private Morocco Tours",
+      },
+    ],
   },
 
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
+  
     title: "Moroccan Trip | Private Morocco Tours & Desert Trips",
+  
     description:
       "Discover Morocco with private tours, Sahara desert trips and personalized journeys across Morocco.",
+  
+    images: [
+      "/images/home/og-home.webp",
+    ],
   },
+
 
   robots: {
     index: true,
