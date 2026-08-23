@@ -21,6 +21,7 @@ const navItems = [
       ["Tours From Agadir", "/tours/from-agadir"],
       ["Tours From Errachidia", "/tours/from-errachidia"],
     ],
+    href:"/tours"
   },
 
   {
