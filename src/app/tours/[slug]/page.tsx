@@ -101,14 +101,110 @@ export default async function TourPage({ params }: TourPageProps) {
     notFound();
   }
 
+  const touristTripSchema = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+  
+    name: tour.title,
+  
+    description: tour.shortDescription,
+  
+    image: [
+      `https://moroccan-trip.com${tour.image}`,
+    ],
+  
+    touristType: "Private Morocco Tour",
+  
+    provider: {
+      "@type": "TravelAgency",
+      name: "Moroccan Trip",
+      url: "https://moroccan-trip.com",
+    },
+  
+    itinerary: {
+      "@type": "ItemList",
+      itemListElement: tour.itinerary.map((day) => ({
+        "@type": "TouristAttraction",
+        name: day.title,
+        description: day.description,
+      })),
+    },
+  
+    duration: tour.duration,
+  
+    location: {
+      "@type": "Country",
+      name: "Morocco",
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+  
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://moroccan-trip.com",
+      },
+  
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Tours",
+        item: "https://moroccan-trip.com/tours",
+      },
+  
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: tour.title,
+        item: `https://moroccan-trip.com/tours/${tour.slug}`,
+      },
+    ],
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+  
+    mainEntity: tour.faqs.map((faq) => ({
+      "@type": "Question",
+  
+      name: faq.question,
+  
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
+  const schemas = [
+    touristTripSchema,
+    breadcrumbSchema,
+    ...(tour.faqs?.length ? [faqSchema] : []),
+  ];
+
   const overviewParagraphs = tour.overview
     .trim()
     .split(/\n\s*\n/)
     .map((paragraph) => paragraph.trim())
     .filter(Boolean);
 
-  return (
-    <main className="min-h-screen bg-[hsl(var(--background))] pb-20 lg:pb-0">
+    return (
+      <>
+        <script
+          id="tour-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemas),
+          }}
+        />
+    
+        <main className="min-h-screen bg-[hsl(var(--background))] pb-20 lg:pb-0">
       {/* ───────────────────────────────────── */}
       {/* BREADCRUMB */}
       {/* ───────────────────────────────────── */}
@@ -852,6 +948,7 @@ export default async function TourPage({ params }: TourPageProps) {
         </div>
       </div>
     </main>
+    </>
   );
 }
 

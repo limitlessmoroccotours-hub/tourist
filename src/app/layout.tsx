@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Discover Morocco with private tours, Sahara desert trips and personalized journeys. Explore Marrakech, Merzouga, the Atlas Mountains and more with Moroccan Trip.",
+    "Discover Morocco with private tours, Sahara Desert trips and authentic experiences. Explore Marrakech, Fes and Casablanca with local travel experts.",
 
   applicationName: "Moroccan Trip",
 

@@ -1,6 +1,61 @@
 import Image from "next/image";
 import Link from "next/link";
 import { tours } from "@/data/tours";
+import type { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Private Morocco Tours | Sahara Desert Trips & Custom Tours",
+  },
+
+  description:
+    "Discover private Morocco tours from Marrakech, Casablanca, Fes, Tangier, Agadir and Errachidia. Custom Sahara desert trips and private journeys across Morocco.",
+
+  alternates: {
+    canonical: "/tours",
+  },
+
+  openGraph: {
+    title: "Private Morocco Tours | Sahara Desert Trips & Custom Tours",
+
+    description:
+      "Discover private Morocco tours from Marrakech, Casablanca, Fes, Tangier, Agadir and Errachidia. Custom Sahara desert trips and private journeys across Morocco.",
+
+    url: "/tours",
+
+    siteName: "Moroccan Trip",
+
+    type: "website",
+
+    images: [
+      {
+        url: "/images/home/og-home.webp",
+        width: 1200,
+        height: 630,
+        alt: "Private Morocco Tours - Moroccan Trip",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Private Morocco Tours | Sahara Desert Trips & Custom Tours",
+
+    description:
+      "Discover private Morocco tours from Marrakech, Casablanca, Fes, Tangier, Agadir and Errachidia.",
+
+    images: [
+      "/images/home/og-home.webp",
+    ],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 const departureContent = [
   {
