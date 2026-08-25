@@ -63,7 +63,7 @@ export default function TrustBar() {
   
               <div>
   
-                <h3
+                <p
                   className="
                   font-[family-name:var(--font-cormorant)]
                   text-xl
@@ -72,7 +72,7 @@ export default function TrustBar() {
                   "
                 >
                   Tripadvisor
-                </h3>
+                </p>
   
   
                 <p
@@ -129,7 +129,7 @@ export default function TrustBar() {
               <div>
   
   
-                <h3
+                <p
                   className="
                   font-[family-name:var(--font-cormorant)]
                   text-xl
@@ -138,7 +138,7 @@ export default function TrustBar() {
                   "
                 >
                   Local Experts
-                </h3>
+                </p>
   
   
                 <p
@@ -198,7 +198,7 @@ export default function TrustBar() {
               <div>
   
   
-                <h3
+                <p
                   className="
                   font-[family-name:var(--font-cormorant)]
                   text-xl
@@ -207,7 +207,7 @@ export default function TrustBar() {
                   "
                 >
                   Private Tours
-                </h3>
+                </p>
   
   
                 <p
@@ -267,7 +267,7 @@ export default function TrustBar() {
               <div>
   
   
-                <h3
+                <p
                   className="
                   font-[family-name:var(--font-cormorant)]
                   text-xl
@@ -276,7 +276,7 @@ export default function TrustBar() {
                   "
                 >
                   Authentic
-                </h3>
+                </p>
   
   
                 <p

@@ -316,7 +316,7 @@ sm:justify-between
 
 <div>
 
-<h3
+<p
 className="
 font-[family-name:var(--font-cormorant)]
 text-3xl
@@ -325,7 +325,7 @@ text-white
 "
 >
 Need help planning your trip?
-</h3>
+</p>
 
 
 <p

@@ -149,7 +149,7 @@ export default function HeroSection() {
               text-[hsl(var(--gold-muted))]
               "
             >
-              Beyond the Ordinary
+              Private Sahara Desert Experiences
             </span>
 
 
