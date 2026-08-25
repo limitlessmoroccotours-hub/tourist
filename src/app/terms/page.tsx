@@ -1,3 +1,11 @@
+
+export const metadata = {
+  title: "Terms & Conditions | Moroccan Trip",
+  description:
+    "Read Moroccan Trip terms and conditions for Morocco tours, bookings, payments, and travel services."
+};
+
+
 export default function TermsPage() {
     return (
       <main className="mx-auto max-w-4xl px-6 py-16">

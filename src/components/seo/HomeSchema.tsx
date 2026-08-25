@@ -8,7 +8,7 @@ export default function HomeSchema() {
   
         {
   
-          "@type": "TravelAgency",
+          "@type": "Organization",
   
           "@id": "https://moroccan-trip.com/#organization",
   
@@ -52,14 +52,6 @@ export default function HomeSchema() {
           ],
   
   
-          "address": {
-  
-            "@type": "PostalAddress",
-  
-            "addressCountry":
-              "MA"
-  
-          }
   
         },
   

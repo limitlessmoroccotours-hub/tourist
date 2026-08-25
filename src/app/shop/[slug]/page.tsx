@@ -130,31 +130,9 @@ export default async function ShopProductPage({
     },
 
 
-    offers:{
 
-      "@type":"Offer",
-
-      availability:
-      product.contact.available
-      ?
-      "https://schema.org/InStock"
-      :
-      "https://schema.org/OutOfStock",
-
-
-      seller:{
-        "@type":"Organization",
-        name:"Moroccan Trip"
-      }
-
-    }
 
   };
-
-
-
-
-
 
 
   return (

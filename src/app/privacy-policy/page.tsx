@@ -1,3 +1,11 @@
+
+export const metadata = {
+  title: "Privacy Policy | Moroccan Trip",
+  description:
+    "Read Moroccan Trip privacy policy and learn how we collect, use, and protect your personal information."
+};
+
+
 export default function PrivacyPolicyPage() {
     return (
       <main className="mx-auto max-w-4xl px-6 py-16">
