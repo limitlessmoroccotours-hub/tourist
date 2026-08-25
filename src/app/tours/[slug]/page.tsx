@@ -116,7 +116,8 @@ export default async function TourPage({ params }: TourPageProps) {
     touristType: "Private Morocco Tour",
   
     provider: {
-      "@type": "TravelAgency",
+      "@type": "Organization",
+      "@id": "https://moroccan-trip.com/#organization",
       name: "Moroccan Trip",
       url: "https://moroccan-trip.com",
     },

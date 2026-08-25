@@ -12,7 +12,7 @@ export default function HomeSchema() {
   
           "@id": "https://moroccan-trip.com/#organization",
   
-          "name": "MoroccanTrip",
+          "name": "Moroccan Trip",
   
           "url": "https://moroccan-trip.com/",
   

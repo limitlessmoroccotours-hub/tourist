@@ -99,7 +99,7 @@ export default async function ShopProductPage({
 
     "@context":"https://schema.org",
 
-    "@type":"Product",
+    "@type":"Thing",
 
     name:product.title,
 
