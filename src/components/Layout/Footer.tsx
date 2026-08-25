@@ -25,15 +25,11 @@ const footerLinks = {
   company: [
     {
       name: "About Us",
-      href: "/about",
+      href: "/about-us",
     },
     {
       name: "Travel Blog",
       href: "/blog",
-    },
-    {
-      name: "FAQ",
-      href: "/faq",
     },
     {
       name: "Contact",
