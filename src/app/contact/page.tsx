@@ -326,7 +326,9 @@ export default function ContactPage() {
             </div>
 
             <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+                  "Hello Moroccan Trip, I would like to plan my Morocco trip."
+                )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-5 inline-flex w-full items-center justify-between rounded-xl bg-primary px-5 py-4 font-bold text-primary-foreground transition hover:bg-primary-hover"

@@ -450,7 +450,7 @@ export type DayTrip = {
 
   seo: {
     title:
-      "Imlil Day Trip from Marrakech | Atlas Mountains & Berber Village Experience",
+      "Imlil Day Trip | Atlas Mountains Escape from Marrakech",
 
     description:
       "Discover the High Atlas Mountains on a private Imlil day trip from Marrakech. Visit Imlil village, explore Berber culture and enjoy the landscapes of the Toubkal region.",
@@ -660,7 +660,7 @@ export type DayTrip = {
 
   seo: {
     title:
-      "Ouzoud Waterfalls Day Trip from Marrakech | Private Nature Escape",
+      "Ouzoud Waterfalls Tour | Private Day Trip from Marrakech",
 
     description:
       "Enjoy a private day trip to Ouzoud Waterfalls from Marrakech and discover Morocco's famous cascades, scenic viewpoints and beautiful countryside with a flexible private driver.",
@@ -869,7 +869,7 @@ export type DayTrip = {
 
   seo: {
     title:
-      "Agafay Desert Day Trip from Marrakech | Sunset & Desert Experience",
+      "Agafay Desert Day Trip | Marrakech Desert Escape",
 
     description:
       "Enjoy a private Agafay Desert day trip from Marrakech and discover rocky desert landscapes, sunset views and a unique desert experience near the city.",

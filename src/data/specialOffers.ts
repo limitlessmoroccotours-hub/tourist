@@ -260,7 +260,7 @@ export type SpecialOffer = {
       seo: {
   
         title:
-          "Morocco Desert Tour | Sahara Adventure Special Offer",
+          "Morocco Desert Tour Deal | Sahara Adventure",
   
   
         description:
@@ -1121,7 +1121,7 @@ export type SpecialOffer = {
         seo: {
       
           title:
-            "Morocco Luxury Tours | Private Luxury Travel Experience",
+            "Morocco Luxury Tours | Private Premium Experiences",
       
       
           description:

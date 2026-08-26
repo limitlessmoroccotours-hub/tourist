@@ -427,9 +427,12 @@ text-[hsl(var(--text-secondary))]
 
 <a
 
-href={`https://wa.me/?text=Hello Moroccan Trip, I am interested in ${product.title}`}
+href={`https://wa.me/212607747056?text=${encodeURIComponent(
+  `Hello Moroccan Trip, I am interested in ${product.title}`
+)}`}
 
 target="_blank"
+rel="noopener noreferrer"
 
 className="
 mt-8

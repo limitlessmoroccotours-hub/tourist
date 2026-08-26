@@ -800,7 +800,7 @@ export type BlogPost = {
   
       seo: {
         title:
-          "Best Time to Visit Morocco: Weather & Month Guide | Moroccan Trip",
+          "Best Time to Visit Morocco | Weather Guide",
   
         description:
           "Discover the best time to visit Morocco by season, month and region, including Marrakech, the Sahara, Atlas Mountains and Atlantic coast.",
@@ -1382,7 +1382,7 @@ export type BlogPost = {
       
         seo: {
           title:
-            "Morocco Travel Tips: What to Know Before You Go | Moroccan Trip",
+            "Morocco Travel Tips | Complete Guide",
       
           description:
             "Essential Morocco travel tips for first-time visitors, covering planning, transport, Sahara trips, packing, culture and practical advice.",
@@ -2663,7 +2663,7 @@ export type BlogPost = {
         seo: {
       
           title:
-            "Things to Do in Morocco: Best Places, Experiences & Travel Guide",
+            "Things to Do in Morocco | Top Experiences",
       
       
           description:

@@ -194,6 +194,7 @@ w-full
       <a
         href={tripadvisorUrl}
         target="_blank"
+        rel="noopener noreferrer"
         className="
         flex
         items-center
@@ -576,6 +577,7 @@ lg:hidden
 <a
 href={tripadvisorUrl}
 target="_blank"
+rel="noopener noreferrer"
 >
 
 <Image

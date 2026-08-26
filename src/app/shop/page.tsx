@@ -8,7 +8,7 @@ import { shopProducts } from "@/data/shop";
 export const metadata = {
 
   title:
-    "Moroccan Fossils Shop | Authentic Trilobite Fossils from Morocco",
+    "Moroccan Fossils Shop | Authentic Fossils",
 
 
   description:

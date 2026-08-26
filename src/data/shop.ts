@@ -215,7 +215,7 @@ export const shopProducts: ShopProduct[] = [
 
 
       title:
-        "Moroccan Trilobite Fossils for Sale | Authentic Fossils from Morocco",
+        "Moroccan Trilobite Fossils | Authentic Fossils",
 
 
 
@@ -400,7 +400,7 @@ export const shopProducts: ShopProduct[] = [
   
   
       title:
-        "Moroccan Fossil Decor | Unique Fossil Decorations from Morocco",
+        "oroccan Fossil Decor | Unique Fossil Pieces",
   
   
   
@@ -589,7 +589,7 @@ export const shopProducts: ShopProduct[] = [
   
   
       title:
-        "Moroccan Culinary Argan Oil | Pure Argan Oil from Morocco",
+        "Moroccan Argan Oil | Pure Culinary Oil",
   
   
   

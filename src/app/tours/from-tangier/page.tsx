@@ -11,7 +11,7 @@ const SITE_URL = "https://moroccan-trip.com";
 export const metadata: Metadata = {
 
   title:
-    "Tangier Tours | Private Tours & Excursions in Northern Morocco",
+    "Tangier Tours | Private Morocco Excursions",
 
   description:
     "Discover Tangier tours and private excursions including Northern Morocco experiences, cultural trips and custom journeys starting from Tangier.",

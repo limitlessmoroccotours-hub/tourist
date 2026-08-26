@@ -11,7 +11,7 @@ const SITE_URL = "https://moroccan-trip.com";
 export const metadata: Metadata = {
 
   title:
-    "Marrakech Desert Tours | Private Sahara Tours from Marrakech",
+    "Marrakech Desert Tours | Private Sahara Trips",
 
   description:
     "Discover Marrakech desert tours including Sahara Desert adventures, Merzouga trips and private Morocco experiences starting from Marrakech.",
