@@ -342,6 +342,83 @@ export default function ContactPage() {
             </a>
           </aside>
         </div>
+        {/* CONTACT SUPPORTING CONTENT */}
+<div className="mx-auto mt-12 max-w-4xl border-t border-border pt-10">
+  <div className="grid gap-10 md:grid-cols-2">
+    {/* LEFT */}
+    <div>
+      <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+        Planning Your Morocco Trip
+      </p>
+
+      <h2 className="mt-3 text-2xl font-bold text-heading sm:text-3xl">
+        Tell Us What Kind of Morocco Experience You Have in Mind
+      </h2>
+
+      <p className="mt-4 leading-7 text-text-secondary">
+        Whether you are planning a private Morocco tour, a Sahara desert
+        journey, a day trip or a customized itinerary, our local team can help
+        you organize a journey around your dates, interests and travel style.
+      </p>
+
+      <p className="mt-4 leading-7 text-text-secondary">
+        Explore our{" "}
+        <Link
+          href="/tours"
+          className="font-semibold text-primary hover:underline"
+        >
+          Morocco tours
+        </Link>
+        , browse our{" "}
+        <Link
+          href="/day-trips"
+          className="font-semibold text-primary hover:underline"
+        >
+          day trips
+        </Link>
+        , or tell us what you need through our{" "}
+        <Link
+          href="/custom-tour"
+          className="font-semibold text-primary hover:underline"
+        >
+          custom tour
+        </Link>{" "}
+        service.
+      </p>
+    </div>
+
+    {/* RIGHT */}
+    <div>
+      <p className="text-sm font-bold uppercase tracking-[0.2em] text-primary">
+        Before You Contact Us
+      </p>
+
+      <h2 className="mt-3 text-2xl font-bold text-heading sm:text-3xl">
+        What to Include in Your Message
+      </h2>
+
+      <p className="mt-4 leading-7 text-text-secondary">
+        If possible, include your travel dates, number of travelers, arrival
+        city, preferred destinations, trip duration and any special requests.
+        These details help us understand the journey you are looking for.
+      </p>
+
+      <p className="mt-4 leading-7 text-text-secondary">
+        If your plans are still flexible, simply tell us what you would most
+        like to experience in Morocco and we can help you explore suitable
+        options.
+      </p>
+
+      <Link
+        href="/plan-your-trip"
+        className="mt-6 inline-flex items-center gap-2 font-bold text-primary hover:underline"
+      >
+        Plan your Morocco trip
+        <ArrowUpRight className="h-4 w-4" />
+      </Link>
+    </div>
+  </div>
+</div>
       </section>
     </section>
     </>
