@@ -56,7 +56,7 @@ export const metadata: Metadata = {
 
 
     siteName:
-      "MoroccanTrip",
+      "Moroccan Trip",
 
 
     type:

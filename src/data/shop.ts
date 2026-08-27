@@ -779,7 +779,7 @@ export const shopProducts: ShopProduct[] = [
   
   
       title:
-        "Pure Moroccan Argan Oil for Hair & Skin | Organic Argan Oil from Morocco",
+        "Pure Moroccan Argan Oil for Hair & Skin",
   
   
   
