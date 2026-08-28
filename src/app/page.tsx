@@ -9,6 +9,7 @@ import MoroccoExperiences from "@/components/sections/Home/MoroccoExperiences";
 import SpecialOffers from "@/components/sections/Home/SpecialOffers";
 import DayTrips from "@/components/sections/Home/DayTrips";
 import TravelInspiration from "@/components/sections/Home/TravelInspiration";
+import Reviews from "@/components/sections/Home/Reviews";
 import HomeSchema from "@/components/seo/HomeSchema";
 
 
@@ -119,6 +120,8 @@ export default function Home() {
       <Hero />
 
       <TrustBar />
+
+      <Reviews />
 
       <DepartureCities />
 
