@@ -6,7 +6,6 @@ import FeaturedTours from "@/components/sections/Home/FeaturedTours";
 import FAQs from "@/components/sections/Home/FAQs";
 import TrustBar from "@/components/sections/Home/TrustBar";
 import MoroccoExperiences from "@/components/sections/Home/MoroccoExperiences";
-import SpecialOffers from "@/components/sections/Home/SpecialOffers";
 import DayTrips from "@/components/sections/Home/DayTrips";
 import TravelInspiration from "@/components/sections/Home/TravelInspiration";
 import Reviews from "@/components/sections/Home/Reviews";
@@ -128,8 +127,6 @@ export default function Home() {
       <FeaturedTours />
 
       <MoroccoExperiences />
-
-      <SpecialOffers />
 
       <DayTrips />
 
