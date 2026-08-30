@@ -410,71 +410,71 @@ export default async function TourPage({ params }: TourPageProps) {
       </section>
 
       {/* ───────────────────────────────────── */}
-      {/* TOUR SECTION NAVIGATION */}
-      {/* ───────────────────────────────────── */}
+{/* TOUR SECTION NAVIGATION */}
+{/* ───────────────────────────────────── */}
 
-      <div className="relative z-30 mt-5 pb-4 lg:sticky lg:top-[136px] lg:z-40 lg:mt-6 lg:pb-5">
-        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-          <div className="mx-auto max-w-6xl rounded-[24px] border border-[hsl(var(--border))] bg-[hsl(var(--background)/0.94)] p-1.5 shadow-[0_16px_45px_rgba(28,20,13,0.08)] backdrop-blur-xl">
-            <nav
-              aria-label="Tour sections"
-              className="flex items-center gap-1 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-            >
-              <TourNavLink
-                href="#overview"
-                icon={<DocumentIcon />}
-                label="Overview"
-              />
+<div className="sticky top-[72px] z-40 border-y border-[hsl(var(--border))] bg-[hsl(var(--background)/0.96)] py-2 backdrop-blur-xl lg:top-[136px] lg:border-y-0 lg:bg-transparent lg:py-3">
+  <div className="mx-auto max-w-7xl lg:px-10">
+    <div className="overflow-hidden bg-[hsl(var(--background)/0.98)] lg:mx-auto lg:max-w-6xl lg:rounded-[24px] lg:border lg:border-[hsl(var(--border))] lg:p-1.5 lg:shadow-[0_16px_45px_rgba(28,20,13,0.08)]">
+      <nav
+        aria-label="Tour sections"
+        className="flex items-center gap-1 overflow-x-auto scroll-smooth px-2 py-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:px-0 lg:py-0"
+      >
+        <TourNavLink
+          href="#overview"
+          icon={<DocumentIcon />}
+          label="Overview"
+        />
 
-              <TourNavLink
-                href="#itinerary"
-                icon={<RouteIcon />}
-                label="Itinerary"
-              />
+        <TourNavLink
+          href="#itinerary"
+          icon={<RouteIcon />}
+          label="Itinerary"
+        />
 
-              <TourNavLink
-                href="#route"
-                icon={<MapPinIcon />}
-                label="Route"
-              />
+        <TourNavLink
+          href="#route"
+          icon={<MapPinIcon />}
+          label="Route"
+        />
 
-              <TourNavLink
-                href="#highlights"
-                icon={<StarIcon />}
-                label="Highlights"
-              />
+        <TourNavLink
+          href="#highlights"
+          icon={<StarIcon />}
+          label="Highlights"
+        />
 
-              <TourNavLink
-                href="#included"
-                icon={<CheckIcon />}
-                label="Included"
-              />
+        <TourNavLink
+          href="#included"
+          icon={<CheckIcon />}
+          label="Included"
+        />
 
-              <TourNavLink
-                href="#accommodation"
-                icon={<BedIcon />}
-                label="Stay"
-              />
+        <TourNavLink
+          href="#accommodation"
+          icon={<BedIcon />}
+          label="Stay"
+        />
 
-              {tour.gallery.length > 0 && (
-                <TourNavLink
-                  href="#gallery"
-                  icon={<GalleryIcon />}
-                  label="Gallery"
-                />
-              )}
+        {tour.gallery.length > 0 && (
+          <TourNavLink
+            href="#gallery"
+            icon={<GalleryIcon />}
+            label="Gallery"
+          />
+        )}
 
-              {tour.faqs.length > 0 && (
-                <TourNavLink
-                  href="#faq"
-                  icon={<QuestionIcon />}
-                  label="FAQ"
-                />
-              )}
-            </nav>
-          </div>
-        </div>
-      </div>
+        {tour.faqs.length > 0 && (
+          <TourNavLink
+            href="#faq"
+            icon={<QuestionIcon />}
+            label="FAQ"
+          />
+        )}
+      </nav>
+    </div>
+  </div>
+</div>
 
       {/* ───────────────────────────────────── */}
       {/* MAIN TOUR CONTENT */}
@@ -1218,13 +1218,53 @@ function TourNavLink({
   return (
     <a
       href={href}
-      className="group flex min-w-max flex-1 items-center justify-center gap-2 rounded-[16px] px-3.5 py-2.5 text-[13px] font-semibold text-[hsl(var(--heading)/0.7)] transition-all duration-200 hover:bg-[hsl(var(--primary)/0.08)] hover:text-[hsl(var(--primary))]"
+      className="
+        group
+        flex
+        min-w-[100px]
+        shrink-0
+        items-center
+        justify-center
+        gap-2
+        rounded-[14px]
+        px-3
+        py-2.5
+        text-xs
+        font-semibold
+        text-[hsl(var(--heading)/0.7)]
+        transition-all
+        duration-200
+        hover:bg-[hsl(var(--primary)/0.08)]
+        hover:text-[hsl(var(--primary))]
+        lg:min-w-max
+        lg:flex-1
+        lg:rounded-[16px]
+        lg:px-3.5
+        lg:text-[13px]
+      "
     >
-      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-[hsl(var(--surface-soft))] text-[hsl(var(--primary))] transition-all duration-200 group-hover:bg-[hsl(var(--primary)/0.12)]">
+      <span
+        className="
+          flex
+          h-8
+          w-8
+          shrink-0
+          items-center
+          justify-center
+          rounded-lg
+          bg-[hsl(var(--surface-soft))]
+          text-[hsl(var(--primary))]
+          transition-all
+          duration-200
+          group-hover:bg-[hsl(var(--primary)/0.12)]
+        "
+      >
         {icon}
       </span>
 
-      <span>{label}</span>
+      <span className="whitespace-nowrap">
+        {label}
+      </span>
     </a>
   );
 }
