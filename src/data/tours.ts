@@ -28,6 +28,17 @@ export type Tour = {
     arrival: string;
   
     locations: string[];
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map?: {
+  stops: {
+    name: string;
+    position: [number, number];
+  }[];
+};
   
     // ─────────────────────────────
     // PRICING
@@ -171,6 +182,43 @@ export const tours: Tour[] = [
     "Erg Chebbi",
     "Sahara Desert",
   ],
+
+  // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.45, -5.97],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+  ],
+},
 
   // ─────────────────────────────
   // PRICING
@@ -560,6 +608,51 @@ export const tours: Tour[] = [
       "Ifrane",
       "Fes",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -980,6 +1073,55 @@ export const tours: Tour[] = [
       "Ifrane",
       "Fes",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Khamlia",
+      position: [31.0186, -4.0058],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -1465,6 +1607,55 @@ export const tours: Tour[] = [
       "Ouarzazate",
       "Marrakech",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Rissani",
+      position: [31.2823, -4.2651],
+    },
+    {
+      name: "Nkob",
+      position: [30.8704, -5.8643],
+    },
+    {
+      name: "Draa Valley",
+      position: [30.6936, -6.4463],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -1945,6 +2136,55 @@ export const tours: Tour[] = [
       "Ifrane",
       "Fes",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Khamlia",
+      position: [31.0186, -4.0058],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -2469,6 +2709,51 @@ export const tours: Tour[] = [
       "Beni Mellal",
       "Marrakech",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+    {
+      name: "Rabat",
+      position: [34.0209, -6.8416],
+    },
+    {
+      name: "Meknes",
+      position: [33.8935, -5.5473],
+    },
+    {
+      name: "Volubilis",
+      position: [34.0734, -5.555],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Beni Mellal",
+      position: [32.3373, -6.3498],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -3053,6 +3338,67 @@ export const tours: Tour[] = [
       "High Atlas Mountains",
       "Marrakech",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+    {
+      name: "Rabat",
+      position: [34.0209, -6.8416],
+    },
+    {
+      name: "Meknes",
+      position: [33.8935, -5.5473],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Rissani",
+      position: [31.2823, -4.2651],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -3567,6 +3913,67 @@ export const tours: Tour[] = [
       "High Atlas Mountains",
       "Marrakech",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+    {
+      name: "Rabat",
+      position: [34.0209, -6.8416],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Khamlia",
+      position: [31.0186, -4.0058],
+    },
+    {
+      name: "Rissani",
+      position: [31.2823, -4.2651],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -4137,6 +4544,59 @@ export const tours: Tour[] = [
       "Fes",
       "Casablanca",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -4767,6 +5227,55 @@ export const tours: Tour[] = [
       "Marrakech",
       "Casablanca",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+    {
+      name: "Rabat",
+      position: [34.0209, -6.8416],
+    },
+    {
+      name: "Chefchaouen",
+      position: [35.1688, -5.2636],
+    },
+    {
+      name: "Tangier",
+      position: [35.7595, -5.834],
+    },
+    {
+      name: "Asilah",
+      position: [35.4652, -6.0342],
+    },
+    {
+      name: "Meknes",
+      position: [33.8935, -5.5473],
+    },
+    {
+      name: "Volubilis",
+      position: [34.0734, -5.555],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -5437,6 +5946,75 @@ export const tours: Tour[] = [
       "Essaouira",
       "Casablanca",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+    {
+      name: "Rabat",
+      position: [34.0209, -6.8416],
+    },
+    {
+      name: "Meknes",
+      position: [33.8935, -5.5473],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Rissani",
+      position: [31.2823, -4.2651],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+    {
+      name: "Essaouira",
+      position: [31.5085, -9.7595],
+    },
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -6245,6 +6823,79 @@ export const tours: Tour[] = [
       "Essaouira",
       "Casablanca",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+    {
+      name: "Rabat",
+      position: [34.0209, -6.8416],
+    },
+    {
+      name: "Tangier",
+      position: [35.7595, -5.834],
+    },
+    {
+      name: "Chefchaouen",
+      position: [35.1688, -5.2636],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Rissani",
+      position: [31.2823, -4.2651],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+    {
+      name: "Essaouira",
+      position: [31.5085, -9.7595],
+    },
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -7234,6 +7885,79 @@ export const tours: Tour[] = [
       "Essaouira",
       "Casablanca",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+    {
+      name: "Rabat",
+      position: [34.0209, -6.8416],
+    },
+    {
+      name: "Tangier",
+      position: [35.7595, -5.834],
+    },
+    {
+      name: "Chefchaouen",
+      position: [35.1688, -5.2636],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Rissani",
+      position: [31.2823, -4.2651],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+    {
+      name: "Essaouira",
+      position: [31.5085, -9.7595],
+    },
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -8120,6 +8844,39 @@ export const tours: Tour[] = [
       "Rabat",
       "Tangier",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Tangier",
+      position: [35.7595, -5.834],
+    },
+    {
+      name: "Chefchaouen",
+      position: [35.1688, -5.2636],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Meknes",
+      position: [33.8935, -5.5473],
+    },
+    {
+      name: "Rabat",
+      position: [34.0209, -6.8416],
+    },
+    {
+      name: "Tangier",
+      position: [35.7595, -5.834],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -8619,6 +9376,63 @@ export const tours: Tour[] = [
       "High Atlas Mountains",
       "Marrakech",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Tangier",
+      position: [35.7595, -5.834],
+    },
+    {
+      name: "Chefchaouen",
+      position: [35.1688, -5.2636],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Rissani",
+      position: [31.2823, -4.2651],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -9253,6 +10067,63 @@ export const tours: Tour[] = [
       "High Atlas Mountains",
       "Marrakech",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Tangier",
+      position: [35.7595, -5.834],
+    },
+    {
+      name: "Chefchaouen",
+      position: [35.1688, -5.2636],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Rissani",
+      position: [31.2823, -4.2651],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -9925,6 +10796,67 @@ export const tours: Tour[] = [
       "Marrakech",
       "Casablanca",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Tangier",
+      position: [35.7595, -5.834],
+    },
+    {
+      name: "Chefchaouen",
+      position: [35.1688, -5.2636],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Rissani",
+      position: [31.2823, -4.2651],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -10742,6 +11674,67 @@ export const tours: Tour[] = [
       "Marrakech",
       "Casablanca",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Tangier",
+      position: [35.7595, -5.834],
+    },
+    {
+      name: "Chefchaouen",
+      position: [35.1688, -5.2636],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Rissani",
+      position: [31.2823, -4.2651],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -11641,6 +12634,54 @@ export const tours: Tour[] = [
     ],
   
     // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Rissani",
+      position: [31.2823, -4.2651],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+  ],
+},
+    // ─────────────────────────────
     // PRICING
     // ─────────────────────────────
   
@@ -12149,6 +13190,34 @@ export const tours: Tour[] = [
     ],
   
     // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+  ],
+},
+    // ─────────────────────────────
     // PRICING
     // ─────────────────────────────
   
@@ -12655,6 +13724,55 @@ export const tours: Tour[] = [
       "High Atlas Mountains",
       "Marrakech",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Rissani",
+      position: [31.2823, -4.2651],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -13238,7 +14356,55 @@ export const tours: Tour[] = [
       "High Atlas Mountains",
       "Marrakech",
     ],
-  
+    
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Rissani",
+      position: [31.2823, -4.2651],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+  ],
+},
     // ─────────────────────────────
     // PRICING
     // ─────────────────────────────
@@ -13884,6 +15050,63 @@ export const tours: Tour[] = [
       "Casablanca",
       "Rabat",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Ifrane",
+      position: [33.5228, -5.1109],
+    },
+    {
+      name: "Midelt",
+      position: [32.6806, -4.7369],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Rissani",
+      position: [31.2823, -4.2651],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+    {
+      name: "Rabat",
+      position: [34.0209, -6.8416],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -14565,6 +15788,47 @@ export const tours: Tour[] = [
       "Rif Mountains",
       "Fes",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+    {
+      name: "Meknes",
+      position: [33.8935, -5.5473],
+    },
+    {
+      name: "Rabat",
+      position: [34.0209, -6.8416],
+    },
+    {
+      name: "Casablanca",
+      position: [33.5731, -7.5898],
+    },
+    {
+      name: "Tangier",
+      position: [35.7595, -5.834],
+    },
+    {
+      name: "Tetouan",
+      position: [35.5889, -5.3626],
+    },
+    {
+      name: "Chefchaouen",
+      position: [35.1688, -5.2636],
+    },
+    {
+      name: "Fes",
+      position: [34.0181, -5.0078],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING
@@ -15264,6 +16528,34 @@ export const tours: Tour[] = [
     ],
   
     // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Errachidia",
+      position: [31.9314, -4.4244],
+    },
+    {
+      name: "Erfoud",
+      position: [31.4367, -4.232],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Rissani",
+      position: [31.2823, -4.2651],
+    },
+    {
+      name: "Errachidia",
+      position: [31.9314, -4.4244],
+    },
+  ],
+},
+    // ─────────────────────────────
     // PRICING
     // ─────────────────────────────
   
@@ -15747,6 +17039,62 @@ export const tours: Tour[] = [
       "Marrakech",
     ],
   
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Agadir",
+      position: [30.4278, -9.5981],
+    },
+    {
+      name: "Taznakht",
+      position: [30.5787, -7.2036],
+    },
+    {
+      name: "Ait Ben Haddou",
+      position: [31.0472, -7.1298],
+    },
+    {
+      name: "Dades Valley",
+      position: [31.3709, -5.9887],
+    },
+    {
+      name: "Todra Gorges",
+      position: [31.5889, -5.5928],
+    },
+    {
+      name: "Erfoud",
+      position: [31.4367, -4.232],
+    },
+    {
+      name: "Merzouga",
+      position: [31.0802, -4.0133],
+    },
+    {
+      name: "Khamlia",
+      position: [31.0186, -4.0058],
+    },
+    {
+      name: "Rissani",
+      position: [31.2823, -4.2651],
+    },
+    {
+      name: "Draa Valley",
+      position: [30.6936, -6.4463],
+    },
+    {
+      name: "Ouarzazate",
+      position: [30.9335, -6.937],
+    },
+    {
+      name: "Marrakech",
+      position: [31.6295, -7.9811],
+    },
+  ],
+},
     // ─────────────────────────────
     // PRICING
     // ─────────────────────────────
@@ -16308,6 +17656,39 @@ export const tours: Tour[] = [
       "Paradise Valley",
       "Atlantic Coast",
     ],
+
+    // ─────────────────────────────
+// MAP
+// ─────────────────────────────
+
+map: {
+  stops: [
+    {
+      name: "Agadir",
+      position: [30.4278, -9.5981],
+    },
+    {
+      name: "Tamraght",
+      position: [30.5111, -9.6742],
+    },
+    {
+      name: "Taghazout",
+      position: [30.5426, -9.7083],
+    },
+    {
+      name: "Paradise Valley",
+      position: [30.5929, -9.5314],
+    },
+    {
+      name: "Imsouane",
+      position: [30.8398, -9.8181],
+    },
+    {
+      name: "Agadir",
+      position: [30.4278, -9.5981],
+    },
+  ],
+},
   
     // ─────────────────────────────
     // PRICING

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { tours } from "@/data/tours";
+import TourMap from "@/components/tours/TourMap";
 
 type TourPageProps = {
   params: Promise<{
@@ -195,6 +196,59 @@ export default async function TourPage({ params }: TourPageProps) {
     .map((paragraph) => paragraph.trim())
     .filter(Boolean);
 
+    const relatedTours = tours
+  .filter((item) => item.slug !== tour.slug)
+  .map((item) => {
+    let score = 0;
+
+    // Same tour category
+    if (item.category === tour.category) {
+      score += 8;
+    }
+
+    // Same departure city
+    if (item.departure === tour.departure) {
+      score += 6;
+    }
+
+    // Same arrival city
+    if (item.arrival === tour.arrival) {
+      score += 3;
+    }
+
+    // Shared places along the route
+    const sharedLocations = item.locations.filter((location) =>
+      tour.locations.includes(location)
+    ).length;
+
+    score += Math.min(sharedLocations, 6);
+
+    // Similar duration
+    const nightDifference = Math.abs(item.nights - tour.nights);
+
+    if (nightDifference === 0) {
+      score += 3;
+    } else if (nightDifference === 1) {
+      score += 2;
+    } else if (nightDifference === 2) {
+      score += 1;
+    }
+
+    return {
+      tour: item,
+      score,
+    };
+  })
+  .sort((a, b) => {
+    if (b.score !== a.score) {
+      return b.score - a.score;
+    }
+
+    return a.tour.title.localeCompare(b.tour.title);
+  })
+  .slice(0, 3)
+  .map((item) => item.tour);
+
     return (
       <>
         <script
@@ -288,7 +342,7 @@ export default async function TourPage({ params }: TourPageProps) {
               {tour.title}
             </h1>
 
-            <p className="mt-6 max-w-2xl text-base leading-8 text-[hsl(var(--text-secondary))] sm:text-lg">
+            <p className="mt-6 max-w-2xl text-base leading-8 text-[hsl(var(--heading)/0.74)] sm:text-lg">
               {tour.shortDescription}
             </p>
 
@@ -359,9 +413,9 @@ export default async function TourPage({ params }: TourPageProps) {
       {/* TOUR SECTION NAVIGATION */}
       {/* ───────────────────────────────────── */}
 
-      <div className="sticky top-[86px] z-40 py-3">
+      <div className="relative z-30 mt-5 pb-4 lg:sticky lg:top-[136px] lg:z-40 lg:mt-6 lg:pb-5">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-          <div className="rounded-2xl border border-[hsl(var(--border))] bg-[hsl(var(--background)/0.96)] p-2 shadow-[0_10px_35px_rgba(0,0,0,0.07)] backdrop-blur-xl">
+          <div className="mx-auto max-w-6xl rounded-[24px] border border-[hsl(var(--border))] bg-[hsl(var(--background)/0.94)] p-1.5 shadow-[0_16px_45px_rgba(28,20,13,0.08)] backdrop-blur-xl">
             <nav
               aria-label="Tour sections"
               className="flex items-center gap-1 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
@@ -373,15 +427,21 @@ export default async function TourPage({ params }: TourPageProps) {
               />
 
               <TourNavLink
-                href="#highlights"
-                icon={<StarIcon />}
-                label="Highlights"
-              />
-
-              <TourNavLink
                 href="#itinerary"
                 icon={<RouteIcon />}
                 label="Itinerary"
+              />
+
+              <TourNavLink
+                href="#route"
+                icon={<MapPinIcon />}
+                label="Route"
+              />
+
+              <TourNavLink
+                href="#highlights"
+                icon={<StarIcon />}
+                label="Highlights"
               />
 
               <TourNavLink
@@ -393,7 +453,7 @@ export default async function TourPage({ params }: TourPageProps) {
               <TourNavLink
                 href="#accommodation"
                 icon={<BedIcon />}
-                label="Accommodation"
+                label="Stay"
               />
 
               {tour.gallery.length > 0 && (
@@ -420,7 +480,7 @@ export default async function TourPage({ params }: TourPageProps) {
       {/* MAIN TOUR CONTENT */}
       {/* ───────────────────────────────────── */}
 
-      <section className="mt-2 border-t border-[hsl(var(--border))] bg-[hsl(var(--surface-soft))]">
+      <section className="mt-2 border-t border-[hsl(var(--border))] bg-[hsl(var(--surface-soft))] lg:mt-1">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 lg:grid-cols-[minmax(0,1fr)_330px] lg:px-10 lg:py-16">
           {/* ─────────────────────────────── */}
           {/* LEFT CONTENT */}
@@ -435,75 +495,17 @@ export default async function TourPage({ params }: TourPageProps) {
               <SectionHeading
                 icon={<DocumentIcon />}
                 eyebrow="Tour Overview"
-                title="Your Morocco journey"              />
+                title="Your Morocco journey"
+              />
 
               <div className="mt-7 max-w-4xl space-y-5">
                 {overviewParagraphs.map((paragraph, index) => (
                   <p
                     key={index}
-                    className="text-[16px] leading-8 text-[hsl(var(--text-secondary))]"
+                    className="text-[16px] leading-8 text-[hsl(var(--heading)/0.78)]"
                   >
                     {paragraph}
                   </p>
-                ))}
-              </div>
-
-              {/* ROUTE */}
-
-              <div className="mt-9 border-t border-[hsl(var(--border))] pt-7">
-                <div className="flex items-center gap-2 text-sm font-semibold text-[hsl(var(--heading))]">
-                  <span className="text-[hsl(var(--primary))]">
-                    <MapPinIcon />
-                  </span>
-
-                  Tour Route
-                </div>
-
-                <div className="mt-5 flex flex-wrap items-center gap-2">
-                  {tour.locations.map((location, index) => (
-                    <div
-                      key={`${location}-${index}`}
-                      className="flex items-center gap-2"
-                    >
-                      <span className="rounded-full border border-[hsl(var(--border))] bg-[hsl(var(--surface-soft))] px-3.5 py-2 text-xs font-medium text-[hsl(var(--text-secondary))] sm:text-sm">
-                        {location}
-                      </span>
-
-                      {index < tour.locations.length - 1 && (
-                        <span className="text-xs text-[hsl(var(--text-muted))]">
-                          →
-                        </span>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </TourSection>
-
-            {/* ───────────────────────────── */}
-            {/* HIGHLIGHTS */}
-            {/* ───────────────────────────── */}
-
-            <TourSection id="highlights">
-              <SectionHeading
-                icon={<StarIcon />}
-                eyebrow="Tour Highlights"
-                title="Highlights of your journey"              />
-
-              <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                {tour.highlights.map((highlight) => (
-                  <div
-                    key={highlight}
-                    className="group flex gap-3 rounded-2xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-[hsl(var(--primary)/0.25)] hover:shadow-sm"
-                  >
-                    <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[hsl(var(--primary)/0.1)] text-[hsl(var(--primary))]">
-                      <CheckSmallIcon />
-                    </span>
-
-                    <p className="text-sm leading-6 text-[hsl(var(--text-secondary))]">
-                      {highlight}
-                    </p>
-                  </div>
                 ))}
               </div>
             </TourSection>
@@ -517,14 +519,15 @@ export default async function TourPage({ params }: TourPageProps) {
                 <SectionHeading
                   icon={<RouteIcon />}
                   eyebrow="Day by Day"
-                  title="Your day-by-day itinerary"                />
+                  title="Your day-by-day itinerary"
+                />
 
-                <span className="shrink-0 rounded-full bg-[hsl(var(--primary)/0.08)] px-4 py-2 text-sm font-semibold text-[hsl(var(--primary))]">
+                <span className="shrink-0 rounded-full border border-[hsl(var(--primary)/0.14)] bg-[hsl(var(--primary)/0.07)] px-4 py-2 text-sm font-semibold text-[hsl(var(--primary))]">
                   {tour.duration}
                 </span>
               </div>
 
-              <p className="mt-5 max-w-3xl text-[15px] leading-7 text-[hsl(var(--text-secondary))]">
+              <p className="mt-5 max-w-3xl text-[15px] leading-7 text-[hsl(var(--heading)/0.72)]">
                 Open each day to discover the route, stops and experiences
                 planned during your private journey.
               </p>
@@ -541,7 +544,7 @@ export default async function TourPage({ params }: TourPageProps) {
                     <details
                       key={day.day}
                       open={day.day === 1}
-                      className="group overflow-hidden rounded-2xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] transition-all duration-200 open:border-[hsl(var(--primary)/0.25)] open:shadow-sm"
+                      className="group overflow-hidden rounded-[22px] border border-[hsl(var(--border))] bg-[hsl(var(--card))] transition-all duration-200 open:border-[hsl(var(--primary)/0.25)] open:shadow-[0_10px_30px_rgba(0,0,0,0.045)]"
                     >
                       <summary className="flex cursor-pointer list-none items-center justify-between gap-5 px-5 py-5 sm:px-6 [&::-webkit-details-marker]:hidden">
                         <div className="flex min-w-0 items-center gap-4">
@@ -570,7 +573,7 @@ export default async function TourPage({ params }: TourPageProps) {
                           {paragraphs.map((paragraph, index) => (
                             <p
                               key={index}
-                              className="text-[15px] leading-8 text-[hsl(var(--text-secondary))]"
+                              className="text-[15px] leading-8 text-[hsl(var(--heading)/0.76)]"
                             >
                               {paragraph}
                             </p>
@@ -587,7 +590,7 @@ export default async function TourPage({ params }: TourPageProps) {
                               {day.highlights.map((highlight) => (
                                 <li
                                   key={highlight}
-                                  className="flex items-start gap-2.5 text-sm leading-6 text-[hsl(var(--text-secondary))]"
+                                  className="flex items-start gap-2.5 text-sm leading-6 text-[hsl(var(--heading)/0.72)]"
                                 >
                                   <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[hsl(var(--primary))]" />
 
@@ -601,6 +604,93 @@ export default async function TourPage({ params }: TourPageProps) {
                     </details>
                   );
                 })}
+              </div>
+            </TourSection>
+
+            {/* ───────────────────────────── */}
+            {/* ROUTE & MAP */}
+            {/* ───────────────────────────── */}
+
+            <TourSection id="route">
+              <SectionHeading
+                icon={<MapPinIcon />}
+                eyebrow="Tour Route"
+                title="Follow the journey across Morocco"
+              />
+
+              <p className="mt-5 max-w-3xl text-[15px] leading-7 text-[hsl(var(--heading)/0.72)]">
+                See the main stops along your private tour and explore the route
+                on the interactive map.
+              </p>
+
+              <div className="mt-7 flex flex-wrap items-center gap-2">
+                {tour.locations.map((location, index) => (
+                  <div
+                    key={`${location}-${index}`}
+                    className="flex items-center gap-2"
+                  >
+                    <span className="rounded-full border border-[hsl(var(--border))] bg-[hsl(var(--surface-soft))] px-3.5 py-2 text-xs font-medium text-[hsl(var(--heading)/0.74)] sm:text-sm">
+                      {location}
+                    </span>
+
+                    {index < tour.locations.length - 1 && (
+                      <span className="text-xs text-[hsl(var(--text-muted))]">
+                        →
+                      </span>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {tour.map && tour.map.stops.length > 0 && (
+                <div className="mt-8 border-t border-[hsl(var(--border))] pt-7">
+                  <div className="mb-4 flex items-center justify-between gap-4">
+                    <div className="flex items-center gap-2">
+                      <span className="text-[hsl(var(--primary))]">
+                        <MapPinIcon />
+                      </span>
+
+                      <h3 className="text-sm font-semibold text-[hsl(var(--heading))]">
+                        Interactive route map
+                      </h3>
+                    </div>
+
+                    <span className="text-sm font-medium text-[hsl(var(--heading)/0.62)]">
+                      {tour.departure} → {tour.arrival}
+                    </span>
+                  </div>
+
+                  <TourMap stops={tour.map.stops} />
+                </div>
+              )}
+            </TourSection>
+
+            {/* ───────────────────────────── */}
+            {/* HIGHLIGHTS */}
+            {/* ───────────────────────────── */}
+
+            <TourSection id="highlights">
+              <SectionHeading
+                icon={<StarIcon />}
+                eyebrow="Tour Highlights"
+                title="Highlights of your journey"
+              />
+
+              <div className="mt-8 grid gap-3 sm:grid-cols-2">
+                {tour.highlights.map((highlight) => (
+                  <div
+                    key={highlight}
+                    className="group flex gap-3 rounded-2xl border border-[hsl(var(--border))] bg-[hsl(var(--card))] p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-[hsl(var(--primary)/0.25)] hover:shadow-sm"
+                  >
+                    <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[hsl(var(--primary)/0.1)] text-[hsl(var(--primary))]">
+                      <CheckSmallIcon />
+                    </span>
+
+                    <p className="text-sm leading-6 text-[hsl(var(--heading)/0.74)]">
+                      {highlight}
+                    </p>
+                  </div>
+                ))}
               </div>
             </TourSection>
 
@@ -639,7 +729,7 @@ export default async function TourPage({ params }: TourPageProps) {
                     {tour.included.map((item) => (
                       <li
                         key={item}
-                        className="flex items-start gap-3 text-sm leading-6 text-[hsl(var(--text-secondary))]"
+                        className="flex items-start gap-3 text-sm leading-6 text-[hsl(var(--heading)/0.72)]"
                       >
                         <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[hsl(var(--primary)/0.1)] text-[hsl(var(--primary))]">
                           <CheckSmallIcon />
@@ -674,7 +764,7 @@ export default async function TourPage({ params }: TourPageProps) {
                     {tour.excluded.map((item) => (
                       <li
                         key={item}
-                        className="flex items-start gap-3 text-sm leading-6 text-[hsl(var(--text-secondary))]"
+                        className="flex items-start gap-3 text-sm leading-6 text-[hsl(var(--heading)/0.72)]"
                       >
                         <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-[hsl(var(--border))] text-[hsl(var(--text-muted))]">
                           <CloseSmallIcon />
@@ -699,7 +789,7 @@ export default async function TourPage({ params }: TourPageProps) {
                 title="Accommodation during the tour"
               />
 
-              <p className="mt-5 max-w-3xl text-[15px] leading-7 text-[hsl(var(--text-secondary))]">
+              <p className="mt-5 max-w-3xl text-[15px] leading-7 text-[hsl(var(--heading)/0.72)]">
                 Your accommodation can be adapted to your preferred comfort
                 level and travel style.
               </p>
@@ -720,7 +810,7 @@ export default async function TourPage({ params }: TourPageProps) {
                           {stay.location}
                         </h3>
 
-                        <p className="mt-2 text-sm text-[hsl(var(--text-secondary))]">
+                        <p className="mt-2 text-sm text-[hsl(var(--heading)/0.7)]">
                           {stay.type}
                         </p>
                       </div>
@@ -784,7 +874,7 @@ export default async function TourPage({ params }: TourPageProps) {
                   eyebrow="Frequently Asked Questions"
                   title="Questions about this tour"                />
 
-                <p className="mt-5 max-w-3xl text-[15px] leading-7 text-[hsl(var(--text-secondary))]">
+                <p className="mt-5 max-w-3xl text-[15px] leading-7 text-[hsl(var(--heading)/0.72)]">
                   Find answers to common questions about the itinerary,
                   accommodation and your travel experience.
                 </p>
@@ -806,7 +896,7 @@ export default async function TourPage({ params }: TourPageProps) {
                       </summary>
 
                       <div className="border-t border-[hsl(var(--border))] px-5 py-5 sm:px-6">
-                        <p className="max-w-3xl text-sm leading-7 text-[hsl(var(--text-secondary))]">
+                        <p className="max-w-3xl text-sm leading-7 text-[hsl(var(--heading)/0.72)]">
                           {faq.answer}
                         </p>
                       </div>
@@ -815,6 +905,120 @@ export default async function TourPage({ params }: TourPageProps) {
                 </div>
               </TourSection>
             )}
+
+            {/* ───────────────────────────── */}
+{/* RELATED TOURS */}
+{/* ───────────────────────────── */}
+
+{relatedTours.length > 0 && (
+  <section className="rounded-[30px] border border-[hsl(var(--border))] bg-[hsl(var(--background))] p-6 shadow-[0_2px_15px_rgba(0,0,0,0.025)] sm:p-8 lg:p-9">
+    {/* HEADING */}
+
+    <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+      <SectionHeading
+        icon={<RouteIcon />}
+        eyebrow="Continue Exploring"
+        title="You may also like"
+      />
+
+      <Link
+        href="/tours"
+        className="group inline-flex w-fit items-center gap-2 text-sm font-semibold text-[hsl(var(--primary))] transition-opacity hover:opacity-75"
+      >
+        View all tours
+
+        <span className="transition-transform duration-200 group-hover:translate-x-1">
+          <ArrowRightIcon />
+        </span>
+      </Link>
+    </div>
+
+    <p className="mt-5 max-w-2xl text-[15px] leading-7 text-[hsl(var(--text-secondary))]">
+      Explore more private Morocco tours with similar routes, destinations
+      and travel experiences.
+    </p>
+
+    {/* TOUR CARDS */}
+
+    <div className="mt-8 grid gap-5 md:grid-cols-3">
+      {relatedTours.map((relatedTour) => (
+        <Link
+          key={relatedTour.slug}
+          href={`/tours/${relatedTour.slug}`}
+          className="group overflow-hidden rounded-[24px] border border-[hsl(var(--border))] bg-[hsl(var(--card))] transition-all duration-300 hover:-translate-y-1 hover:border-[hsl(var(--primary)/0.3)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.08)]"
+        >
+          {/* IMAGE */}
+
+          <div className="relative aspect-[4/3] overflow-hidden bg-[hsl(var(--surface-soft))]">
+            <Image
+              src={relatedTour.image}
+              alt={`${relatedTour.title} in Morocco`}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 280px"
+              className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent" />
+
+            {/* BADGE */}
+
+            {relatedTour.badge && (
+              <span className="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1.5 text-[10px] font-bold text-neutral-900 shadow-sm backdrop-blur-md">
+                {relatedTour.badge}
+              </span>
+            )}
+
+            {/* DURATION */}
+
+            <span className="absolute bottom-4 left-4 rounded-full border border-white/10 bg-black/45 px-3 py-1.5 text-[11px] font-semibold text-white backdrop-blur-md">
+              {relatedTour.duration}
+            </span>
+          </div>
+
+          {/* CONTENT */}
+
+          <div className="p-5">
+            <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[hsl(var(--primary))]">
+              {relatedTour.category}
+            </p>
+
+            <h3 className="mt-2 text-lg font-semibold leading-6 tracking-[-0.015em] text-[hsl(var(--heading))] transition-colors duration-200 group-hover:text-[hsl(var(--primary))]">
+              {relatedTour.title}
+            </h3>
+
+            <p className="mt-3 line-clamp-3 text-sm leading-6 text-[hsl(var(--text-secondary))]">
+              {relatedTour.shortDescription}
+            </p>
+
+            {/* ROUTE */}
+
+            <div className="mt-5 border-t border-[hsl(var(--border))] pt-4">
+              <div className="flex items-center justify-between gap-4">
+                <div className="min-w-0">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-[hsl(var(--text-muted))]">
+                    Route
+                  </p>
+
+                  <p className="mt-1 truncate text-xs font-semibold text-[hsl(var(--heading))]">
+                    {relatedTour.departure}
+                    <span className="mx-1.5 text-[hsl(var(--text-muted))]">
+                      →
+                    </span>
+                    {relatedTour.arrival}
+                  </p>
+                </div>
+
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[hsl(var(--primary)/0.08)] text-[hsl(var(--primary))] transition-all duration-300 group-hover:bg-[hsl(var(--primary))] group-hover:text-[hsl(var(--primary-foreground))]">
+                  <ArrowRightIcon />
+                </span>
+              </div>
+            </div>
+          </div>
+        </Link>
+      ))}
+    </div>
+  </section>
+)}
 
             {/* ───────────────────────────── */}
             {/* FINAL CTA */}
@@ -855,7 +1059,7 @@ export default async function TourPage({ params }: TourPageProps) {
           {/* ─────────────────────────────── */}
 
           <aside className="hidden lg:block">
-            <div className="sticky top-[190px] overflow-hidden rounded-[28px] border border-[hsl(var(--border))] bg-[hsl(var(--card))] shadow-[0_8px_30px_rgba(0,0,0,0.05)]">
+            <div className="sticky top-[220px] overflow-hidden rounded-[28px] border border-[hsl(var(--border))] bg-[hsl(var(--card))] shadow-[0_12px_35px_rgba(28,20,13,0.06)]">
               <div className="p-6">
                 <p className="text-xs font-bold uppercase tracking-[0.15em] text-[hsl(var(--primary))]">
                   Plan Your Tour
@@ -865,7 +1069,7 @@ export default async function TourPage({ params }: TourPageProps) {
                   Request your private trip
                 </h2>
 
-                <p className="mt-3 text-sm leading-6 text-[hsl(var(--text-secondary))]">
+                <p className="mt-3 text-sm leading-6 text-[hsl(var(--heading)/0.7)]">
                   The final quote depends on group size, accommodation level
                   and the services you choose.
                 </p>
@@ -967,7 +1171,7 @@ function TourSection({
   return (
     <section
       id={id}
-      className="scroll-mt-[190px] rounded-[30px] border border-[hsl(var(--border))] bg-[hsl(var(--background))] p-6 shadow-[0_2px_15px_rgba(0,0,0,0.025)] sm:p-8 lg:p-9"
+      className="scroll-mt-[120px] rounded-[30px] border border-[hsl(var(--border))] bg-[hsl(var(--background))] p-6 shadow-[0_8px_30px_rgba(28,20,13,0.035)] sm:p-8 lg:scroll-mt-[220px] lg:p-9"
     >
       {children}
     </section>
@@ -1014,9 +1218,9 @@ function TourNavLink({
   return (
     <a
       href={href}
-      className="group flex min-w-max flex-1 items-center justify-center gap-2.5 rounded-xl px-4 py-3 text-sm font-semibold text-[hsl(var(--text-secondary))] transition-all duration-200 hover:bg-[hsl(var(--primary)/0.08)] hover:text-[hsl(var(--primary))]"
+      className="group flex min-w-max flex-1 items-center justify-center gap-2 rounded-[16px] px-3.5 py-2.5 text-[13px] font-semibold text-[hsl(var(--heading)/0.7)] transition-all duration-200 hover:bg-[hsl(var(--primary)/0.08)] hover:text-[hsl(var(--primary))]"
     >
-      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[hsl(var(--surface-soft))] text-[hsl(var(--primary))] transition-all duration-200 group-hover:bg-[hsl(var(--primary)/0.12)]">
+      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-[hsl(var(--surface-soft))] text-[hsl(var(--primary))] transition-all duration-200 group-hover:bg-[hsl(var(--primary)/0.12)]">
         {icon}
       </span>
 

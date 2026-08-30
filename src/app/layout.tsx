@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 
 import "./globals.css";
+import "leaflet/dist/leaflet.css";
 
 import Footer from "@/components/Layout/Footer";
 import Header from "@/components/Layout/Header";
@@ -41,9 +42,7 @@ export const metadata: Metadata = {
   creator: "Moroccan Trip",
 
   publisher: "Moroccan Trip",
-  icons: {
-    icon: "/favicon.ico",
-  },
+
 
   openGraph: {
     title: "Moroccan Trip | Private Morocco Tours & Desert Trips",
