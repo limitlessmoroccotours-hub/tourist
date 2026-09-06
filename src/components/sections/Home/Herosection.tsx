@@ -2,7 +2,24 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-export default function HeroSection() {
+export default function HeroSection({
+  content,
+}: {
+  content?: {
+    label?: string;
+    title?: string;
+    subtitle?: string;
+    description?: string;
+    primaryButton?: string;
+    secondaryButton?: string;
+    trust?: {
+      tripadvisor?: string;
+      localExperts?: string;
+      privateTours?: string;
+    };
+    scroll?: string;
+  };
+}) {
   return (
     <section
       className="
@@ -117,7 +134,7 @@ export default function HeroSection() {
               text-[hsl(var(--gold-muted))]
               "
             >
-              Private & Authentic Morocco Tours
+              {content?.label ?? "Private & Authentic Morocco Tours"}
             </span>
 
 
@@ -140,7 +157,7 @@ export default function HeroSection() {
             "
           >
 
-            Morocco Tours
+{content?.title ?? "Morocco Tours"}
 
             <br />
 
@@ -149,7 +166,8 @@ export default function HeroSection() {
               text-[hsl(var(--gold-muted))]
               "
             >
-              Private Sahara Desert Experiences
+                {content?.subtitle ?? "Private Sahara Desert Experiences"}
+
             </span>
 
 
@@ -174,8 +192,9 @@ export default function HeroSection() {
             "
           >
 
-Discover Morocco through private tours and authentic experiences.
-From Marrakech to the Sahara Desert, travel with a local team creating unforgettable journeys.
+{content?.description ??
+"Discover Morocco through private tours and authentic experiences. From Marrakech to the Sahara Desert, travel with a local team creating unforgettable journeys."
+}
 
           </p>
 
@@ -224,7 +243,7 @@ From Marrakech to the Sahara Desert, travel with a local team creating unforgett
 
             >
 
-              Explore Morocco Tours
+{content?.primaryButton ?? "Explore Morocco Tours"}
 
 
               <svg
@@ -277,7 +296,7 @@ From Marrakech to the Sahara Desert, travel with a local team creating unforgett
 
             >
 
-              Plan Your Trip
+{content?.secondaryButton ?? "Plan Your Trip"}
 
             </Link>
 
@@ -328,7 +347,7 @@ From Marrakech to the Sahara Desert, travel with a local team creating unforgett
 
             >
 
-              ★★★★★ Tripadvisor Rated Experience
+★★★★★ {content?.trust?.tripadvisor ?? "Tripadvisor Rated Experience"}
 
             </a>
 
@@ -348,7 +367,7 @@ From Marrakech to the Sahara Desert, travel with a local team creating unforgett
               "
             >
 
-              Local Morocco Experts
+{content?.trust?.localExperts ?? "Local Morocco Experts"}
 
             </div>
 
@@ -368,7 +387,7 @@ From Marrakech to the Sahara Desert, travel with a local team creating unforgett
               "
             >
 
-              Private & Custom Tours
+{content?.trust?.privateTours ?? "Private & Custom Tours"}
 
             </div>
 

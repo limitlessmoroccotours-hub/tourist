@@ -55,7 +55,19 @@ const extraDepartures = [
 
 
 
-export default function DepartureCities() {
+export default function DepartureCities({
+  content,
+}: {
+  content?: {
+    label?: string;
+    title?: string;
+    titleHighlight?: string;
+    description?: string;
+    startingPoint?: string;
+    exploreTours?: string;
+    toursFrom?: string;
+  };
+}) {
 
 
 return (
@@ -102,7 +114,7 @@ tracking-[0.28em]
 text-[hsl(var(--primary))]
 "
 >
-Start Your Journey
+{content?.label ?? "Start Your Journey"}
 </p>
 
 
@@ -119,13 +131,14 @@ text-[hsl(var(--heading))]
 sm:text-6xl
 "
 >
-Explore Morocco From
+{content?.title ?? "Explore Morocco From"}
+
 <span
 className="
 text-[hsl(var(--primary))]
 "
 >
- Your Departure City
+ {content?.titleHighlight ?? " Your Departure City"}
 </span>
 </h2>
 
@@ -140,8 +153,9 @@ leading-7
 text-[hsl(var(--text-secondary))]
 "
 >
-Choose your starting point and discover private Morocco tours
-created around your travel style and interests.
+{content?.description ??
+"Choose your starting point and discover private Morocco tours created around your travel style and interests."
+}
 </p>
 
 
@@ -296,7 +310,7 @@ tracking-[0.25em]
 text-white/60
 "
 >
-Starting Point
+{content?.startingPoint ?? "Starting Point"}
 </p>
 
 
@@ -354,7 +368,7 @@ tracking-[0.18em]
 text-[hsl(var(--gold-muted))]
 "
 >
-Explore Tours →
+{content?.exploreTours ?? "Explore Tours"} →
 </div>
 
 
@@ -436,7 +450,7 @@ hover:text-[hsl(var(--primary))]
 
 >
 
-Tours From {city.name}
+{content?.toursFrom ?? "Tours From"} {city.name}
 
 <span
 className="

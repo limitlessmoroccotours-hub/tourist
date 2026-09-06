@@ -1,4 +1,20 @@
-export default function TrustBar() {
+export default function TrustBar({
+  content,
+}: {
+  content?: {
+    tripadvisorTitle?: string;
+    tripadvisorSubtitle?: string;
+
+    expertsTitle?: string;
+    expertsSubtitle?: string;
+
+    privateTitle?: string;
+    privateSubtitle?: string;
+
+    authenticTitle?: string;
+    authenticSubtitle?: string;
+  };
+}) {
     return (
       <section
         className="
@@ -71,7 +87,7 @@ export default function TrustBar() {
                   text-[hsl(var(--heading))]
                   "
                 >
-                  Tripadvisor
+                  {content?.tripadvisorTitle ?? "Tripadvisor"}
                 </p>
   
   
@@ -82,7 +98,7 @@ export default function TrustBar() {
                   text-[hsl(var(--text-secondary))]
                   "
                 >
-                  Rated Experience
+                  {content?.tripadvisorSubtitle ?? "Rated Experience"}
                 </p>
   
               </div>
@@ -137,7 +153,7 @@ export default function TrustBar() {
                   text-[hsl(var(--heading))]
                   "
                 >
-                  Local Experts
+                  {content?.expertsTitle ?? "Local Experts"}
                 </p>
   
   
@@ -148,7 +164,7 @@ export default function TrustBar() {
                   text-[hsl(var(--text-secondary))]
                   "
                 >
-                  Marrakech Based Team
+                  {content?.expertsSubtitle ?? "Marrakech Based Team"}
                 </p>
   
   
@@ -206,7 +222,7 @@ export default function TrustBar() {
                   text-[hsl(var(--heading))]
                   "
                 >
-                  Private Tours
+                  {content?.privateTitle ?? "Private Tours"}
                 </p>
   
   
@@ -217,7 +233,7 @@ export default function TrustBar() {
                   text-[hsl(var(--text-secondary))]
                   "
                 >
-                  Custom Morocco Journeys
+                  {content?.privateSubtitle ?? "Custom Morocco Journeys"}
                 </p>
   
   
@@ -275,7 +291,7 @@ export default function TrustBar() {
                   text-[hsl(var(--heading))]
                   "
                 >
-                  Authentic
+                  {content?.authenticTitle ?? "Authentic"}
                 </p>
   
   
@@ -286,7 +302,7 @@ export default function TrustBar() {
                   text-[hsl(var(--text-secondary))]
                   "
                 >
-                  Moroccan Experiences
+                  {content?.authenticSubtitle ?? "Moroccan Experiences"}
                 </p>
   
   

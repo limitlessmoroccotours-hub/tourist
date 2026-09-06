@@ -1,4 +1,16 @@
-export default function Reviews() {
+export default function Reviews({
+  content,
+}: {
+  content?: {
+    label?: string;
+    title?: string;
+    titleHighlight?: string;
+    description?: string;
+    verifiedText?: string;
+    readMore?: string;
+    cta?: string;
+  };
+}) {
     return (
       <section
         id="reviews"
@@ -8,19 +20,18 @@ export default function Reviews() {
           {/* Section Header */}
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#c85f13]">
-              Traveler Reviews
+            {content?.label ?? "Traveler Reviews"}
             </p>
   
             <h2 className="mt-4 font-serif text-4xl leading-tight text-[#17213c] sm:text-5xl">
-              What Travelers Say
-              <span className="text-[#c85f13]"> About Our Team</span>
+            {content?.title ?? "What Travelers Say"}
+              <span className="text-[#c85f13]"> {content?.titleHighlight ?? " About Our Team"}</span>
             </h2>
   
             <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-[#606575] sm:text-base">
-              Moroccan Trip is operated by the same local team behind Limitless
-              Morocco Tours. These Tripadvisor reviews were shared by travelers
-              who experienced Morocco with our team through Limitless Morocco
-              Tours.
+            {content?.description ??
+"Moroccan Trip is operated by the same local team behind Limitless Morocco Tours. These Tripadvisor reviews were shared by travelers who experienced Morocco with our team."
+}
             </p>
   
             <div className="mx-auto mt-6 flex max-w-2xl items-center justify-center gap-2 text-center text-xs text-[#747987] sm:text-sm">
@@ -32,8 +43,9 @@ export default function Reviews() {
               </span>
   
               <span>
-                Verified Tripadvisor reviews from our team&apos;s Limitless
-                Morocco Tours profile
+              {content?.verifiedText ??
+"Verified Tripadvisor reviews from our team's Limitless Morocco Tours profile"
+}
               </span>
             </div>
           </div>
@@ -91,7 +103,7 @@ export default function Reviews() {
                   rel="noopener noreferrer"
                   className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#c85f13] transition hover:text-[#a94d0d]"
                 >
-                  Read full review
+                  {content?.readMore ?? "Read full review"}
                   <span aria-hidden="true">→</span>
                 </a>
               </div>
@@ -147,7 +159,7 @@ export default function Reviews() {
                   rel="noopener noreferrer"
                   className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#c85f13] transition hover:text-[#a94d0d]"
                 >
-                  Read full review
+                  {content?.readMore ?? "Read full review"}
                   <span aria-hidden="true">→</span>
                 </a>
               </div>
@@ -203,7 +215,7 @@ export default function Reviews() {
                   rel="noopener noreferrer"
                   className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#c85f13] transition hover:text-[#a94d0d]"
                 >
-                  Read full review
+                  {content?.readMore ?? "Read full review"}
                   <span aria-hidden="true">→</span>
                 </a>
               </div>
@@ -218,7 +230,7 @@ export default function Reviews() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-[#c85f13] px-7 py-3.5 text-sm font-semibold text-white transition duration-300 hover:bg-[#a94d0d]"
             >
-              See Our Team Reviews on Tripadvisor
+              {content?.cta ?? "See Our Team Reviews on Tripadvisor"}
               <span aria-hidden="true">→</span>
             </a>
           </div>
