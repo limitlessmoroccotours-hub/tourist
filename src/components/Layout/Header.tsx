@@ -134,7 +134,7 @@ const navItemsEs: NavItem[] = [
 
 
 // ─────────────────────────────
-// CHEVRON ICON
+// CHEVRON
 // ─────────────────────────────
 
 function Chevron() {
@@ -194,7 +194,7 @@ export default function Header() {
     useState<string | null>(null);
 
 
-  // Close menus after route navigation
+  // Close menus after navigation
   useEffect(() => {
 
     setMobileOpen(false);
@@ -378,11 +378,16 @@ export default function Header() {
         >
 
 
-          {/* LOGO */}
+          {/* ================= LOGO ================= */}
 
           <Link
             href={homeHref}
-            className="flex shrink-0 items-center"
+
+            className="
+            flex
+            shrink-0
+            items-center
+            "
           >
 
             <Image
@@ -420,7 +425,9 @@ export default function Header() {
               <div
                 key={item.label}
 
-                className="relative"
+                className="
+                relative
+                "
 
                 onMouseEnter={() => {
 
@@ -572,7 +579,7 @@ export default function Header() {
           </nav>
 
 
-          {/* ================= LANGUAGE SWITCHER ================= */}
+          {/* ================= DESKTOP LANGUAGE ================= */}
 
           <div
             className="
@@ -587,39 +594,83 @@ export default function Header() {
           </div>
 
 
-          {/* ================= MOBILE HEADER ================= */}
+          {/* ================= MOBILE RIGHT SIDE ================= */}
 
           <div
             className="
             flex
+            shrink-0
             items-center
-            gap-3
+            gap-2
             lg:hidden
             "
           >
 
 
-            {/* Tripadvisor Mobile */}
+            {/* Mobile Language */}
+
+            <LanguageSwitcher compact />
+
+
+            {/* Tripadvisor icon only */}
 
             <a
               href={tripadvisorUrl}
               target="_blank"
               rel="noopener noreferrer"
-
               aria-label="Tripadvisor"
+
+              className="
+              flex
+              h-10
+              w-10
+              shrink-0
+              items-center
+              justify-center
+              rounded-full
+              transition-opacity
+              hover:opacity-75
+              "
             >
 
-              <Image
-                src="/images/home/TripAdvisor_Logo.svg"
-                alt="Tripadvisor"
-                width={75}
-                height={24}
-              />
+              {/*
+                The original SVG contains icon + wordmark.
+                This small container crops the wordmark and
+                keeps only the Tripadvisor icon visible.
+              */}
+
+              <span
+                className="
+                relative
+                block
+                h-[26px]
+                w-[26px]
+                overflow-hidden
+                "
+              >
+
+                <Image
+                  src="/images/home/TripAdvisor_Logo.svg"
+                  alt=""
+                  width={82}
+                  height={26}
+
+                  className="
+                  absolute
+                  left-0
+                  top-0
+                  h-[26px]
+                  w-auto
+                  max-w-none
+                  "
+                />
+
+              </span>
 
             </a>
 
 
-            {/* Menu button */}
+            {/* Menu Button */}
 
             <button
               type="button"
@@ -642,6 +693,7 @@ export default function Header() {
               flex
               h-10
               w-10
+              shrink-0
               items-center
               justify-center
               rounded-full
@@ -686,40 +738,6 @@ export default function Header() {
           lg:hidden
           "
         >
-
-
-          {/* Language Switcher Mobile */}
-
-          <div
-            className="
-            mb-5
-            border-b
-            border-[hsl(var(--border))]
-            pb-5
-            "
-          >
-
-            <p
-              className="
-              mb-2
-              text-[10px]
-              font-bold
-              uppercase
-              tracking-[0.18em]
-              text-[hsl(var(--text-secondary))]
-              "
-            >
-
-              {isSpanish
-                ? "Idioma"
-                : "Language"}
-
-            </p>
-
-
-            <LanguageSwitcher mobile />
-
-          </div>
 
 
           {/* Mobile Navigation */}
@@ -807,12 +825,13 @@ export default function Header() {
 
               )}
 
+
             </div>
 
           ))}
 
 
-          {/* Mobile CTA */}
+          {/* ================= MOBILE CTA ================= */}
 
           <Link
             href={contactHref}
@@ -843,12 +862,7 @@ export default function Header() {
               ? "Planifica tu viaje"
               : "Plan Your Trip"}
 
-            <span
-              className="
-              ml-2
-              transition-transform
-              "
-            >
+            <span className="ml-2">
               →
             </span>
 

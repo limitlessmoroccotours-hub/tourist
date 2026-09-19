@@ -8,13 +8,19 @@ import {
 } from "react";
 
 
+type LanguageSwitcherProps = {
+  mobile?: boolean;
+  compact?: boolean;
+};
+
+
 export default function LanguageSwitcher({
   mobile = false,
-}: {
-  mobile?: boolean;
-}) {
+  compact = false,
+}: LanguageSwitcherProps) {
 
   const pathname = usePathname();
+
 
   const isSpanish =
     pathname === "/es" ||
@@ -28,6 +34,10 @@ export default function LanguageSwitcher({
   const wrapperRef =
     useRef<HTMLDivElement>(null);
 
+
+  // ─────────────────────────────
+  // CLOSE ON OUTSIDE CLICK
+  // ─────────────────────────────
 
   useEffect(() => {
 
@@ -65,10 +75,53 @@ export default function LanguageSwitcher({
   }, []);
 
 
+  // ─────────────────────────────
+  // CLOSE WITH ESC
+  // ─────────────────────────────
+
+  useEffect(() => {
+
+    function handleKeyDown(
+      event: KeyboardEvent
+    ) {
+
+      if (event.key === "Escape") {
+        setOpen(false);
+      }
+
+    }
+
+
+    document.addEventListener(
+      "keydown",
+      handleKeyDown
+    );
+
+
+    return () => {
+
+      document.removeEventListener(
+        "keydown",
+        handleKeyDown
+      );
+
+    };
+
+  }, []);
+
+
+  // ─────────────────────────────
+  // CLOSE AFTER NAVIGATION
+  // ─────────────────────────────
+
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
 
+
+  // ─────────────────────────────
+  // LANGUAGE URL
+  // ─────────────────────────────
 
   const languageUrl = (
     language: "en" | "es"
@@ -86,32 +139,44 @@ export default function LanguageSwitcher({
 
     <div
       ref={wrapperRef}
+
       className={`
         relative
-        ${mobile ? "w-full" : ""}
+
+        ${
+          mobile
+            ? "w-full"
+            : ""
+        }
       `}
     >
 
 
-      {/* BUTTON */}
+      {/* ================= BUTTON ================= */}
 
       <button
         type="button"
+
+        aria-label={
+          isSpanish
+            ? "Cambiar idioma"
+            : "Change language"
+        }
 
         aria-haspopup="menu"
 
         aria-expanded={open}
 
         onClick={() =>
-          setOpen((current) => !current)
+          setOpen(
+            (current) => !current
+          )
         }
 
         className={`
           group
           flex
           items-center
-          justify-between
-          gap-3
           rounded-full
           border
           border-[hsl(var(--border))]
@@ -124,28 +189,52 @@ export default function LanguageSwitcher({
           hover:bg-[hsl(var(--muted))]
 
           ${
-            mobile
-              ? "w-full px-5 py-3.5"
-              : "px-5 py-3"
+            compact
+              ? `
+                h-10
+                min-w-[66px]
+                justify-center
+                gap-2
+                px-3
+              `
+              : mobile
+                ? `
+                  w-full
+                  justify-between
+                  gap-3
+                  px-5
+                  py-3.5
+                `
+                : `
+                  justify-between
+                  gap-3
+                  px-5
+                  py-3
+                `
           }
         `}
       >
 
 
         <span
-          className="
-          flex
-          items-center
-          gap-3
-          "
+          className={`
+            flex
+            items-center
+
+            ${
+              compact
+                ? "gap-2"
+                : "gap-3"
+            }
+          `}
         >
 
 
           {/* Globe */}
 
           <svg
-            width="18"
-            height="18"
+            width={compact ? 16 : 18}
+            height={compact ? 16 : 18}
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -153,6 +242,7 @@ export default function LanguageSwitcher({
             aria-hidden="true"
 
             className="
+            shrink-0
             text-[hsl(var(--primary))]
             "
           >
@@ -163,9 +253,7 @@ export default function LanguageSwitcher({
               r="9"
             />
 
-            <path
-              d="M3 12h18"
-            />
+            <path d="M3 12h18" />
 
             <path
               d="M12 3a15 15 0 0 1 0 18"
@@ -178,7 +266,7 @@ export default function LanguageSwitcher({
           </svg>
 
 
-          {/* Language code */}
+          {/* Language Code */}
 
           <span
             className="
@@ -193,18 +281,23 @@ export default function LanguageSwitcher({
           </span>
 
 
-          {/* Language */}
+          {/* Full Language Name - hidden in compact mode */}
 
-          <span
-            className="
-            text-sm
-            font-semibold
-            "
-          >
-            {isSpanish
-              ? "Español"
-              : "English"}
-          </span>
+          {!compact && (
+
+            <span
+              className="
+              whitespace-nowrap
+              text-sm
+              font-semibold
+              "
+            >
+              {isSpanish
+                ? "Español"
+                : "English"}
+            </span>
+
+          )}
 
 
         </span>
@@ -213,20 +306,25 @@ export default function LanguageSwitcher({
         {/* Chevron */}
 
         <svg
-          width="14"
-          height="14"
+          width={compact ? 12 : 14}
+          height={compact ? 12 : 14}
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
           strokeWidth="2"
+          aria-hidden="true"
 
           className={`
+            shrink-0
             transition-transform
             duration-200
 
-            ${open ? "rotate-180" : ""}
+            ${
+              open
+                ? "rotate-180"
+                : ""
+            }
           `}
-          aria-hidden="true"
         >
 
           <path d="m6 9 6 6 6-6" />
@@ -237,7 +335,7 @@ export default function LanguageSwitcher({
       </button>
 
 
-      {/* DROPDOWN */}
+      {/* ================= DROPDOWN ================= */}
 
       {open && (
 
@@ -257,19 +355,38 @@ export default function LanguageSwitcher({
 
             ${
               mobile
-                ? "relative w-full"
-                : "absolute right-0 w-[220px]"
+                ? `
+                  relative
+                  w-full
+                `
+                : compact
+                  ? `
+                    absolute
+                    right-0
+                    w-[210px]
+                  `
+                  : `
+                    absolute
+                    right-0
+                    w-[220px]
+                  `
             }
           `}
         >
 
 
-          {/* ENGLISH */}
+          {/* ================= ENGLISH ================= */}
 
           <a
             href={languageUrl("en")}
 
             role="menuitem"
+
+            aria-current={
+              !isSpanish
+                ? "page"
+                : undefined
+            }
 
             className={`
               flex
@@ -301,6 +418,7 @@ export default function LanguageSwitcher({
                 flex
                 h-8
                 w-8
+                shrink-0
                 items-center
                 justify-center
                 rounded-full
@@ -328,16 +446,21 @@ export default function LanguageSwitcher({
                   English
                 </span>
 
-                <span
-                  className="
-                  mt-0.5
-                  block
-                  text-[11px]
-                  text-[hsl(var(--text-secondary))]
-                  "
-                >
-                  English version
-                </span>
+
+                {!compact && (
+
+                  <span
+                    className="
+                    mt-0.5
+                    block
+                    text-[11px]
+                    text-[hsl(var(--text-secondary))]
+                    "
+                  >
+                    English version
+                  </span>
+
+                )}
 
               </span>
 
@@ -353,8 +476,10 @@ export default function LanguageSwitcher({
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2.2"
+                aria-hidden="true"
 
                 className="
+                shrink-0
                 text-[hsl(var(--primary))]
                 "
               >
@@ -363,15 +488,22 @@ export default function LanguageSwitcher({
 
             )}
 
+
           </a>
 
 
-          {/* SPANISH */}
+          {/* ================= SPANISH ================= */}
 
           <a
             href={languageUrl("es")}
 
             role="menuitem"
+
+            aria-current={
+              isSpanish
+                ? "page"
+                : undefined
+            }
 
             className={`
               mt-1
@@ -404,6 +536,7 @@ export default function LanguageSwitcher({
                 flex
                 h-8
                 w-8
+                shrink-0
                 items-center
                 justify-center
                 rounded-full
@@ -431,16 +564,21 @@ export default function LanguageSwitcher({
                   Español
                 </span>
 
-                <span
-                  className="
-                  mt-0.5
-                  block
-                  text-[11px]
-                  text-[hsl(var(--text-secondary))]
-                  "
-                >
-                  Versión en español
-                </span>
+
+                {!compact && (
+
+                  <span
+                    className="
+                    mt-0.5
+                    block
+                    text-[11px]
+                    text-[hsl(var(--text-secondary))]
+                    "
+                  >
+                    Versión en español
+                  </span>
+
+                )}
 
               </span>
 
@@ -456,8 +594,10 @@ export default function LanguageSwitcher({
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2.2"
+                aria-hidden="true"
 
                 className="
+                shrink-0
                 text-[hsl(var(--primary))]
                 "
               >
@@ -465,6 +605,7 @@ export default function LanguageSwitcher({
               </svg>
 
             )}
+
 
           </a>
 
