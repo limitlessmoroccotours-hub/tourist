@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-export default function HeroSection({
-  content,
-}: {
+type HeroSectionProps = {
+  language?: "en" | "es";
+
   content?: {
     label?: string;
     title?: string;
@@ -12,15 +12,41 @@ export default function HeroSection({
     description?: string;
     primaryButton?: string;
     secondaryButton?: string;
+
     trust?: {
       tripadvisor?: string;
       localExperts?: string;
       privateTours?: string;
     };
+
     scroll?: string;
   };
-}) {
+};
+
+
+export default function HeroSection({
+  language = "en",
+  content,
+}: HeroSectionProps) {
+
+  const isSpanish =
+    language === "es";
+
+
+  const primaryHref =
+    isSpanish
+      ? "/es/tours"
+      : "/tours";
+
+
+  const secondaryHref =
+    isSpanish
+      ? "/es/contacto"
+      : "/contact";
+
+
   return (
+
     <section
       className="
       relative
@@ -33,14 +59,22 @@ export default function HeroSection({
       "
     >
 
+
       {/* Background */}
 
       <Image
         src="/heropic.webp"
-        alt="Morocco desert landscape and Sahara travel experience"
+
+        alt={
+          isSpanish
+            ? "Paisaje del desierto de Marruecos y experiencia en el Sahara"
+            : "Morocco desert landscape and Sahara travel experience"
+        }
+
         fill
         priority
         sizes="100vw"
+
         className="
         object-cover
         object-center
@@ -74,7 +108,6 @@ export default function HeroSection({
       />
 
 
-
       {/* Content */}
 
       <div
@@ -86,8 +119,8 @@ export default function HeroSection({
         max-w-7xl
         items-center
         px-5
-        pt-28
         pb-20
+        pt-28
 
         sm:min-h-[760px]
         sm:px-8
@@ -96,7 +129,6 @@ export default function HeroSection({
         lg:px-10
         "
       >
-
 
         <div
           className="
@@ -134,14 +166,18 @@ export default function HeroSection({
               text-[hsl(var(--gold-muted))]
               "
             >
-              {content?.label ?? "Private & Authentic Morocco Tours"}
+              {
+                content?.label
+                ??
+                (
+                  isSpanish
+                    ? "Tours privados y auténticos por Marruecos"
+                    : "Private & Authentic Morocco Tours"
+                )
+              }
             </span>
 
-
           </div>
-
-
-
 
 
           {/* Heading */}
@@ -157,25 +193,36 @@ export default function HeroSection({
             "
           >
 
-{content?.title ?? "Morocco Tours"}
+            {
+              content?.title
+              ??
+              (
+                isSpanish
+                  ? "Viaje a Marruecos"
+                  : "Morocco Tours"
+              )
+            }
 
             <br />
+
 
             <span
               className="
               text-[hsl(var(--gold-muted))]
               "
             >
-                {content?.subtitle ?? "Private Sahara Desert Experiences"}
-
+              {
+                content?.subtitle
+                ??
+                (
+                  isSpanish
+                    ? "Experiencias privadas en el desierto del Sahara"
+                    : "Private Sahara Desert Experiences"
+                )
+              }
             </span>
 
-
           </h1>
-
-
-
-
 
 
           {/* Description */}
@@ -191,16 +238,18 @@ export default function HeroSection({
             sm:text-lg
             "
           >
+            {
+              content?.description
+              ??
+              (
+                isSpanish
 
-{content?.description ??
-"Discover Morocco through private tours and authentic experiences. From Marrakech to the Sahara Desert, travel with a local team creating unforgettable journeys."
-}
+                  ? "Descubre Marruecos con tours privados y experiencias auténticas. Viaja desde Marrakech al desierto del Sahara con un equipo local especializado."
 
+                  : "Discover Morocco through private tours and authentic experiences. From Marrakech to the Sahara Desert, travel with a local team creating unforgettable journeys."
+              )
+            }
           </p>
-
-
-
-
 
 
           {/* Buttons */}
@@ -219,7 +268,7 @@ export default function HeroSection({
 
             <Link
 
-              href="/tours"
+              href={primaryHref}
 
               className="
               group
@@ -240,10 +289,17 @@ export default function HeroSection({
               hover:-translate-y-1
               hover:bg-[hsl(var(--primary-hover))]
               "
-
             >
 
-{content?.primaryButton ?? "Explore Morocco Tours"}
+              {
+                content?.primaryButton
+                ??
+                (
+                  isSpanish
+                    ? "Explorar tours por Marruecos"
+                    : "Explore Morocco Tours"
+                )
+              }
 
 
               <svg
@@ -253,6 +309,7 @@ export default function HeroSection({
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
+
                 className="
                 transition-transform
                 group-hover:translate-x-1
@@ -265,16 +322,12 @@ export default function HeroSection({
 
               </svg>
 
-
             </Link>
-
-
-
 
 
             <Link
 
-              href="/contact"
+              href={secondaryHref}
 
               className="
               inline-flex
@@ -293,22 +346,22 @@ export default function HeroSection({
               transition
               hover:bg-white/20
               "
-
             >
 
-{content?.secondaryButton ?? "Plan Your Trip"}
+              {
+                content?.secondaryButton
+                ??
+                (
+                  isSpanish
+                    ? "Planifica tu viaje"
+                    : "Plan Your Trip"
+                )
+              }
 
             </Link>
 
 
-
           </div>
-
-
-
-
-
-
 
 
           {/* Trust */}
@@ -344,14 +397,49 @@ export default function HeroSection({
               transition
               hover:bg-white/20
               "
-
             >
 
-★★★★★ {content?.trust?.tripadvisor ?? "Tripadvisor Rated Experience"}
+              ★★★★★{" "}
+
+              {
+                content?.trust?.tripadvisor
+                ??
+                (
+                  isSpanish
+                    ? "Opiniones en Tripadvisor · Limitless Morocco Tours"
+                    : "Tripadvisor Reviews · Limitless Morocco Tours"
+                )
+              }
 
             </a>
 
 
+            <div
+              className="
+              rounded-full
+              border
+              border-white/20
+              bg-white/10
+              px-5
+              py-3
+              text-sm
+              text-white/90
+              backdrop-blur-sm
+              "
+            >
+
+              {
+                content?.trust?.localExperts
+                ??
+                (
+                  isSpanish
+                    ? "Expertos locales en Marruecos"
+                    : "Local Morocco Experts"
+                )
+              }
+
+            </div>
+
 
             <div
               className="
@@ -367,44 +455,26 @@ export default function HeroSection({
               "
             >
 
-{content?.trust?.localExperts ?? "Local Morocco Experts"}
+              {
+                content?.trust?.privateTours
+                ??
+                (
+                  isSpanish
+                    ? "Tours privados y personalizados"
+                    : "Private & Custom Tours"
+                )
+              }
 
             </div>
-
-
-
-            <div
-              className="
-              rounded-full
-              border
-              border-white/20
-              bg-white/10
-              px-5
-              py-3
-              text-sm
-              text-white/90
-              backdrop-blur-sm
-              "
-            >
-
-{content?.trust?.privateTours ?? "Private & Custom Tours"}
-
-            </div>
-
 
 
           </div>
-
 
 
         </div>
 
 
       </div>
-
-
-
-
 
 
       {/* Scroll */}
@@ -433,7 +503,15 @@ export default function HeroSection({
           "
         >
 
-          Scroll to explore
+          {
+            content?.scroll
+            ??
+            (
+              isSpanish
+                ? "Desliza para explorar"
+                : "Scroll to explore"
+            )
+          }
 
         </span>
 
@@ -446,11 +524,10 @@ export default function HeroSection({
           "
         />
 
-
       </div>
 
 
-
     </section>
+
   );
 }

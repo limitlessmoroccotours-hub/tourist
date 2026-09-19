@@ -8,9 +8,14 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
+      disallow: [
+        "/api/",
+      ],
     },
 
-    sitemap: "https://moroccan-trip.com/sitemap.xml",
+    sitemap:
+      "https://moroccan-trip.com/sitemap.xml",
+
   };
 
 }

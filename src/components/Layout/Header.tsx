@@ -5,14 +5,32 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+import LanguageSwitcher from "@/components/Layout/LanguageSwitcher";
+
 
 const tripadvisorUrl =
   "https://www.tripadvisor.fr/Attraction_Review-g293734-d33115204-Reviews-Limitless_morocco_tours-Marrakech_Marrakech_Safi.html";
 
 
-const navItems = [
+// ─────────────────────────────
+// TYPES
+// ─────────────────────────────
+
+type NavItem = {
+  label: string;
+  href: string;
+  dropdown?: [string, string][];
+};
+
+
+// ─────────────────────────────
+// ENGLISH NAVIGATION
+// ─────────────────────────────
+
+const navItemsEn: NavItem[] = [
   {
     label: "Tours",
+    href: "/tours",
     dropdown: [
       ["Tours From Marrakech", "/tours/from-marrakech"],
       ["Tours From Fes", "/tours/from-fes"],
@@ -21,7 +39,6 @@ const navItems = [
       ["Tours From Agadir", "/tours/from-agadir"],
       ["Tours From Errachidia", "/tours/from-errachidia"],
     ],
-    href:"/tours"
   },
 
   {
@@ -61,678 +78,790 @@ const navItems = [
 ];
 
 
+// ─────────────────────────────
+// SPANISH NAVIGATION
+// ─────────────────────────────
 
-function Arrow(){
+const navItemsEs: NavItem[] = [
+  {
+    label: "Tours",
+    href: "/es/tours",
+    dropdown: [
+      ["Tours desde Marrakech", "/es/tours/desde-marrakech"],
+      ["Tours desde Fez", "/es/tours/desde-fez"],
+      ["Tours desde Casablanca", "/es/tours/desde-casablanca"],
+      ["Tours desde Tánger", "/es/tours/desde-tanger"],
+      ["Tours desde Agadir", "/es/tours/desde-agadir"],
+      ["Tours desde Errachidia", "/es/tours/desde-errachidia"],
+    ],
+  },
 
-return (
+  {
+    label: "Excursiones",
+    href: "/es/excursiones",
+  },
 
-<svg
-width="15"
-height="15"
-viewBox="0 0 24 24"
-fill="none"
-stroke="currentColor"
-strokeWidth="2"
->
+  {
+    label: "Viajes organizados",
+    href: "/es/viajes-organizados-a-marruecos",
+  },
 
-<path d="M5 12h14"/>
-<path d="m13 6 6 6-6 6"/>
+  {
+    label: "Ofertas especiales",
+    href: "/es/ofertas-especiales",
+  },
 
-</svg>
+  {
+    label: "Tienda",
+    href: "/es/tienda",
+  },
 
-)
+  {
+    label: "Nosotros",
+    href: "/es/nosotros",
+  },
 
+  {
+    label: "Blog",
+    href: "/es/blog",
+  },
+
+  {
+    label: "Contacto",
+    href: "/es/contacto",
+  },
+];
+
+
+// ─────────────────────────────
+// CHEVRON ICON
+// ─────────────────────────────
+
+function Chevron() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      aria-hidden="true"
+    >
+      <path d="m6 9 6 6 6-6" />
+    </svg>
+  );
 }
 
 
+// ─────────────────────────────
+// HEADER
+// ─────────────────────────────
+
+export default function Header() {
+
+  const pathname = usePathname();
 
 
-function Chevron(){
-
-return (
-
-<svg
-width="14"
-height="14"
-viewBox="0 0 24 24"
-fill="none"
-stroke="currentColor"
-strokeWidth="2"
->
-
-<path d="m6 9 6 6 6-6"/>
-
-</svg>
-
-)
-
-}
+  const isSpanish =
+    pathname === "/es" ||
+    pathname.startsWith("/es/");
 
 
+  const navItems =
+    isSpanish
+      ? navItemsEs
+      : navItemsEn;
 
 
-export default function Header(){
+  const homeHref =
+    isSpanish
+      ? "/es"
+      : "/";
 
 
-const pathname = usePathname();
+  const contactHref =
+    isSpanish
+      ? "/es/contacto"
+      : "/contact";
 
 
-
-const [mobileOpen,setMobileOpen] =
-useState(false);
-
-
-const [dropdown,setDropdown] =
-useState<string|null>(null);
+  const [mobileOpen, setMobileOpen] =
+    useState(false);
 
 
+  const [dropdown, setDropdown] =
+    useState<string | null>(null);
 
-useEffect(() => {
-  const closeMenus = () => {
+
+  // Close menus after route navigation
+  useEffect(() => {
+
     setMobileOpen(false);
     setDropdown(null);
+
+  }, [pathname]);
+
+
+  const active = (href: string) => {
+
+    return (
+      pathname === href ||
+      pathname.startsWith(href + "/")
+    );
+
   };
-}, [pathname]);
 
 
+  return (
 
-const active=(href:string)=>{
-
-return pathname === href ||
-pathname.startsWith(href + "/");
-
-};
-
-
-
-return (
-
-<header
-className="
-sticky
-top-0
-z-50
-w-full
-"
->
-
-
-{/* ================= TOP BAR ================= */}
-
-<div
-  className="
-  hidden
-  border-b
-  border-[hsl(var(--border))]
-  bg-[hsl(var(--background))]
-  lg:block
-  "
->
-
-  <div
-    className="
-    flex
-    h-10
-    items-center
-    justify-center
-    "
-  >
-
-    <div
+    <header
       className="
-      flex
-      items-center
-      gap-4
-      text-xs
-      font-semibold
+      sticky
+      top-0
+      z-50
+      w-full
       "
     >
 
 
-      {/* Tripadvisor */}
+      {/* ================= TOP BAR ================= */}
 
-      <a
-        href={tripadvisorUrl}
-        target="_blank"
-        rel="noopener noreferrer"
+      <div
         className="
-        flex
-        items-center
-        gap-2
-        text-[hsl(var(--heading))]
-        transition-opacity
-        hover:opacity-70
+        hidden
+        border-b
+        border-[hsl(var(--border))]
+        bg-[hsl(var(--background))]
+        lg:block
         "
       >
 
-        <Image
-          src="/images/home/TripAdvisor_Logo.svg"
-          alt="Tripadvisor"
-          width={70}
-          height={22}
-        />
+        <div
+          className="
+          flex
+          h-10
+          items-center
+          justify-center
+          "
+        >
 
-        <span>
-          Rated Experience
-        </span>
+          <div
+            className="
+            flex
+            items-center
+            gap-4
+            text-xs
+            font-semibold
+            "
+          >
 
-      </a>
+
+            {/* Tripadvisor */}
+
+            <a
+              href={tripadvisorUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+
+              className="
+              flex
+              items-center
+              gap-2
+              text-[hsl(var(--heading))]
+              transition-opacity
+              hover:opacity-70
+              "
+            >
+
+              <Image
+                src="/images/home/TripAdvisor_Logo.svg"
+                alt="Tripadvisor"
+                width={70}
+                height={22}
+              />
 
 
+              <span>
+                {isSpanish
+                  ? "Opiniones del equipo"
+                  : "Team Reviews"}
+              </span>
+
+            </a>
 
 
-      {/* Divider */}
+            {/* Divider */}
 
-      <span
+            <span
+              className="
+              h-4
+              w-px
+              bg-[hsl(var(--border))]
+              "
+            />
+
+
+            {/* Email */}
+
+            <a
+              href="mailto:contact@moroccan-trip.com"
+
+              className="
+              text-[hsl(var(--text-secondary))]
+              transition
+              hover:text-[hsl(var(--primary))]
+              "
+            >
+              ✉ contact@moroccan-trip.com
+            </a>
+
+
+            {/* Divider */}
+
+            <span
+              className="
+              h-4
+              w-px
+              bg-[hsl(var(--border))]
+              "
+            />
+
+
+            {/* WhatsApp */}
+
+            <a
+              href="https://wa.me/212607747056"
+              target="_blank"
+              rel="noopener noreferrer"
+
+              className="
+              text-[hsl(var(--text-secondary))]
+              transition
+              hover:text-[hsl(var(--primary))]
+              "
+            >
+              WhatsApp +212607747056
+            </a>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      {/* ================= MAIN HEADER ================= */}
+
+      <div
         className="
-        h-4
-        w-px
-        bg-[hsl(var(--border))]
-        "
-      />
-
-
-
-
-      {/* Email */}
-
-      <a
-        href="mailto:contact@moroccan-trip.com"
-        className="
-        text-[hsl(var(--text-secondary))]
-        hover:text-[hsl(var(--primary))]
+        border-b
+        border-[hsl(var(--border))]
+        bg-[hsl(var(--background)/0.96)]
+        backdrop-blur-xl
         "
       >
 
-        ✉ contact@moroccan-trip.com
+        <div
+          className="
+          mx-auto
+          flex
+          h-[82px]
+          max-w-[1280px]
+          items-center
+          justify-between
+          gap-4
+          px-5
+          lg:px-6
+          "
+        >
 
-      </a>
 
+          {/* LOGO */}
 
+          <Link
+            href={homeHref}
+            className="flex shrink-0 items-center"
+          >
+
+            <Image
+              src="/images/home/Moroccan-Trip-Logo.svg"
+              alt="Moroccan Trip"
+              width={90}
+              height={40}
+              priority
 
+              className="
+              h-auto
+              w-[100px]
+              lg:w-[130px]
+              "
+            />
 
+          </Link>
 
-      {/* Divider */}
 
-      <span
-        className="
-        h-4
-        w-px
-        bg-[hsl(var(--border))]
-        "
-      />
+          {/* ================= DESKTOP NAV ================= */}
 
+          <nav
+            className="
+            hidden
+            flex-1
+            items-center
+            justify-center
+            gap-0
+            lg:flex
+            "
+          >
 
+            {navItems.map((item) => (
 
+              <div
+                key={item.label}
 
+                className="relative"
 
-      {/* WhatsApp */}
+                onMouseEnter={() => {
 
-      <a
-        href="https://wa.me/212607747056"
-        className="
-        text-[hsl(var(--text-secondary))]
-        hover:text-[hsl(var(--primary))]
-        "
-      >
+                  if (item.dropdown) {
+                    setDropdown(item.label);
+                  }
+
+                }}
+
+                onMouseLeave={() => {
+
+                  if (item.dropdown) {
+                    setDropdown(null);
+                  }
+
+                }}
+              >
+
+
+                {item.dropdown ? (
+
+                  <Link
+                    href={item.href}
+
+                    className={`
+                    flex
+                    items-center
+                    gap-1.5
+                    px-2.5
+                    py-6
+                    text-[13px]
+                    font-semibold
+                    transition
+
+                    ${
+                      active(item.href)
+                        ? "text-[hsl(var(--primary))]"
+                        : "text-[hsl(var(--heading))]"
+                    }
+
+                    hover:text-[hsl(var(--primary))]
+                    `}
+                  >
+
+                    {item.label}
 
-        WhatsApp +212607747056
+                    <Chevron />
 
-      </a>
+                  </Link>
 
+                ) : (
 
+                  <Link
+                    href={item.href}
 
-    </div>
+                    className={`
+                    block
+                    whitespace-nowrap
+                    px-2.5
+                    py-6
+                    text-[13px]
+                    font-semibold
+                    transition
 
+                    ${
+                      active(item.href)
+                        ? "text-[hsl(var(--primary))]"
+                        : "text-[hsl(var(--heading))]"
+                    }
 
-  </div>
+                    hover:text-[hsl(var(--primary))]
+                    `}
+                  >
 
-</div>
+                    {item.label}
 
+                  </Link>
 
+                )}
 
 
+                {/* ================= TOURS DROPDOWN ================= */}
 
+                {dropdown === item.label &&
+                  item.dropdown && (
 
-{/* ================= MAIN HEADER ================= */}
+                    <div
+                      className="
+                      absolute
+                      left-1/2
+                      top-full
+                      w-[620px]
+                      -translate-x-1/2
+                      pt-2
+                      "
+                    >
 
+                      <div
+                        className="
+                        grid
+                        grid-cols-2
+                        gap-2
+                        rounded-2xl
+                        border
+                        border-[hsl(var(--border))]
+                        bg-[hsl(var(--card))]
+                        p-4
+                        shadow-[0_20px_60px_rgba(15,23,42,0.14)]
+                        "
+                      >
 
-<div
-className="
-border-b
-border-[hsl(var(--border))]
-bg-[hsl(var(--background)/0.96)]
-backdrop-blur-xl
-"
->
+                        {item.dropdown.map(
+                          ([label, href]) => (
 
+                            <Link
+                              key={href}
+                              href={href}
 
-<div
-className="
-mx-auto
-flex
-h-[82px]
-max-w-[1280px]
-items-center
-justify-between
-px-5
-lg:px-6
-"
->
+                              className="
+                              rounded-xl
+                              px-4
+                              py-3
+                              text-sm
+                              font-medium
+                              text-[hsl(var(--text-main))]
+                              transition
 
+                              hover:bg-[hsl(var(--muted))]
+                              hover:text-[hsl(var(--primary))]
+                              "
+                            >
+                              {label}
+                            </Link>
 
-{/* LOGO */}
+                          )
+                        )}
 
-<Link
-  href="/"
-  className="flex items-center"
->
+                      </div>
 
-<Image
-  src="/images/home/Moroccan-Trip-Logo.svg"
-  alt="Moroccan Trip"
-  onClick={() => {
-    setMobileOpen(false);
-    setDropdown(null);
-  }}
-  width={90}
-  height={40}
-  priority
-  className="h-auto w-[100px] lg:w-[130px]"
-/>
+                    </div>
 
-</Link>
+                  )}
 
 
+              </div>
 
+            ))}
 
-{/* DESKTOP NAV */}
+          </nav>
 
 
-<nav
-className="
-hidden
-items-center
-gap-1
-lg:flex
-"
->
+          {/* ================= LANGUAGE SWITCHER ================= */}
 
+          <div
+            className="
+            hidden
+            shrink-0
+            lg:block
+            "
+          >
 
-{
-navItems.map((item)=>
+            <LanguageSwitcher />
 
+          </div>
 
-<div
-key={item.label}
-className="relative"
-onMouseEnter={()=>
-item.dropdown &&
-setDropdown(item.label)
-}
-onMouseLeave={()=>
-item.dropdown &&
-setDropdown(null)
-}
->
 
+          {/* ================= MOBILE HEADER ================= */}
 
-{
-item.dropdown ?
+          <div
+            className="
+            flex
+            items-center
+            gap-3
+            lg:hidden
+            "
+          >
 
 
-<button
+            {/* Tripadvisor Mobile */}
 
-className="
-flex
-items-center
-gap-2
-px-3
-py-6
-text-sm
-font-semibold
-text-[hsl(var(--heading))]
-hover:text-[hsl(var(--primary))]
-"
+            <a
+              href={tripadvisorUrl}
+              target="_blank"
+              rel="noopener noreferrer"
 
->
+              aria-label="Tripadvisor"
+            >
 
-{item.label}
+              <Image
+                src="/images/home/TripAdvisor_Logo.svg"
+                alt="Tripadvisor"
+                width={75}
+                height={24}
+              />
 
-<Chevron/>
+            </a>
 
-</button>
 
+            {/* Menu button */}
 
-:
+            <button
+              type="button"
 
+              aria-label={
+                isSpanish
+                  ? "Abrir menú"
+                  : "Open menu"
+              }
 
-<Link
+              aria-expanded={mobileOpen}
 
-href={item.href!}
+              onClick={() =>
+                setMobileOpen(
+                  (current) => !current
+                )
+              }
 
-className={`
-px-3
-py-6
-text-sm
-font-semibold
+              className="
+              flex
+              h-10
+              w-10
+              items-center
+              justify-center
+              rounded-full
+              border
+              border-[hsl(var(--border))]
+              text-lg
+              text-[hsl(var(--heading))]
+              transition
 
-${
-active(item.href!)
-?
-"text-[hsl(var(--primary))]"
-:
-"text-[hsl(var(--heading))]"
-}
-`}
+              hover:border-[hsl(var(--primary)/0.40)]
+              hover:text-[hsl(var(--primary))]
+              "
+            >
 
->
+              {mobileOpen ? "×" : "☰"}
 
-{item.label}
+            </button>
 
-</Link>
 
-}
+          </div>
 
 
+        </div>
 
+      </div>
 
 
-{
-dropdown===item.label && item.dropdown &&
+      {/* ================= MOBILE MENU ================= */}
 
-<div
-className="
-absolute
-left-1/2
-top-full
-w-[620px]
--translate-x-1/2
-"
->
+      {mobileOpen && (
 
+        <div
+          className="
+          max-h-[calc(100vh-82px)]
+          overflow-y-auto
+          border-b
+          border-[hsl(var(--border))]
+          bg-[hsl(var(--background))]
+          px-5
+          py-5
+          shadow-xl
+          lg:hidden
+          "
+        >
 
-<div
-className="
-grid
-grid-cols-2
-gap-2
-rounded-xl
-border
-border-[hsl(var(--border))]
-bg-[hsl(var(--card))]
-p-4
-shadow-xl
-"
->
 
+          {/* Language Switcher Mobile */}
 
-{
-item.dropdown.map(([label,href])=>(
+          <div
+            className="
+            mb-5
+            border-b
+            border-[hsl(var(--border))]
+            pb-5
+            "
+          >
 
+            <p
+              className="
+              mb-2
+              text-[10px]
+              font-bold
+              uppercase
+              tracking-[0.18em]
+              text-[hsl(var(--text-secondary))]
+              "
+            >
 
-<Link
+              {isSpanish
+                ? "Idioma"
+                : "Language"}
 
-key={href}
+            </p>
 
-href={href}
 
-className="
-rounded-lg
-px-4
-py-3
-text-sm
-font-medium
-text-[hsl(var(--text-main))]
-hover:bg-[hsl(var(--muted))]
-hover:text-[hsl(var(--primary))]
-"
+            <LanguageSwitcher mobile />
 
->
+          </div>
 
-{label}
 
-</Link>
+          {/* Mobile Navigation */}
 
+          {navItems.map((item) => (
 
-))
+            <div
+              key={item.label}
 
-}
+              className="
+              border-b
+              border-[hsl(var(--border))]
+              py-3
+              "
+            >
 
+              <Link
+                href={item.href}
 
-</div>
+                onClick={() =>
+                  setMobileOpen(false)
+                }
 
+                className={`
+                block
+                font-semibold
+                transition
 
-</div>
+                ${
+                  active(item.href)
+                    ? "text-[hsl(var(--primary))]"
+                    : "text-[hsl(var(--heading))]"
+                }
+                `}
+              >
 
+                {item.label}
 
-}
+              </Link>
 
 
+              {/* Mobile Tours Submenu */}
 
-</div>
+              {item.dropdown && (
 
+                <div
+                  className="
+                  mt-3
+                  space-y-1
+                  border-l
+                  border-[hsl(var(--border))]
+                  pl-4
+                  "
+                >
 
-)
+                  {item.dropdown.map(
+                    ([label, href]) => (
 
-}
+                      <Link
+                        key={href}
+                        href={href}
 
+                        onClick={() =>
+                          setMobileOpen(false)
+                        }
 
-</nav>
+                        className="
+                        block
+                        rounded-lg
+                        py-1.5
+                        text-sm
+                        text-[hsl(var(--text-secondary))]
+                        transition
 
+                        hover:text-[hsl(var(--primary))]
+                        "
+                      >
+                        {label}
+                      </Link>
 
+                    )
+                  )}
 
+                </div>
 
+              )}
 
+            </div>
 
+          ))}
 
-{/* CTA */}
 
+          {/* Mobile CTA */}
 
-<Link
+          <Link
+            href={contactHref}
 
-href="/contact"
+            onClick={() =>
+              setMobileOpen(false)
+            }
 
-className="
-hidden
-items-center
-gap-2
-rounded-full
-bg-[hsl(var(--primary))]
-px-6
-py-3
-text-sm
-font-bold
-text-white
-hover:bg-[hsl(var(--primary-hover))]
-lg:flex
-"
+            className="
+            mt-6
+            flex
+            items-center
+            justify-center
+            rounded-full
+            bg-[hsl(var(--primary))]
+            px-6
+            py-3.5
+            text-sm
+            font-bold
+            text-white
+            transition
 
->
+            hover:bg-[hsl(var(--primary-hover))]
+            "
+          >
 
-Plan Your Trip
+            {isSpanish
+              ? "Planifica tu viaje"
+              : "Plan Your Trip"}
 
-<Arrow/>
+            <span
+              className="
+              ml-2
+              transition-transform
+              "
+            >
+              →
+            </span>
 
-</Link>
+          </Link>
 
 
+        </div>
 
+      )}
 
 
+    </header>
 
-{/* MOBILE */}
-
-
-<div
-className="
-flex
-items-center
-gap-4
-lg:hidden
-"
->
-
-
-<a
-href={tripadvisorUrl}
-target="_blank"
-rel="noopener noreferrer"
->
-
-<Image
-
-src="/images/home/TripAdvisor_Logo.svg"
-
-alt="Tripadvisor"
-
-width={75}
-
-height={24}
-
-/>
-
-</a>
-
-
-
-
-<button
-
-onClick={()=>setMobileOpen(!mobileOpen)}
-
-className="
-flex
-h-10
-w-10
-items-center
-justify-center
-rounded-full
-border
-border-[hsl(var(--border))]
-"
-
->
-
-☰
-
-</button>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-{/* MOBILE MENU */}
-
-
-{
-
-mobileOpen &&
-
-<div
-className="
-border-b
-border-[hsl(var(--border))]
-bg-[hsl(var(--background))]
-px-5
-py-5
-lg:hidden
-"
->
-
-
-{
-navItems.map((item)=>
-
-<div
-key={item.label}
-className="
-border-b
-border-[hsl(var(--border))]
-py-3
-"
->
-
-
-{
-item.href ?
-
-<Link
-href={item.href}
-onClick={() => {
-  setMobileOpen(false);
-  setDropdown(null);
-}}
-className="font-semibold"
->
-
-{item.label}
-
-</Link>
-
-
-:
-
-<p className="font-semibold">
-
-{item.label}
-
-</p>
-
-}
-
-
-</div>
-
-)
-
-}
-
-
-
-<Link
-
-href="/contact"
-onClick={() => {
-  setMobileOpen(false);
-  setDropdown(null);
-}}
-
-className="
-mt-5
-flex
-justify-center
-rounded-full
-bg-[hsl(var(--primary))]
-py-3
-font-bold
-text-white
-"
->
-
-Plan Your Trip
-
-</Link>
-
-
-</div>
-
-}
-
-
-</header>
-
-);
+  );
 
 }

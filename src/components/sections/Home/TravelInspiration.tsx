@@ -2,14 +2,32 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { blogPosts } from "@/data/blog";
+import { blogPostsEs } from "@/data/blog-es";
 
 
+type TravelInspirationProps = {
+  language?: "en" | "es";
+};
 
-const featuredBlogs = blogPosts.slice(0,3);
+
+export default function TravelInspiration({
+  language = "en",
+}: TravelInspirationProps) {
+
+  const isSpanish =
+    language === "es";
 
 
+  const featuredBlogs =
+    isSpanish
+      ? blogPostsEs.slice(0, 3)
+      : blogPosts.slice(0, 3);
 
-export default function TravelInspiration() {
+
+  const blogBaseUrl =
+    isSpanish
+      ? "/es/blog"
+      : "/blog";
 
 
   return (
@@ -19,7 +37,6 @@ export default function TravelInspiration() {
       bg-[hsl(var(--surface))]
       "
     >
-
 
       <div
         className="
@@ -49,13 +66,11 @@ export default function TravelInspiration() {
           "
         >
 
-
           <div
             className="
             max-w-3xl
             "
           >
-
 
             <p
               className="
@@ -67,9 +82,10 @@ export default function TravelInspiration() {
               text-[hsl(var(--primary))]
               "
             >
-              Travel Inspiration
+              {isSpanish
+                ? "Inspiración para tu viaje"
+                : "Travel Inspiration"}
             </p>
-
 
 
             <h2
@@ -81,9 +97,10 @@ export default function TravelInspiration() {
               sm:text-5xl
               "
             >
-              Discover Morocco Before You Go
+              {isSpanish
+                ? "Descubre Marruecos antes de viajar"
+                : "Discover Morocco Before You Go"}
             </h2>
-
 
 
             <p
@@ -94,17 +111,16 @@ export default function TravelInspiration() {
               text-[hsl(var(--text-secondary))]
               "
             >
-              Travel guides, local tips and inspiration to help
-              you plan your perfect Morocco journey.
+              {isSpanish
+                ? "Guías de viaje, consejos locales e información práctica para ayudarte a preparar tu viaje a Marruecos."
+                : "Travel guides, local tips and inspiration to help you plan your perfect Morocco journey."}
             </p>
-
 
           </div>
 
 
-
           <Link
-            href="/blog"
+            href={blogBaseUrl}
             className="
             hidden
             rounded-full
@@ -123,18 +139,15 @@ export default function TravelInspiration() {
             md:inline-flex
             "
           >
-            View All Guides →
+            {isSpanish
+              ? "Ver todas las guías →"
+              : "View All Guides →"}
           </Link>
-
 
         </div>
 
 
-
-
-
         {/* Blog Cards */}
-
 
         <div
           className="
@@ -146,9 +159,7 @@ export default function TravelInspiration() {
           "
         >
 
-
-          {featuredBlogs.map((post)=>(
-
+          {featuredBlogs.map((post) => (
 
             <article
               key={post.id}
@@ -162,11 +173,9 @@ export default function TravelInspiration() {
               "
             >
 
-
               <Link
-                href={`/blog/${post.slug}`}
+                href={`${blogBaseUrl}/${post.slug}`}
               >
-
 
                 <div
                   className="
@@ -175,7 +184,6 @@ export default function TravelInspiration() {
                   overflow-hidden
                   "
                 >
-
 
                   <Image
                     src={post.image}
@@ -190,11 +198,7 @@ export default function TravelInspiration() {
                     "
                   />
 
-
                 </div>
-
-
-
 
 
                 <div
@@ -202,8 +206,6 @@ export default function TravelInspiration() {
                   p-6
                   "
                 >
-
-
 
                   <p
                     className="
@@ -216,7 +218,6 @@ export default function TravelInspiration() {
                   >
                     {post.category}
                   </p>
-
 
 
                   <h3
@@ -232,7 +233,6 @@ export default function TravelInspiration() {
                   </h3>
 
 
-
                   <p
                     className="
                     mt-4
@@ -246,12 +246,12 @@ export default function TravelInspiration() {
                   </p>
 
 
-
                   <div
                     className="
                     mt-6
                     flex
                     justify-between
+                    gap-4
                     text-sm
                     font-semibold
                     text-[hsl(var(--primary))]
@@ -259,9 +259,10 @@ export default function TravelInspiration() {
                   >
 
                     <span>
-                      Read Article →
+                      {isSpanish
+                        ? "Leer artículo →"
+                        : "Read Article →"}
                     </span>
-
 
                     <span>
                       {post.readTime}
@@ -269,24 +270,17 @@ export default function TravelInspiration() {
 
                   </div>
 
-
                 </div>
-
 
               </Link>
 
-
             </article>
-
 
           ))}
 
-
         </div>
 
-
       </div>
-
 
     </section>
 

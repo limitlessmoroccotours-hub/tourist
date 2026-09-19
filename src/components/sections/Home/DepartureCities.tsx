@@ -2,62 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-const destinations = [
-  {
-    city: "Marrakech",
-    tours: 13,
-    image: "/images/marrakech.webp",
-    description:
-      "Sahara adventures & Atlas Mountains journeys",
-    href: "/tours/from-marrakech",
-  },
+type DepartureCitiesProps = {
+  language?: "en" | "es";
 
-  {
-    city: "Casablanca",
-    tours: 10,
-    image: "/images/Casablanca.webp",
-    description:
-      "Atlantic coast & Morocco private journeys",
-    href: "/tours/from-casablanca",
-  },
-
-  {
-    city: "Fes",
-    tours: 12,
-    image: "/images/Fes.webp",
-    description:
-      "Imperial cities & cultural experiences",
-    href: "/tours/from-fes",
-  },
-
-  {
-    city: "Tangier",
-    tours: 6,
-    image: "/images/Tangier.webp",
-    description:
-      "Northern Morocco & Mediterranean escapes",
-    href: "/tours/from-tangier",
-  },
-];
-
-
-
-const extraDepartures = [
-  {
-    name: "Agadir",
-    href: "/tours/from-agadir",
-  },
-  {
-    name: "Errachidia",
-    href: "/tours/from-errachidia",
-  },
-];
-
-
-
-export default function DepartureCities({
-  content,
-}: {
   content?: {
     label?: string;
     title?: string;
@@ -67,419 +14,690 @@ export default function DepartureCities({
     exploreTours?: string;
     toursFrom?: string;
   };
-}) {
+};
 
 
-return (
+type Destination = {
+  city: string;
+  badge: string;
+  image: string;
+  description: string;
+  href: string;
+};
 
-<section
-className="
-bg-[hsl(var(--background))]
-"
->
 
+type ExtraDeparture = {
+  name: string;
+  href: string;
+};
 
-<div
-className="
-mx-auto
-max-w-7xl
-px-5
-py-20
 
-sm:px-8
-lg:px-10
-lg:py-24
-"
->
+// ─────────────────────────────
+// ENGLISH DESTINATIONS
+// ─────────────────────────────
 
+const destinationsEn: Destination[] = [
 
+  {
+    city: "Marrakech",
 
-{/* Heading */}
+    badge: "13 Tours",
 
-<div
-className="
-max-w-3xl
-mb-14
-"
->
+    image:
+      "/images/marrakech.webp",
 
+    description:
+      "Sahara adventures & Atlas Mountains journeys",
 
-<p
-className="
-mb-4
-text-xs
-font-bold
-uppercase
-tracking-[0.28em]
-text-[hsl(var(--primary))]
-"
->
-{content?.label ?? "Start Your Journey"}
-</p>
+    href:
+      "/tours/from-marrakech",
+  },
 
 
+  {
+    city: "Casablanca",
 
-<h2
-className="
-font-[family-name:var(--font-cormorant)]
-text-5xl
-font-semibold
-leading-tight
-tracking-tight
-text-[hsl(var(--heading))]
+    badge: "10 Tours",
 
-sm:text-6xl
-"
->
-{content?.title ?? "Explore Morocco From"}
+    image:
+      "/images/Casablanca.webp",
 
-<span
-className="
-text-[hsl(var(--primary))]
-"
->
- {content?.titleHighlight ?? " Your Departure City"}
-</span>
-</h2>
+    description:
+      "Atlantic coast & Morocco private journeys",
 
+    href:
+      "/tours/from-casablanca",
+  },
 
 
-<p
-className="
-mt-5
-max-w-2xl
-text-base
-leading-7
-text-[hsl(var(--text-secondary))]
-"
->
-{content?.description ??
-"Choose your starting point and discover private Morocco tours created around your travel style and interests."
-}
-</p>
+  {
+    city: "Fes",
 
+    badge: "12 Tours",
 
-</div>
+    image:
+      "/images/Fes.webp",
 
+    description:
+      "Imperial cities & cultural experiences",
 
+    href:
+      "/tours/from-fes",
+  },
 
 
+  {
+    city: "Tangier",
 
-{/* Cards */}
+    badge: "6 Tours",
 
-<div
-className="
-grid
-gap-6
+    image:
+      "/images/Tangier.webp",
 
-sm:grid-cols-2
-lg:grid-cols-4
-"
->
+    description:
+      "Northern Morocco & Mediterranean escapes",
 
+    href:
+      "/tours/from-tangier",
+  },
 
-{
-destinations.map((destination)=>(
+];
 
 
-<Link
-key={destination.city}
-href={destination.href}
+// ─────────────────────────────
+// SPANISH DESTINATIONS
+// ─────────────────────────────
 
-className="
-group
-relative
-h-[410px]
-overflow-hidden
-rounded-3xl
+const destinationsEs: Destination[] = [
 
-transition-all
-duration-500
+  {
+    city: "Marrakech",
 
-hover:-translate-y-1
-hover:shadow-xl
-"
+    badge:
+      "Tours desde Marrakech",
 
->
+    image:
+      "/images/marrakech.webp",
 
+    description:
+      "Tours privados por el Sahara, Merzouga y las montañas del Atlas.",
 
-<Image
+    href:
+      "/es/tours/desde-marrakech",
+  },
 
-src={destination.image}
 
-alt={`${destination.city} Morocco tours`}
+  {
+    city: "Casablanca",
 
-fill
+    badge:
+      "Tours desde Casablanca",
 
-sizes="
-(max-width:768px) 100vw,
-25vw
-"
+    image:
+      "/images/Casablanca.webp",
 
-className="
-object-cover
-transition-transform
-duration-700
+    description:
+      "Circuitos privados por ciudades históricas, el Sahara y Marrakech.",
 
-group-hover:scale-110
-"
+    href:
+      "/es/tours/desde-casablanca",
+  },
 
-/>
 
+  {
+    city: "Fez",
 
+    badge:
+      "Tours desde Fez",
 
-{/* Elegant Overlay */}
+    image:
+      "/images/Fes.webp",
 
-<div
-className="
-absolute
-inset-0
+    description:
+      "Rutas desde Fez hacia Merzouga, el Sahara, Marrakech y el norte de Marruecos.",
 
-bg-gradient-to-t
-from-black/80
-via-black/20
-to-transparent
-"
-/>
+    href:
+      "/es/tours/desde-fez",
+  },
 
 
+  {
+    city: "Tánger",
 
+    badge:
+      "Tours desde Tánger",
 
+    image:
+      "/images/Tangier.webp",
 
-{/* Tour badge */}
+    description:
+      "Viajes privados por Chefchaouen, Fez, el Sahara y otras regiones de Marruecos.",
 
-<div
-className="
-absolute
-right-5
-top-5
+    href:
+      "/es/tours/desde-tanger",
+  },
 
-rounded-full
+];
 
-border
-border-white/20
 
-bg-black/20
+// ─────────────────────────────
+// EXTRA DEPARTURES
+// ─────────────────────────────
 
-px-4
-py-2
+const extraDeparturesEn: ExtraDeparture[] = [
 
-backdrop-blur-md
-"
->
+  {
+    name: "Agadir",
 
-<span
-className="
-text-[10px]
-font-bold
-uppercase
-tracking-wider
-text-white
-"
->
-{destination.tours} Tours
-</span>
+    href:
+      "/tours/from-agadir",
+  },
 
+  {
+    name: "Errachidia",
 
-</div>
+    href:
+      "/tours/from-errachidia",
+  },
 
+];
 
 
+const extraDeparturesEs: ExtraDeparture[] = [
 
+  {
+    name: "Agadir",
 
-{/* Content */}
+    href:
+      "/es/tours/desde-agadir",
+  },
 
-<div
-className="
-absolute
-bottom-0
-left-0
-right-0
+  {
+    name: "Errachidia",
 
-p-6
-"
->
+    href:
+      "/es/tours/desde-errachidia",
+  },
 
+];
 
-<p
-className="
-text-[10px]
-font-bold
-uppercase
-tracking-[0.25em]
-text-white/60
-"
->
-{content?.startingPoint ?? "Starting Point"}
-</p>
 
+// ─────────────────────────────
+// COMPONENT
+// ─────────────────────────────
 
+export default function DepartureCities({
+  language = "en",
+  content,
+}: DepartureCitiesProps) {
 
-<h3
-className="
-mt-2
+  const isSpanish =
+    language === "es";
 
-font-[family-name:var(--font-cormorant)]
 
-text-5xl
+  const destinations =
+    isSpanish
+      ? destinationsEs
+      : destinationsEn;
 
-font-semibold
 
-leading-none
+  const extraDepartures =
+    isSpanish
+      ? extraDeparturesEs
+      : extraDeparturesEn;
 
-text-white
-"
->
-{destination.city}
-</h3>
 
+  return (
 
+    <section
+      className="
+      bg-[hsl(var(--background))]
+      "
+    >
 
+      <div
+        className="
+        mx-auto
+        max-w-7xl
+        px-5
+        py-20
 
-<p
-className="
-mt-4
+        sm:px-8
+        lg:px-10
+        lg:py-24
+        "
+      >
 
-text-sm
 
-leading-5
+        {/* Heading */}
 
-text-white/75
-"
->
-{destination.description}
-</p>
+        <div
+          className="
+          mb-14
+          max-w-3xl
+          "
+        >
 
 
+          <p
+            className="
+            mb-4
+            text-xs
+            font-bold
+            uppercase
+            tracking-[0.28em]
+            text-[hsl(var(--primary))]
+            "
+          >
+            {
+              content?.label
+              ??
+              (
+                isSpanish
+                  ? "Comienza tu viaje"
+                  : "Start Your Journey"
+              )
+            }
+          </p>
 
 
-<div
-className="
-mt-5
+          <h2
+            className="
+            font-[family-name:var(--font-cormorant)]
+            text-5xl
+            font-semibold
+            leading-tight
+            tracking-tight
+            text-[hsl(var(--heading))]
 
-text-xs
+            sm:text-6xl
+            "
+          >
 
-font-bold
+            {
+              content?.title
+              ??
+              (
+                isSpanish
+                  ? "Explora Marruecos desde"
+                  : "Explore Morocco From"
+              )
+            }
 
-uppercase
 
-tracking-[0.18em]
+            <span
+              className="
+              text-[hsl(var(--primary))]
+              "
+            >
+              {" "}
 
-text-[hsl(var(--gold-muted))]
-"
->
-{content?.exploreTours ?? "Explore Tours"} →
-</div>
+              {
+                content?.titleHighlight
+                ??
+                (
+                  isSpanish
+                    ? "tu ciudad de salida"
+                    : "Your Departure City"
+                )
+              }
 
+            </span>
 
+          </h2>
 
-</div>
 
+          <p
+            className="
+            mt-5
+            max-w-2xl
+            text-base
+            leading-7
+            text-[hsl(var(--text-secondary))]
+            "
+          >
+            {
+              content?.description
+              ??
+              (
+                isSpanish
 
+                  ? "Elige tu punto de partida y descubre tours privados por Marruecos diseñados según tu estilo de viaje y tus intereses."
 
-</Link>
+                  : "Choose your starting point and discover private Morocco tours created around your travel style and interests."
+              )
+            }
+          </p>
 
 
-))
-}
+        </div>
 
 
-</div>
+        {/* Cards */}
 
+        <div
+          className="
+          grid
+          gap-6
 
+          sm:grid-cols-2
+          lg:grid-cols-4
+          "
+        >
 
 
+          {
+            destinations.map((destination) => (
 
+              <Link
+                key={destination.city}
 
-{/* Additional cities */}
+                href={destination.href}
 
-<div
-className="
-mt-12
+                className="
+                group
+                relative
+                h-[410px]
+                overflow-hidden
+                rounded-3xl
 
-flex
+                transition-all
+                duration-500
 
-justify-center
+                hover:-translate-y-1
+                hover:shadow-xl
+                "
+              >
 
-flex-wrap
 
-gap-4
-"
->
+                {/* Image */}
 
+                <Image
+                  src={destination.image}
 
-{
-extraDepartures.map((city)=>(
+                  alt={
+                    isSpanish
 
+                      ? `Tours desde ${destination.city} por Marruecos`
 
-<Link
+                      : `${destination.city} Morocco tours`
+                  }
 
-key={city.name}
+                  fill
 
-href={city.href}
+                  sizes="
+                  (max-width:768px) 100vw,
+                  25vw
+                  "
 
-className="
-inline-flex
+                  className="
+                  object-cover
+                  transition-transform
+                  duration-700
 
-items-center
+                  group-hover:scale-110
+                  "
+                />
 
-rounded-full
 
-border
+                {/* Overlay */}
 
-border-[hsl(var(--border))]
+                <div
+                  className="
+                  absolute
+                  inset-0
 
-bg-[hsl(var(--card))]
+                  bg-gradient-to-t
+                  from-black/80
+                  via-black/20
+                  to-transparent
+                  "
+                />
 
-px-7
 
-py-3
+                {/* Badge */}
 
-text-sm
+                <div
+                  className="
+                  absolute
+                  right-5
+                  top-5
 
-font-semibold
+                  rounded-full
 
-text-[hsl(var(--heading))]
+                  border
+                  border-white/20
 
-transition-all
+                  bg-black/20
 
-hover:border-[hsl(var(--primary))]
+                  px-4
+                  py-2
 
-hover:text-[hsl(var(--primary))]
-"
+                  backdrop-blur-md
+                  "
+                >
 
->
+                  <span
+                    className="
+                    text-[10px]
+                    font-bold
+                    uppercase
+                    tracking-wider
+                    text-white
+                    "
+                  >
+                    {destination.badge}
+                  </span>
 
-{content?.toursFrom ?? "Tours From"} {city.name}
+                </div>
 
-<span
-className="
-ml-2
-text-[hsl(var(--primary))]
-"
->
-→
-</span>
 
+                {/* Content */}
 
-</Link>
+                <div
+                  className="
+                  absolute
+                  bottom-0
+                  left-0
+                  right-0
 
+                  p-6
+                  "
+                >
 
-))
-}
 
+                  <p
+                    className="
+                    text-[10px]
+                    font-bold
+                    uppercase
+                    tracking-[0.25em]
+                    text-white/60
+                    "
+                  >
+                    {
+                      content?.startingPoint
+                      ??
+                      (
+                        isSpanish
+                          ? "Punto de salida"
+                          : "Starting Point"
+                      )
+                    }
+                  </p>
 
-</div>
 
+                  <h3
+                    className="
+                    mt-2
 
+                    font-[family-name:var(--font-cormorant)]
 
-</div>
+                    text-5xl
 
+                    font-semibold
 
-</section>
+                    leading-none
 
+                    text-white
+                    "
+                  >
+                    {destination.city}
+                  </h3>
 
-);
 
+                  <p
+                    className="
+                    mt-4
+
+                    text-sm
+
+                    leading-5
+
+                    text-white/75
+                    "
+                  >
+                    {destination.description}
+                  </p>
+
+
+                  <div
+                    className="
+                    mt-5
+
+                    text-xs
+
+                    font-bold
+
+                    uppercase
+
+                    tracking-[0.18em]
+
+                    text-[hsl(var(--gold-muted))]
+                    "
+                  >
+
+                    {
+                      content?.exploreTours
+                      ??
+                      (
+                        isSpanish
+                          ? "Explorar tours"
+                          : "Explore Tours"
+                      )
+                    }
+
+                    {" "}→
+
+                  </div>
+
+
+                </div>
+
+
+              </Link>
+
+            ))
+          }
+
+
+        </div>
+
+
+        {/* Additional Cities */}
+
+        <div
+          className="
+          mt-12
+
+          flex
+          flex-wrap
+          justify-center
+
+          gap-4
+          "
+        >
+
+
+          {
+            extraDepartures.map((city) => (
+
+              <Link
+
+                key={city.name}
+
+                href={city.href}
+
+                className="
+                inline-flex
+
+                items-center
+
+                rounded-full
+
+                border
+
+                border-[hsl(var(--border))]
+
+                bg-[hsl(var(--card))]
+
+                px-7
+
+                py-3
+
+                text-sm
+
+                font-semibold
+
+                text-[hsl(var(--heading))]
+
+                transition-all
+
+                hover:border-[hsl(var(--primary))]
+
+                hover:text-[hsl(var(--primary))]
+                "
+              >
+
+                {
+                  content?.toursFrom
+                  ??
+                  (
+                    isSpanish
+                      ? "Tours desde"
+                      : "Tours From"
+                  )
+                }
+
+                {" "}
+
+                {city.name}
+
+
+                <span
+                  className="
+                  ml-2
+                  text-[hsl(var(--primary))]
+                  "
+                >
+                  →
+                </span>
+
+
+              </Link>
+
+            ))
+          }
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+  );
 
 }

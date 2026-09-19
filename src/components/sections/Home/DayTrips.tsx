@@ -1,24 +1,58 @@
 import Image from "next/image";
 import Link from "next/link";
+
 import { dayTrips } from "@/data/dayTrips";
+import { excursionesEs } from "@/data/excursiones-es";
 
+type DayTripsProps = {
+  language?: "en" | "es";
+};
 
-const featuredDayTrips = [
+const featuredDayTripsEn = [
   "agafay-desert-day-trip-from-marrakech",
   "ourika-valley-day-trip-from-marrakech",
   "ouzoud-waterfalls-day-trip-from-marrakech",
 ];
 
+const featuredDayTripsEs = [
+  "desierto-de-agafay-desde-marrakech",
+  "valle-de-ourika",
+  "cascadas-de-ouzoud-desde-marrakech",
+];
 
-export default function DayTrips() {
+export default function DayTrips({
+  language = "en",
+}: DayTripsProps) {
 
+  const isSpanish = language === "es";
 
-  const trips = featuredDayTrips
+  const tripsData =
+    isSpanish
+      ? excursionesEs
+      : dayTrips;
+
+  const featuredSlugs =
+    isSpanish
+      ? featuredDayTripsEs
+      : featuredDayTripsEn;
+
+  const trips = featuredSlugs
     .map((slug) =>
-      dayTrips.find((trip) => trip.slug === slug)
+      tripsData.find(
+        (trip) => trip.slug === slug
+      )
     )
-    .filter(Boolean);
+    .filter(
+      (
+        trip
+      ): trip is NonNullable<typeof trip> =>
+        Boolean(trip)
+    );
 
+  const baseUrl =
+    isSpanish
+      ? "/es/excursiones"
+      : "/day-trips";
 
 
   return (
@@ -28,7 +62,6 @@ export default function DayTrips() {
       bg-[hsl(var(--background))]
       "
     >
-
 
       <div
         className="
@@ -58,13 +91,11 @@ export default function DayTrips() {
           "
         >
 
-
           <div
             className="
             max-w-3xl
             "
           >
-
 
             <p
               className="
@@ -76,9 +107,10 @@ export default function DayTrips() {
               text-[hsl(var(--primary))]
               "
             >
-              Day Trips From Marrakech
+              {isSpanish
+                ? "Excursiones desde Marrakech"
+                : "Day Trips From Marrakech"}
             </p>
-
 
 
             <h2
@@ -91,9 +123,10 @@ export default function DayTrips() {
               sm:text-5xl
               "
             >
-              Discover Morocco Beyond The City
+              {isSpanish
+                ? "Descubre Marruecos más allá de Marrakech"
+                : "Discover Morocco Beyond The City"}
             </h2>
-
 
 
             <p
@@ -104,18 +137,16 @@ export default function DayTrips() {
               text-[hsl(var(--text-secondary))]
               "
             >
-              Explore the Atlas Mountains, desert landscapes
-              and natural wonders of Morocco with private
-              day experiences from Marrakech.
+              {isSpanish
+                ? "Explora las montañas del Atlas, el Desierto de Agafay y algunos de los paisajes naturales más impresionantes de Marruecos con excursiones privadas desde Marrakech."
+                : "Explore the Atlas Mountains, desert landscapes and natural wonders of Morocco with private day experiences from Marrakech."}
             </p>
-
 
           </div>
 
 
-
           <Link
-            href="/day-trips"
+            href={baseUrl}
             className="
             inline-flex
             w-fit
@@ -135,13 +166,12 @@ export default function DayTrips() {
             hover:text-white
             "
           >
-            View All Day Trips
+            {isSpanish
+              ? "Ver todas las excursiones"
+              : "View All Day Trips"}
           </Link>
 
-
         </div>
-
-
 
 
         {/* Cards */}
@@ -156,12 +186,10 @@ export default function DayTrips() {
           "
         >
 
-
-          {trips.map((trip)=> (
-
+          {trips.map((trip) => (
 
             <article
-              key={trip!.id}
+              key={trip.id}
               className="
               group
               overflow-hidden
@@ -178,12 +206,9 @@ export default function DayTrips() {
               "
             >
 
-
               <Link
-                href={`/day-trips/${trip!.slug}`}
+                href={`${baseUrl}/${trip.slug}`}
               >
-
-
 
                 {/* Image */}
 
@@ -195,10 +220,9 @@ export default function DayTrips() {
                   "
                 >
 
-
                   <Image
-                    src={trip!.image}
-                    alt={trip!.title}
+                    src={trip.image}
+                    alt={trip.title}
                     fill
                     sizes="
                     (max-width:768px) 100vw,
@@ -214,8 +238,7 @@ export default function DayTrips() {
                   />
 
 
-
-                  {trip!.badge && (
+                  {trip.badge && (
 
                     <span
                       className="
@@ -233,15 +256,12 @@ export default function DayTrips() {
                       text-white
                       "
                     >
-                      {trip!.badge}
+                      {trip.badge}
                     </span>
 
                   )}
 
-
                 </div>
-
-
 
 
                 {/* Content */}
@@ -252,8 +272,6 @@ export default function DayTrips() {
                   "
                 >
 
-
-
                   <p
                     className="
                     text-xs
@@ -263,10 +281,8 @@ export default function DayTrips() {
                     text-[hsl(var(--primary))]
                     "
                   >
-                    {trip!.category}
+                    {trip.category}
                   </p>
-
-
 
 
                   <h3
@@ -278,13 +294,10 @@ export default function DayTrips() {
                     text-[hsl(var(--heading))]
                     "
                   >
-                    {trip!.title
+                    {trip.title
                       .split("|")[0]
-                      .trim()
-                    }
+                      .trim()}
                   </h3>
-
-
 
 
                   <p
@@ -296,10 +309,8 @@ export default function DayTrips() {
                     text-[hsl(var(--text-secondary))]
                     "
                   >
-                    {trip!.shortDescription}
+                    {trip.shortDescription}
                   </p>
-
-
 
 
                   <div
@@ -314,16 +325,14 @@ export default function DayTrips() {
                     "
                   >
 
-
                     <span
                       className="
                       text-sm
                       text-[hsl(var(--text-muted))]
                       "
                     >
-                      {trip!.duration}
+                      {trip.duration}
                     </span>
-
 
 
                     <span
@@ -333,31 +342,24 @@ export default function DayTrips() {
                       text-[hsl(var(--primary))]
                       "
                     >
-                      Explore →
+                      {isSpanish
+                        ? "Ver excursión →"
+                        : "Explore →"}
                     </span>
-
 
                   </div>
 
-
-
                 </div>
-
 
               </Link>
 
-
             </article>
-
 
           ))}
 
-
         </div>
 
-
       </div>
-
 
     </section>
 

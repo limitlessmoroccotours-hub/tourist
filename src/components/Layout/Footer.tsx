@@ -1,23 +1,43 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 
-const footerLinks = {
+const tripadvisorUrl =
+  "https://www.tripadvisor.fr/Attraction_Review-g293734-d33115204-Reviews-Limitless_morocco_tours-Marrakech_Marrakech_Safi.html";
+
+
+// ─────────────────────────────
+// ENGLISH LINKS
+// ─────────────────────────────
+
+const footerLinksEn = {
+
   explore: [
     {
       name: "Morocco Tours",
       href: "/tours",
     },
+
     {
       name: "Day Trips",
       href: "/day-trips",
     },
+
     {
       name: "Custom Tours",
       href: "/custom-tour",
     },
+
     {
       name: "Special Offers",
       href: "/special-offers",
+    },
+
+    {
+      name: "Shop",
+      href: "/shop",
     },
   ],
 
@@ -27,10 +47,12 @@ const footerLinks = {
       name: "About Us",
       href: "/about-us",
     },
+
     {
       name: "Travel Blog",
       href: "/blog",
     },
+
     {
       name: "Contact",
       href: "/contact",
@@ -43,549 +65,584 @@ const footerLinks = {
       name: "Marrakech",
       href: "/tours/from-marrakech",
     },
+
     {
       name: "Casablanca",
       href: "/tours/from-casablanca",
     },
+
     {
       name: "Fes",
       href: "/tours/from-fes",
     },
+
     {
       name: "Tangier",
       href: "/tours/from-tangier",
     },
+
     {
       name: "Agadir",
       href: "/tours/from-agadir",
     },
+
     {
       name: "Errachidia",
       href: "/tours/from-errachidia",
     },
   ],
+
 };
 
 
+// ─────────────────────────────
+// SPANISH LINKS
+// ─────────────────────────────
+
+const footerLinksEs = {
+
+  explore: [
+    {
+      name: "Tours por Marruecos",
+      href: "/es/tours",
+    },
 
-export default function Footer(){
+    {
+      name: "Excursiones",
+      href: "/es/excursiones",
+    },
 
+    // Cambiaremos este href cuando confirmemos
+    // el slug completo de /es/viajes-organizados...
+    {
+      name: "Viajes organizados",
+      href: "/es/viajes-organizados-a-marruecos",
+    },
 
-return (
+    {
+      name: "Ofertas especiales",
+      href: "/es/ofertas-especiales",
+    },
 
-<footer
-className="
-bg-[hsl(var(--footer))]
-text-white
-"
->
+    {
+      name: "Tienda",
+      href: "/es/tienda",
+    },
+  ],
 
 
-<div
-className="
-mx-auto
-max-w-7xl
+  company: [
+    {
+      name: "Nosotros",
+      href: "/es/nosotros",
+    },
 
-px-5
-py-16
+    {
+      name: "Blog de viajes",
+      href: "/es/blog",
+    },
 
-sm:px-8
+    {
+      name: "Contacto",
+      href: "/es/contacto",
+    },
+  ],
 
-lg:px-10
-lg:py-20
-"
->
 
+  departures: [
+    {
+      name: "Marrakech",
+      href: "/es/tours/desde-marrakech",
+    },
 
+    {
+      name: "Casablanca",
+      href: "/es/tours/desde-casablanca",
+    },
 
-{/* Main Footer */}
+    {
+      name: "Fez",
+      href: "/es/tours/desde-fez",
+    },
 
-<div
-className="
-grid
-gap-12
+    {
+      name: "Tánger",
+      href: "/es/tours/desde-tanger",
+    },
 
-lg:grid-cols-5
-"
->
+    {
+      name: "Agadir",
+      href: "/es/tours/desde-agadir",
+    },
 
+    {
+      name: "Errachidia",
+      href: "/es/tours/desde-errachidia",
+    },
+  ],
 
+};
 
-{/* Brand */}
 
-<div
-className="
-lg:col-span-2
-"
->
+export default function Footer() {
 
+  const pathname =
+    usePathname();
 
-<Link
-href="/"
-className="
-font-[family-name:var(--font-cormorant)]
 
-text-4xl
+  const isSpanish =
+    pathname === "/es" ||
+    pathname.startsWith("/es/");
 
-font-semibold
-"
->
 
-Moroccan
-<span
-className="
-text-[hsl(var(--primary))]
-"
->
-Trip
-</span>
+  const footerLinks =
+    isSpanish
+      ? footerLinksEs
+      : footerLinksEn;
 
-</Link>
 
+  const homeHref =
+    isSpanish
+      ? "/es"
+      : "/";
 
 
-<p
-className="
-mt-6
+  const contactHref =
+    isSpanish
+      ? "/es/contacto"
+      : "/contact";
 
-max-w-sm
 
-text-sm
+  return (
 
-leading-7
+    <footer
+      className="
+      bg-[hsl(var(--footer))]
+      text-white
+      "
+    >
 
-text-white/65
-"
->
-Discover Morocco through private tours, Sahara adventures
-and authentic travel experiences created by local experts.
-</p>
+      <div
+        className="
+        mx-auto
+        max-w-7xl
 
+        px-5
+        py-16
 
+        sm:px-8
 
-{/* Trust */}
+        lg:px-10
+        lg:py-20
+        "
+      >
 
-<div
-className="
-mt-6
-flex
-items-center
-gap-3
-"
->
 
+        {/* Main Footer */}
 
-<div
-className="
-rounded-full
+        <div
+          className="
+          grid
+          gap-12
 
-border
+          lg:grid-cols-5
+          "
+        >
 
-border-white/20
 
-px-4
+          {/* Brand */}
 
-py-2
-"
->
+          <div
+            className="
+            lg:col-span-2
+            "
+          >
 
-<span
-className="
-text-xs
-font-semibold
-text-white/80
-"
->
-★★★★★
-</span>
+            <Link
+              href={homeHref}
 
-</div>
+              className="
+              font-[family-name:var(--font-cormorant)]
+              text-4xl
+              font-semibold
+              "
+            >
 
+              Moroccan
 
+              <span
+                className="
+                text-[hsl(var(--primary))]
+                "
+              >
+                Trip
+              </span>
 
-<p
-className="
-text-xs
-text-white/60
-"
->
-Tripadvisor Rated Experience
-</p>
+            </Link>
 
 
-</div>
+            <p
+              className="
+              mt-6
+              max-w-sm
+              text-sm
+              leading-7
+              text-white/65
+              "
+            >
 
+              {isSpanish
 
-</div>
+                ? "Descubre Marruecos con tours privados, aventuras en el Sahara y experiencias auténticas creadas por un equipo local."
 
+                : "Discover Morocco through private tours, Sahara adventures and authentic travel experiences created by local experts."}
 
+            </p>
 
 
+            {/* Tripadvisor Trust */}
 
-{/* Explore */}
+            <div
+              className="
+              mt-6
+              flex
+              items-center
+              gap-3
+              "
+            >
 
-<div>
+              <div
+                className="
+                rounded-full
+                border
+                border-white/20
+                px-4
+                py-2
+                "
+              >
 
+                <span
+                  className="
+                  text-xs
+                  font-semibold
+                  text-white/80
+                  "
+                >
+                  ★★★★★
+                </span>
 
-<h3
-className="
-mb-5
+              </div>
 
-text-xs
 
-font-bold
+              <a
+                href={tripadvisorUrl}
+                target="_blank"
+                rel="noopener noreferrer"
 
-uppercase
+                className="
+                text-xs
+                text-white/60
+                transition
+                hover:text-white
+                "
+              >
 
-tracking-[0.25em]
+                {isSpanish
+                  ? "Opiniones del equipo en Tripadvisor · Limitless Morocco Tours"
+                  : "Team reviews on Tripadvisor · Limitless Morocco Tours"}
 
-text-[hsl(var(--gold-muted))]
-"
->
-Explore
-</h3>
+              </a>
 
+            </div>
 
+          </div>
 
-<ul
-className="
-space-y-3
-"
->
 
-{
-footerLinks.explore.map((item)=>(
-<li key={item.name}>
+          {/* Explore */}
 
-<Link
-href={item.href}
-className="
-text-sm
+          <div>
 
-text-white/70
+            <h3
+              className="
+              mb-5
+              text-xs
+              font-bold
+              uppercase
+              tracking-[0.25em]
+              text-[hsl(var(--gold-muted))]
+              "
+            >
+              {isSpanish
+                ? "Explorar"
+                : "Explore"}
+            </h3>
 
-transition
 
-hover:text-white
-"
->
-{item.name}
-</Link>
+            <ul className="space-y-3">
 
-</li>
-))
-}
+              {footerLinks.explore.map(
+                (item) => (
 
-</ul>
+                  <li key={item.name}>
 
+                    <Link
+                      href={item.href}
 
-</div>
+                      className="
+                      text-sm
+                      text-white/70
+                      transition
+                      hover:text-white
+                      "
+                    >
+                      {item.name}
+                    </Link>
 
+                  </li>
 
+                )
+              )}
 
+            </ul>
 
+          </div>
 
 
-{/* Company */}
+          {/* Company */}
 
-<div>
+          <div>
 
+            <h3
+              className="
+              mb-5
+              text-xs
+              font-bold
+              uppercase
+              tracking-[0.25em]
+              text-[hsl(var(--gold-muted))]
+              "
+            >
+              {isSpanish
+                ? "Empresa"
+                : "Company"}
+            </h3>
 
-<h3
-className="
-mb-5
 
-text-xs
+            <ul className="space-y-3">
 
-font-bold
+              {footerLinks.company.map(
+                (item) => (
 
-uppercase
+                  <li key={item.name}>
 
-tracking-[0.25em]
+                    <Link
+                      href={item.href}
 
-text-[hsl(var(--gold-muted))]
-"
->
-Company
-</h3>
+                      className="
+                      text-sm
+                      text-white/70
+                      transition
+                      hover:text-white
+                      "
+                    >
+                      {item.name}
+                    </Link>
 
+                  </li>
 
+                )
+              )}
 
-<ul
-className="
-space-y-3
-"
->
+            </ul>
 
-{
-footerLinks.company.map((item)=>(
-<li key={item.name}>
+          </div>
 
-<Link
-href={item.href}
-className="
-text-sm
 
-text-white/70
+          {/* Departures */}
 
-transition
+          <div>
 
-hover:text-white
-"
->
-{item.name}
-</Link>
+            <h3
+              className="
+              mb-5
+              text-xs
+              font-bold
+              uppercase
+              tracking-[0.25em]
+              text-[hsl(var(--gold-muted))]
+              "
+            >
+              {isSpanish
+                ? "Tours desde"
+                : "Start From"}
+            </h3>
 
-</li>
-))
-}
 
-</ul>
+            <ul className="space-y-3">
 
+              {footerLinks.departures.map(
+                (item) => (
 
-</div>
+                  <li key={item.name}>
 
+                    <Link
+                      href={item.href}
 
+                      className="
+                      text-sm
+                      text-white/70
+                      transition
+                      hover:text-white
+                      "
+                    >
+                      {item.name}
+                    </Link>
 
+                  </li>
 
+                )
+              )}
 
+            </ul>
 
-{/* Departures */}
+          </div>
 
-<div>
 
+        </div>
 
-<h3
-className="
-mb-5
 
-text-xs
+        {/* CTA */}
 
-font-bold
+        <div
+          className="
+          mt-16
+          flex
+          flex-col
+          gap-6
+          rounded-3xl
+          border
+          border-white/10
+          bg-white/5
+          p-8
 
-uppercase
+          sm:flex-row
+          sm:items-center
+          sm:justify-between
+          "
+        >
 
-tracking-[0.25em]
+          <div>
 
-text-[hsl(var(--gold-muted))]
-"
->
-Start From
-</h3>
+            <h3
+              className="
+              font-[family-name:var(--font-cormorant)]
+              text-3xl
+              font-semibold
+              "
+            >
+              {isSpanish
+                ? "¿Listo para descubrir Marruecos?"
+                : "Ready to explore Morocco?"}
+            </h3>
 
 
+            <p
+              className="
+              mt-2
+              text-sm
+              text-white/60
+              "
+            >
+              {isSpanish
 
-<ul
-className="
-space-y-3
-"
->
+                ? "Crea un viaje personalizado por Marruecos con nuestro equipo local."
 
-{
-footerLinks.departures.map((item)=>(
-<li key={item.name}>
+                : "Create your personalized Morocco journey with our local team."}
+            </p>
 
-<Link
-href={item.href}
-className="
-text-sm
+          </div>
 
-text-white/70
 
-transition
+          <Link
+            href={contactHref}
 
-hover:text-white
-"
->
-{item.name}
-</Link>
+            className="
+            inline-flex
+            rounded-full
+            bg-[hsl(var(--primary))]
+            px-7
+            py-3
+            text-sm
+            font-semibold
+            transition
 
-</li>
-))
-}
+            hover:bg-[hsl(var(--primary-hover))]
+            "
+          >
+            {isSpanish
+              ? "Planifica tu viaje →"
+              : "Plan Your Trip →"}
+          </Link>
 
-</ul>
+        </div>
 
 
-</div>
+        {/* Bottom */}
 
+        <div
+          className="
+          mt-10
+          flex
+          flex-col
+          gap-4
+          border-t
+          border-white/10
+          pt-6
+          text-xs
+          text-white/50
 
+          sm:flex-row
+          sm:items-center
+          sm:justify-between
+          "
+        >
 
+          <p>
+            © {new Date().getFullYear()} Moroccan Trip.{" "}
+            {isSpanish
+              ? "Todos los derechos reservados."
+              : "All rights reserved."}
+          </p>
 
-</div>
 
+          <div
+            className="
+            flex
+            gap-5
+            "
+          >
 
+            <Link href="/privacy-policy">
+              {isSpanish
+                ? "Política de privacidad"
+                : "Privacy Policy"}
+            </Link>
 
+            <Link href="/terms">
+              {isSpanish
+                ? "Términos"
+                : "Terms"}
+            </Link>
 
+          </div>
 
+        </div>
 
 
-{/* CTA */}
+      </div>
 
-<div
-className="
-mt-16
+    </footer>
 
-rounded-3xl
-
-border
-
-border-white/10
-
-bg-white/5
-
-p-8
-
-flex
-
-flex-col
-
-gap-6
-
-
-sm:flex-row
-
-sm:items-center
-
-sm:justify-between
-"
->
-
-
-<div>
-
-<h3
-className="
-font-[family-name:var(--font-cormorant)]
-
-text-3xl
-
-font-semibold
-"
->
-Ready to explore Morocco?
-</h3>
-
-
-<p
-className="
-mt-2
-
-text-sm
-
-text-white/60
-"
->
-Create your personalized Morocco journey with our local team.
-</p>
-
-
-</div>
-
-
-
-<Link
-href="/contact"
-
-className="
-inline-flex
-
-rounded-full
-
-bg-[hsl(var(--primary))]
-
-px-7
-
-py-3
-
-text-sm
-
-font-semibold
-
-transition
-
-hover:bg-[hsl(var(--primary-hover))]
-"
->
-Plan Your Trip →
-</Link>
-
-
-</div>
-
-
-
-
-
-
-
-
-{/* Bottom */}
-
-<div
-className="
-mt-10
-
-border-t
-
-border-white/10
-
-pt-6
-
-flex
-
-flex-col
-
-gap-4
-
-text-xs
-
-text-white/50
-
-
-sm:flex-row
-
-sm:items-center
-
-sm:justify-between
-"
->
-
-
-<p>
-© {new Date().getFullYear()} MoroccanTrip. All rights reserved.
-</p>
-
-
-
-<div
-className="
-flex
-
-gap-5
-"
->
-
-<Link href="/privacy-policy">
-Privacy Policy
-</Link>
-
-<Link href="/terms">
-Terms
-</Link>
-
-</div>
-
-
-</div>
-
-
-
-</div>
-
-
-</footer>
-
-);
+  );
 
 }

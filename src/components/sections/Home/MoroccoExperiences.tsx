@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
+type MoroccoExperiencesProps = {
+  language?: "en" | "es";
+};
 
-const experiences = [
+const experiencesEn = [
   {
     title: "Sahara Desert Adventures",
     description:
@@ -10,7 +13,6 @@ const experiences = [
     image: "/images/home/MoroccoExperiences1.webp",
     link: "/tours",
   },
-
   {
     title: "Atlas Mountains Escape",
     description:
@@ -18,7 +20,6 @@ const experiences = [
     image: "/images/home/MoroccoExperiences2.webp",
     link: "/tours",
   },
-
   {
     title: "Moroccan Culture & Heritage",
     description:
@@ -26,7 +27,6 @@ const experiences = [
     image: "/images/home/MoroccoExperiences3.webp",
     link: "/tours",
   },
-
   {
     title: "Imperial Cities Journey",
     description:
@@ -36,14 +36,49 @@ const experiences = [
   },
 ];
 
+const experiencesEs = [
+  {
+    title: "Aventuras en el desierto del Sahara",
+    description:
+      "Descubre las dunas de Merzouga, paseos en camello, campamentos en el desierto y atardeceres inolvidables en el Sahara.",
+    image: "/images/home/MoroccoExperiences1.webp",
+    link: "/es/tours/3-dias-marrakech-merzouga",
+  },
+  {
+    title: "Montañas del Atlas",
+    description:
+      "Descubre paisajes de montaña, valles y pueblos tradicionales cerca de Marrakech.",
+    image: "/images/home/MoroccoExperiences2.webp",
+    link: "/es/excursiones/imlil",
+  },
+  {
+    title: "Cultura y patrimonio de Marruecos",
+    description:
+      "Explora antiguas medinas, mercados tradicionales, gastronomía marroquí y ciudades llenas de historia.",
+    image: "/images/home/MoroccoExperiences3.webp",
+    link: "/es/tours",
+  },
+  {
+    title: "Ciudades imperiales de Marruecos",
+    description:
+      "Descubre Marrakech, Rabat, Meknes y Fez en una ruta privada por algunas de las ciudades históricas más importantes del país.",
+    image: "/images/home/MoroccoExperiences4.webp",
+    link: "/es/tours/ciudades-imperiales-marruecos-7-dias",
+  },
+];
 
+export default function MoroccoExperiences({
+  language = "en",
+}: MoroccoExperiencesProps) {
+  const isSpanish = language === "es";
 
-export default function MoroccoExperiences() {
+  const experiences =
+    isSpanish
+      ? experiencesEs
+      : experiencesEn;
 
   return (
-
     <section className="bg-[hsl(var(--background))]">
-
 
       <div
         className="
@@ -51,18 +86,15 @@ export default function MoroccoExperiences() {
         max-w-7xl
         px-5
         py-16
-
         sm:px-8
         lg:px-10
         lg:py-20
         "
       >
 
-
         {/* Header */}
 
         <div className="max-w-3xl">
-
 
           <p
             className="
@@ -74,10 +106,10 @@ export default function MoroccoExperiences() {
             text-[hsl(var(--primary))]
             "
           >
-            Explore Morocco
+            {isSpanish
+              ? "Descubre Marruecos"
+              : "Explore Morocco"}
           </p>
-
-
 
           <h2
             className="
@@ -88,10 +120,10 @@ export default function MoroccoExperiences() {
             sm:text-5xl
             "
           >
-            Morocco Experiences Beyond the Ordinary
+            {isSpanish
+              ? "Experiencias únicas en Marruecos"
+              : "Morocco Experiences Beyond the Ordinary"}
           </h2>
-
-
 
           <p
             className="
@@ -101,14 +133,12 @@ export default function MoroccoExperiences() {
             text-[hsl(var(--text-secondary))]
             "
           >
-            Discover Morocco through unforgettable experiences,
-            from Sahara adventures and mountain escapes to cultural
-            discoveries created by local experts.
+            {isSpanish
+              ? "Descubre Marruecos a través de experiencias inolvidables, desde aventuras en el Sahara y paisajes del Atlas hasta medinas históricas y ciudades imperiales."
+              : "Discover Morocco through unforgettable experiences, from Sahara adventures and mountain escapes to cultural discoveries created by local experts."}
           </p>
 
-
         </div>
-
 
 
         {/* Cards */}
@@ -118,15 +148,12 @@ export default function MoroccoExperiences() {
           mt-12
           grid
           gap-8
-
           sm:grid-cols-2
           lg:grid-cols-4
           "
         >
 
-
-          {experiences.map((item)=>(
-
+          {experiences.map((item) => (
 
             <article
               key={item.title}
@@ -144,12 +171,7 @@ export default function MoroccoExperiences() {
               "
             >
 
-
               <Link href={item.link}>
-
-
-                {/* Image */}
-
 
                 <div
                   className="
@@ -158,7 +180,6 @@ export default function MoroccoExperiences() {
                   overflow-hidden
                   "
                 >
-
 
                   <Image
                     src={item.image}
@@ -173,21 +194,10 @@ export default function MoroccoExperiences() {
                     "
                   />
 
-
                 </div>
 
 
-
-
-                {/* Content */}
-
-
-                <div
-                  className="
-                  p-6
-                  "
-                >
-
+                <div className="p-6">
 
                   <h3
                     className="
@@ -201,8 +211,6 @@ export default function MoroccoExperiences() {
                     {item.title}
                   </h3>
 
-
-
                   <p
                     className="
                     mt-4
@@ -215,8 +223,6 @@ export default function MoroccoExperiences() {
                     {item.description}
                   </p>
 
-
-
                   <div
                     className="
                     mt-6
@@ -227,7 +233,9 @@ export default function MoroccoExperiences() {
                     text-[hsl(var(--primary))]
                     "
                   >
-                    Explore Experience
+                    {isSpanish
+                      ? "Explorar experiencia"
+                      : "Explore Experience"}
 
                     <span className="ml-2 transition-transform group-hover:translate-x-1">
                       →
@@ -235,26 +243,18 @@ export default function MoroccoExperiences() {
 
                   </div>
 
-
                 </div>
-
 
               </Link>
 
-
             </article>
-
 
           ))}
 
-
         </div>
-
 
       </div>
 
-
     </section>
-
   );
 }

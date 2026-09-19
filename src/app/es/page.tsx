@@ -12,6 +12,9 @@ import Reviews from "@/components/sections/Home/Reviews";
 import HomeSchema from "@/components/seo/HomeSchema";
 
 
+// ─────────────────────────────
+// HERO
+// ─────────────────────────────
 
 const heroSpanish = {
 
@@ -22,10 +25,10 @@ const heroSpanish = {
     "Viaje a Marruecos",
 
   subtitle:
-    "Experiencias privadas en el desierto del Sahara",
+    "Experiencias privadas en el desierto del Sáhara",
 
   description:
-    "Descubre Marruecos con tours privados, viajes personalizados y experiencias auténticas. Explora Marrakech, el desierto del Sahara y los lugares más increíbles con expertos locales.",
+    "Descubre Marruecos con tours privados, viajes personalizados y experiencias auténticas. Explora Marrakech, el desierto del Sáhara y algunos de los lugares más increíbles del país con expertos locales.",
 
   primaryButton:
     "Explorar tours por Marruecos",
@@ -36,8 +39,9 @@ const heroSpanish = {
 };
 
 
-
-
+// ─────────────────────────────
+// TRUST BAR
+// ─────────────────────────────
 
 const trustBarSpanish = {
 
@@ -45,8 +49,7 @@ const trustBarSpanish = {
     "Tripadvisor",
 
   tripadvisorSubtitle:
-    "Experiencia valorada",
-
+    "Opiniones de nuestro equipo",
 
   expertsTitle:
     "Expertos locales",
@@ -54,13 +57,11 @@ const trustBarSpanish = {
   expertsSubtitle:
     "Equipo basado en Marrakech",
 
-
   privateTitle:
     "Tours privados",
 
   privateSubtitle:
     "Viajes personalizados por Marruecos",
-
 
   authenticTitle:
     "Auténtico",
@@ -71,91 +72,77 @@ const trustBarSpanish = {
 };
 
 
-
-
+// ─────────────────────────────
+// REVIEWS
+// ─────────────────────────────
 
 const reviewsSpanish = {
 
   label:
     "Opiniones de viajeros",
 
-
   title:
     "Opiniones de viajeros sobre nuestros tours por Marruecos",
-
 
   titleHighlight:
     "",
 
-
   description:
-    "Moroccan Trip ofrece tours privados en Marruecos con el mismo equipo local detrás de Limitless Morocco Tours. Estas opiniones verificadas de Tripadvisor fueron compartidas por viajeros que descubrieron Marrakech, el desierto del Sahara y otros lugares de Marruecos con nuestro equipo.",
-
+    "Moroccan Trip ofrece tours privados en Marruecos con el mismo equipo local detrás de Limitless Morocco Tours. Estas opiniones fueron publicadas en Tripadvisor por viajeros que descubrieron Marrakech, el desierto del Sáhara y otros lugares de Marruecos con nuestro equipo.",
 
   verifiedText:
-    "Opiniones verificadas de Tripadvisor del perfil de Limitless Morocco Tours",
-
+    "Opiniones publicadas en Tripadvisor en el perfil de Limitless Morocco Tours",
 
   readMore:
     "Leer opinión completa",
 
-
   cta:
-    "Ver todas las opiniones en Tripadvisor",
+    "Ver opiniones del equipo en Tripadvisor",
 
 };
 
+
+// ─────────────────────────────
+// DEPARTURE CITIES
+// ─────────────────────────────
+
 const departureCitiesSpanish = {
 
-    label:
-      "Comienza tu viaje",
-  
-    title:
-      "Explora Marruecos desde",
-  
-    titleHighlight:
-      " tu ciudad de salida",
-  
-    description:
-      "Elige tu punto de partida y descubre tours privados por Marruecos diseñados según tu estilo de viaje y tus intereses.",
-  
-    startingPoint:
-      "Punto de salida",
-  
-    exploreTours:
-      "Explorar tours",
-  
-    toursFrom:
-      "Tours desde",
-  
-  };
+  label:
+    "Comienza tu viaje",
+
+  title:
+    "Explora Marruecos desde",
+
+  titleHighlight:
+    "tu ciudad de salida",
+
+  description:
+    "Elige tu punto de partida y descubre tours privados por Marruecos diseñados según tu estilo de viaje y tus intereses.",
+
+  startingPoint:
+    "Punto de salida",
+
+  exploreTours:
+    "Explorar tours",
+
+  toursFrom:
+    "Tours desde",
+
+};
 
 
-
+// ─────────────────────────────
+// SEO METADATA
+// ─────────────────────────────
 
 export const metadata: Metadata = {
-
 
   title:
     "Viaje a Marruecos | Tours Privados y Experiencias Auténticas",
 
-
-
   description:
-    "Descubre Marruecos con tours privados, viajes personalizados y experiencias auténticas. Explora Marrakech, el Sahara y Marruecos con expertos locales.",
-
-
-
-  keywords: [
-
-    "viaje a marruecos",
-    "viajes a marruecos",
-    "tours marruecos",
-    "tour privado marruecos",
-    "viaje organizado marruecos",
-
-  ],
-
+    "Descubre Marruecos con tours privados, viajes personalizados y experiencias auténticas. Explora Marrakech, el Sáhara y diferentes regiones con expertos locales.",
 
 
   alternates: {
@@ -163,8 +150,20 @@ export const metadata: Metadata = {
     canonical:
       "https://moroccan-trip.com/es",
 
-  },
+    languages: {
 
+      en:
+        "https://moroccan-trip.com/",
+
+      es:
+        "https://moroccan-trip.com/es",
+
+      "x-default":
+        "https://moroccan-trip.com/",
+
+    },
+
+  },
 
 
   openGraph: {
@@ -172,31 +171,23 @@ export const metadata: Metadata = {
     title:
       "Viaje a Marruecos | Tours Privados y Experiencias Auténticas",
 
-
     description:
       "Descubre Marruecos con tours privados, viajes personalizados y experiencias auténticas con expertos locales.",
-
 
     url:
       "https://moroccan-trip.com/es",
 
-
     siteName:
       "Moroccan Trip",
-
 
     type:
       "website",
 
-
     locale:
       "es_ES",
 
-
     images: [
-
       {
-
         url:
           "/images/home/og-home.webp",
 
@@ -207,14 +198,11 @@ export const metadata: Metadata = {
           630,
 
         alt:
-          "Viaje a Marruecos y tours privados en el desierto del Sahara",
-
+          "Viaje a Marruecos y tours privados en el desierto del Sáhara",
       },
-
     ],
 
   },
-
 
 
   twitter: {
@@ -222,72 +210,83 @@ export const metadata: Metadata = {
     card:
       "summary_large_image",
 
-
     title:
       "Viaje a Marruecos | Tours Privados y Experiencias Auténticas",
 
-
     description:
-      "Explora Marruecos con tours privados, aventuras en el Sahara y experiencias auténticas.",
+      "Explora Marruecos con tours privados, aventuras en el Sáhara y experiencias auténticas.",
 
-
-    images:
-
-      [
-        "/images/home/og-home.webp"
-      ],
+    images: [
+      "/images/home/og-home.webp"
+    ],
 
   },
-
 
 };
 
 
-
-
-
+// ─────────────────────────────
+// PAGE
+// ─────────────────────────────
 
 export default function SpanishHome() {
-
 
   return (
 
     <>
 
-
       <HomeSchema language="es" />
 
 
-      <Hero content={heroSpanish} />
+      <Hero
+        language="es"
+        content={heroSpanish}
+      />
 
 
-      <TrustBar content={trustBarSpanish} />
+      <TrustBar
+        content={trustBarSpanish}
+      />
 
 
-      <Reviews content={reviewsSpanish} />
+      <Reviews
+        content={reviewsSpanish}
+      />
 
 
-      <DepartureCities content={departureCitiesSpanish} />
+      <DepartureCities
+        language="es"
+        content={departureCitiesSpanish}
+      />
 
 
-      <FeaturedTours />
+      <FeaturedTours
+        language="es"
+      />
 
 
-      <MoroccoExperiences />
+      <MoroccoExperiences
+        language="es"
+      />
 
 
-      <DayTrips />
+      <DayTrips
+        language="es"
+      />
 
 
-      <TravelInspiration />
+      <TravelInspiration
+        language="es"
+      />
 
 
-      <FAQs />
-
+      <FAQs
+        language="es"
+        contactHref="/es/contacto"
+      />
 
     </>
 
   );
-
 
 }
