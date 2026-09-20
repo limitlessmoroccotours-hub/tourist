@@ -833,7 +833,7 @@ export const blogPostsEs: BlogPost[] = [
       seo:{
   
         title:
-          "Mejor época para viajar a Marruecos | Clima, meses y consejos",
+        "Mejor época para viajar a Marruecos | Clima",
   
   
         description:
