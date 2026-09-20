@@ -17879,5 +17879,803 @@ export const toursEs: Tour[] = [
       "Solicitar presupuesto",
   },
 },
+{
+  id: "27",
+
+  // ─────────────────────────────
+  // INFORMACIÓN BÁSICA
+  // ─────────────────────────────
+
+  slug:
+    "surf-camp-taghazout-8-dias",
+
+  title:
+    "Surf Camp en Taghazout de 8 días",
+
+  shortDescription:
+    "Disfruta de un surf camp en Taghazout de 8 días con alojamiento, clases de surf o surf guiding, transporte diario, Imsouane, Paradise Valley y traslados desde Agadir.",
+
+  image:
+    "/images/tours/8-day-taghazout-surf-camp.webp",
+
+  badge:
+    "Surf Camp Taghazout",
+
+  featured:
+    true,
+
+  category:
+    "Surf Camps en Marruecos",
+
+
+  // ─────────────────────────────
+  // DETALLES DEL TOUR
+  // ─────────────────────────────
+
+  duration:
+    "8 días / 7 noches",
+
+  nights:
+    7,
+
+  tourType:
+    "Tour privado",
+
+  groupSize:
+    "Hasta 4 personas",
+
+  languages:
+    ["Inglés", "Francés"],
+
+  departure:
+    "Agadir",
+
+  arrival:
+    "Agadir",
+
+  locations: [
+    "Agadir",
+    "Taghazout",
+    "Tamraght",
+    "Imsouane",
+    "Paradise Valley",
+    "Costa Atlántica",
+  ],
+
+
+  // ─────────────────────────────
+  // MAPA
+  // ─────────────────────────────
+
+  map: {
+    stops: [
+      {
+        name: "Agadir",
+        position: [30.4278, -9.5981],
+      },
+      {
+        name: "Tamraght",
+        position: [30.5111, -9.6742],
+      },
+      {
+        name: "Taghazout",
+        position: [30.5426, -9.7083],
+      },
+      {
+        name: "Paradise Valley",
+        position: [30.5929, -9.5314],
+      },
+      {
+        name: "Imsouane",
+        position: [30.8398, -9.8181],
+      },
+      {
+        name: "Agadir",
+        position: [30.4278, -9.5981],
+      },
+    ],
+  },
+
+
+  // ─────────────────────────────
+  // DESTACADOS
+  // ─────────────────────────────
+
+  highlights: [
+    "Disfruta de siete noches en la costa atlántica de Marruecos",
+    "Vive una experiencia completa de surf camp en Taghazout",
+    "Aprende a surfear o mejora tu nivel con sesiones adaptadas a tu experiencia",
+    "Practica surf en Taghazout y Tamraght en spots elegidos según las condiciones",
+    "Utiliza tabla de surf y neopreno durante las sesiones incluidas",
+    "Viaja cada día al spot más adecuado según las olas, la marea y tu nivel",
+    "Pasa dos noches en Imsouane y disfruta de más tiempo para surfear",
+    "Dedica un día completo al surf en Imsouane",
+    "Descansa del surf con una excursión a Paradise Valley",
+    "Disfruta de transporte organizado entre el alojamiento y los spots de surf",
+    "Combina surf, costa, naturaleza y tiempo libre en un solo viaje",
+    "Programa adecuado para principiantes, surfistas intermedios y surfistas con experiencia",
+    "Posibilidad de personalizar el viaje para parejas, amigos y grupos pequeños",
+    "Los acompañantes que no practican surf también pueden participar con un programa adaptado",
+    "Posibilidad de organizar recogida y traslado al aeropuerto de Agadir",
+  ],
+
+
+  // ─────────────────────────────
+  // DESCRIPCIÓN GENERAL
+  // ─────────────────────────────
+
+  overview: `
+    Disfruta de ocho días en la costa atlántica con este surf camp en Taghazout,
+    Marruecos. El viaje combina alojamiento, surf, transporte, pueblos costeros y
+    tiempo para relajarte.
+
+    La mayor parte del programa se desarrolla entre Taghazout y Tamraght, dos de las
+    zonas más conocidas para practicar surf en Marruecos. Las sesiones no siguen un
+    único spot. Cada día podemos elegir la playa según tu nivel, la marea, el swell
+    y las condiciones del mar.
+
+    Si nunca has hecho surf, comenzarás con las bases: seguridad, posición sobre la
+    tabla, remada, take-off y primeras olas. Si ya tienes experiencia, podemos adaptar
+    las sesiones para trabajar técnica, posicionamiento, lectura de olas o surf guiding.
+
+    Este surf camp en Marruecos no se limita a Taghazout. Después de varios días de
+    surf en la zona, tendrás una jornada de descanso en Paradise Valley y continuarás
+    hacia Imsouane.
+
+    Pasarás dos noches en Imsouane. Esto permite disfrutar de la zona con más calma y
+    tener un día completo dedicado al surf sin convertir la visita en una excursión
+    rápida de ida y vuelta.
+
+    Después regresarás hacia Taghazout o Tamraght para disfrutar de la última noche
+    junto al Atlántico.
+
+    El paquete puede adaptarse para parejas o amigos con diferentes niveles. Si una
+    persona quiere surfear y otra prefiere playa, yoga, hammam, naturaleza u otras
+    actividades, podemos organizar un programa más flexible.
+
+    Si buscas un surf camp Taghazout con alojamiento, transporte y diferentes zonas
+    de surf incluidas en el mismo viaje, esta ruta de 8 días ofrece una forma sencilla
+    de descubrir Taghazout, Tamraght e Imsouane.
+  `,
+
+
+  // ─────────────────────────────
+  // ITINERARIO
+  // ─────────────────────────────
+
+  itinerary: [
+
+    {
+      day: 1,
+
+      title:
+        "Llegada a Agadir – Traslado a Taghazout o Tamraght",
+
+      description: `
+        Tu viaje de surf comienza con la llegada a Agadir.
+
+        La recogida puede organizarse en el aeropuerto de Agadir Al Massira o en otro
+        punto acordado de la ciudad.
+
+        Desde Agadir viajaremos hacia el norte por la costa hasta Taghazout o Tamraght,
+        donde se encuentra tu alojamiento.
+
+        Después del check-in tendrás tiempo para instalarte y descansar.
+
+        Más tarde podrás conocer al equipo local y hablar sobre tu experiencia previa
+        con el surf.
+
+        Si eres principiante, prepararemos las primeras sesiones para aprender las bases
+        de forma progresiva.
+
+        Si ya tienes experiencia, podremos hablar sobre tu nivel, el tipo de olas que
+        buscas y si prefieres coaching o surf guiding.
+
+        El resto del día queda libre para caminar por el pueblo, disfrutar de la playa
+        o descansar antes de la primera jornada de surf.
+      `,
+
+      highlights: [
+        "Llegada a Agadir",
+        "Recogida en el aeropuerto cuando esté incluida",
+        "Traslado hacia Taghazout o Tamraght",
+        "Check-in en el alojamiento",
+        "Encuentro con el equipo local",
+        "Revisión de tu nivel de surf",
+        "Planificación de las primeras sesiones",
+        "Tiempo libre junto al Atlántico",
+        "Noche en Taghazout o Tamraght",
+      ],
+    },
+
+
+    {
+      day: 2,
+
+      title:
+        "Primer día de surf – Evaluación y clase adaptada a tu nivel",
+
+      description: `
+        Después del desayuno comienza tu primer día completo de surf en Taghazout.
+
+        El spot se elige según las condiciones del día y tu nivel. No utilizamos siempre
+        la misma playa porque las olas, la marea y el viento pueden cambiar.
+
+        Los principiantes comenzarán con seguridad, posición sobre la tabla, remada y
+        movimientos básicos para ponerse de pie.
+
+        Después podrás practicar en condiciones adecuadas acompañado por el instructor.
+
+        Los surfistas intermedios pueden utilizar esta primera sesión para evaluar su
+        nivel y trabajar aspectos como el posicionamiento, el timing o la selección de olas.
+
+        Si tienes más experiencia, puedes elegir surf guiding en lugar de una clase para
+        principiantes.
+
+        Después de la sesión tendrás tiempo para comer, descansar y recuperar energía.
+
+        Dependiendo de las condiciones y del paquete contratado, puede organizarse una
+        segunda sesión o dejar la tarde libre.
+      `,
+
+      highlights: [
+        "Desayuno antes de la sesión",
+        "Spot elegido según las condiciones",
+        "Clase de surf para principiantes",
+        "Evaluación para surfistas intermedios",
+        "Opción de surf guiding",
+        "Tabla y neopreno cuando estén incluidos",
+        "Transporte hasta el spot",
+        "Tiempo para comer y descansar",
+        "Segunda sesión opcional según condiciones",
+        "Noche en Taghazout o Tamraght",
+      ],
+    },
+
+
+    {
+      day: 3,
+
+      title:
+        "Surf en Taghazout y Tamraght – Día de progresión",
+
+      description: `
+        El tercer día está pensado para seguir mejorando tu surf.
+
+        Después del desayuno revisaremos las condiciones y viajaremos a un spot adecuado
+        para el grupo.
+
+        Si eres principiante, trabajarás sobre lo aprendido durante la primera sesión.
+        El objetivo es coger más olas, mejorar el take-off y ganar control sobre la tabla.
+
+        Los surfistas intermedios pueden trabajar lectura de olas, posicionamiento y
+        técnica.
+
+        Los surfistas con más experiencia pueden continuar con surf guiding y buscar
+        mejores condiciones a lo largo de la costa.
+
+        El programa sigue siendo flexible porque las condiciones pueden cambiar de un
+        día a otro.
+
+        Después del surf regresarás a Taghazout o Tamraght.
+
+        La tarde queda libre para descansar, disfrutar de la playa, tomar algo en el
+        pueblo o añadir yoga o estiramientos.
+      `,
+
+      highlights: [
+        "Segundo día completo de surf",
+        "Surf en Taghazout o Tamraght",
+        "Spot flexible según las condiciones",
+        "Progresión para principiantes",
+        "Trabajo técnico para nivel intermedio",
+        "Surf guiding para surfistas con experiencia",
+        "Transporte diario hasta el spot",
+        "Tarde libre después de la sesión",
+        "Yoga o estiramientos opcionales",
+        "Noche en Taghazout o Tamraght",
+      ],
+    },
+
+
+    {
+      day: 4,
+
+      title:
+        "Paradise Valley – Día de naturaleza y descanso",
+
+      description: `
+        Después de varios días de surf, haremos una pausa para descubrir otra parte de
+        la región de Agadir.
+
+        Después del desayuno viajaremos hacia Paradise Valley.
+
+        Dejaremos atrás la costa para entrar en un paisaje de montañas, palmeras y zonas
+        rocosas.
+
+        Tendrás tiempo para caminar, relajarte y disfrutar del entorno.
+
+        Esta jornada también ayuda a descansar el cuerpo antes de continuar con más días
+        de surf.
+
+        El almuerzo puede organizarse durante la excursión o realizarse por libre,
+        dependiendo del paquete elegido.
+
+        Regresaremos a Taghazout o Tamraght más tarde durante el día.
+
+        La noche queda libre. También se pueden solicitar actividades opcionales como
+        hammam, masaje o yoga cuando estén disponibles.
+      `,
+
+      highlights: [
+        "Desayuno en el alojamiento",
+        "Excursión a Paradise Valley",
+        "Paisajes de montaña y palmeras",
+        "Tiempo para caminar",
+        "Día de recuperación",
+        "Regreso a la costa",
+        "Hammam opcional",
+        "Masaje opcional",
+        "Yoga opcional",
+        "Noche en Taghazout o Tamraght",
+      ],
+    },
+
+
+    {
+      day: 5,
+
+      title:
+        "Taghazout o Tamraght – Imsouane – Sesión de surf",
+
+      description: `
+        Después del desayuno dejaremos la zona de Taghazout y Tamraght para viajar hacia
+        el norte por la costa atlántica.
+
+        La ruta continúa hasta Imsouane, otro destino conocido entre surfistas que viajan
+        por Marruecos.
+
+        Al llegar realizarás el check-in en el alojamiento.
+
+        Dependiendo de la hora, las condiciones del mar y tu nivel, podremos salir para
+        una primera sesión de surf en Imsouane.
+
+        Los principiantes pueden continuar practicando las habilidades aprendidas durante
+        los primeros días.
+
+        Los surfistas intermedios pueden trabajar recorridos más largos, posicionamiento
+        y control.
+
+        Si tienes experiencia, puedes realizar una sesión guiada según las condiciones.
+
+        Después del surf tendrás tiempo libre para disfrutar del ambiente tranquilo del
+        pueblo.
+
+        Pasarás la primera noche en Imsouane.
+      `,
+
+      highlights: [
+        "Ruta por la costa atlántica",
+        "Llegada a Imsouane",
+        "Check-in en el alojamiento",
+        "Primera sesión de surf en Imsouane",
+        "Progresión para principiantes",
+        "Trabajo para nivel intermedio",
+        "Surf guiding opcional",
+        "Tiempo libre en el pueblo",
+        "Primera noche en Imsouane",
+      ],
+    },
+
+
+    {
+      day: 6,
+
+      title:
+        "Día completo de surf en Imsouane",
+
+      description: `
+        El sexto día está dedicado completamente al surf en Imsouane.
+
+        Después del desayuno revisaremos las condiciones y organizaremos la sesión de la
+        mañana.
+
+        Tener dos noches en Imsouane permite pasar más tiempo en el agua sin tener que
+        regresar inmediatamente a Taghazout.
+
+        Los principiantes pueden seguir trabajando confianza, control de la tabla y
+        entrada en las olas.
+
+        Los surfistas intermedios pueden mejorar técnica y aprovechar mejor cada ola.
+
+        Los surfistas con experiencia pueden utilizar el conocimiento local para elegir
+        la mejor sesión disponible según las condiciones.
+
+        Después del surf tendrás tiempo para comer y descansar.
+
+        Si las condiciones y tu energía lo permiten, puede organizarse una segunda sesión.
+
+        También puedes pasar la tarde caminando por el pueblo, descansando junto al mar
+        o disfrutando de la puesta de sol.
+      `,
+
+      highlights: [
+        "Día completo en Imsouane",
+        "Sesión de surf por la mañana",
+        "Coaching adaptado a tu nivel",
+        "Tiempo para descansar entre sesiones",
+        "Segunda sesión opcional",
+        "Tiempo libre en el pueblo",
+        "Puesta de sol junto al Atlántico",
+        "Segunda noche en Imsouane",
+      ],
+    },
+
+
+    {
+      day: 7,
+
+      title:
+        "Última sesión de surf – Imsouane a Taghazout o Tamraght",
+
+      description: `
+        Disfruta del último día activo de este surf camp en Marruecos.
+
+        Dependiendo de las condiciones, podemos comenzar con una última sesión en
+        Imsouane o elegir un spot durante el regreso hacia el sur.
+
+        Para los principiantes será una oportunidad para aplicar todo lo aprendido
+        durante la semana.
+
+        Los surfistas intermedios pueden trabajar consistencia y selección de olas.
+
+        Los surfistas con experiencia pueden disfrutar de una última sesión guiada.
+
+        Después del surf regresaremos hacia Taghazout o Tamraght.
+
+        Allí realizarás el check-in para la última noche.
+
+        El resto del día queda libre para la playa, caminar por Taghazout, tomar algo
+        frente al mar o añadir una actividad de bienestar.
+      `,
+
+      highlights: [
+        "Última sesión de surf",
+        "Sesión adaptada a tu nivel",
+        "Spot elegido según las condiciones",
+        "Regreso hacia Taghazout o Tamraght",
+        "Tiempo libre junto al mar",
+        "Actividad wellness opcional",
+        "Última noche en la costa",
+      ],
+    },
+
+
+    {
+      day: 8,
+
+      title:
+        "Taghazout o Tamraght – Salida hacia Agadir",
+
+      description: `
+        Disfruta del desayuno y de tu última mañana junto al océano Atlántico.
+
+        Dependiendo de tu horario de salida, podrás tener algo de tiempo libre para la
+        playa, caminar por el pueblo, hacer compras o tomar un café.
+
+        A la hora acordada te recogeremos en el alojamiento.
+
+        El traslado continuará hacia Agadir.
+
+        Si lo necesitas, puede organizarse el traslado hasta el aeropuerto de Agadir
+        Al Massira según el horario de tu vuelo.
+
+        Aquí termina tu surf camp de 8 días después de descubrir Taghazout, Tamraght,
+        Imsouane, Paradise Valley y diferentes spots de la costa atlántica.
+
+        Si quieres continuar viajando por Marruecos, también podemos organizar un
+        traslado personalizado hacia tu siguiente destino.
+      `,
+
+      highlights: [
+        "Último desayuno",
+        "Tiempo libre según el horario",
+        "Recogida en el alojamiento",
+        "Traslado hacia Agadir",
+        "Traslado al aeropuerto cuando esté contratado",
+        "Fin del surf camp de 8 días",
+        "Traslado posterior personalizable",
+      ],
+    },
+
+  ],
+
+
+  // ─────────────────────────────
+  // INCLUIDO
+  // ─────────────────────────────
+
+  included: [
+    "Siete noches de alojamiento",
+    "Alojamiento en la zona de Taghazout o Tamraght",
+    "Dos noches de alojamiento en Imsouane",
+    "Desayuno diario",
+    "Traslado de llegada desde Agadir cuando esté incluido en el paquete",
+    "Traslado de salida hacia Agadir cuando esté incluido en el paquete",
+    "Clases de surf o surf guiding según el paquete elegido",
+    "Tabla de surf durante las sesiones programadas",
+    "Neopreno durante las sesiones programadas",
+    "Transporte diario hasta los spots seleccionados",
+    "Selección del spot según tu nivel y las condiciones del mar",
+    "Transporte entre Taghazout o Tamraght e Imsouane",
+    "Excursión a Paradise Valley",
+    "Coordinación local durante el viaje",
+    "Itinerario flexible según las condiciones del surf",
+  ],
+
+
+  // ─────────────────────────────
+  // NO INCLUIDO
+  // ─────────────────────────────
+
+  excluded: [
+    "Vuelos internacionales",
+    "Almuerzos y cenas salvo que estén incluidos en el paquete elegido",
+    "Bebidas",
+    "Seguro de viaje",
+    "Gastos personales",
+    "Hammam opcional",
+    "Masajes opcionales",
+    "Sesiones de yoga opcionales salvo que estén incluidas",
+    "Actividades opcionales no indicadas en el paquete elegido",
+    "Equipo de surf avanzado o específico salvo solicitud previa",
+    "Propinas",
+    "Servicios no mencionados en la sección de incluidos",
+  ],
+
+
+  // ─────────────────────────────
+  // ALOJAMIENTO
+  // ─────────────────────────────
+
+  accommodation: [
+    {
+      night: 1,
+      location: "Taghazout o Tamraght",
+      type: "Surf house, riad u hotel",
+    },
+    {
+      night: 2,
+      location: "Taghazout o Tamraght",
+      type: "Surf house, riad u hotel",
+    },
+    {
+      night: 3,
+      location: "Taghazout o Tamraght",
+      type: "Surf house, riad u hotel",
+    },
+    {
+      night: 4,
+      location: "Taghazout o Tamraght",
+      type: "Surf house, riad u hotel",
+    },
+    {
+      night: 5,
+      location: "Imsouane",
+      type: "Surf house, guesthouse u hotel",
+    },
+    {
+      night: 6,
+      location: "Imsouane",
+      type: "Surf house, guesthouse u hotel",
+    },
+    {
+      night: 7,
+      location: "Taghazout o Tamraght",
+      type: "Surf house, riad u hotel",
+    },
+  ],
+
+
+  // ─────────────────────────────
+  // GALERÍA
+  // ─────────────────────────────
+
+  gallery: [
+    "/images/tours/8-day-taghazout-surf-camp.webp",
+  ],
+
+
+  // ─────────────────────────────
+  // PREGUNTAS FRECUENTES
+  // ─────────────────────────────
+
+  faqs: [
+
+    {
+      question:
+        "¿Este surf camp en Taghazout es adecuado para principiantes?",
+
+      answer:
+        "Sí. El programa puede adaptarse a personas que nunca han practicado surf. Las primeras sesiones pueden incluir seguridad, remada, posición sobre la tabla, take-off y práctica progresiva en condiciones adecuadas.",
+    },
+
+    {
+      question:
+        "¿Necesito experiencia previa para participar?",
+
+      answer:
+        "No. Pueden participar principiantes, surfistas intermedios y personas con experiencia. Las sesiones se adaptan al nivel de cada viajero.",
+    },
+
+    {
+      question:
+        "¿Este Taghazout surf camp también sirve para surfistas intermedios?",
+
+      answer:
+        "Sí. Si ya tienes experiencia, las sesiones pueden centrarse en posicionamiento, lectura de olas, técnica, selección de olas y mayor consistencia en el agua.",
+    },
+
+    {
+      question:
+        "¿Ofrecéis surf guiding para surfistas con experiencia?",
+
+      answer:
+        "Sí. Los surfistas con experiencia pueden solicitar surf guiding en lugar de clases básicas. El spot se elige según tu nivel y las condiciones del día.",
+    },
+
+    {
+      question:
+        "¿Las clases de surf están incluidas todos los días?",
+
+      answer:
+        "El número exacto de clases depende del paquete contratado. El itinerario incluye varios días de surf, además de desplazamientos, tiempo de recuperación y una excursión a Paradise Valley.",
+    },
+
+    {
+      question:
+        "¿Los spots de surf se deciden antes del viaje?",
+
+      answer:
+        "No siempre. Las condiciones del Atlántico cambian, por lo que elegimos el spot según el swell, la marea, el viento y tu nivel. Esto permite mantener el programa flexible.",
+    },
+
+    {
+      question:
+        "¿Está incluido el equipo de surf?",
+
+      answer:
+        "La tabla y el neopreno pueden estar incluidos durante las sesiones programadas. Si necesitas equipo específico o quieres traer tu propia tabla, indícalo antes del viaje.",
+    },
+
+    {
+      question:
+        "¿Dónde nos alojamos durante el surf camp?",
+
+      answer:
+        "El itinerario incluye alojamiento en Taghazout o Tamraght y dos noches en Imsouane. El alojamiento exacto depende del presupuesto y del nivel de comodidad que prefieras.",
+    },
+
+    {
+      question:
+        "¿El viaje incluye surf en Imsouane?",
+
+      answer:
+        "Sí. El programa incluye dos noches en Imsouane y tiempo para realizar varias sesiones de surf según las condiciones.",
+    },
+
+    {
+      question:
+        "¿Paradise Valley está incluido?",
+
+      answer:
+        "Sí. El cuarto día está pensado como una jornada de naturaleza y recuperación con una excursión a Paradise Valley.",
+    },
+
+    {
+      question:
+        "¿Es un surf camp privado?",
+
+      answer:
+        "El viaje puede organizarse de forma privada para parejas, amigos, familias o grupos pequeños. Las clases y actividades se adaptan al paquete acordado.",
+    },
+
+    {
+      question:
+        "¿Puede venir conmigo una persona que no practica surf?",
+
+      answer:
+        "Sí. Los acompañantes que no practican surf pueden participar. Podemos organizar alojamiento, playa, Paradise Valley y otras actividades mientras tú realizas las sesiones.",
+    },
+
+    {
+      question:
+        "¿Se puede añadir yoga, hammam o masaje?",
+
+      answer:
+        "Sí. Yoga, hammam y masaje se pueden añadir como actividades opcionales según disponibilidad y la zona donde te alojes.",
+    },
+
+    {
+      question:
+        "¿Este surf camp incluye traslado desde Agadir?",
+
+      answer:
+        "La recogida y el traslado desde Agadir o el aeropuerto de Agadir Al Massira pueden incluirse en el paquete. Comparte los datos de tu vuelo para organizar el servicio.",
+    },
+
+    {
+      question:
+        "¿Se puede personalizar este surf camp en Marruecos?",
+
+      answer:
+        "Sí. Podemos adaptar el programa según tu nivel de surf, fechas, alojamiento, tamaño del grupo y actividades que quieras añadir.",
+    },
+
+    {
+      question:
+        "¿Qué pasa si las condiciones de surf no son buenas?",
+
+      answer:
+        "El programa es flexible. Podemos cambiar el spot, modificar la hora de la sesión o adaptar las actividades según las condiciones locales y la seguridad.",
+    },
+
+  ],
+
+
+  // ─────────────────────────────
+  // SEO
+  // ─────────────────────────────
+
+  seo: {
+
+    title:
+      "Surf Camp Taghazout 8 días | Surf en Marruecos",
+
+    description:
+      "Surf camp en Taghazout de 8 días con alojamiento, clases o surf guiding, transporte diario, Imsouane, Paradise Valley y traslados desde Agadir.",
+
+    // Mapa interno de keywords basado en Semrush España.
+    // No convertir este array en <meta name="keywords">.
+    //
+    // Primary:
+    // surf camp taghazout = Volume 210 / KD 13 / Commercial / Relevance 100
+    //
+    // Strong commercial + transactional opportunities:
+    // surf camp marruecos = 480 / KD 13 / Commercial
+    // surf en taghazout = 320 / KD 15 / Commercial
+    // taghazout surf camp = 140 / KD 8 / Transactional
+    // agadir surf camp = 170 / KD 10 / Transactional
+    // imsouane surf camp = 90 / KD 8 / Informational + Transactional
+
+    keywords: [
+      "surf camp taghazout",
+      "taghazout surf camp",
+      "surf camp marruecos",
+      "surf en taghazout",
+      "surf marruecos",
+      "surf en marruecos",
+      "agadir surf camp",
+      "imsouane surf camp",
+      "surf trip marruecos",
+      "taghazout surf",
+    ],
+
+  },
+
+
+  // ─────────────────────────────
+  // RESERVA
+  // ─────────────────────────────
+
+  booking: {
+    available: true,
+    minimumDays: 8,
+    customizable: true,
+    contactLabel: "Solicitar presupuesto",
+  },
+
+},
+
 
 ];
