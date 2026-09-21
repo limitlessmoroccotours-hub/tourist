@@ -4561,5 +4561,942 @@ export const blogPostsEs: BlogPost[] = [
       }
     
     },
+    {
+      id: "7",
+    
+      // ─────────────────────────────
+      // BASIC INFORMATION
+      // ─────────────────────────────
+    
+      slug:
+        "darija-arabe-marroqui",
+    
+      title:
+        "Darija: árabe marroquí, palabras y frases útiles para viajar",
+    
+      excerpt:
+        "Aprende palabras y frases sencillas en darija para viajar por Marruecos: hola, gracias, buenos días, compras, restaurantes y expresiones prácticas.",
+    
+      image:
+        "/images/blog/moroccan-arabic-darija.webp",
+    
+      category:
+        "Guía de viaje de Marruecos",
+    
+      author:
+        "Moroccan Trip",
+    
+      publishedAt:
+        "2026-09-21",
+    
+      readTime:
+        "13 min de lectura",
+    
+      featured:
+        false,
+    
+      // ─────────────────────────────
+      // INTRODUCTION
+      // ─────────────────────────────
+    
+      introduction: `
+    
+        El darija es el árabe marroquí que escucharás cada día durante un viaje por Marruecos.
+    
+        Se utiliza en conversaciones familiares, mercados, cafeterías, taxis, tiendas y muchas situaciones de la vida cotidiana.
+    
+        No necesitas aprender darija para viajar por Marruecos. En las principales zonas turísticas encontrarás muchas personas que hablan francés, inglés y, especialmente en algunas zonas del norte, también español.
+    
+        Sin embargo, conocer unas pocas palabras en marroquí puede hacer que las conversaciones sean más sencillas y cercanas.
+    
+        Saber cómo decir hola, gracias, por favor o cuánto cuesta algo puede ser útil cuando recorres una medina, compras en un zoco, entras en una cafetería o hablas con un conductor.
+    
+        Esta guía está pensada para viajeros. No necesitas estudiar gramática complicada ni memorizar cientos de palabras.
+    
+        Aquí encontrarás expresiones sencillas de árabe marroquí, explicadas de forma práctica para que puedas utilizarlas durante tu viaje.
+    
+      `,
+    
+      // ─────────────────────────────
+      // ARTICLE SECTIONS
+      // ─────────────────────────────
+    
+      sections: [
+    
+        {
+          id:
+            "que-es-darija",
+    
+          heading:
+            "¿Qué es el darija?",
+    
+          paragraphs: [
+    
+            `El darija es la variedad de árabe utilizada habitualmente en la vida cotidiana de Marruecos.`,
+    
+            `También puedes encontrarlo escrito como dariya. Las dos formas se utilizan para representar el nombre de esta manera de hablar cuando se escribe con letras latinas.`,
+    
+            `El darija se escucha en ciudades como Marrakech, Casablanca, Fez, Rabat, Tánger y muchas otras zonas del país.`,
+    
+            `También se utiliza en pueblos, mercados y conversaciones familiares.`,
+    
+            `Para un viajero, es la forma de árabe de Marruecos más útil cuando el objetivo es aprender saludos y expresiones sencillas para situaciones cotidianas.`
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "darija-o-dariya",
+    
+          heading:
+            "Darija o dariya: ¿es lo mismo?",
+    
+          paragraphs: [
+    
+            `Sí. Darija y dariya son dos maneras de escribir con letras latinas una palabra que normalmente escucharás hablada.`,
+    
+            `No existe una única forma de representar todos los sonidos del árabe marroquí utilizando el alfabeto latino.`,
+    
+            `Por eso puedes encontrar diferentes versiones de una misma palabra cuando buscas información en internet.`,
+    
+            `Lo mismo ocurre con muchas expresiones. Por ejemplo, la palabra utilizada para decir gracias puede aparecer escrita como shukran, chokran o choukran.`,
+    
+            `Si estás preparando un viaje, no necesitas preocuparte demasiado por estas diferencias. Lo importante es reconocer el sonido y utilizar la expresión de una forma comprensible.`
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "darija-idioma-o-dialecto",
+    
+          heading:
+            "¿El darija es un idioma o un dialecto marroquí?",
+    
+          paragraphs: [
+    
+            `El darija suele describirse como el dialecto marroquí del árabe porque está relacionado con el árabe y se utiliza principalmente en Marruecos.`,
+    
+            `En la vida diaria funciona como una forma completa de comunicación entre millones de personas.`,
+    
+            `El vocabulario, la pronunciación y algunas estructuras pueden ser diferentes del árabe estándar que se utiliza en medios de comunicación, documentos o situaciones formales.`,
+    
+            `También existen diferencias dentro del propio Marruecos. Una conversación en Casablanca puede sonar algo diferente de otra en Fez, Marrakech o el norte del país.`,
+    
+            `Para un visitante estas diferencias regionales no suelen ser un problema. Las expresiones básicas de esta guía son útiles en gran parte del país.`
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "arabe-marroqui-arabe-estandar",
+    
+          heading:
+            "Árabe marroquí y árabe estándar: ¿son iguales?",
+    
+          paragraphs: [
+    
+            `No son exactamente iguales.`,
+    
+            `El árabe estándar moderno aparece en situaciones formales, educación, noticias y diferentes tipos de comunicación escrita.`,
+    
+            `El árabe marroquí o darija es mucho más habitual en conversaciones informales del día a día.`,
+    
+            `Una persona marroquí puede utilizar darija con su familia o amigos y encontrar árabe estándar en un contexto más formal.`,
+    
+            `Si tu objetivo es viajar, pedir algo, saludar o mantener una conversación sencilla, las palabras de darija suelen ser más prácticas que estudiar expresiones formales.`
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "como-decir-hola-marruecos",
+    
+          heading:
+            "¿Cómo se dice hola en Marruecos?",
+    
+          paragraphs: [
+    
+            `Si buscas cómo se dice hola en Marruecos, una de las opciones más sencillas es Salam.`,
+    
+            `Es una palabra corta, fácil de recordar y muy útil para comenzar una conversación.`,
+    
+            `También escucharás Salam alaykum, un saludo tradicional muy utilizado en Marruecos y en otros países musulmanes.`,
+    
+            `Puedes utilizar un saludo al entrar en una tienda, conocer a tu guía, hablar con personal del alojamiento o comenzar una conversación durante el viaje.`
+    
+          ],
+    
+          bullets: [
+    
+            "Salam — Hola",
+    
+            "Salam alaykum — Hola / La paz sea contigo",
+    
+            "Wa alaykum salam — Respuesta habitual a Salam alaykum",
+    
+            "Labas? — ¿Todo bien? / ¿Cómo estás?",
+    
+            "Bikhir — Bien"
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "hola-en-marroqui",
+    
+          heading:
+            "Hola en marroquí: saludos fáciles para viajeros",
+    
+          paragraphs: [
+    
+            `Decir hola en marroquí no requiere aprender una frase larga.`,
+    
+            `Salam funciona en muchas situaciones y es una de las primeras palabras que merece la pena recordar antes de viajar.`,
+    
+            `No necesitas tener una pronunciación perfecta. Habla con naturalidad y escucha cómo responde la otra persona.`,
+    
+            `En zonas turísticas es normal continuar la conversación en español, francés o inglés si ambas personas comparten alguno de esos idiomas.`
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "gracias-en-marroqui",
+    
+          heading:
+            "¿Cómo se dice gracias en marroquí?",
+    
+          paragraphs: [
+    
+            `Shukran es una de las palabras más útiles para cualquier visitante.`,
+    
+            `Si buscas cómo se dice gracias en Marruecos, esta es una expresión sencilla que puedes utilizar durante todo el viaje.`,
+    
+            `Puedes decirla después de una comida, al recibir ayuda, al terminar una visita o simplemente como gesto de cortesía.`,
+    
+            `También puedes encontrar la palabra escrita como chokran o choukran. Son diferentes maneras de representar una pronunciación similar con letras latinas.`
+    
+          ],
+    
+          bullets: [
+    
+            "Shukran — Gracias",
+    
+            "Shukran bezaf — Muchas gracias",
+    
+            "Afak — Por favor",
+    
+            "Bslama — Adiós"
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "buenos-dias-arabe-marroqui",
+    
+          heading:
+            "Buenos días en árabe marroquí",
+    
+          paragraphs: [
+    
+            `Para decir buenos días en árabe marroquí puedes utilizar Sbah lkhir.`,
+    
+            `Es una expresión útil cuando ves al personal de tu riad por la mañana, te encuentras con tu conductor o empiezas una excursión.`,
+    
+            `Por la tarde o por la noche puedes escuchar Msa lkhir como saludo.`,
+    
+            `Aprender estos pequeños saludos puede ser más útil para un viaje que memorizar frases largas que probablemente no utilizarás.`
+    
+          ],
+    
+          bullets: [
+    
+            "Sbah lkhir — Buenos días",
+    
+            "Msa lkhir — Buenas tardes / Buenas noches",
+    
+            "Salam — Hola",
+    
+            "Bslama — Adiós"
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "palabras-en-marroqui",
+    
+          heading:
+            "Palabras en marroquí que merece la pena aprender",
+    
+          paragraphs: [
+    
+            `No necesitas un vocabulario grande para aprovechar algunas palabras en marroquí durante tus vacaciones.`,
+    
+            `Una lista corta puede ayudarte en saludos, compras, cafeterías y conversaciones sencillas.`,
+    
+            `Empieza con las expresiones que realmente puedas utilizar varias veces durante el viaje.`
+    
+          ],
+    
+          bullets: [
+    
+            "Salam — Hola",
+    
+            "Shukran — Gracias",
+    
+            "Afak — Por favor",
+    
+            "Bslama — Adiós",
+    
+            "Iyeh — Sí",
+    
+            "La — No",
+    
+            "Labas? — ¿Todo bien?",
+    
+            "Bikhir — Bien",
+    
+            "Chhal? — ¿Cuánto?",
+    
+            "Bghit — Quiero / Me gustaría",
+    
+            "Fin...? — ¿Dónde...?",
+    
+            "Ma fhemtsh — No entiendo"
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "frases-darija-compras",
+    
+          heading:
+            "Frases en darija para comprar en los zocos",
+    
+          paragraphs: [
+    
+            `Los mercados y zocos son lugares donde unas pocas palabras pueden resultar especialmente útiles.`,
+    
+            `No necesitas negociar una compra completa en árabe marroquí. Puedes utilizar una expresión sencilla y continuar la conversación en otro idioma si es necesario.`,
+    
+            `Chhal significa cuánto y es probablemente una de las palabras más prácticas para una visita a un mercado.`,
+    
+            `Antes de comprar, asegúrate de comprender el precio final. Si existe alguna duda, pide que te escriban la cantidad o utiliza la calculadora del teléfono.`
+    
+          ],
+    
+          bullets: [
+    
+            "Chhal? — ¿Cuánto?",
+    
+            "Chhal hada? — ¿Cuánto cuesta esto?",
+    
+            "Bghit hada — Quiero esto / Me gustaría esto",
+    
+            "La, shukran — No, gracias",
+    
+            "Shukran — Gracias"
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "darija-restaurantes",
+    
+          heading:
+            "Palabras en darija para restaurantes y cafeterías",
+    
+          paragraphs: [
+    
+            `En muchas zonas turísticas encontrarás cartas en francés, inglés o incluso español, por lo que no necesitas hablar darija para pedir comida.`,
+    
+            `Aun así, algunas palabras sencillas pueden hacer la experiencia más cercana.`,
+    
+            `Puedes comenzar con un saludo y utilizar Shukran cuando recibas tu comida o al terminar.`,
+    
+            `Si tienes una alergia o una necesidad alimentaria importante, no dependas únicamente de una frase memorizada. Explica claramente la situación en un idioma que el establecimiento pueda comprender y confirma los ingredientes.`
+    
+          ],
+    
+          bullets: [
+    
+            "Bghit... — Quiero / Me gustaría...",
+    
+            "Atay — Té",
+    
+            "Lma — Agua",
+    
+            "Khobz — Pan",
+    
+            "Bnin — Rico / Sabroso",
+    
+            "Shukran — Gracias"
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "darija-taxis-direcciones",
+    
+          heading:
+            "Darija para taxis y direcciones",
+    
+          paragraphs: [
+    
+            `Algunas palabras también pueden ayudarte cuando utilizas un taxi o intentas localizar un lugar.`,
+    
+            `Fin significa dónde y puede utilizarse antes del nombre de un lugar.`,
+    
+            `Sin embargo, para direcciones complicadas es mejor llevar la ubicación guardada en el teléfono.`,
+    
+            `Esto resulta especialmente útil cuando tu alojamiento está dentro de una medina con calles pequeñas y difíciles de explicar.`,
+    
+            `Para un traslado largo o un tour privado, normalmente será más sencillo hablar en español, francés o inglés si el conductor domina alguno de esos idiomas.`
+    
+          ],
+    
+          bullets: [
+    
+            "Fin...? — ¿Dónde...?",
+    
+            "Hna — Aquí",
+    
+            "Temma — Allí",
+    
+            "Chhal? — ¿Cuánto?",
+    
+            "Shukran — Gracias"
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "darija-hoteles-riads",
+    
+          heading:
+            "Darija en hoteles y riads",
+    
+          paragraphs: [
+    
+            `En hoteles y riads acostumbrados a recibir viajeros internacionales normalmente no necesitarás hablar árabe marroquí para registrarte o pedir información.`,
+    
+            `Muchos equipos turísticos utilizan varios idiomas.`,
+    
+            `Las palabras locales son más útiles como pequeños gestos cotidianos.`,
+    
+            `Decir Salam cuando llegas o Shukran cuando alguien te ayuda es suficiente para empezar.`,
+    
+            `No es necesario convertir cada conversación en una práctica de idiomas. Utiliza el darija cuando resulte natural y cambia a un idioma común cuando necesites explicar algo importante.`
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "aprender-darija",
+    
+          heading:
+            "Cómo aprender darija antes de viajar a Marruecos",
+    
+          paragraphs: [
+    
+            `Aprender darija para unas vacaciones no significa estudiar todo el idioma.`,
+    
+            `Para un primer viaje, puedes empezar con diez o quince expresiones que se adapten a las situaciones que vas a encontrar.`,
+    
+            `Si te gusta visitar mercados, aprende cómo preguntar un precio. Si viajas por tu cuenta, añade algunas palabras relacionadas con direcciones. Si te interesa la gastronomía, aprende varios términos para comidas y bebidas.`,
+    
+            `Escuchar las palabras es importante porque la escritura con letras latinas no siempre representa perfectamente la pronunciación.`,
+    
+            `La mejor estrategia es aprender poco, practicarlo varias veces y añadir vocabulario solamente cuando realmente te resulte útil.`
+    
+          ],
+    
+          bullets: [
+    
+            "Empieza por Salam y Shukran",
+    
+            "Aprende Afak para decir por favor",
+    
+            "Recuerda Chhal? para preguntar cuánto cuesta",
+    
+            "Aprende Bslama para despedirte",
+    
+            "Escucha la pronunciación además de leer las palabras",
+    
+            "Guarda las direcciones importantes en el teléfono",
+    
+            "Utiliza una aplicación de traducción para conversaciones complejas"
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "pronunciacion-arabe-marroqui",
+    
+          heading:
+            "¿Es difícil pronunciar el árabe marroquí?",
+    
+          paragraphs: [
+    
+            `Algunos sonidos del árabe marroquí pueden resultar nuevos para una persona que habla español.`,
+    
+            `También puedes notar que el darija se habla con rapidez y que algunas palabras parecen más cortas cuando las escuchas en una conversación real.`,
+    
+            `No necesitas imitar perfectamente cada sonido para utilizar una expresión básica.`,
+    
+            `Empieza por palabras cortas como Salam, Shukran y Bslama.`,
+    
+            `Escuchar cómo las utilizan personas locales te ayudará más que intentar aprender toda la pronunciación únicamente a partir de la escritura.`
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "por-que-palabras-darija-diferente-escritura",
+    
+          heading:
+            "¿Por qué las palabras en darija se escriben de formas diferentes?",
+    
+          paragraphs: [
+    
+            `Esta pregunta aparece rápidamente cuando empiezas a buscar palabras o frases de árabe marroquí.`,
+    
+            `El darija se utiliza principalmente de forma oral y, cuando se escribe informalmente con letras latinas, no existe un único sistema utilizado por todas las personas.`,
+    
+            `Una misma palabra puede aparecer con pequeñas diferencias según quién la haya escrito.`,
+    
+            `Por eso encuentras ejemplos como darija y dariya, o shukran, chokran y choukran.`,
+    
+            `En algunos mensajes también puedes ver números utilizados para representar determinados sonidos árabes.`,
+    
+            `Para un viaje corto no necesitas aprender todos estos sistemas. Concéntrate en las palabras que puedes reconocer y utilizar al hablar.`
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "darija-marrakech",
+    
+          heading:
+            "¿Necesitas hablar darija en Marrakech?",
+    
+          paragraphs: [
+    
+            `No. Puedes visitar Marrakech sin hablar darija.`,
+    
+            `La ciudad recibe viajeros de muchos países y en hoteles, riads, restaurantes, tours y otras empresas turísticas es habitual encontrar personas que hablan idiomas extranjeros.`,
+    
+            `Sin embargo, el darija forma parte de la vida cotidiana de la ciudad.`,
+    
+            `Lo escucharás constantemente en la medina, Jemaa el-Fna, mercados, taxis, cafeterías y conversaciones entre residentes.`,
+    
+            `Utilizar unas pocas palabras puede ayudarte a participar de una forma más cercana sin necesidad de mantener toda la conversación en árabe.`
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "darija-norte-marruecos",
+    
+          heading:
+            "Darija y español en el norte de Marruecos",
+    
+          paragraphs: [
+    
+            `El uso de idiomas cambia según la región de Marruecos.`,
+    
+            `En el norte, especialmente alrededor de ciudades como Tánger y Tetuán, puedes encontrar personas que también hablan español.`,
+    
+            `Esto puede facilitar la comunicación para viajeros procedentes de España.`,
+    
+            `El darija sigue estando muy presente en la vida cotidiana, por lo que aprender varios saludos continúa siendo útil aunque puedas comunicarte en español en algunas situaciones.`,
+    
+            `No debes asumir que todo el mundo habla español. La mejor opción es empezar con un saludo y comprobar qué idioma compartís.`
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "darija-atlas-desierto",
+    
+          heading:
+            "Darija en el Atlas y el desierto de Marruecos",
+    
+          paragraphs: [
+    
+            `Cuando sales de las grandes ciudades puedes encontrar todavía más variedad lingüística.`,
+    
+            `El darija se utiliza y se comprende ampliamente, pero las lenguas amaziges también tienen una gran presencia en diferentes zonas de montaña, rurales y del sur.`,
+    
+            `Un conductor, guía o anfitrión puede cambiar de un idioma a otro dependiendo de la persona con la que está hablando.`,
+    
+            `Para un viajero no es necesario dominar estas diferencias.`,
+    
+            `Utiliza las expresiones sencillas que conozcas y deja la comunicación más compleja para un idioma compartido o para tu guía local.`
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "errores-aprender-darija",
+    
+          heading:
+            "Errores habituales al aprender árabe marroquí para viajar",
+    
+          paragraphs: [
+    
+            `Uno de los errores más comunes es intentar memorizar demasiado antes del viaje.`,
+    
+            `Para unas vacaciones de una o dos semanas no necesitas cientos de palabras ni estudiar toda la gramática.`,
+    
+            `Otro error es preocuparse demasiado por las diferentes formas de escribir una palabra con letras latinas.`,
+    
+            `También conviene recordar que Marruecos es un país multilingüe. No todas las personas utilizan exactamente las mismas palabras, pronunciaciones o idiomas en cada región.`,
+    
+            `El objetivo debe ser comunicarte de forma sencilla, no hablar perfectamente.`
+    
+          ],
+    
+          bullets: [
+    
+            "No intentes aprender cientos de palabras antes de un viaje corto",
+    
+            "No te preocupes demasiado por pequeñas diferencias de escritura",
+    
+            "No esperes que todo Marruecos hable exactamente igual",
+    
+            "No utilices una frase memorizada para información médica importante",
+    
+            "No tengas miedo de cometer pequeños errores de pronunciación",
+    
+            "Prioriza expresiones que realmente puedas utilizar"
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "lista-darija-viajeros",
+    
+          heading:
+            "Lista rápida de palabras y frases en darija para viajeros",
+    
+          paragraphs: [
+    
+            `Si solamente quieres memorizar algunas expresiones antes de viajar, puedes empezar con esta lista.`,
+    
+            `Son palabras fáciles de utilizar en saludos, tiendas, cafeterías y conversaciones sencillas.`
+    
+          ],
+    
+          bullets: [
+    
+            "Salam — Hola",
+    
+            "Sbah lkhir — Buenos días",
+    
+            "Labas? — ¿Cómo estás? / ¿Todo bien?",
+    
+            "Bikhir — Bien",
+    
+            "Shukran — Gracias",
+    
+            "Shukran bezaf — Muchas gracias",
+    
+            "Afak — Por favor",
+    
+            "La, shukran — No, gracias",
+    
+            "Chhal? — ¿Cuánto?",
+    
+            "Bghit hada — Quiero esto / Me gustaría esto",
+    
+            "Fin...? — ¿Dónde...?",
+    
+            "Ma fhemtsh — No entiendo",
+    
+            "Bslama — Adiós"
+    
+          ]
+    
+        },
+    
+        {
+          id:
+            "conclusion-darija",
+    
+          heading:
+            "¿Merece la pena aprender darija antes de viajar?",
+    
+          paragraphs: [
+    
+            `Sí, siempre que mantengas el objetivo sencillo.`,
+    
+            `No necesitas hablar árabe marroquí con fluidez para disfrutar de Marruecos.`,
+    
+            `Un pequeño grupo de palabras como Salam, Shukran, Afak, Chhal y Bslama puede acompañarte durante todo el viaje.`,
+    
+            `Utiliza estas expresiones cuando resulte natural y cambia a español, francés, inglés o una aplicación de traducción cuando necesites explicar algo más complejo.`,
+    
+            `Aprender darija para viajar no consiste en hablar perfectamente. Consiste en comprender un poco mejor el entorno y facilitar pequeños momentos de comunicación durante tu recorrido por Marruecos.`,
+    
+            `Mientras visitas Marrakech, Fez, las montañas del Atlas o el Sáhara, probablemente escucharás muchas formas diferentes de hablar. Esa diversidad forma parte de la experiencia del viaje.`
+    
+          ]
+    
+        }
+    
+      ],
+    
+      // ─────────────────────────────
+      // RELATED TOURS
+      // Spanish slugs
+      // ─────────────────────────────
+    
+      relatedTours: [
+    
+        "3-dias-marrakech-merzouga",
+    
+        "marrakech-fez-desierto-3-dias",
+    
+        "marrakech-fez-desierto-4-dias"
+    
+      ],
+    
+      // ─────────────────────────────
+      // RELATED DAY TRIPS
+      // ─────────────────────────────
+    
+      relatedDayTrips: [
+    
+        "valle-de-ourika",
+    
+        "imlil",
+    
+        "cascadas-de-ouzoud-desde-marrakech",
+    
+        "desierto-de-agafay-desde-marrakech"
+    
+      ],
+    
+      // ─────────────────────────────
+      // RELATED SPECIAL OFFERS
+      // ─────────────────────────────
+    
+      relatedSpecialOffers: [
+    
+        "viaje-desierto-marruecos",
+    
+        "viajes-lujo-marruecos",
+    
+        "marruecos-con-ninos"
+    
+      ],
+    
+      // ─────────────────────────────
+      // FAQ
+      // ─────────────────────────────
+    
+      faqs: [
+    
+        {
+          question:
+            "¿Qué es el darija?",
+    
+          answer:
+            "El darija es la variedad de árabe utilizada habitualmente en la vida cotidiana de Marruecos. Se escucha en conversaciones, mercados, tiendas, taxis, cafeterías y hogares."
+        },
+    
+        {
+          question:
+            "¿Darija y dariya significan lo mismo?",
+    
+          answer:
+            "Sí. Darija y dariya son dos formas de escribir con letras latinas el nombre del árabe marroquí cotidiano. La escritura puede variar porque no existe una única transliteración informal."
+        },
+    
+        {
+          question:
+            "¿Cómo se dice hola en Marruecos?",
+    
+          answer:
+            "Salam es una forma sencilla y común de decir hola en Marruecos. También puedes escuchar Salam alaykum, un saludo tradicional ampliamente utilizado."
+        },
+    
+        {
+          question:
+            "¿Cómo se dice gracias en Marruecos?",
+    
+          answer:
+            "Shukran significa gracias y es una de las palabras más útiles para los viajeros. También puedes encontrarla escrita como chokran o choukran."
+        },
+    
+        {
+          question:
+            "¿Cómo se dice buenos días en árabe marroquí?",
+    
+          answer:
+            "Sbah lkhir es una expresión habitual para decir buenos días en árabe marroquí. Puedes utilizarla por la mañana con personal del alojamiento, guías, conductores o personas que conozcas durante el viaje."
+        },
+    
+        {
+          question:
+            "¿El darija es un idioma o un dialecto?",
+    
+          answer:
+            "El darija suele describirse como el dialecto marroquí del árabe. Es la forma de árabe utilizada habitualmente para la comunicación cotidiana en gran parte de Marruecos."
+        },
+    
+        {
+          question:
+            "¿Necesito hablar darija para viajar por Marruecos?",
+    
+          answer:
+            "No. Puedes viajar por Marruecos sin hablar darija. En las zonas turísticas se utilizan también francés, inglés y, en algunas zonas del norte, español. Aprender algunas palabras locales puede facilitar las conversaciones."
+        },
+    
+        {
+          question:
+            "¿Cuáles son las palabras en marroquí más útiles para un turista?",
+    
+          answer:
+            "Algunas de las palabras más prácticas son Salam para hola, Shukran para gracias, Afak para por favor, Chhal para preguntar cuánto cuesta algo y Bslama para despedirse."
+        },
+    
+        {
+          question:
+            "¿Es difícil aprender darija?",
+    
+          answer:
+            "Aprender a hablar darija con fluidez requiere tiempo, pero un viajero puede aprender rápidamente un pequeño grupo de saludos y expresiones prácticas para utilizar durante sus vacaciones."
+        },
+    
+        {
+          question:
+            "¿Por qué el árabe marroquí aparece escrito de diferentes maneras?",
+    
+          answer:
+            "El darija es principalmente oral y su escritura informal con letras latinas no sigue un único sistema. Por eso puedes encontrar palabras como darija y dariya o shukran y chokran escritas de varias formas."
+        }
+    
+      ],
+    
+      // ─────────────────────────────
+      // SEO
+      // ─────────────────────────────
+    
+      seo: {
+    
+        title:
+          "Darija: árabe marroquí y frases útiles para viajar",
+    
+        description:
+          "Aprende darija y árabe marroquí para viajar: hola, gracias, buenos días, palabras y frases sencillas para compras, restaurantes y situaciones diarias.",
+    
+        // PRIMARY:
+        // darija
+        //
+        // Strong Spain cluster from Semrush.
+        // Internal SEO keyword map only.
+        // Do not output as <meta name="keywords">.
+    
+        keywords: [
+    
+          "darija",
+    
+          "árabe marroquí",
+    
+          "arabe marroqui",
+    
+          "dariya",
+    
+          "dariya marroquí",
+    
+          "árabe de marruecos",
+    
+          "gracias en marroqui",
+    
+          "gracias en marroquí",
+    
+          "como se dice gracias en marruecos",
+    
+          "hola en marroqui",
+    
+          "hola en marroquí",
+    
+          "como se dice hola en marruecos",
+    
+          "cómo se dice hola en marruecos",
+    
+          "buenos dias en marroqui",
+    
+          "buenos días en marroquí",
+    
+          "buenos días en árabe marroquí",
+    
+          "palabras en marroquí",
+    
+          "palabras en marroqui",
+    
+          "palabras en darija",
+    
+          "dialecto marroqui",
+    
+          "dialecto marroquí",
+    
+          "darija idioma",
+    
+          "dariya idioma",
+    
+          "aprender darija",
+    
+          "frases en marroquí",
+    
+          "frases en darija"
+    
+        ]
+    
+      }
+    
+    },
   
   ];

@@ -3756,7 +3756,766 @@ export type BlogPost = {
           ],
         },
       },
+      {
+        id: "7",
       
+        // ─────────────────────────────
+        // BASIC INFORMATION
+        // ─────────────────────────────
+      
+        slug:
+          "moroccan-arabic-darija",
+      
+        title:
+          "Moroccan Arabic (Darija): Essential Words & Phrases for Travelers",
+      
+        excerpt:
+          "Learn useful Moroccan Arabic and Darija words for your trip, including greetings, thank you, shopping phrases, restaurant words and simple expressions for travelers.",
+      
+        image:
+          "/images/blog/moroccan-arabic-darija.webp",
+      
+        category:
+          "Morocco Travel Guide",
+      
+        author:
+          "Moroccan Trip",
+      
+        publishedAt:
+          "2026-09-21",
+      
+        readTime:
+          "13 min read",
+      
+        featured:
+          false,
+      
+        // ─────────────────────────────
+        // INTRODUCTION
+        // ─────────────────────────────
+      
+        introduction: `
+          Moroccan Arabic, commonly called Darija, is the everyday form of Arabic
+          used by millions of people across Morocco.
+      
+          Travelers hear it in markets, cafés, taxis, homes, small shops and normal
+          conversations throughout the country.
+      
+          You do not need to learn Moroccan Arabic before visiting Morocco. English
+          and French are widely used in many tourist areas, and people working in
+          hotels, riads, restaurants and tours often communicate in several
+          languages.
+      
+          Still, learning a few Moroccan Darija words can make everyday interactions
+          easier and more personal.
+      
+          A simple greeting, a polite thank you or knowing how to ask the price of
+          something can be useful whether you are exploring Marrakech, walking
+          through the medina of Fes, visiting an Atlas Mountain village or traveling
+          toward the Sahara Desert.
+      
+          This guide introduces practical Moroccan Arabic words and phrases for
+          travelers. The goal is not to teach complicated grammar. It is to give you
+          simple expressions that you can actually use during your trip.
+        `,
+      
+        // ─────────────────────────────
+        // ARTICLE SECTIONS
+        // ─────────────────────────────
+      
+        sections: [
+          {
+            id:
+              "what-is-moroccan-arabic",
+      
+            heading:
+              "What Is Moroccan Arabic?",
+      
+            paragraphs: [
+              `Moroccan Arabic is the variety of Arabic commonly spoken in everyday life in Morocco. It is usually known locally as Darija.`,
+      
+              `Darija developed over centuries and includes influences from Arabic, Amazigh languages and other languages that have been present in Morocco.`,
+      
+              `You will hear Moroccan Arabic in homes, streets, markets, restaurants, taxis and informal conversations.`,
+      
+              `It is different from the more formal Arabic used in news, official communication and many written situations.`,
+      
+              `For travelers, Darija is the most useful type of Arabic to recognize if your goal is simply to communicate during a holiday in Morocco.`,
+            ],
+          },
+      
+          {
+            id:
+              "what-is-darija",
+      
+            heading:
+              "What Is Darija?",
+      
+            paragraphs: [
+              `Darija is the common name for everyday Moroccan Arabic.`,
+      
+              `It is mainly a spoken language, although people also write it informally in messages, social media and online conversations.`,
+      
+              `Because there is no single spelling system used in every informal situation, the same Darija word may appear with different Latin spellings.`,
+      
+              `For example, a traveler may see the word for thank you written as shukran, chokran or choukran. These spellings are trying to represent a similar spoken expression.`,
+      
+              `Do not worry about finding one perfect English spelling. Listening carefully and using simple expressions naturally is more important.`,
+            ],
+          },
+      
+          {
+            id:
+              "moroccan-arabic-vs-standard-arabic",
+      
+            heading:
+              "Is Moroccan Arabic Different From Standard Arabic?",
+      
+            paragraphs: [
+              `Yes. Moroccan Arabic and Modern Standard Arabic are related, but they are used differently.`,
+      
+              `Modern Standard Arabic is used in many formal situations across the Arabic-speaking world, including news, official writing and some education.`,
+      
+              `Darija is much more common in everyday conversation inside Morocco.`,
+      
+              `The pronunciation, vocabulary and sentence structure can be different enough that Moroccan Darija may sound unfamiliar to someone who has studied only formal Arabic.`,
+      
+              `As a visitor, you do not need to understand these linguistic differences in detail. If you want a few expressions for cafés, shops, taxis and friendly conversations, Darija is the practical choice.`,
+            ],
+          },
+      
+          {
+            id:
+              "moroccan-dialect",
+      
+            heading:
+              "Is Darija a Moroccan Dialect?",
+      
+            paragraphs: [
+              `Darija is often described in travel guides as the Moroccan dialect of Arabic.`,
+      
+              `That description is useful for travelers because it helps distinguish everyday Moroccan speech from Modern Standard Arabic.`,
+      
+              `However, Darija is not exactly the same everywhere. Pronunciation and vocabulary can vary between regions, cities and communities.`,
+      
+              `Someone from Casablanca may speak slightly differently from someone in Fes, Marrakech or northern Morocco.`,
+      
+              `These regional differences should not concern visitors. The basic expressions in this guide are widely recognizable and useful for normal travel situations.`,
+            ],
+          },
+      
+          {
+            id:
+              "hello-in-moroccan",
+      
+            heading:
+              "How Do You Say Hello in Moroccan Arabic?",
+      
+            paragraphs: [
+              `One of the easiest Moroccan Arabic phrases to learn is a simple greeting.`,
+      
+              `Salam is commonly used as an informal hello and is easy for travelers to remember.`,
+      
+              `You may also hear Salam alaykum, a traditional greeting used throughout Morocco and many other Muslim communities.`,
+      
+              `Using a local greeting when entering a shop, meeting a guide or speaking with someone at your riad is a simple way to begin an interaction politely.`,
+            ],
+      
+            bullets: [
+              "Salam — Hello",
+              "Salam alaykum — Peace be upon you / Hello",
+              "Wa alaykum salam — Common reply to Salam alaykum",
+              "Labas? — Are you well? / How are things?",
+              "Bikhir — Good / Fine",
+            ],
+          },
+      
+          {
+            id:
+              "thank-you-in-moroccan",
+      
+            heading:
+              "How Do You Say Thank You in Moroccan Arabic?",
+      
+            paragraphs: [
+              `Shukran is the easiest and most useful way to say thank you in Moroccan Arabic.`,
+      
+              `It can be used in restaurants, shops, hotels, taxis and almost any normal travel situation.`,
+      
+              `You may see different spellings such as chokran or choukran because Darija written in Latin letters does not always follow one fixed system.`,
+      
+              `Learning this single expression is useful even if you do not plan to learn any other Moroccan Arabic words.`,
+            ],
+      
+            bullets: [
+              "Shukran — Thank you",
+              "Shukran bezaf — Thank you very much",
+              "Afak — Please",
+              "Bslama — Goodbye",
+            ],
+          },
+      
+          {
+            id:
+              "good-morning-moroccan-arabic",
+      
+            heading:
+              "How Do You Say Good Morning in Moroccan Arabic?",
+      
+            paragraphs: [
+              `A useful expression in the morning is Sbah lkhir.`,
+      
+              `You may hear it when entering a café, meeting your driver, greeting hotel staff or starting a tour.`,
+      
+              `During the evening, Msa lkhir is another common greeting.`,
+      
+              `Do not worry if your pronunciation is not perfect. Most people will understand that you are a visitor making an effort to use a local expression.`,
+            ],
+      
+            bullets: [
+              "Sbah lkhir — Good morning",
+              "Msa lkhir — Good evening",
+              "Bslama — Goodbye",
+            ],
+          },
+      
+          {
+            id:
+              "essential-moroccan-arabic-words",
+      
+            heading:
+              "Essential Moroccan Arabic Words for Travelers",
+      
+            paragraphs: [
+              `You do not need a large vocabulary for a short trip.`,
+      
+              `A small number of Moroccan Arabic words can help with greetings, shopping, food and simple everyday interactions.`,
+      
+              `Try learning the words you are most likely to use instead of memorizing a long list before your holiday.`,
+            ],
+      
+            bullets: [
+              "Salam — Hello",
+              "Shukran — Thank you",
+              "Afak — Please",
+              "Bslama — Goodbye",
+              "Iyeh — Yes",
+              "La — No",
+              "Bikhir — Fine / Good",
+              "Chhal? — How much?",
+              "Bghit — I want / I would like",
+              "Ma fhemtsh — I do not understand",
+            ],
+          },
+      
+          {
+            id:
+              "moroccan-arabic-phrases-shopping",
+      
+            heading:
+              "Useful Moroccan Arabic Phrases for Shopping",
+      
+            paragraphs: [
+              `Shopping in Moroccan souks can be one of the most memorable parts of a trip.`,
+      
+              `You will find spices, leather goods, carpets, pottery, lamps, clothing and handmade products in markets across the country.`,
+      
+              `You do not need to conduct an entire conversation in Darija, but understanding a few words can be helpful.`,
+      
+              `Chhal means how much and is one of the most practical Moroccan Arabic words for travelers.`,
+      
+              `Prices should always be clear before you agree to buy something. If you do not understand the amount, ask again rather than guessing.`,
+            ],
+      
+            bullets: [
+              "Chhal? — How much?",
+              "Chhal hada? — How much is this?",
+              "Bghit hada — I want this",
+              "La, shukran — No, thank you",
+              "Shukran — Thank you",
+            ],
+          },
+      
+          {
+            id:
+              "moroccan-arabic-restaurants",
+      
+            heading:
+              "Useful Darija Words in Restaurants and Cafés",
+      
+            paragraphs: [
+              `Restaurants and cafés are another place where a few simple Darija expressions can be useful.`,
+      
+              `In tourist areas, menus are often available in French or English, so you normally do not need Moroccan Arabic to order.`,
+      
+              `Still, using a local greeting and saying thank you after your meal is easy and appreciated.`,
+      
+              `If you have allergies or important dietary restrictions, do not rely only on a memorized phrase. Explain the requirement clearly in a language the restaurant understands and confirm ingredients when necessary.`,
+            ],
+      
+            bullets: [
+              "Bghit... — I would like...",
+              "Atay — Tea",
+              "Lma — Water",
+              "Khobz — Bread",
+              "Shukran — Thank you",
+              "Bnin — Delicious / Tasty",
+            ],
+          },
+      
+          {
+            id:
+              "moroccan-arabic-taxis-transport",
+      
+            heading:
+              "Moroccan Darija for Taxis and Transportation",
+      
+            paragraphs: [
+              `Knowing a few words can also help when using taxis or asking simple transportation questions.`,
+      
+              `The most important thing is to know the name of your destination clearly. Keep the address of your hotel or riad saved on your phone, especially in cities with large medinas.`,
+      
+              `Do not depend entirely on pronunciation when the destination is unfamiliar. Showing the location on a map can avoid confusion.`,
+      
+              `For longer transfers or private tours, English or French is often easier because you may need to discuss timing, stops and travel plans in more detail.`,
+            ],
+      
+            bullets: [
+              "Fin...? — Where is...?",
+              "Hna — Here",
+              "Temma — There",
+              "Chhal? — How much?",
+              "Shukran — Thank you",
+            ],
+          },
+      
+          {
+            id:
+              "moroccan-darija-hotels-riads",
+      
+            heading:
+              "Useful Words at Hotels and Riads",
+      
+            paragraphs: [
+              `Most riads and hotels that regularly welcome international travelers have staff who speak English, French or both.`,
+      
+              `You therefore do not need Darija to check in or manage normal hotel arrangements.`,
+      
+              `Local expressions are still useful for friendly everyday communication with staff.`,
+      
+              `A simple Salam in the morning or Shukran when someone helps with your luggage can be easier to remember than trying to learn complicated sentences.`,
+            ],
+      
+            bullets: [
+              "Salam — Hello",
+              "Sbah lkhir — Good morning",
+              "Shukran — Thank you",
+              "Afak — Please",
+              "Bslama — Goodbye",
+            ],
+          },
+      
+          {
+            id:
+              "numbers-in-moroccan-darija",
+      
+            heading:
+              "Do You Need to Learn Numbers in Moroccan Darija?",
+      
+            paragraphs: [
+              `Learning a few numbers can be useful, but it is not essential for most travelers.`,
+      
+              `Prices in tourist shops, restaurants and hotels can usually be written down or shown on a calculator when communication is difficult.`,
+      
+              `This is often easier than trying to understand numbers quickly in a busy market.`,
+      
+              `If you enjoy learning languages, numbers are useful. If your trip is soon, prioritize greetings, thank you, please and how much before trying to memorize a complete number system.`,
+            ],
+          },
+      
+          {
+            id:
+              "darija-pronunciation",
+      
+            heading:
+              "Is Moroccan Arabic Difficult to Pronounce?",
+      
+            paragraphs: [
+              `Some Darija sounds may be unfamiliar to English speakers.`,
+      
+              `You may also notice that Moroccan Arabic is spoken quickly and that words sometimes sound shorter than expected.`,
+      
+              `This does not mean you need perfect pronunciation before using a phrase.`,
+      
+              `Start with short expressions such as Salam, Shukran and Bslama. Listen to how local people say them and gradually adjust your pronunciation.`,
+      
+              `Trying to communicate politely is more useful than worrying about speaking with a perfect accent.`,
+            ],
+          },
+      
+          {
+            id:
+              "darija-latin-spelling",
+      
+            heading:
+              "Why Are Moroccan Arabic Words Spelled Differently Online?",
+      
+            paragraphs: [
+              `Travelers researching Moroccan Arabic phrases often notice that the same word can have several spellings.`,
+      
+              `This happens because Darija is commonly spoken, while informal Latin-letter writing does not use one universal spelling system.`,
+      
+              `A sound may be represented differently depending on the writer's first language and the system they prefer.`,
+      
+              `You may therefore see Shukran, Chokran and Choukran referring to the same basic expression.`,
+      
+              `Some online writing also uses numbers to represent Arabic sounds that do not have an obvious equivalent in the Latin alphabet.`,
+      
+              `For a short holiday, you do not need to master these systems. Focus on recognizing the spoken expressions you expect to use.`,
+            ],
+          },
+      
+          {
+            id:
+              "french-english-and-darija",
+      
+            heading:
+              "Should Travelers Learn Darija, French or English?",
+      
+            paragraphs: [
+              `For most visitors, you do not need to learn a complete new language before traveling to Morocco.`,
+      
+              `English is common in many tourism businesses and is increasingly used by younger Moroccans.`,
+      
+              `French is also widely used in hotels, restaurants, businesses and urban areas.`,
+      
+              `Darija becomes most useful when you want to greet people, handle small everyday interactions or show interest in local culture.`,
+      
+              `The best approach is usually to travel using the language you already speak while learning a small group of Moroccan Darija phrases for friendly everyday use.`,
+            ],
+          },
+      
+          {
+            id:
+              "learn-moroccan-darija-before-trip",
+      
+            heading:
+              "How Much Moroccan Darija Should You Learn Before Your Trip?",
+      
+            paragraphs: [
+              `You can travel around Morocco without studying Darija for months.`,
+      
+              `For most first-time visitors, ten to fifteen practical expressions are enough to make a noticeable difference.`,
+      
+              `Start with greetings and polite words, then add expressions connected with your travel style.`,
+      
+              `If you enjoy shopping, learn how to ask the price. If you are traveling independently, learn simple direction words. If food is an important part of your trip, add a few restaurant expressions.`,
+      
+              `Learning phrases that you will actually use is more effective than memorizing vocabulary without context.`,
+            ],
+      
+            bullets: [
+              "Learn Salam for hello",
+              "Learn Shukran for thank you",
+              "Learn Afak for please",
+              "Learn Chhal? for asking how much",
+              "Learn Bslama for goodbye",
+              "Save important addresses on your phone",
+              "Use a translation app for more complicated conversations",
+            ],
+          },
+      
+          {
+            id:
+              "darija-in-marrakech",
+      
+            heading:
+              "Using Moroccan Arabic in Marrakech",
+      
+            paragraphs: [
+              `Marrakech receives visitors from around the world, so travelers can normally communicate in English or French in hotels, restaurants and major tourism businesses.`,
+      
+              `Darija is still the language you will hear frequently in normal local conversations.`,
+      
+              `You may hear it in the medina, Jemaa el-Fna, cafés, taxis, neighborhood shops and markets.`,
+      
+              `Using simple expressions such as Salam and Shukran is enough for most visitors who want to make their interactions feel more local without trying to conduct an entire conversation in Arabic.`,
+            ],
+          },
+      
+          {
+            id:
+              "darija-in-fes",
+      
+            heading:
+              "Using Darija in Fes",
+      
+            paragraphs: [
+              `Fes is another city where Moroccan Arabic is part of everyday life.`,
+      
+              `Inside the historic medina, you will hear Darija used among residents, artisans, shop owners and families.`,
+      
+              `Tour guides and businesses serving international travelers often speak other languages as well.`,
+      
+              `Because the medina is large and its streets can be difficult to navigate, keeping the address of your accommodation on your phone is more useful than trying to memorize complicated direction phrases.`,
+            ],
+          },
+      
+          {
+            id:
+              "darija-atlas-sahara",
+      
+            heading:
+              "Darija in the Atlas Mountains and Sahara Region",
+      
+            paragraphs: [
+              `Travel outside Morocco's major cities introduces you to an even more diverse linguistic environment.`,
+      
+              `Darija is widely understood and spoken in many places, but Amazigh languages are also important in mountain, rural and southern communities.`,
+      
+              `Your guide, driver or accommodation host may move between several languages depending on who they are speaking with.`,
+      
+              `For visitors, this is another reason not to worry about becoming fluent in Darija. A few respectful expressions are useful, while local guides can help when more detailed communication is necessary.`,
+            ],
+          },
+      
+          {
+            id:
+              "common-darija-mistakes",
+      
+            heading:
+              "Common Mistakes When Learning Moroccan Arabic for Travel",
+      
+            paragraphs: [
+              `The biggest mistake is trying to learn too much immediately.`,
+      
+              `You do not need complicated grammar or hundreds of Moroccan Arabic words for a one or two week trip.`,
+      
+              `Another common mistake is becoming too concerned about Latin spelling. The goal is communication, not passing a written language exam.`,
+      
+              `Travelers should also avoid assuming that every person in Morocco communicates in exactly the same way. The country is multilingual and language use changes between regions, generations and situations.`,
+            ],
+      
+            bullets: [
+              "Do not try to memorize hundreds of words before a short trip",
+              "Do not worry about small differences in Latin spelling",
+              "Do not expect everyone to speak the same languages",
+              "Do not rely on one memorized sentence for important medical or dietary information",
+              "Do not worry about having a perfect accent",
+              "Focus on short expressions you can use confidently",
+            ],
+          },
+      
+          {
+            id:
+              "simple-darija-cheat-sheet",
+      
+            heading:
+              "Quick Moroccan Darija Cheat Sheet for Travelers",
+      
+            paragraphs: [
+              `If you only want to remember a few expressions before arriving in Morocco, start with this short list.`,
+      
+              `These phrases cover the most common situations for greetings, politeness and simple shopping interactions.`,
+            ],
+      
+            bullets: [
+              "Salam — Hello",
+              "Sbah lkhir — Good morning",
+              "Labas? — How are things?",
+              "Bikhir — Fine / Good",
+              "Shukran — Thank you",
+              "Shukran bezaf — Thank you very much",
+              "Afak — Please",
+              "La, shukran — No, thank you",
+              "Chhal? — How much?",
+              "Bghit hada — I would like this",
+              "Ma fhemtsh — I do not understand",
+              "Bslama — Goodbye",
+            ],
+          },
+      
+          {
+            id:
+              "final-moroccan-arabic-advice",
+      
+            heading:
+              "Final Advice for Learning Moroccan Arabic Before Your Trip",
+      
+            paragraphs: [
+              `Moroccan Arabic can make your trip more interesting, but it should not become another stressful task before your holiday.`,
+      
+              `You can travel comfortably through Morocco without speaking Darija fluently.`,
+      
+              `Start with a few useful Moroccan Arabic phrases such as Salam, Shukran, Afak, Chhal and Bslama.`,
+      
+              `Use them naturally when the opportunity appears, and rely on English, French, translation apps or your local guide when you need to communicate something more complicated.`,
+      
+              `The purpose of learning Darija for travel is not perfection. It is to make simple interactions easier and create small moments of connection during your journey through Morocco.`,
+            ],
+          },
+        ],
+      
+        // ─────────────────────────────
+        // RELATED TOURS
+        // Slugs must match src/data/tours.ts
+        // ─────────────────────────────
+      
+        relatedTours: [
+          "3-day-desert-tour-marrakech-merzouga",
+          "5-day-marrakech-fes-desert-tour",
+          "10-day-morocco-tour-from-casablanca",
+        ],
+      
+        // ─────────────────────────────
+        // RELATED DAY TRIPS
+        // Slugs must match src/data/dayTrips.ts
+        // ─────────────────────────────
+      
+        relatedDayTrips: [
+          "ourika-valley-day-trip-from-marrakech",
+          "imlil-day-trip-from-marrakech",
+          "agafay-desert-day-trip-from-marrakech",
+          "essaouira-day-trip-from-marrakech",
+        ],
+      
+        // ─────────────────────────────
+        // RELATED SPECIAL OFFERS
+        // Slugs must match src/data/specialOffers.ts
+        // ─────────────────────────────
+      
+        relatedSpecialOffers: [
+          "morocco-desert-tour",
+          "morocco-family-tours",
+          "morocco-luxury-tours",
+        ],
+      
+        // ─────────────────────────────
+        // FAQ
+        // ─────────────────────────────
+      
+        faqs: [
+          {
+            question:
+              "What is Moroccan Arabic?",
+      
+            answer:
+              "Moroccan Arabic is the everyday variety of Arabic commonly spoken in Morocco. It is usually called Darija and is used in homes, markets, cafés, taxis and normal daily conversations.",
+          },
+      
+          {
+            question:
+              "Is Moroccan Arabic the same as Darija?",
+      
+            answer:
+              "Yes. Darija is the common name used for everyday Moroccan Arabic. Pronunciation and vocabulary can vary slightly between different regions of Morocco.",
+          },
+      
+          {
+            question:
+              "How do you say hello in Moroccan Arabic?",
+      
+            answer:
+              "Salam is a simple and common way to say hello. You may also hear Salam alaykum, which is a traditional greeting widely used in Morocco.",
+          },
+      
+          {
+            question:
+              "How do you say thank you in Moroccan?",
+      
+            answer:
+              "Shukran is the most useful way to say thank you. You may also see it written as chokran or choukran because Latin spelling of Darija can vary.",
+          },
+      
+          {
+            question:
+              "How do you say good morning in Moroccan Arabic?",
+      
+            answer:
+              "Sbah lkhir is a common way to say good morning in Moroccan Arabic. It is useful when greeting hotel staff, drivers, guides, shopkeepers or local people in the morning.",
+          },
+      
+          {
+            question:
+              "Do I need to speak Moroccan Arabic when visiting Morocco?",
+      
+            answer:
+              "No. Travelers can visit Morocco without speaking Darija. English and French are widely used in many tourism businesses, while a few basic Darija expressions can make everyday interactions easier.",
+          },
+      
+          {
+            question:
+              "What are the most useful Moroccan Arabic words for travelers?",
+      
+            answer:
+              "Useful words include Salam for hello, Shukran for thank you, Afak for please, Chhal for how much and Bslama for goodbye. These expressions cover many common travel situations.",
+          },
+      
+          {
+            question:
+              "Is Moroccan Darija difficult to learn?",
+      
+            answer:
+              "Learning fluent Darija takes time, but travelers can learn a small group of practical words quite quickly. Start with greetings, polite expressions and phrases connected with situations you expect to encounter.",
+          },
+      
+          {
+            question:
+              "Why are Moroccan Arabic words spelled differently?",
+      
+            answer:
+              "Darija is mainly spoken, and informal Latin-letter writing does not follow one universal spelling system. This is why the same expression may appear with several slightly different spellings online.",
+          },
+      
+          {
+            question:
+              "Can I use English instead of Darija in Morocco?",
+      
+            answer:
+              "English is commonly used in many hotels, riads, tours, restaurants and tourist destinations. In less touristy places, French or local languages may be more common, so a translation app or local guide can be useful.",
+          },
+        ],
+      
+        // ─────────────────────────────
+        // SEO
+        // ─────────────────────────────
+      
+        seo: {
+          title:
+            "Moroccan Arabic (Darija): Words & Phrases for Travelers",
+      
+          description:
+            "Learn Moroccan Arabic and Darija with useful words and phrases for travelers, including greetings, thank you, shopping, food and simple travel expressions.",
+      
+          // Primary:
+          // moroccan arabic
+          //
+          // Secondary semantic targets based on Semrush research.
+          // Internal SEO keyword map only.
+          // Do not output these as a meta keywords tag.
+      
+          keywords: [
+            "moroccan arabic",
+            "moroccan darija",
+            "moroccan arabic phrases",
+            "moroccan arabic words",
+            "moroccan dialect",
+            "moroccan darija phrases",
+            "learn moroccan darija",
+            "hello in moroccan",
+            "thank you in moroccan",
+            "how do you say hello in moroccan",
+            "how do you say thank you in moroccan",
+            "good morning in moroccan arabic",
+            "darija words",
+            "darija phrases",
+            "moroccan arabic for travelers",
+            "moroccan arabic for tourists",
+            "basic moroccan arabic",
+            "useful darija phrases",
+          ],
+        },
+      },
       
   ];
 
