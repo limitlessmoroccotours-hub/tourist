@@ -7,6 +7,7 @@ import "leaflet/dist/leaflet.css";
 import Footer from "@/components/Layout/Footer";
 import Header from "@/components/Layout/Header";
 import { Toaster } from "sonner";
+import Script from "next/script";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -107,6 +108,23 @@ export default function RootLayout({
       className={`${cormorant.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
+
+<Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-WR454372L0"
+  strategy="afterInteractive"
+/>
+
+<Script id="google-analytics" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WR454372L0', {
+  page_path: window.location.pathname,
+});
+  `}
+</Script>
         <Header />
 
         <main className="w-full flex-1 bg-background">
