@@ -1398,44 +1398,6 @@ Si tus planes todavía son flexibles, simplemente dinos qué te gustaría descub
 </p>
 
 
-
-
-
-
-
-<Link
-
-href="/es/viajes-organizados"
-
-className="
-mt-6
-inline-flex
-items-center
-gap-2
-font-bold
-text-primary
-hover:underline
-"
-
->
-
-Planifica tu viaje a Marruecos
-
-
-<ArrowUpRight
-
-className="
-h-4
-w-4
-"
-
-/>
-
-
-</Link>
-
-
-
 </div>
 
 
