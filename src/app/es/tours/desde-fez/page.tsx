@@ -658,7 +658,7 @@ export default function ToursDesdeFezPage() {
 
   <Link
 
-    href="/es/contact"
+    href="/es/contacto"
 
     className="
     mt-8

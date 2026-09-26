@@ -567,7 +567,7 @@ export default async function ExcursionPage({
 
               <Link
 
-                href="/es/contact"
+                href="/es/contacto"
 
                 className="inline-flex h-13 items-center justify-center gap-2 rounded-full bg-[hsl(var(--primary))] px-7 text-sm font-bold text-white shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:bg-[hsl(var(--primary-hover))]"
 
@@ -1496,7 +1496,7 @@ className="mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10"
 
             <Link
 
-              href="/es/contact"
+              href="/es/contacto"
 
               className="mt-8 inline-flex h-12 items-center justify-center rounded-full bg-[hsl(var(--primary))] px-8 text-sm font-bold text-white transition-all hover:-translate-y-0.5"
 

@@ -597,7 +597,7 @@ export default function ToursDesdeMarrakechPage() {
 
   <Link
 
-    href="/es/contact"
+    href="/es/contacto"
 
     className="
     mt-8

@@ -137,7 +137,7 @@ Creamos viajes a Marruecos personalizados según tus intereses, fechas y estilo 
 
 <Link
 
-href="/es/contact"
+href="/es/contacto"
 
 className="
 rounded-full
@@ -808,7 +808,7 @@ Cuéntanos qué quieres descubrir en Marruecos. Nuestro equipo creará un viaje 
 
 <Link
 
-href="/es/contact"
+href="/es/contacto"
 
 className="
 mt-8

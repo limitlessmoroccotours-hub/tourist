@@ -1449,7 +1449,7 @@ export default function BlogPage(){
 
               <Link
 
-                href="/es/contact"
+                href="/es/contacto"
 
                 className="
                 inline-flex

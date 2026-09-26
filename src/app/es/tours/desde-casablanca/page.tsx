@@ -659,7 +659,7 @@ export default function ToursDesdeCasablancaPage() {
 
   <Link
 
-    href="/es/contact"
+   href="/es/contacto"
 
     className="
     mt-8

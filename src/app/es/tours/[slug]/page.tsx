@@ -534,7 +534,7 @@ export default async function SpanishTourPage({
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
 
                 <Link
-                  href="/contact"
+                  href="/es/contacto"
                   className="group inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[hsl(var(--primary))] px-7 text-sm font-bold text-[hsl(var(--primary-foreground))] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[hsl(var(--primary-hover))] hover:shadow-lg"
                 >
                   {tour.booking.contactLabel}
@@ -1421,7 +1421,7 @@ export default async function SpanishTourPage({
                   </p>
 
                   <Link
-                    href="/contact"
+                    href="/es/contacto"
                     className="mt-7 inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[hsl(var(--background))] px-7 text-sm font-bold text-[hsl(var(--heading))] transition-transform duration-200 hover:-translate-y-0.5"
                   >
                     {tour.booking.contactLabel}
@@ -1504,7 +1504,7 @@ export default async function SpanishTourPage({
                   </div>
 
                   <Link
-                    href="/contact"
+                    href="/es/contacto"
                     className="mt-6 flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[hsl(var(--primary))] px-6 text-sm font-bold text-[hsl(var(--primary-foreground))] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[hsl(var(--primary-hover))] hover:shadow-lg"
                   >
                     {tour.booking.contactLabel}
@@ -1558,7 +1558,7 @@ export default async function SpanishTourPage({
             </div>
 
             <Link
-              href="/contact"
+              href="/es/contacto"
               className="inline-flex h-11 shrink-0 items-center justify-center rounded-full bg-[hsl(var(--primary))] px-5 text-sm font-bold text-[hsl(var(--primary-foreground))]"
             >
               {tour.booking.contactLabel}

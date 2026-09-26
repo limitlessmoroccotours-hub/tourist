@@ -517,7 +517,7 @@ Ofertas especiales
 
 <Link
 
-href="/es/contact"
+href="/es/contacto"
 
 className="rounded-full bg-[hsl(var(--primary))] px-8 py-4 text-sm font-bold text-white"
 
@@ -1724,7 +1724,7 @@ Contacta con nosotros y crearemos una experiencia privada adaptada a tus fechas,
 
 <Link
 
-href="/es/contact"
+href="/es/contacto"
 
 className="
 mt-8

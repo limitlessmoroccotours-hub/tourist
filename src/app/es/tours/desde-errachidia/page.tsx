@@ -661,7 +661,7 @@ export default function ToursDesdeErrachidiaPage() {
 
   <Link
 
-    href="/es/contact"
+    href="/es/contacto"
 
     className="
     mt-8

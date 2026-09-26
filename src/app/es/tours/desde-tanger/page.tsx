@@ -652,7 +652,7 @@ export default function ToursDesdeTangerPage() {
     
               <Link
     
-                href="/es/contact"
+                href="/es/contacto"
     
                 className="
                 mt-8
