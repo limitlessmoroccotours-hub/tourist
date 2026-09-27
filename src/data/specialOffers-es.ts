@@ -1072,6 +1072,236 @@ Creamos experiencias privadas por el desierto de Marruecos con más libertad y c
   
     }
   
-  }
+  },
+
+  {
+    id: "5",
+  
+    slug: "viaje-cultural-marruecos-estudiantes",
+  
+    title:
+      "Viaje Cultural a Marruecos para Estudiantes y Jóvenes",
+  
+    shortDescription:
+      "Descubre Marruecos con un viaje cultural diseñado para estudiantes y jóvenes. Explora Marrakech, el desierto del Sahara, Merzouga y la cultura marroquí con una experiencia privada y personalizada.",
+  
+    image:
+      "/images/special-offers/morocco-student-tours.webp",
+  
+    badge:
+      "Experiencia Cultural",
+  
+    category:
+      "Viajes culturales a Marruecos",
+  
+    targetAudience:
+      "Estudiantes, jóvenes y grupos que buscan descubrir la cultura, historia y paisajes de Marruecos",
+  
+    duration:
+      "Personalizable",
+  
+    destinations: [
+      "Marrakech",
+      "Alto Atlas",
+      "Ait Ben Haddou",
+      "Valle del Dades",
+      "Merzouga",
+      "Desierto del Sahara"
+    ],
+  
+  
+    recommendedTours: [
+      "3-dias-marrakech-merzouga",
+      "marrakech-fez-desierto-3-dias",
+      "marrakech-fez-desierto-4-dias"
+    ],
+  
+  
+    highlights: [
+  
+      "Descubre la cultura y las tradiciones de Marruecos",
+  
+      "Explora Marrakech y sus mercados históricos",
+  
+      "Conoce pueblos tradicionales y paisajes del Atlas",
+  
+      "Visita Ait Ben Haddou y las antiguas kasbahs",
+  
+      "Vive una experiencia auténtica en el desierto del Sahara",
+  
+      "Explora Merzouga y las dunas de Erg Chebbi",
+  
+      "Viaje privado adaptado para estudiantes y grupos jóvenes"
+  
+    ],
+  
+  
+    overview: `
+  
+  Descubre Marruecos con un viaje cultural pensado para estudiantes y jóvenes que quieren conocer un destino lleno de historia, tradiciones y paisajes únicos.
+  
+  Este viaje combina cultura, aventura y naturaleza para ofrecer una experiencia diferente. Explorarás Marrakech, sus mercados tradicionales, su arquitectura y la vida local mientras descubres una de las ciudades más famosas de Marruecos.
+  
+  La ruta continúa hacia el sur atravesando las montañas del Atlas, pueblos tradicionales y lugares históricos como Ait Ben Haddou. Durante el recorrido podrás conocer otra parte de la cultura marroquí, lejos de las rutas habituales.
+  
+  La experiencia incluye también una visita al desierto de Merzouga y las dunas de Erg Chebbi, donde los viajeros pueden descubrir el paisaje del Sahara y vivir una experiencia inolvidable.
+  
+  Este viaje cultural a Marruecos es ideal para estudiantes, grupos universitarios y jóvenes viajeros que buscan aprender, explorar y conectar con una nueva cultura.
+  
+  `,
+  
+  
+    itinerary: [
+  
+      {
+        title:
+          "Marrakech: primera experiencia cultural en Marruecos",
+  
+        description:
+          `
+  Descubre Marrakech, sus mercados tradicionales, plazas históricas y calles llenas de vida.
+  
+  Durante esta etapa conocerás la cultura local, la arquitectura marroquí y el ambiente único de la ciudad.
+  `
+      },
+  
+  
+      {
+        title:
+          "Atlas, Ait Ben Haddou y pueblos tradicionales",
+  
+        description:
+          `
+  Cruza las montañas del Alto Atlas y descubre paisajes naturales, pueblos tradicionales y la famosa kasbah de Ait Ben Haddou.
+  
+  Esta etapa permite conocer la historia y las tradiciones del sur de Marruecos.
+  `
+      },
+  
+  
+      {
+        title:
+          "Merzouga y experiencia cultural en el Sahara",
+  
+        description:
+          `
+  Viaja hasta Merzouga para descubrir las dunas de Erg Chebbi y el desierto del Sahara.
+  
+  Disfruta de una experiencia diferente entre paisajes únicos y conoce otra parte de la cultura marroquí.
+  `
+      }
+  
+    ],
+  
+  
+    included: [
+  
+      "Transporte privado durante todo el viaje",
+  
+      "Conductor profesional",
+  
+      "Itinerario personalizado",
+  
+      "Asistencia durante el recorrido"
+  
+    ],
+  
+  
+    excluded: [
+  
+      "Gastos personales",
+  
+      "Bebidas",
+  
+      "Actividades opcionales",
+  
+      "Servicios no indicados"
+  
+    ],
+  
+  
+    faqs: [
+  
+      {
+        question:
+          "¿Este viaje cultural a Marruecos es adecuado para estudiantes?",
+  
+        answer:
+          "Sí. Está diseñado para estudiantes, jóvenes y grupos que quieren descubrir la cultura, historia y paisajes de Marruecos."
+      },
+  
+  
+      {
+        question:
+          "¿Qué lugares se pueden visitar durante este viaje?",
+  
+        answer:
+          "La ruta puede incluir Marrakech, las montañas del Atlas, Ait Ben Haddou, Merzouga y el desierto del Sahara."
+      },
+  
+  
+      {
+        question:
+          "¿Es un viaje privado para grupos?",
+  
+        answer:
+          "Sí. Organizamos experiencias privadas adaptadas al tamaño del grupo, fechas e intereses de los viajeros."
+      },
+  
+  
+      {
+        question:
+          "¿Se puede personalizar el itinerario?",
+  
+        answer:
+          "Sí. La duración, las visitas y el ritmo del viaje pueden adaptarse según las necesidades del grupo."
+      }
+  
+    ],
+  
+  
+    seo: {
+  
+      title:
+        "Viaje Cultural a Marruecos para Estudiantes | Moroccan Trip",
+  
+      description:
+        "Organiza un viaje cultural a Marruecos para estudiantes y jóvenes. Descubre Marrakech, Sahara, Merzouga y la cultura marroquí con una experiencia privada.",
+  
+      keywords: [
+  
+        "viaje cultural a Marruecos",
+  
+        "cultura de Marruecos",
+  
+        "viaje organizado Marruecos",
+  
+        "experiencia cultural Marruecos",
+  
+        "viaje estudiantes Marruecos",
+  
+        "Marruecos para jóvenes",
+  
+        "viaje en grupo Marruecos",
+  
+        "tour Marruecos privado"
+  
+      ]
+  
+    },
+  
+  
+    booking: {
+  
+      available: true,
+  
+      customizable: true,
+  
+      contactLabel:
+        "Solicitar este viaje"
+  
+    }
+  
+  },
 
 ];

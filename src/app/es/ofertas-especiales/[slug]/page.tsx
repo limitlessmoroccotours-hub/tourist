@@ -297,7 +297,18 @@ export default async function SpecialOfferPage({
 
   };
 
-
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: offer.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
 
 
 
@@ -313,15 +324,17 @@ return (
 
 
 <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(breadcrumbJsonLd),
+  }}
+/>
 
-type="application/ld+json"
-
-dangerouslySetInnerHTML={{
-
-__html: JSON.stringify(breadcrumbJsonLd),
-
-}}
-
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(faqJsonLd),
+  }}
 />
 
 

@@ -1176,6 +1176,246 @@ export type SpecialOffer = {
         },
       
       },
+
+      {
+        id: "5",
+      
+        slug: "morocco-student-tours",
+      
+        title:
+          "Morocco Student Tours | Cultural & Adventure Travel Experience",
+      
+        shortDescription:
+          "Discover Morocco with a student travel experience combining culture, history, local traditions, desert adventures and unforgettable moments designed for students and young travelers.",
+      
+        image:
+          "/images/special-offers/morocco-student-tours.webp",
+      
+        badge:
+          "Student Travel Experience",
+      
+        category:
+          "Student Morocco Tours",
+      
+        targetAudience:
+          "Students and young travelers looking for a cultural, educational and adventure experience in Morocco",
+      
+        duration:
+          "Customizable",
+      
+        destinations: [
+          "Marrakech",
+          "Ait Ben Haddou",
+          "High Atlas Mountains",
+          "Merzouga Desert",
+          "Fes",
+          "Chefchaouen",
+        ],
+      
+        recommendedTours: [
+          "7-day-morocco-imperial-cities-tour",
+          "3-day-desert-tour-marrakech-merzouga",
+          "5-day-marrakech-fes-desert-tour",
+        ],
+      
+        highlights: [
+          "Explore Morocco's culture, history and traditions",
+          "Discover famous Moroccan cities and local communities",
+          "Experience the Sahara Desert and desert landscapes",
+          "Visit historical places and traditional villages",
+          "Enjoy a private and flexible travel experience",
+          "Combine learning, adventure and cultural discovery",
+          "Create unforgettable memories with a customized itinerary",
+        ],
+      
+        overview: `
+      Discover Morocco through a student travel experience designed for young travelers who want to explore culture, history, nature and adventure.
+      
+      This Morocco student tour combines visits to historic cities, traditional villages, mountain landscapes and the Sahara Desert. Students can discover Morocco beyond the usual tourist paths while experiencing local traditions, food and daily life.
+      
+      Travel through destinations such as Marrakech, Fes, the Atlas Mountains and the desert region while enjoying a comfortable private experience with a flexible itinerary.
+      
+      Whether you are interested in cultural discovery, educational travel or adventure experiences, this Morocco student tour can be adapted to your group's interests, available time and travel goals.
+      `,
+      
+        itinerary: [
+      
+          {
+            title:
+              "Discover Morocco's Culture and Historic Cities",
+      
+            description:
+            `
+      Begin your journey by exploring Morocco's famous cities and cultural landmarks.
+      
+      Discover traditional markets, historic areas and local traditions while learning about Morocco's rich heritage and diverse culture.
+      `,
+          },
+      
+      
+          {
+            title:
+              "Explore Mountains, Villages and Local Life",
+      
+            description:
+            `
+      Travel through the High Atlas Mountains and discover traditional Moroccan villages.
+      
+      Enjoy beautiful landscapes, meet local communities and experience another side of Morocco away from the main cities.
+      `,
+          },
+      
+      
+          {
+            title:
+              "Experience the Sahara Desert Adventure",
+      
+            description:
+            `
+      Continue toward the desert region and discover the unique atmosphere of Merzouga.
+      
+      Experience the Sahara landscapes, desert activities and the peaceful environment of one of Morocco's most famous destinations.
+      `,
+          },
+      
+      
+          {
+            title:
+              "Complete Your Morocco Student Experience",
+      
+            description:
+            `
+      Continue your journey according to your group's interests.
+      
+      The itinerary can include more cultural visits, outdoor activities or additional destinations depending on your preferred travel style.
+      `,
+          },
+      
+        ],
+      
+      
+        included: [
+      
+          "Private transportation during the experience",
+      
+          "Professional driver",
+      
+          "Flexible itinerary planning",
+      
+          "Travel assistance during your journey",
+      
+          "Private travel experience adapted to your group",
+      
+        ],
+      
+      
+        excluded: [
+      
+          "Flights",
+      
+          "Personal expenses",
+      
+          "Meals unless included in the selected package",
+      
+          "Entrance fees when required",
+      
+          "Optional activities",
+      
+          "Tips and gratuities",
+      
+        ],
+      
+      
+        faqs: [
+      
+          {
+            question:
+              "Is this Morocco student tour suitable for university students?",
+      
+            answer:
+              "Yes. This experience is designed for students and young travelers who want to discover Morocco through culture, history, adventure and local experiences.",
+          },
+      
+      
+          {
+            question:
+              "What can students experience during this Morocco tour?",
+      
+            answer:
+              "Students can explore historic cities, traditional villages, mountain landscapes, local culture and the Sahara Desert depending on the selected itinerary.",
+          },
+      
+      
+          {
+            question:
+              "Can this student tour in Morocco be customized?",
+      
+            answer:
+              "Yes. The itinerary, destinations and activities can be adapted according to the group's interests, travel dates and available time.",
+          },
+      
+      
+          {
+            question:
+              "Does the Morocco student tour include the Sahara Desert?",
+      
+            answer:
+              "The Sahara Desert can be included as part of the experience, with options such as visiting Merzouga and discovering the desert landscapes.",
+          },
+      
+      
+          {
+            question:
+              "Is this a private or group student travel experience?",
+      
+            answer:
+              "This offer is designed as a flexible private experience that can be adapted for student groups and educational travelers.",
+          },
+      
+        ],
+      
+      
+        seo: {
+      
+          title:
+            "Morocco Student Tours | Cultural & Adventure Travel Experience",
+      
+          description:
+            "Discover Morocco with a student tour experience combining culture, history, desert adventures and local experiences designed for students and young travelers.",
+      
+          keywords: [
+      
+            "morocco student tours",
+      
+            "morocco student tour",
+      
+            "student trips to morocco",
+      
+            "student travel morocco",
+      
+            "student tours to morocco",
+      
+            "morocco cultural tour",
+      
+            "morocco educational trip",
+      
+            "morocco adventure travel",
+      
+          ],
+        },
+      
+      
+        booking: {
+      
+          available: true,
+      
+          customizable: true,
+      
+          contactLabel:
+            "Request This Student Offer",
+      
+        },
+      },
   
   ];
 
