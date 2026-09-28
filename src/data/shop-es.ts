@@ -96,7 +96,33 @@ Cada fósil trilobites es una pieza única de la historia de la Tierra, con form
     shipping:
       "Envío internacional disponible. Contacta con nosotros para consultar disponibilidad, fotografías adicionales y detalles de entrega.",
 
+      faqs: [
 
+        {
+          question:
+            "¿Los fósiles trilobites de Marruecos son auténticos?",
+      
+          answer:
+            "Sí, nuestros fósiles son seleccionados de regiones fósiles de Marruecos y ofrecemos información sobre su origen antes de la compra.",
+        },
+      
+        {
+          question:
+            "¿Puedo solicitar fotografías adicionales del fósil?",
+      
+          answer:
+            "Sí, puedes contactar con Moroccan Trip para recibir fotografías adicionales y más detalles sobre el ejemplar disponible.",
+        },
+      
+        {
+          question:
+            "¿Envían fósiles marroquíes a otros países?",
+      
+          answer:
+            "Sí, ofrecemos opciones de envío internacional. Contacta con nosotros para consultar disponibilidad y detalles de entrega.",
+        },
+      
+      ],
     relatedProducts: [
 
       "moroccan-fossil-decor"
@@ -254,7 +280,33 @@ Cada fósil trilobites es una pieza única de la historia de la Tierra, con form
     shipping:
       "Envío internacional disponible. Contacta con nosotros para consultar disponibilidad, fotografías adicionales y opciones de entrega.",
   
-  
+      faqs: [
+
+        {
+          question:
+            "¿Las piedras fósiles de Marruecos son auténticas?",
+      
+          answer:
+            "Sí, nuestras piedras fósiles son piezas naturales seleccionadas de regiones fósiles conocidas de Marruecos.",
+        },
+      
+        {
+          question:
+            "¿Son adecuadas las piedras fósiles para decoración?",
+      
+          answer:
+            "Sí, estas piezas son ideales para decoración natural, colecciones y amantes de la historia geológica.",
+        },
+      
+        {
+          question:
+            "¿Puedo conocer más detalles antes de comprar?",
+      
+          answer:
+            "Sí, puedes contactar con Moroccan Trip para solicitar fotografías adicionales, disponibilidad e información del producto.",
+        },
+      
+      ],
   
     relatedProducts: [
   
@@ -418,7 +470,33 @@ Cada fósil trilobites es una pieza única de la historia de la Tierra, con form
     shipping:
       "Envío internacional disponible. Contacta con nosotros para consultar disponibilidad y opciones de entrega.",
   
-  
+      faqs: [
+
+        {
+          question:
+            "¿El aceite de argán culinario es auténtico de Marruecos?",
+      
+          answer:
+            "Sí, nuestro aceite de argán culinario es un producto tradicional marroquí seleccionado por su origen y calidad.",
+        },
+      
+        {
+          question:
+            "¿Cómo se utiliza el aceite de argán en la cocina?",
+      
+          answer:
+            "El aceite de argán culinario se utiliza tradicionalmente en platos marroquíes, ensaladas y recetas gourmet.",
+        },
+      
+        {
+          question:
+            "¿Puedo solicitar información sobre disponibilidad y envío?",
+      
+          answer:
+            "Sí, contacta con Moroccan Trip para consultar formatos disponibles, precios y opciones de entrega.",
+        },
+      
+      ],
   
     relatedProducts: [
   
@@ -581,7 +659,33 @@ Cada fósil trilobites es una pieza única de la historia de la Tierra, con form
     shipping:
       "Envío internacional disponible. Contacta con nosotros para consultar disponibilidad y opciones de entrega.",
   
-  
+      faqs: [
+
+        {
+          question:
+            "¿El aceite de argán puro de Marruecos es auténtico?",
+      
+          answer:
+            "Sí, nuestro aceite de argán puro es seleccionado por su origen marroquí y sus características naturales.",
+        },
+      
+        {
+          question:
+            "¿Cómo se utiliza el aceite de argán para la piel y el cabello?",
+      
+          answer:
+            "El aceite de argán se utiliza tradicionalmente en rutinas de cuidado natural para hidratar la piel y cuidar el cabello.",
+        },
+      
+        {
+          question:
+            "¿Puedo solicitar más información antes de comprar?",
+      
+          answer:
+            "Sí, puedes contactar con Moroccan Trip para conocer disponibilidad, formatos y detalles del producto.",
+        },
+      
+      ],
   
     relatedProducts: [
   
