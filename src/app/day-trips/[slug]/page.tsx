@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { dayTrips } from "@/data/dayTrips";
+import FaqSchema from "@/components/seo/FaqSchema";
 
 type DayTripPageProps = {
   params: Promise<{
@@ -149,6 +150,7 @@ export default async function DayTripPage({
           __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
         }}
       />
+      <FaqSchema faqs={trip.faqs} />
 
       {/* ───────────────────────────────────── */}
       {/* IMMERSIVE HERO */}

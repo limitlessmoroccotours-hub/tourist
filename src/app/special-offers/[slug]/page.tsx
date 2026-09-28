@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { specialOffers } from "@/data/specialOffers";
 import { tours } from "@/data/tours";
+import FaqSchema from "@/components/seo/FaqSchema";
 
 
 type SpecialOfferPageProps = {
@@ -179,6 +180,7 @@ dangerouslySetInnerHTML={{
 __html:JSON.stringify(breadcrumbJsonLd),
 }}
 />
+<FaqSchema faqs={offer.faqs} />
 
 
 
