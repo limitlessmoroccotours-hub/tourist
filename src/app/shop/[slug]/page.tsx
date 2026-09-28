@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { shopProducts } from "@/data/shop";
+import FaqSchema from "@/components/seo/FaqSchema";
 
 
 
@@ -156,7 +157,7 @@ __html:JSON.stringify(productSchema)
 }}
 
 />
-
+<FaqSchema faqs={product.faqs} />
 
 
 
@@ -801,66 +802,32 @@ Frequently Asked Questions
 <div className="mt-8 space-y-6">
 
 
-<div>
+{product.faqs.map((faq) => (
+
+<div key={faq.question}>
 
 <h3 className="font-semibold">
 
-Are Moroccan trilobite fossils authentic?
+{faq.question}
 
 </h3>
 
+
 <p className="mt-2 text-sm leading-7">
 
-Yes, our fossils are selected from Moroccan fossil regions and information is provided before purchase.
+{faq.answer}
 
 </p>
 
 </div>
 
-
-
-
-<div>
-
-<h3 className="font-semibold">
-
-Can you ship Moroccan fossils worldwide?
-
-</h3>
-
-<p className="mt-2 text-sm leading-7">
-
-Yes, contact us to check shipping availability and delivery options.
-
-</p>
-
-</div>
-
-
-
-
-<div>
-
-<h3 className="font-semibold">
-
-How can I request more details about a fossil?
-
-</h3>
-
-<p className="mt-2 text-sm leading-7">
-
-You can contact Moroccan Trip through WhatsApp for additional photos and information.
-
-</p>
-
-</div>
+))}
 
 
 </div>
 
 
 </section>
-
 
 
 

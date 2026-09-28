@@ -106,7 +106,36 @@ const breadcrumbJsonLd = {
   ],
 
 };
-
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Can you create a Morocco itinerary based on our interests?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We design personalized Morocco itineraries according to your preferred destinations, activities, travel dates and budget.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you arrange private and shared group tours?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Moroccan Trip can organize private journeys as well as shared group experiences depending on your preferences.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can we combine desert, cities and coastal destinations?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We can create a balanced Morocco journey combining different regions and experiences.",
+      },
+    },
+  ],
+};
 
 
 
@@ -125,7 +154,13 @@ __html:
 JSON.stringify(breadcrumbJsonLd),
 }}
 />
-
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html:
+      JSON.stringify(faqJsonLd),
+  }}
+/>
 
 
 

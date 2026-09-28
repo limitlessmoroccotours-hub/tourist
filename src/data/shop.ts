@@ -1,3 +1,8 @@
+export type ProductFAQ = {
+  question: string;
+  answer: string;
+};
+
 export type ShopProduct = {
 
   id: string;
@@ -42,6 +47,8 @@ export type ShopProduct = {
 
   shipping: string;
 
+  faqs: ProductFAQ[];
+  
   relatedProducts?: string[];
 
 
@@ -201,6 +208,33 @@ export const shopProducts: ShopProduct[] = [
 
     shipping:
       "Worldwide shipping options available. Contact us for availability, additional photos and delivery information.",
+      faqs: [
+
+        {
+          question:
+            "Are Moroccan trilobite fossils authentic?",
+      
+          answer:
+            "Yes, our fossils are selected from Moroccan fossil regions and information is provided before purchase.",
+        },
+      
+        {
+          question:
+            "Can you ship Moroccan fossils worldwide?",
+      
+          answer:
+            "Yes, contact us to check shipping availability and delivery options.",
+        },
+      
+        {
+          question:
+            "How can I request more details about a fossil?",
+      
+          answer:
+            "You can contact Moroccan Trip through WhatsApp for additional photos and information.",
+        },
+      
+      ],
       relatedProducts: [
 
         "moroccan-fossil-decor"
@@ -385,6 +419,33 @@ export const shopProducts: ShopProduct[] = [
   
     shipping:
       "Worldwide shipping options available. Contact us for available pieces, prices and delivery information.",
+      faqs: [
+
+        {
+          question:
+            "Are Moroccan fossil decor pieces authentic?",
+      
+          answer:
+            "Yes, our fossil decor pieces are made from natural Moroccan fossil stones carefully selected from famous fossil regions.",
+        },
+      
+        {
+          question:
+            "Where do Moroccan fossil decor pieces come from?",
+      
+          answer:
+            "Our fossil decor pieces come from Moroccan fossil regions, especially areas known for natural fossil stones.",
+        },
+      
+        {
+          question:
+            "Can I request photos and details before purchase?",
+      
+          answer:
+            "Yes, you can contact Moroccan Trip to request additional photos, details and information about available pieces.",
+        },
+      
+      ],
       relatedProducts: [
 
         "moroccan-fossil-decor"
@@ -575,6 +636,34 @@ export const shopProducts: ShopProduct[] = [
   
     shipping:
       "Worldwide shipping options available. Contact us for availability, bottle sizes and delivery information.",
+      faqs: [
+
+        {
+          question:
+            "Is Moroccan culinary argan oil authentic?",
+      
+          answer:
+            "Yes, our culinary argan oil is selected as an authentic Moroccan product with information about its origin and quality.",
+        },
+      
+        {
+          question:
+            "How is culinary argan oil used in Moroccan cuisine?",
+      
+          answer:
+            "Culinary argan oil is traditionally used with bread, salads, couscous and different Moroccan dishes.",
+        },
+      
+        {
+          question:
+            "Can I buy Moroccan culinary argan oil online?",
+      
+          answer:
+            "Yes, contact Moroccan Trip for availability, bottle sizes and delivery information.",
+        },
+      
+      ],
+      
       relatedProducts: [
 
         "moroccan-fossil-decor"
@@ -764,6 +853,33 @@ export const shopProducts: ShopProduct[] = [
   
     shipping:
       "Worldwide shipping options available. Contact us for bottle sizes, availability and delivery information.",
+      faqs: [
+
+        {
+          question:
+            "Is Moroccan argan oil good for hair and skin?",
+      
+          answer:
+            "Moroccan argan oil is traditionally used in hair and skin care routines because of its natural properties.",
+        },
+      
+        {
+          question:
+            "Is this pure Moroccan argan oil?",
+      
+          answer:
+            "Yes, this product is described as pure Moroccan argan oil sourced from traditional argan tree regions in Morocco.",
+        },
+      
+        {
+          question:
+            "Can I request more information before purchase?",
+      
+          answer:
+            "Yes, contact Moroccan Trip for product details, bottle sizes and availability.",
+        },
+      
+      ],
       relatedProducts: [
 
         "moroccan-fossil-decor"

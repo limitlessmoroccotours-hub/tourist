@@ -1,10 +1,47 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-
+import FaqSchema from "@/components/seo/FaqSchema";
 
 const SITE_URL = "https://moroccan-trip.com";
-
+const faqData = [
+  {
+    question:
+      "¿Pueden crear un viaje a Marruecos según nuestros intereses?",
+    answer:
+      "Sí. Diseñamos viajes a Marruecos personalizados según tus destinos favoritos, fechas, presupuesto, estilo de viaje y actividades que deseas realizar.",
+  },
+  {
+    question:
+      "¿Organizan viajes privados y viajes en grupo por Marruecos?",
+    answer:
+      "Sí. Podemos organizar tanto viajes privados a Marruecos como experiencias compartidas en grupo, adaptando la ruta y los servicios según tus preferencias.",
+  },
+  {
+    question:
+      "¿Podemos combinar el desierto, ciudades y la costa en un mismo viaje?",
+    answer:
+      "Sí. Creamos rutas por Marruecos combinando diferentes regiones como el desierto del Sahara, ciudades imperiales, las montañas del Atlas y la costa atlántica.",
+  },
+  {
+    question:
+      "¿Cuánto dura un viaje organizado a Marruecos?",
+    answer:
+      "La duración depende de tu disponibilidad y del tipo de experiencia que buscas. Podemos crear rutas cortas o circuitos completos por Marruecos de varios días.",
+  },
+  {
+    question:
+      "¿Los viajes a Marruecos a medida incluyen conductor y guía?",
+    answer:
+      "Podemos organizar transporte privado, conductor profesional y guías locales según las necesidades de tu viaje personalizado.",
+  },
+  {
+    question:
+      "¿Puedo modificar la ruta después de recibir la propuesta?",
+    answer:
+      "Sí. Al ser viajes personalizados, podemos ajustar destinos, actividades y ritmo del itinerario hasta crear la experiencia ideal para ti.",
+  },
+];
 
 export const metadata: Metadata = {
 
@@ -70,7 +107,10 @@ export default function ViajesOrganizadosMarruecosPage(){
 return (
 
 <main className="min-h-screen bg-[hsl(var(--background))]">
-
+<FaqSchema
+  faqs={faqData}
+  language="es"
+/>
 
 {/* HERO */}
 

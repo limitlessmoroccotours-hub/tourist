@@ -3,8 +3,33 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { shopProducts } from "@/data/shop-es";
+import FaqSchema from "@/components/seo/FaqSchema";
 
+const faqData = [
+  {
+    question:
+      "¿Los fósiles trilobites de Marruecos son auténticos?",
 
+    answer:
+      "Sí, nuestros fósiles son seleccionados de regiones fósiles de Marruecos y ofrecemos información sobre su origen antes de la compra.",
+  },
+
+  {
+    question:
+      "¿Pueden enviar fósiles marroquíes a otros países?",
+
+    answer:
+      "Sí, contacta con nosotros para consultar disponibilidad, opciones de envío y detalles de entrega.",
+  },
+
+  {
+    question:
+      "¿Cómo puedo solicitar más información sobre un fósil?",
+
+    answer:
+      "Puedes contactar con Moroccan Trip por WhatsApp para recibir fotografías adicionales y más detalles del ejemplar.",
+  },
+];
 
 type Props = {
   params: Promise<{
@@ -152,7 +177,10 @@ min-h-screen
 bg-[hsl(var(--background))]
 "
 >
-
+<FaqSchema
+  faqs={faqData}
+  language="es"
+/>
 
 <script
 

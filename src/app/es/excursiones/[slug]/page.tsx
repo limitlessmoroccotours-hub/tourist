@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { excursionesEs } from "@/data/excursiones-es";
-
+import FaqSchema from "@/components/seo/FaqSchema";
 
 type ExcursionPageProps = {
   params: Promise<{
@@ -362,7 +362,10 @@ export default async function ExcursionPage({
         }}
 
       />
-
+<FaqSchema 
+  faqs={trip.faqs}
+  language="es"
+/>
 
 
 
