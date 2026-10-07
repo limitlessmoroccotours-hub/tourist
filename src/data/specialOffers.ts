@@ -1416,6 +1416,281 @@ export type SpecialOffer = {
       
         },
       },
+
+      {
+        id: "6",
+      
+        slug: "morocco-small-group-tours",
+      
+        title:
+          "Morocco Small Group Tours | Shared Desert Tours from Marrakech",
+      
+      
+        shortDescription:
+          "Join affordable small group tours in Morocco and discover the Sahara Desert, Merzouga, Marrakech day trips and unforgettable experiences with other travelers.",
+      
+      
+        image:
+          "/images/special-offers/morocco-small-group-tours.webp",
+      
+      
+        badge:
+          "Small Group Tours",
+      
+      
+        category:
+          "Shared Group Tours",
+      
+      
+        targetAudience:
+          "Solo travelers, couples and travelers looking for affordable shared Morocco tours.",
+      
+      
+        duration:
+          "Flexible",
+      
+      
+        destinations: [
+      
+          "Marrakech",
+      
+          "High Atlas Mountains",
+      
+          "Ait Ben Haddou",
+      
+          "Merzouga",
+      
+          "Erg Chebbi",
+      
+          "Sahara Desert",
+      
+          "Ourika Valley",
+      
+          "Ouzoud Waterfalls",
+      
+          "Agafay Desert",
+      
+        ],
+      
+      
+        recommendedTours: [
+      
+          "3-day-desert-tour-marrakech-merzouga",
+      
+          "3-day-marrakech-fes-desert-tour",
+      
+        ],
+      
+      
+        highlights: [
+      
+          "Affordable small group tours in Morocco",
+      
+          "Shared desert tours from Marrakech",
+      
+          "Explore Merzouga and the Sahara Desert",
+      
+          "Travel with other international travelers",
+      
+          "Great option for solo travelers and couples",
+      
+          "Discover Marrakech day trips and nearby destinations",
+      
+          "Enjoy Morocco experiences at a lower cost",
+      
+        ],
+      
+      
+        overview: `
+      
+      Discover Morocco with our small group tours designed for travelers who want to explore the country while sharing the experience with other travelers.
+      
+      Our shared desert tours from Marrakech are a great option for visitors looking for an affordable way to discover the Sahara Desert, Merzouga, Erg Chebbi dunes and southern Morocco.
+      
+      The experience can include popular routes such as the 3-day desert tour from Marrakech to Merzouga and the 3-day Marrakech to Fes desert tour.
+      
+      Travelers can also join Marrakech day trips to explore the Atlas Mountains, Ourika Valley, Ouzoud Waterfalls and Agafay Desert.
+      
+      Small group tours in Morocco are ideal for solo travelers, couples and anyone who wants a social travel experience with a better price than a private tour.
+      
+        `,
+      
+      
+        itinerary: [
+      
+          {
+      
+            title:
+              "Start your shared Morocco adventure",
+      
+            description:
+      
+              `
+      
+      Meet other travelers in Marrakech and begin your shared group experience.
+      
+      Depending on your selected tour, travel toward the Atlas Mountains, desert landscapes or nearby attractions.
+      
+              `,
+      
+          },
+      
+      
+          {
+      
+            title:
+              "Discover Morocco's desert and landscapes",
+      
+            description:
+      
+              `
+      
+      Explore famous Moroccan destinations including Merzouga, Erg Chebbi dunes, Sahara landscapes and traditional villages.
+      
+              `,
+      
+          },
+      
+      
+          {
+      
+            title:
+              "Complete your Morocco group experience",
+      
+            description:
+      
+              `
+      
+      Finish your shared journey with unforgettable memories and new travel connections.
+      
+              `,
+      
+          },
+      
+        ],
+      
+      
+        included: [
+      
+          "Shared transportation according to the selected tour",
+      
+          "Professional driver",
+      
+          "Pickup from Marrakech when included",
+      
+          "Travel assistance",
+      
+        ],
+      
+      
+        excluded: [
+      
+          "Lunches",
+      
+          "Drinks",
+      
+          "Entrance fees",
+      
+          "Personal expenses",
+      
+          "Tips and gratuities",
+      
+        ],
+      
+      
+        faqs: [
+      
+          {
+      
+            question:
+              "What are small group tours in Morocco?",
+      
+            answer:
+              "Small group tours in Morocco are shared experiences where travelers join the same trip and explore destinations together.",
+      
+          },
+      
+      
+          {
+      
+            question:
+              "Are shared desert tours from Marrakech cheaper?",
+      
+            answer:
+              "Yes. Shared tours are usually more affordable because transportation and some services are shared with other travelers.",
+      
+          },
+      
+      
+          {
+      
+            question:
+              "Can solo travelers join Morocco group tours?",
+      
+            answer:
+              "Yes. Small group tours are a popular choice for solo travelers who want to discover Morocco and meet other people.",
+      
+          },
+      
+      
+          {
+      
+            question:
+              "Which Morocco tours are available in shared groups?",
+      
+            answer:
+              "Available options include selected desert tours from Marrakech and Marrakech day trips depending on availability.",
+      
+          },
+      
+        ],
+      
+      
+        seo: {
+      
+          title:
+            "Morocco Small Group Tours | Shared Desert Tours from Marrakech",
+      
+      
+          description:
+            "Join Morocco small group tours from Marrakech and explore the Sahara Desert, Merzouga, Marrakech day trips and affordable shared travel experiences.",
+      
+      
+          keywords: [
+      
+            "morocco small group tours",
+      
+            "small group tours morocco",
+      
+            "shared desert tours from marrakech",
+      
+            "morocco group tours",
+      
+            "marrakech group tours",
+      
+            "marrakech desert tour group",
+      
+            "budget morocco tours",
+      
+            "shared morocco tours",
+      
+          ],
+      
+        },
+      
+      
+        booking: {
+      
+          available: true,
+      
+          customizable: false,
+      
+          contactLabel:
+            "Join This Group Tour",
+      
+        },
+      
+      },
   
   ];
 

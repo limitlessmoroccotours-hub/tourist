@@ -1304,4 +1304,309 @@ Creamos experiencias privadas por el desierto de Marruecos con más libertad y c
   
   },
 
+  {
+    id: "6",
+  
+    slug:
+      "viajes-marruecos-grupo",
+  
+  
+    title:
+      "Viajes a Marruecos en Grupo | Excursiones al Desierto desde Marrakech",
+  
+  
+    shortDescription:
+      "Descubre Marruecos con viajes en grupo, excursiones al desierto desde Marrakech, Merzouga y experiencias compartidas a precios accesibles.",
+  
+  
+    image:
+      "/images/special-offers/viajes-marruecos-grupo.webp",
+  
+  
+    badge:
+      "Experiencia en Grupo",
+  
+  
+    category:
+      "Viajes en Grupo",
+  
+  
+    targetAudience:
+      "Viajeros que buscan una forma económica y social de descubrir Marruecos compartiendo la experiencia con otros viajeros.",
+  
+  
+    duration:
+      "Según el tour seleccionado",
+  
+  
+    destinations: [
+  
+      "Marrakech",
+  
+      "Merzouga",
+  
+      "Desierto del Sáhara",
+  
+      "Dunas de Erg Chebbi",
+  
+      "Ait Ben Haddou",
+  
+      "Alto Atlas",
+  
+      "Valle del Ourika",
+  
+      "Desierto de Agafay",
+  
+    ],
+  
+  
+    recommendedTours: [
+  
+      "3-dias-marrakech-merzouga",
+  
+      "marrakech-fez-desierto-3-dias",
+  
+    ],
+  
+  
+    highlights: [
+  
+      "Viajes a Marruecos en grupo con otros viajeros",
+  
+      "Excursiones al desierto desde Marrakech",
+  
+      "Experiencia en Merzouga y las dunas de Erg Chebbi",
+  
+      "Opción económica frente a un tour privado",
+  
+      "Ideal para viajeros solos, parejas y pequeños grupos",
+  
+      "Descubre el Sahara marroquí con guías locales",
+  
+      "Combina desierto, cultura y paisajes naturales",
+  
+    ],
+  
+  
+    overview: `
+  
+  Descubre Marruecos con nuestros viajes en grupo diseñados para viajeros que
+  quieren explorar el país de una forma cómoda, económica y auténtica.
+  
+  Nuestros viajes organizados en Marruecos permiten compartir la experiencia con
+  otros viajeros mientras descubres algunos de los destinos más impresionantes
+  del país.
+  
+  Una de las opciones más populares son las excursiones al desierto desde
+  Marrakech hacia Merzouga, donde podrás conocer el Alto Atlas, Ait Ben Haddou,
+  los valles del sur de Marruecos, las dunas de Erg Chebbi y vivir la experiencia
+  del desierto del Sáhara.
+  
+  También ofrecemos rutas que conectan Marrakech con Fez atravesando el desierto,
+  además de excursiones desde Marrakech para descubrir lugares cercanos como el
+  Valle del Ourika, las cascadas de Ouzoud y el desierto de Agafay.
+  
+  Los viajes a Marruecos en grupo son una excelente opción para quienes buscan
+  una experiencia completa con un precio más accesible y la oportunidad de
+  conocer otros viajeros.
+  
+    `,
+  
+  
+    itinerary: [
+  
+      {
+  
+        title:
+          "Salida desde Marrakech",
+  
+        description:
+  
+          `
+  
+  Comienza tu experiencia en grupo desde Marrakech y conoce a otros viajeros
+  mientras descubres los paisajes de Marruecos.
+  
+          `,
+  
+      },
+  
+  
+      {
+  
+        title:
+          "Descubre el desierto de Merzouga",
+  
+        description:
+  
+          `
+  
+  Explora el desierto del Sáhara, las dunas de Erg Chebbi, disfruta de un paseo
+  en camello y vive una noche especial en el campamento del desierto.
+  
+          `,
+  
+      },
+  
+  
+      {
+  
+        title:
+          "Continúa tu aventura por Marruecos",
+  
+        description:
+  
+          `
+  
+  Dependiendo del tour elegido, termina tu viaje regresando a Marrakech o
+  continuando hacia otros destinos como Fez.
+  
+          `,
+  
+      },
+  
+    ],
+  
+  
+    included: [
+  
+      "Transporte compartido según el tour seleccionado",
+  
+      "Conductor profesional",
+  
+      "Recogida en Marrakech cuando esté incluida",
+  
+      "Alojamiento según el programa elegido",
+  
+      "Asistencia antes y durante el viaje",
+  
+    ],
+  
+  
+    excluded: [
+  
+      "Almuerzos",
+  
+      "Bebidas",
+  
+      "Entradas a monumentos",
+  
+      "Gastos personales",
+  
+      "Propinas",
+  
+    ],
+  
+  
+    faqs: [
+  
+      {
+  
+        question:
+          "¿Qué son los viajes en grupo por Marruecos?",
+  
+        answer:
+          "Son experiencias compartidas donde varios viajeros realizan juntos una ruta para descubrir Marruecos, sus ciudades, paisajes y el desierto.",
+  
+      },
+  
+  
+      {
+  
+        question:
+          "¿Son más baratos los viajes en grupo a Marruecos?",
+  
+        answer:
+          "Sí. Los viajes compartidos suelen tener un precio más accesible porque algunos servicios como el transporte se comparten entre viajeros.",
+  
+      },
+  
+  
+      {
+  
+        question:
+          "¿Puedo hacer una excursión al desierto desde Marrakech en grupo?",
+  
+        answer:
+          "Sí. Existen excursiones en grupo desde Marrakech hacia Merzouga para conocer el desierto del Sáhara, las dunas de Erg Chebbi y los campamentos del desierto.",
+  
+      },
+  
+  
+      {
+  
+        question:
+          "¿Los viajes en grupo son adecuados para viajeros solos?",
+  
+        answer:
+          "Sí. Son una buena opción para viajeros solos porque permiten descubrir Marruecos y conocer personas de diferentes países.",
+  
+      },
+  
+  
+      {
+  
+        question:
+          "¿Qué destinos incluyen estos viajes organizados en Marruecos?",
+  
+        answer:
+          "Dependiendo del programa, pueden incluir Marrakech, Merzouga, el desierto del Sáhara, el Alto Atlas, Ait Ben Haddou y excursiones cercanas.",
+  
+      },
+  
+    ],
+  
+  
+    seo: {
+  
+      title:
+        "Viajes a Marruecos en Grupo | Excursiones al Desierto desde Marrakech",
+  
+  
+      description:
+        "Reserva viajes a Marruecos en grupo y descubre excursiones al desierto desde Marrakech, Merzouga, el Sáhara y experiencias compartidas.",
+  
+  
+      keywords: [
+  
+        "viajes a marruecos",
+  
+        "viajes baratos a marruecos",
+  
+        "viajes organizados marruecos",
+  
+        "excursion desierto marrakech",
+  
+        "excursiones desde marrakech",
+  
+        "desierto marruecos",
+  
+        "desierto merzouga",
+  
+        "tour merzouga desde marrakech",
+  
+        "viajes marrakech",
+  
+        "viajes en grupo marruecos",
+  
+      ],
+  
+    },
+  
+  
+    booking: {
+  
+      available:
+        true,
+  
+      customizable:
+        false,
+  
+      contactLabel:
+        "Únete a este viaje en grupo",
+  
+    },
+  
+  },
+
 ];
