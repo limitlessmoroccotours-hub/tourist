@@ -18435,6 +18435,384 @@ map: {
       contactLabel: "Request a Quote",
     },
   },
+  {
+    id: "28",
+  
+    slug: "5-day-marrakech-merzouga-desert-tour",
+    title: "5-Day Desert Tour from Marrakech to Merzouga",
+    shortDescription:
+      "Discover the Sahara on a private 5-day Marrakech to Merzouga desert tour, with two nights near the dunes, a camel trek and a scenic return to Marrakech.",
+    image: "/images/tours/5-day-marrakech-merzouga-desert-tour.webp",
+    badge: "Two Nights in Merzouga",
+    featured: true,
+    category: "Desert Tours",
+  
+    duration: "5 Days / 4 Nights",
+    nights: 4,
+    tourType: "Private Tour",
+    groupSize: "Up to 4 People",
+    languages: ["English", "French"],
+    departure: "Marrakech",
+    arrival: "Marrakech",
+  
+    locations: [
+      "Marrakech",
+      "High Atlas Mountains",
+      "Ait Ben Haddou",
+      "Ouarzazate",
+      "Dades Valley",
+      "Todra Gorges",
+      "Merzouga",
+      "Erg Chebbi",
+      "Khamlia",
+      "Rissani",
+      "Nkob",
+      "Draa Valley",
+      "Ouarzazate",
+      "Marrakech",
+    ],
+  
+    map: {
+      stops: [
+        { name: "Marrakech", position: [31.6295, -7.9811] },
+        { name: "Ait Ben Haddou", position: [31.0472, -7.1298] },
+        { name: "Ouarzazate", position: [30.9335, -6.937] },
+        { name: "Dades Valley", position: [31.3709, -5.9887] },
+        { name: "Todra Gorges", position: [31.5889, -5.5928] },
+        { name: "Merzouga", position: [31.0802, -4.0133] },
+        { name: "Khamlia", position: [31.0186, -4.0058] },
+        { name: "Merzouga", position: [31.0802, -4.0133] },
+        { name: "Rissani", position: [31.2823, -4.2651] },
+        { name: "Nkob", position: [30.8704, -5.8643] },
+        { name: "Draa Valley", position: [30.6936, -6.4463] },
+        { name: "Ouarzazate", position: [30.9335, -6.937] },
+        { name: "Marrakech", position: [31.6295, -7.9811] },
+      ],
+    },
+  
+    // No fixed price: quote according to travelers and accommodation level.
+    highlights: [
+      "Explore the Sahara on a five-day round trip from Marrakech",
+      "Cross the High Atlas Mountains and visit Ait Ben Haddou",
+      "Travel through Ouarzazate and the Dades Valley",
+      "Walk between the dramatic cliffs of Todra Gorges",
+      "Spend two nights in the Merzouga area instead of rushing back",
+      "Enjoy a camel trek and sunset over the Erg Chebbi dunes",
+      "Spend one night in a Sahara desert camp",
+      "Explore Khamlia and the surroundings of Merzouga",
+      "Stay the following night in a riad in Merzouga",
+      "Discover Rissani and the landscapes of southeastern Morocco",
+      "Return through Nkob and the palm-filled Draa Valley",
+      "Spend a night in Ouarzazate before returning to Marrakech",
+      "Travel privately with flexible sightseeing and photo stops",
+    ],
+  
+    overview: `
+      Take your time in Morocco's Sahara on this private 5-day desert tour from
+      Marrakech to Merzouga and back. The itinerary combines the High Atlas
+      Mountains, historic kasbahs, deep gorges and the Erg Chebbi dunes, with
+      more time in the desert than a typical shorter round trip.
+  
+      Travel from Marrakech across the High Atlas Mountains to Ait Ben Haddou
+      and Ouarzazate before spending your first night in the Dades Valley.
+      Continue the next day through Todra Gorges to Merzouga, where the sand
+      dunes of Erg Chebbi rise above the surrounding desert landscape.
+  
+      The highlight is two nights in the Merzouga area, with two different
+      experiences: first, a camel trek and a night in a Sahara desert camp;
+      then, a day exploring the desert surroundings and an overnight stay in
+      a riad. This extra day offers time for Khamlia and the local landscape
+      without combining every activity with a long drive.
+  
+      On the return journey, travel past Rissani and through the rocky desert
+      scenery toward Nkob and the Draa Valley. Spend the fourth night in
+      Ouarzazate, then cross the High Atlas Mountains again and finish your
+      private tour in Marrakech on day five.
+  
+      Unlike a Marrakech-to-Fes desert itinerary, this five-day tour starts
+      and finishes in Marrakech. It is particularly well suited to travelers
+      who want to discover Merzouga at a more comfortable pace while keeping
+      Marrakech as their base before and after the Sahara adventure.
+    `,
+  
+    itinerary: [
+      {
+        day: 1,
+        title:
+          "Marrakech – High Atlas Mountains – Ait Ben Haddou – Dades Valley",
+        description: `
+          Your private 5-day desert tour begins with pickup in Marrakech.
+          Leave the city behind and travel into the High Atlas Mountains,
+          following the mountain road through villages and dramatic scenery.
+          There will be opportunities to stop for photographs and short breaks.
+  
+          Continue to Ait Ben Haddou, the historic fortified village known
+          for its traditional earthen buildings. After time to explore,
+          follow the route through Ouarzazate and the landscapes of southern
+          Morocco toward the Dades Valley.
+  
+          Arrive in the Dades area for dinner and your first overnight stay
+          at a hotel or riad. The first day introduces the mountains,
+          kasbahs and valleys that make the journey to Merzouga memorable.
+        `,
+        highlights: [
+          "Pickup in Marrakech",
+          "Cross the High Atlas Mountains",
+          "Photo stops along the mountain route",
+          "Visit Ait Ben Haddou",
+          "Travel through Ouarzazate",
+          "Dinner and overnight in the Dades Valley",
+        ],
+      },
+      {
+        day: 2,
+        title: "Dades Valley – Todra Gorges – Merzouga – Sahara Desert Camp",
+        description: `
+          After breakfast, continue through the scenery of southeastern
+          Morocco toward Todra Gorges. Stop to explore the impressive canyon,
+          where steep rock walls rise above the riverbed and walking areas.
+  
+          The route then heads toward Merzouga, the village at the edge of
+          Erg Chebbi. As you approach, the landscape changes from rocky
+          valleys and small settlements to the golden dunes of the Sahara.
+  
+          In the afternoon, prepare for a camel trek across the dunes,
+          timed when possible for the softer light before sunset. Enjoy the
+          desert views, then continue to your Sahara camp. Dinner and your
+          second night are spent at the desert camp near Merzouga.
+        `,
+        highlights: [
+          "Breakfast in the Dades Valley",
+          "Visit Todra Gorges",
+          "Travel toward Merzouga and Erg Chebbi",
+          "Camel trek across the Sahara dunes",
+          "Watch the sunset when conditions permit",
+          "Dinner and overnight at a Sahara desert camp",
+        ],
+      },
+      {
+        day: 3,
+        title: "Merzouga – Khamlia – Erg Chebbi Desert Exploration – Merzouga Riad",
+        description: `
+          Wake up in the Sahara and, if you wish, rise early to see the
+          sunrise over the dunes. After breakfast, leave the desert camp
+          and begin a slower day devoted to the Merzouga area.
+  
+          Visit Khamlia, a nearby village known for its local musical
+          traditions, and spend time discovering the communities and
+          landscapes around Erg Chebbi. With no long transfer scheduled,
+          there is room in the day for breaks, photographs and enjoying
+          the desert atmosphere. Optional off-road excursions can be
+          discussed separately when planning the tour.
+  
+          Later, check in at a riad in the Merzouga area. Your third night
+          is in the riad rather than a second night at the camp, giving
+          you a different way to experience the Sahara region.
+        `,
+        highlights: [
+          "Optional sunrise over the Erg Chebbi dunes",
+          "Breakfast in the Sahara",
+          "Explore the Merzouga desert area",
+          "Visit Khamlia and learn about local culture",
+          "Unhurried time for photographs and scenic stops",
+          "Dinner and overnight at a riad in Merzouga",
+        ],
+      },
+      {
+        day: 4,
+        title: "Merzouga – Rissani – Nkob – Draa Valley – Ouarzazate",
+        description: `
+          After breakfast at your riad, leave Merzouga and begin the
+          return journey west through southern Morocco. Pass through
+          Rissani, a historic town with longstanding trading connections
+          to the desert region.
+  
+          Continue across the dry landscapes toward Nkob and the Draa
+          Valley. The route offers a different perspective from the way
+          to Merzouga, with rocky hills, traditional settlements and
+          stretches of palm groves. Stop along the way as timing and
+          road conditions allow.
+  
+          Arrive in Ouarzazate later in the day and check into your
+          hotel or riad. Spending the fourth night here breaks up the
+          return to Marrakech rather than making the entire journey
+          directly from Merzouga in one day.
+        `,
+        highlights: [
+          "Breakfast at your Merzouga riad",
+          "Travel through Rissani",
+          "Cross the landscapes around Nkob",
+          "Explore the Draa Valley scenery",
+          "Flexible stops for photos and breaks",
+          "Dinner and overnight in Ouarzazate",
+        ],
+      },
+      {
+        day: 5,
+        title: "Ouarzazate – High Atlas Mountains – Marrakech",
+        description: `
+          Enjoy breakfast in Ouarzazate before the final stage of your
+          five-day desert journey. Travel back toward the High Atlas
+          Mountains, with opportunities for scenic stops along the route.
+  
+          Cross the mountain landscapes as the road winds toward Marrakech.
+          The exact timing of stops and arrival depends on traffic, weather
+          and road conditions, so the day remains flexible rather than
+          following an unrealistic fixed schedule.
+  
+          Arrive in Marrakech and transfer to your agreed drop-off point.
+          Your private 5-day Marrakech to Merzouga desert tour ends in the
+          city where it began, after two distinct overnight experiences
+          in the Sahara region and a return journey through the Draa Valley.
+        `,
+        highlights: [
+          "Breakfast in Ouarzazate",
+          "Cross the High Atlas Mountains",
+          "Enjoy final mountain views and photo stops",
+          "Return to Marrakech",
+          "Drop-off at the agreed location in Marrakech",
+        ],
+      },
+    ],
+  
+    included: [
+      "Private transportation throughout the five-day round trip",
+      "Pickup and drop-off in Marrakech",
+      "English- or French-speaking driver",
+      "Four nights of accommodation",
+      "One night at a hotel or riad in the Dades Valley",
+      "One night at a Sahara desert camp near Merzouga",
+      "One night at a riad in the Merzouga area",
+      "One night at a hotel or riad in Ouarzazate",
+      "Breakfasts and dinners during the tour",
+      "Camel trek in the Erg Chebbi dunes, subject to weather and safety conditions",
+      "Visit to Ait Ben Haddou and a stop at Todra Gorges",
+      "Time to explore Khamlia and the Merzouga surroundings",
+      "Flexible photo stops along the route",
+    ],
+  
+    excluded: [
+      "Lunches",
+      "Drinks",
+      "Entrance fees when required",
+      "Local guides unless requested",
+      "Optional 4x4 desert excursions or other optional activities",
+      "Personal expenses",
+      "Travel insurance",
+      "Tips and gratuities",
+      "Any services not specifically listed as included",
+    ],
+  
+    accommodation: [
+      { night: 1, location: "Dades Valley", type: "Hotel or Riad" },
+      { night: 2, location: "Merzouga", type: "Sahara Desert Camp" },
+      { night: 3, location: "Merzouga", type: "Riad" },
+      { night: 4, location: "Ouarzazate", type: "Hotel or Riad" },
+    ],
+  
+    gallery: [
+      "/images/tours/5-day-marrakech-merzouga-desert-tour.webp",
+    ],
+  
+    faqs: [
+      {
+        question: "Is the 5-day Marrakech to Merzouga desert tour private?",
+        answer:
+          "Yes. This itinerary is designed as a private tour, with private transportation and flexibility for sightseeing stops and breaks.",
+      },
+      {
+        question: "Does the five-day tour start and finish in Marrakech?",
+        answer:
+          "Yes. Pickup is in Marrakech on day one, and the tour returns to Marrakech on day five. It does not end in Fes.",
+      },
+      {
+        question: "How many nights do we spend in Merzouga?",
+        answer:
+          "You spend two nights in the Merzouga area: the second night at a Sahara desert camp and the third night at a riad.",
+      },
+      {
+        question: "Which night is at the Sahara desert camp?",
+        answer:
+          "The Sahara desert camp is scheduled for night two, after arriving from Todra Gorges and enjoying the dunes of Erg Chebbi.",
+      },
+      {
+        question: "Do we stay in a riad in Merzouga?",
+        answer:
+          "Yes. The third night is spent at a riad in the Merzouga area after a day exploring the desert surroundings.",
+      },
+      {
+        question: "What makes this 5-day desert tour different from the 4-day tour?",
+        answer:
+          "The extra day allows two nights around Merzouga and more time for the desert itself. You enjoy one night at a camp and another at a riad before returning through the Draa Valley.",
+      },
+      {
+        question: "Is the camel trek included?",
+        answer:
+          "A camel trek in the Erg Chebbi dunes is included, subject to local weather and safety conditions. Alternative arrangements can be discussed before travel.",
+      },
+      {
+        question: "Will we visit Ait Ben Haddou and Todra Gorges?",
+        answer:
+          "Yes. The planned itinerary includes Ait Ben Haddou on day one and a stop at Todra Gorges on day two before continuing to Merzouga.",
+      },
+      {
+        question: "Is a 4x4 desert excursion included?",
+        answer:
+          "No. Optional off-road excursions are not included by default. Ask when requesting your quote if you would like one added to your itinerary.",
+      },
+      {
+        question: "Which meals are included?",
+        answer:
+          "Breakfasts and dinners are included during the tour. Lunches and drinks are not included unless confirmed separately in your quote.",
+      },
+      {
+        question: "Is there a lot of driving on this tour?",
+        answer:
+          "Travel between Marrakech and Merzouga involves long road distances. The five-day itinerary divides the journey across four overnight stops and includes a day focused on the Merzouga area.",
+      },
+      {
+        question: "Can families book this Marrakech desert tour?",
+        answer:
+          "Families can request the tour. Share the ages of any children in advance so transport, accommodation and desert activities can be discussed appropriately.",
+      },
+      {
+        question: "Can I customize this five-day tour?",
+        answer:
+          "Yes. The private itinerary can be adjusted to your interests, preferred accommodation standard and travel dates, subject to route and availability.",
+      },
+      {
+        question: "What should I pack for Merzouga?",
+        answer:
+          "Bring comfortable walking shoes, sun protection, water for the journey and an extra warm layer for evenings. Desert temperatures can change substantially by season.",
+      },
+    ],
+  
+    seo: {
+      title: "5-Day Marrakech to Merzouga Desert Tour | Moroccan Trip",
+      description:
+        "Explore a private 5-day Marrakech to Merzouga desert tour with two nights near the dunes, a camel trek, Dades Valley, Todra Gorges and return to Marrakech.",
+      // Internal keyword mapping; Google does not use a meta keywords tag for rankings.
+      keywords: [
+        "5 days tour from marrakech to merzouga",
+        "5 day desert tour from marrakech",
+        "5 day marrakech to merzouga desert tour",
+        "marrakech to merzouga 5 day tour",
+        "5 days desert tour from marrakech",
+        "private desert tour marrakech to merzouga",
+        "merzouga desert tour from marrakech",
+        "5 day sahara desert tour from marrakech",
+      ],
+    },
+  
+    booking: {
+      available: true,
+      minimumDays: 5,
+      customizable: true,
+      contactLabel: "Request a Quote",
+    },
+  },
+  
+
 ];
 
 
