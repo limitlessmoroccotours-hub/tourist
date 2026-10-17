@@ -7675,5 +7675,902 @@ export const blogPostsEs: BlogPost[] = [
       },
     
     },
+
+    {
+      id: "11",
+      slug: "dormir-en-el-desierto-de-merzouga",
+      title: "Dormir en el desierto de Merzouga: guía desde Marrakech",
+      excerpt:
+        "Prepara tu noche en el desierto de Merzouga desde Marrakech. Compara jaimas, campamentos y riads, elige una o dos noches y revisa qué incluye la reserva.",
+      image: "/images/blog/merzouga-desert-camp.webp",
+      category: "Guía de viaje de Marruecos",
+      author: "Moroccan Trip",
+      publishedAt: "2026-10-17",
+      readTime: "12 min de lectura",
+      featured: true,
+      introduction: `
+        Dormir en el desierto de Merzouga te permite pasar la noche en un campamento junto a los
+        paisajes de Erg Chebbi. Si sales desde Marrakech, no basta con elegir una jaima: también
+        necesitas organizar el trayecto y saber dónde dormirás cada noche.
+    
+        Una noche en el campamento puede encajar cuando tienes pocos días. Añadir otra noche en un
+        riad de Merzouga te permite dedicar una jornada a la zona antes de continuar el viaje. Son
+        dos alojamientos distintos, no dos noches obligatorias en una tienda.
+    
+        En esta guía encontrarás qué comparar entre campamentos, cómo preparar el equipaje y qué
+        preguntar sobre comidas y traslados. También verás cómo encaja la estancia en nuestras
+        rutas de tres, cuatro y cinco días desde Marrakech.
+      `,
+      sections: [
+        {
+          id: "jaimas-campamentos-merzouga",
+          heading: "Jaimas en el desierto de Merzouga: empieza por la ubicación",
+          paragraphs: [
+            `
+              Merzouga es un pueblo del sureste de Marruecos situado junto a las dunas de Erg
+              Chebbi. El pueblo, un riad de la zona y un campamento del desierto no son el
+              mismo alojamiento. Una reserva que solo indica «Merzouga» no explica exactamente
+              dónde vas a dormir.
+            `,
+            `
+              Antes de reservar un campamento de jaimas en Merzouga, pide el nombre, la
+              ubicación y el punto de encuentro. Pregunta también cómo se realiza el traslado
+              hasta el alojamiento y dónde termina la experiencia a la mañana siguiente.
+            `,
+            `
+              Dormir en el desierto de Marruecos puede formar parte de una ruta más larga. En
+              ese caso, revisa que el programa distinga la noche de campamento de las noches
+              en hoteles o riads. Así podrás comparar propuestas que realmente ofrecen la
+              misma distribución.
+            `,
+          ],
+        },
+        {
+          id: "campamento-estandar-o-lujo",
+          heading: "Campamento estándar o de lujo: compara los servicios",
+          paragraphs: [
+            `
+              Empieza por las comodidades que necesitas, no por la palabra «lujo». Al elegir
+              un campamento de lujo en Merzouga, lo importante es que la reserva describa la
+              jaima concreta y los servicios que vas a recibir.
+            `,
+            `
+              Haz las mismas preguntas al comparar alojamientos estándar y de mayor categoría.
+              ¿El baño es privado o compartido? ¿Qué camas tendrá tu grupo? ¿Las fotografías
+              corresponden a la jaima que te están ofreciendo?
+            `,
+            `
+              No des por incluidos el aire acondicionado, la calefacción, el agua caliente,
+              los enchufes o el wifi. Solicita una confirmación de aquello que sea importante
+              para tu estancia antes de pagar.
+            `,
+            `
+              Pagar más tiene sentido cuando la diferencia te aporta algo útil. Para una
+              familia, la distribución de las camas o el acceso al baño puede importar más que
+              la decoración. Compara la comodidad que buscas con el precio completo.
+            `,
+          ],
+          bullets: [
+            "Tipo de jaima y distribución de las camas.",
+            "Baño privado o compartido y forma de acceso.",
+            "Agua caliente, calefacción y refrigeración.",
+            "Electricidad y puntos para cargar el teléfono.",
+            "Wifi, si lo necesitas durante la estancia.",
+            "Fotografías del alojamiento que vas a reservar.",
+          ],
+        },
+        {
+          id: "llegada-al-campamento",
+          heading: "Cómo llegar al campamento y qué hacer con el equipaje",
+          paragraphs: [
+            `
+              Antes de comenzar el viaje, guarda los datos de recogida y pregunta quién te
+              recibirá en Merzouga. Tener claro el punto de encuentro evita confundir la
+              llegada al pueblo con la llegada al campamento.
+            `,
+            `
+              En nuestra ruta de cinco días desde Marrakech, llegarás a la zona durante el
+              segundo día, después de visitar las gargantas del Todra. El programa incluye un
+              paseo en camello, sujeto a las condiciones meteorológicas y de seguridad, y
+              después la noche en el campamento.
+            `,
+            `
+              No apliques esas condiciones a cualquier reserva de alojamiento. Si contratas
+              solo una jaima, pregunta si el traslado y el paseo están incluidos. Si prefieres
+              no montar en camello, acuerda una alternativa y su posible coste antes de
+              reservar.
+            `,
+            `
+              Aclara también qué equipaje llevarás contigo, cómo se gestionará la maleta
+              principal y cuándo volverás a tener acceso a ella. Prepara la bolsa para la
+              noche después de conocer esas indicaciones.
+            `,
+          ],
+        },
+        {
+          id: "noche-desierto-merzouga",
+          heading: "Una noche en el desierto de Merzouga: del atardecer al desayuno",
+          paragraphs: [
+            `
+              La noche de campamento te permite quedarte en la zona de las dunas en lugar de
+              salir hacia otra ciudad al terminar la tarde. Según el programa y las
+              condiciones, tendrás ocasión de disfrutar de un paseo, del atardecer en Merzouga
+              y de la cena.
+            `,
+            `
+              El té, la comida marroquí y la música forman parte de la experiencia descrita en
+              nuestra guía de Merzouga. Comprueba qué está previsto en tu reserva: no todos
+              los alojamientos tienen que seguir el mismo horario ni ofrecer las mismas
+              actividades.
+            `,
+            `
+              Deja espacio para descansar y disfrutar del entorno. No necesitas llenar cada
+              momento con una actividad. Las vistas del atardecer y el tiempo bajo las
+              estrellas deben entenderse como oportunidades, no como resultados garantizados.
+            `,
+            `
+              Para ver el amanecer en Merzouga, pregunta cómo encaja con el desayuno y la
+              salida. Si continúas la ruta esa mañana, necesitarás preparar el equipaje. Si te
+              quedas otra noche en la zona, podrás dedicar el día a los alrededores.
+            `,
+          ],
+        },
+        {
+          id: "una-o-dos-noches-merzouga",
+          heading: "Dónde dormir en Merzouga: una noche de campamento o dos noches en la zona",
+          paragraphs: [
+            `
+              Una noche puede ser suficiente para vivir la experiencia del campamento y
+              continuar la ruta a la mañana siguiente. La contrapartida es que tendrás menos
+              tiempo para descubrir los alrededores después del desayuno.
+            `,
+            `
+              Con dos noches en la zona puedes combinar una jaima con un riad. Pasas la
+              primera noche en el campamento y la segunda en el riad, con una jornada entre
+              ambas para conocer Merzouga sin emprender otro trayecto largo.
+            `,
+            `
+              Esa es la distribución de nuestra excursión de cinco días con salida y regreso a
+              Marrakech. La segunda noche del tour se pasa en el campamento y la tercera en un
+              riad de Merzouga. El programa de ese día incluye tiempo para Khamlia y los
+              alrededores de Erg Chebbi.
+            `,
+            `
+              Dos noches en Merzouga no significa automáticamente dos noches en una jaima.
+              Pide el alojamiento de cada noche por escrito para que la reserva coincida con
+              lo que buscas.
+            `,
+          ],
+          bullets: [
+            "Una noche de campamento: estancia corta antes de continuar la ruta.",
+            "Una noche de campamento y otra de riad: dos experiencias y más tiempo en Merzouga.",
+            "Dos noches de campamento: una distribución diferente que debes solicitar y confirmar.",
+          ],
+        },
+        {
+          id: "dormir-desierto-desde-marrakech",
+          heading: "Cómo organizar una noche en el desierto desde Marrakech",
+          paragraphs: [
+            `
+              Si quieres dormir en el desierto desde Marrakech y tu destino es Merzouga,
+              reserva varios días para el viaje. El recorrido atraviesa montañas y valles del
+              sur de Marruecos; no conviene plantearlo como una excursión rápida desde la
+              ciudad.
+            `,
+            `
+              Una ruta puede combinar el Alto Atlas, Ait Ben Haddou, Ouarzazate, el valle del
+              Dades y las gargantas del Todra antes de llegar a las dunas. El número de días
+              cambia el tiempo disponible en cada etapa y la forma de organizar el regreso.
+            `,
+            `
+              Comprueba dónde termina el tour. Una ruta que vuelve a Marrakech no es igual que
+              otra que continúa hacia Fez, aunque ambas visiten Merzouga y tengan la misma
+              duración.
+            `,
+            `
+              Reservar una noche en el desierto de Merzouga desde Marrakech implica revisar el
+              transporte completo. Una reserva de campamento por sí sola no confirma que
+              incluya la recogida en Marrakech ni los alojamientos del camino.
+            `,
+          ],
+        },
+        {
+          id: "comparar-tours-tres-cuatro-cinco-dias",
+          heading: "¿Tour de 3, 4 o 5 días? Mira dónde se pasa cada noche",
+          paragraphs: [
+            `
+              Compara las noches y las etapas, no solo el número de días. Una jornada
+              adicional puede servir para pasar más tiempo en Merzouga o para dividir el
+              regreso. Son ventajas diferentes.
+            `,
+            `
+              Las tres opciones de Moroccan Trip que aparecen a continuación salen de
+              Marrakech y vuelven a Marrakech. Esta es la distribución de sus alojamientos:
+            `,
+          ],
+          bullets: [
+            "3 días y 2 noches: una noche en la zona del Dades y otra en un campamento del desierto. El último día se regresa a Marrakech.",
+            "4 días y 3 noches: una noche en Dades, otra en el campamento y otra en Ouarzazate. La vuelta se divide en etapas por el valle del Draa.",
+            "5 días y 4 noches: una noche en Dades, otra en el campamento, otra en un riad de Merzouga y la última en Ouarzazate antes de volver a Marrakech.",
+          ],
+        },
+        {
+          id: "precio-incluidos-campamento",
+          heading: "Cuánto cuesta dormir en el desierto: compara el precio completo",
+          paragraphs: [
+            `
+              El precio de una jaima no se puede comparar directamente con el de un tour de
+              varios días. Para valorar una propuesta, revisa qué incluye en alojamiento,
+              comidas, traslados, transporte y actividades.
+            `,
+            `
+              Pregunta si la cantidad se calcula por persona, por jaima o por grupo. Pide
+              también los gastos que quedan fuera. Dos ofertas con el mismo número de noches
+              pueden cubrir servicios distintos.
+            `,
+            `
+              En nuestra ruta de cinco días, los servicios indicados incluyen transporte
+              privado, cuatro noches de alojamiento, desayunos, cenas y un paseo en camello
+              sujeto a las condiciones meteorológicas y de seguridad.
+            `,
+            `
+              Los almuerzos, las bebidas, las entradas y las excursiones opcionales en 4x4 no
+              están incluidos por defecto. Revisa el presupuesto final antes de reservar;
+              estas condiciones no deben darse por hechas para otro tour o una reserva
+              independiente.
+            `,
+            `
+              Esta guía no fija una tarifa por dormir en una jaima en el desierto. Solicita el
+              total para tus fechas, el tamaño del grupo y la categoría de alojamiento. Así
+              compararás la estancia real, no solamente una fotografía o un precio inicial.
+            `,
+          ],
+        },
+        {
+          id: "equipaje-noche-desierto",
+          heading: "Qué llevar para dormir en una jaima en el desierto",
+          paragraphs: [
+            `
+              Prepara la maleta para todo el recorrido. Una tarde cálida en Marrakech no
+              representa necesariamente las condiciones que encontrarás en el Atlas o durante
+              la noche en Merzouga.
+            `,
+            `
+              Para dormir en una jaima en el desierto de Marruecos, lleva prendas que puedas
+              combinar por capas y los objetos que necesitas para una noche. Reúne lo esencial
+              en una bolsa pequeña, siguiendo las indicaciones que te den sobre el equipaje.
+            `,
+            `
+              No lleves únicamente ropa para el calor. El calzado cómodo y una capa de abrigo
+              también son útiles cuando el programa incluye caminar, salir temprano o pasar
+              tiempo al aire libre después del atardecer.
+            `,
+          ],
+          bullets: [
+            "Calzado cómodo para caminar.",
+            "Ropa ligera para el día.",
+            "Una capa de abrigo para la noche y la mañana.",
+            "Protección solar y gafas de sol.",
+            "Una bolsa pequeña con lo necesario para el campamento.",
+            "Agua para el trayecto y medicación personal.",
+            "Teléfono o cámara y su cargador.",
+          ],
+        },
+        {
+          id: "temperatura-merzouga-noche",
+          heading: "Temperatura en el desierto de Merzouga por la noche: cómo prepararte",
+          paragraphs: [
+            `
+              La temperatura durante la noche no es igual todo el año. La guía de Merzouga de
+              nuestro sitio destaca la primavera y el otoño como periodos para considerar si
+              prefieres condiciones más cómodas para las actividades al aire libre.
+            `,
+            `
+              En verano hay que preparar la estancia para los días calurosos. En invierno
+              conviene llevar más abrigo para las noches. Consulta las condiciones cerca de la
+              fecha de salida, en lugar de organizar la maleta según una única temperatura
+              para todo Marruecos.
+            `,
+            `
+              Pregunta qué ropa de cama ofrece el alojamiento y confirma la calefacción o la
+              refrigeración que necesites. La palabra «lujo» no sustituye esa información.
+              Tampoco conviene deducir la temperatura dentro de una jaima a partir de una
+              foto.
+            `,
+            `
+              Ten en cuenta también las etapas del Alto Atlas. Dormir en Merzouga es solo una
+              parte del viaje, y la preparación debe cubrir el trayecto completo. No se
+              incluye aquí una cifra fija en grados para todas las noches.
+            `,
+          ],
+        },
+        {
+          id: "necesidades-antes-reservar",
+          heading: "Familias, movilidad y comidas: explica tus necesidades antes de reservar",
+          paragraphs: [
+            `
+              Si viajas con niños, personas mayores o alguien con movilidad reducida, comparte
+              esa información antes de cerrar el programa. Revisa el acceso a la jaima, al
+              baño y al vehículo, además de los trayectos de carretera.
+            `,
+            `
+              Un tour privado no confirma por sí solo el uso exclusivo del campamento.
+              Pregunta qué espacios se comparten y cómo se organiza el alojamiento de tu
+              grupo.
+            `,
+            `
+              Comunica las alergias y las necesidades alimentarias de forma clara. Pide una
+              respuesta sobre lo que se puede preparar, en lugar de asumir que cualquier menú
+              podrá cambiarse al llegar.
+            `,
+            `
+              También conviene resolver con tiempo cualquier alternativa al paseo en camello.
+              Confirma cómo se realizará el traslado y si hay algún coste adicional. Es una
+              parte de la reserva, no un detalle que debas dejar para el último momento.
+            `,
+          ],
+        },
+        {
+          id: "elegir-campamento-merzouga",
+          heading: "Cómo elegir el campamento de Merzouga adecuado para tu viaje",
+          paragraphs: [
+            `
+              El mejor campamento para ti será el que encaje con tu presupuesto, tus
+              necesidades y el tiempo que tienes. No necesitas una lista interminable de
+              actividades para disfrutar de la estancia.
+            `,
+            `
+              Antes de pagar, pide un resumen que reúna el alojamiento, los servicios, los
+              puntos de encuentro y las noches de la ruta. Comprueba que se refiere al
+              campamento del desierto de Merzouga que has elegido y no solo a una categoría
+              general.
+            `,
+            `
+              Después compara ese resumen con tus prioridades. Una persona puede valorar más
+              un baño privado; otra puede preferir dedicar el presupuesto a una segunda noche
+              en la zona. La elección debe responder a tu manera de viajar.
+            `,
+          ],
+          bullets: [
+            "¿Qué campamento y qué tipo de jaima quedan confirmados?",
+            "¿Qué incluye el precio total y qué se paga aparte?",
+            "¿Cómo llegaré al campamento y cómo saldré de él?",
+            "¿Qué ocurrirá con mi equipaje?",
+            "¿Dónde dormiré la noche siguiente?",
+            "¿Cuáles son las condiciones de pago, cancelación y cambios?",
+          ],
+        },
+        {
+          id: "preparar-estancia-marrakech-merzouga",
+          heading: "Prepara tu estancia en Merzouga desde Marrakech",
+          paragraphs: [
+            `
+              Decide primero cuántos días puedes dedicar al recorrido. Después elige si buscas
+              una sola noche de campamento o una estancia que combine jaima y riad. Pasar más
+              tiempo en la zona permite conocer los alrededores sin salir hacia otra ciudad
+              justo después del desayuno.
+            `,
+            `
+              Puedes comparar los tours de tres, cuatro y cinco días que encontrarás debajo.
+              Envía a Moroccan Trip tus fechas, el número de viajeros y tus preferencias de
+              alojamiento para solicitar un presupuesto acorde con la ruta elegida.
+            `,
+          ],
+        },
+      ],
+      relatedTours: [
+        "3-dias-marrakech-merzouga",
+        "excursion-desierto-desde-marrakech-4-dias",
+        "5-dias-marrakech-merzouga",
+      ],
+      relatedDayTrips: [],
+      relatedSpecialOffers: [
+        "viaje-desierto-marruecos",
+        "viajes-lujo-marruecos",
+        "marruecos-con-ninos",
+      ],
+      faqs: [
+        {
+          question: "¿Se puede dormir en el desierto de Merzouga saliendo desde Marrakech?",
+          answer:
+            "Sí. Organiza la estancia como parte de un viaje de varios días, no como una excursión rápida desde Marrakech. Nuestras rutas de tres, cuatro y cinco días incluyen una noche de campamento, con distintas paradas y alojamientos durante el recorrido.",
+        },
+        {
+          question: "¿Es suficiente una noche en un campamento de Merzouga?",
+          answer:
+            "Una noche permite vivir la experiencia del campamento antes de continuar el viaje. Una segunda noche en la zona te da más tiempo para explorar Merzouga en lugar de marcharte después del desayuno.",
+        },
+        {
+          question: "¿Dos noches en Merzouga significa dormir dos veces en una jaima?",
+          answer:
+            "No necesariamente. Nuestra excursión de cinco días incluye campamento en la segunda noche del tour y riad en Merzouga en la tercera. Dos noches de campamento serían una distribución distinta que habría que solicitar y confirmar.",
+        },
+        {
+          question: "¿Un campamento de lujo incluye baño privado y aire acondicionado?",
+          answer:
+            "No lo des por hecho por el nombre. Pregunta por los servicios de la jaima concreta: baño, agua caliente, calefacción, refrigeración y electricidad. Confirma los que sean importantes para ti antes de reservar.",
+        },
+        {
+          question: "¿Puedo reservar una noche en el desierto sin montar en camello?",
+          answer:
+            "Consulta una alternativa con el proveedor antes de reservar. Debes saber cómo llegarás al campamento, si esa opción está disponible para tus fechas y si supone un suplemento.",
+        },
+        {
+          question: "¿Cuánto cuesta dormir en el desierto de Merzouga?",
+          answer:
+            "Solicita un presupuesto para tus fechas, número de viajeros, alojamiento y servicios. Compara el precio completo: una noche de jaima no cubre necesariamente lo mismo que un tour con transporte desde Marrakech y otras noches de alojamiento.",
+        },
+        {
+          question: "¿La noche de campamento incluye las comidas?",
+          answer:
+            "Depende de la reserva. Nuestra ruta de cinco días desde Marrakech incluye desayunos y cenas. Los almuerzos y las bebidas quedan fuera salvo que el presupuesto final indique otra cosa. Comprueba las condiciones de tu programa.",
+        },
+        {
+          question: "¿Qué ropa llevar para dormir en una jaima en Merzouga?",
+          answer:
+            "Lleva ropa cómoda para el día, calzado para caminar y una capa de abrigo para la noche. Añade protección solar y tus objetos personales. Revisa las condiciones para las fechas del viaje y confirma cómo se organizará el equipaje.",
+        },
+      ],
+      seo: {
+        title: "Dormir en el desierto de Merzouga: jaimas y campamentos",
+        description:
+          "Prepara tu noche en el desierto de Merzouga desde Marrakech. Compara jaimas y riads, una o dos noches, qué llevar y qué confirmar antes de reservar.",
+        // Mapa editorial de palabras clave: exportaciones Semrush ES del 17/10/2026.
+        // En el texto se usan variantes gramaticales; no es una etiqueta meta keywords.
+        keywords: [
+          "dormir en el desierto de merzouga",
+          "dormir en el desierto marruecos",
+          "jaimas desierto merzouga",
+          "campamento merzouga",
+          "campamento de jaimas en merzouga",
+          "campamento de lujo en merzouga",
+          "dormir en una jaima en el desierto",
+          "dormir en jaima desierto marruecos",
+          "noche en el desierto merzouga",
+          "desierto merzouga noche",
+          "temperatura desierto merzouga noche",
+          "dormir en el desierto desde marrakech",
+          "noche en el desierto merzouga desde marrakech",
+          "dormir en merzouga",
+          "donde dormir en merzouga",
+          "atardecer en merzouga",
+          "amanecer en merzouga",
+          "campamento desierto merzouga",
+        ],
+      },
+    },
+    
+    {
+      id: "12",
+      slug: "ait-ben-haddou-que-ver",
+      title: "Ait Ben Haddou: qué ver y cómo visitarlo desde Marrakech",
+      excerpt: "Descubre qué ver en Ait Ben Haddou y cómo organizar la visita desde Marrakech. Compara una excursión de un día con una ruta por Ouarzazate hacia Merzouga.",
+      image: "/images/blog/ait-ben-haddou-guide.webp",
+      category: "Guía de viaje de Marruecos",
+      author: "Moroccan Trip",
+      publishedAt: "2026-10-17",
+      readTime: "13 min de lectura",
+      featured: false,
+      introduction: `
+        Ait Ben Haddou es un pueblo fortificado del sur de Marruecos, conocido por sus
+        construcciones tradicionales de tierra. Visitarlo permite conocer una arquitectura diferente
+        de la medina de Marrakech y añadir una parada cultural al viaje por el Alto Atlas.
+    
+        Puedes organizar la visita con regreso a Marrakech o incluirla en una ruta más larga hacia
+        Merzouga. Conviene decidirlo antes de reservar: conocer el pueblo y viajar hasta las dunas
+        del Sáhara son experiencias distintas, aunque puedan formar parte del mismo recorrido.
+    
+        En esta guía encontrarás qué ver en Ait Ben Haddou, cómo preparar el trayecto desde
+        Marrakech y qué comprobar sobre entradas, guías y transporte. También explicamos cómo
+        encajan Ouarzazate y el desierto en nuestros programas de tres, cuatro y cinco días.
+      `,
+      sections: [
+        {
+          id: "que-es-ait-ben-haddou",
+          heading: "Ait Ben Haddou en Marruecos: qué lugar vas a visitar",
+          paragraphs: [
+            `
+              Ait Ben Haddou, también escrito Ait Benhaddou, es un conjunto de edificios
+              tradicionales dentro de un antiguo poblado fortificado. El nombre ksar de Ait Ben
+              Haddou se refiere a este lugar, que merece una visita a pie y no solo una fotografía
+              desde el exterior.
+            `,
+            `
+              También encontrarás la expresión kasbah de Ait Ben Haddou al preparar el viaje. Para
+              organizar la visita, piensa en el conjunto del pueblo y en su arquitectura, no
+              únicamente en buscar un edificio concreto. El interés está tanto en la vista general
+              como en los detalles que descubres al caminar.
+            `,
+            `
+              En nuestras rutas desde Marrakech, esta parada llega después de cruzar el Alto Atlas.
+              A continuación, el recorrido pasa por Ouarzazate y continúa hacia el valle del Dades.
+              Ait Ben Haddou es la visita cultural de esta etapa; el campamento junto a las dunas de
+              Merzouga corresponde a otra parte del viaje.
+            `,
+          ],
+        },
+        {
+          id: "que-ver-en-ait-ben-haddou",
+          heading: "Qué ver en Ait Ben Haddou durante tu visita",
+          paragraphs: [
+            `
+              Empieza por observar el pueblo en conjunto. Fíjate en las formas de los edificios, en
+              cómo se agrupan y en su relación con el paisaje. Después, dedica tiempo a los detalles
+              de las fachadas, las texturas de los muros y los espacios entre las construcciones.
+            `,
+            `
+              El paseo por las zonas abiertas a visitantes es el centro de la experiencia. Elige un
+              recorrido adecuado para tu grupo y deja margen para regresar al punto de encuentro. No
+              hace falta convertir la visita en una carrera para ver cada rincón.
+            `,
+            `
+              Para las fotografías, combina algunas vistas amplias con detalles de la arquitectura
+              de tierra. Respeta los espacios privados y pregunta antes de fotografiar a una persona
+              de cerca. No subas a muros ni entres en una vivienda para conseguir una imagen.
+            `,
+            `
+              Si te interesa conocer la historia de Ait Ben Haddou o entender sus formas de
+              construcción, puedes solicitar una explicación guiada. Acuerda el idioma, el recorrido
+              y el precio antes de empezar. El conductor del vehículo y el guía que acompaña el
+              paseo pueden ser personas diferentes.
+            `,
+          ],
+          bullets: [
+            "Observar el conjunto del pueblo fortificado antes de comenzar el paseo.",
+            "Descubrir las fachadas y los detalles de la arquitectura de tierra.",
+            "Caminar por las zonas abiertas a visitantes al ritmo de tu grupo.",
+            "Reservar tiempo para fotografías sin bloquear los accesos.",
+            "Solicitar una visita guiada si la historia es una prioridad para ti.",
+          ],
+        },
+        {
+          id: "merece-la-pena-ait-ben-haddou",
+          heading: "¿Merece la pena visitar Ait Ben Haddou?",
+          paragraphs: [
+            `
+              Puede ser una buena elección si disfrutas de la arquitectura, los paseos por pueblos
+              históricos y los viajes que muestran algo más que las grandes ciudades. En una ruta
+              hacia Merzouga, añade una experiencia cultural antes de llegar a los paisajes de
+              arena.
+            `,
+            `
+              La parte que debes valorar es el desplazamiento desde Marrakech. El día no incluye
+              solamente el paseo: también hay un cruce del Alto Atlas, paradas y, si regresas a la
+              ciudad, el trayecto de vuelta. Decide si ese tipo de jornada encaja con tus
+              vacaciones.
+            `,
+            `
+              Si tu prioridad es ver las dunas de Erg Chebbi y dormir en un campamento del Sáhara,
+              reserva varios días para Merzouga. Ait Ben Haddou puede formar parte de ese viaje,
+              pero visitar el pueblo no sustituye la experiencia del desierto.
+            `,
+          ],
+        },
+        {
+          id: "como-llegar-ait-ben-haddou-marrakech",
+          heading: "Cómo llegar a Ait Ben Haddou desde Marrakech",
+          paragraphs: [
+            `
+              Nuestras rutas de Marrakech a Ait Ben Haddou atraviesan el Alto Atlas antes de
+              continuar por el sur de Marruecos. La guía de Marrakech a Merzouga que encontrarás en
+              nuestro blog describe el cruce por el puerto de Tizi n'Tichka como parte de este
+              recorrido.
+            `,
+            `
+              Al comparar opciones, separa el transporte de la visita. Un precio puede cubrir
+              únicamente el vehículo, mientras que el guía, la comida o determinadas paradas se
+              organizan aparte. Primero decide qué necesitas y después compara propuestas que
+              incluyan servicios similares.
+            `,
+            `
+              Para un viaje privado, acuerda el punto de recogida, las pausas, el tiempo reservado
+              al pueblo y el destino final. Si eliges una excursión compartida, revisa el horario
+              del grupo y cuánto tiempo libre queda para caminar.
+            `,
+            `
+              Si preparas los desplazamientos por tu cuenta, organiza tanto la llegada como la
+              salida. Llegar a Ouarzazate no significa que tengas incluida la visita al pueblo ni el
+              regreso a Marrakech. Guarda los puntos de encuentro y los contactos de cada servicio.
+            `,
+            `
+              La distancia por sí sola no describe la duración de la jornada. Consulta las
+              condiciones de la ruta para tus fechas y añade las visitas, las comidas y los
+              descansos al tiempo de carretera. Confirma los horarios de transporte con el proveedor
+              en lugar de depender de una hora fija indicada en una guía.
+            `,
+          ],
+        },
+        {
+          id: "excursion-dia-o-ruta-desierto",
+          heading: "Excursión de un día desde Marrakech o ruta hacia el desierto",
+          paragraphs: [
+            `
+              Una excursión de Marrakech a Ait Ben Haddou con regreso el mismo día mantiene la
+              ciudad como base. Esta opción puede encajar cuando el pueblo es tu objetivo principal
+              y aceptas hacer la ida y la vuelta por las montañas en una sola jornada.
+            `,
+            `
+              Una ruta de varios días hacia Merzouga tiene otra organización. Después de la visita,
+              continúas por el sur en lugar de volver inmediatamente a Marrakech. Si ya quieres
+              conocer el Sáhara, esta opción permite integrar las diferentes etapas en un solo
+              recorrido.
+            `,
+            `
+              Ninguno de los formatos garantiza por sí mismo una visita más larga al pueblo. Compara
+              el tiempo que se dedica realmente a Ait Ben Haddou. Una excursión que anuncia muchas
+              paradas puede dejarte menos margen para caminar en el lugar que más te interesa.
+            `,
+            `
+              Antes de reservar una salida independiente, revisa el tour del desierto que hayas
+              elegido. Nuestras rutas circulares de tres, cuatro y cinco días incluyen esta parada.
+              Reservar otra excursión sin comprobar el programa podría hacerte repetir la misma
+              visita.
+            `,
+          ],
+        },
+        {
+          id: "ouarzazate-y-ait-ben-haddou",
+          heading: "Ouarzazate y Ait Ben Haddou: cómo combinarlos",
+          paragraphs: [
+            `
+              Ouarzazate y Ait Ben Haddou son paradas distintas en nuestros itinerarios por el sur.
+              Durante la primera etapa desde Marrakech se visita el pueblo fortificado y después se
+              continúa por Ouarzazate hacia el valle del Dades.
+            `,
+            `
+              Comprueba qué significa la mención de Ouarzazate en cada programa. Pasar por la
+              ciudad, hacer una pausa y realizar una visita cultural son cosas diferentes. No des
+              por incluidas todas las atracciones que hayas visto en otras guías.
+            `,
+            `
+              Para ordenar esta parte del viaje, mira dónde encajan la comida y la siguiente noche
+              de alojamiento. Es preferible tener tiempo para el paseo y el descanso que añadir
+              muchas visitas breves solo porque los nombres aparecen juntos en una excursión.
+            `,
+          ],
+        },
+        {
+          id: "ait-ben-haddou-merzouga-rutas",
+          heading: "De Ait Ben Haddou a Merzouga: rutas de 3, 4 y 5 días",
+          paragraphs: [
+            `
+              Ir de Ait Ben Haddou a Merzouga supone continuar por el sur de Marruecos, no añadir
+              una pequeña vuelta después del paseo. En nuestras rutas circulares desde Marrakech, la
+              primera noche se pasa en la zona del Dades. El segundo día incluye las gargantas del
+              Todra antes de llegar a Merzouga.
+            `,
+            `
+              Cada lugar aporta una experiencia distinta. En Ait Ben Haddou, la visita se centra en
+              el pueblo y su arquitectura. En Merzouga, el viaje se acerca a las dunas de Erg Chebbi
+              y a la noche de campamento.
+            `,
+            `
+              Las tres opciones que aparecen debajo del artículo empiezan y terminan en Marrakech.
+              Lo que cambia es cómo se reparte el regreso y cuánto tiempo se dedica a Merzouga. Más
+              días no significa automáticamente más noches ni un paseo más largo en Ait Ben Haddou.
+            `,
+          ],
+          bullets: [
+            "3 días / 2 noches: visita de Ait Ben Haddou el primer día, noche en el Dades, segunda noche en campamento cerca de Merzouga y regreso a Marrakech el tercer día.",
+            "4 días / 3 noches: noche en el Dades, noche de campamento y noche en Ouarzazate durante el regreso por el valle del Draa.",
+            "5 días / 4 noches: noche en el Dades, noche de campamento, otra en un riad de Merzouga y última noche en Ouarzazate antes de volver a Marrakech.",
+          ],
+        },
+        {
+          id: "tiempo-visita-ait-ben-haddou",
+          heading: "Cuánto tiempo reservar para visitar el pueblo",
+          paragraphs: [
+            `
+              Organiza una visita a pie, no solamente una parada para hacer una foto. Al revisar un
+              itinerario, distingue el tiempo dentro de Ait Ben Haddou del tiempo de carretera,
+              comida o visitas a otros lugares.
+            `,
+            `
+              Como propuesta para ordenar el paseo, puedes empezar con una vista general, recorrer
+              las zonas abiertas a visitantes y detenerte en los detalles que más te interesen.
+              Después, regresa al punto de encuentro con margen. Es una sugerencia de organización,
+              no un circuito guiado fijo.
+            `,
+            `
+              La duración depende del ritmo del grupo, las fotografías y las explicaciones que
+              quieras escuchar. Si viajas con niños o prefieres caminar poco, coméntalo al preparar
+              la ruta. Un paseo más corto que puedas disfrutar tiene más sentido que seguir un ritmo
+              incómodo.
+            `,
+            `
+              Cuando la arquitectura sea uno de los motivos principales del viaje, dilo antes de
+              reservar. Así podrás comparar programas que dediquen tiempo a la visita, en lugar de
+              elegir únicamente por la cantidad de destinos anunciados.
+            `,
+          ],
+        },
+        {
+          id: "ait-ben-haddou-entrada-gastos",
+          heading: "Entrada a Ait Ben Haddou, guía y otros gastos",
+          paragraphs: [
+            `
+              Antes de la visita, confirma el precio de entrada que pueda corresponder al espacio o
+              servicio que vas a utilizar. Un paseo guiado, un traslado y el acceso a un lugar
+              concreto no son el mismo gasto. Esta guía no indica una tarifa de entrada actual
+              verificada.
+            `,
+            `
+              Pide un desglose sencillo del presupuesto: vehículo, guía, comidas, entradas y
+              alojamiento si el viaje dura varios días. Una oferta de transporte no te dice
+              necesariamente cuánto costará la jornada completa.
+            `,
+            `
+              Nuestra ruta de cinco días desde Marrakech incluye Ait Ben Haddou en el itinerario,
+              pero los guías locales y las entradas no están incluidos por defecto. Los almuerzos,
+              las bebidas y las actividades opcionales en 4x4 también quedan fuera, salvo que el
+              presupuesto final indique otra cosa.
+            `,
+            `
+              Lleva algunos billetes pequeños en dirhams para los gastos que no estén pagados.
+              Acuerda el precio antes de aceptar un servicio adicional y distingue la tarifa de una
+              posible propina. Así tendrás claro qué estás pagando durante cada parada.
+            `,
+            `
+              Aplica estas comprobaciones al programa que contrates. Las condiciones de un tour de
+              varios días no tienen por qué ser iguales a las de una excursión independiente o una
+              visita guiada reservada por separado.
+            `,
+          ],
+        },
+        {
+          id: "tiempo-ait-ben-haddou-que-llevar",
+          heading: "El tiempo en Ait Ben Haddou y qué llevar",
+          paragraphs: [
+            `
+              Consulta el tiempo en Ait Ben Haddou cerca de la salida y revisa también las
+              condiciones del recorrido. Si empiezas en Marrakech, cruzas el Alto Atlas y después
+              continúas a Merzouga, mirar solo la temperatura de una ciudad no es suficiente.
+            `,
+            `
+              Nuestra guía de Marruecos presenta la primavera y el otoño como épocas a considerar
+              para rutas por varias regiones. En verano conviene organizar las actividades alrededor
+              del calor. En invierno debes preparar el paso por zonas de montaña y las noches más
+              frías del desierto. Son orientaciones generales, no una previsión para tus fechas.
+            `,
+            `
+              Lleva ropa que puedas combinar por capas y una mochila pequeña para el paseo. Guarda
+              el agua, la protección solar y tus objetos personales a mano, en lugar de dejarlos en
+              el fondo de la maleta.
+            `,
+          ],
+          bullets: [
+            "Calzado cómodo para caminar.",
+            "Ropa práctica y una capa adicional para momentos más frescos.",
+            "Sombrero, gafas de sol y protección solar.",
+            "Agua y medicamentos personales.",
+            "Billetes pequeños en dirhams para gastos no incluidos.",
+            "Ubicación del punto de encuentro y un teléfono de contacto.",
+          ],
+        },
+        {
+          id: "comprobar-reserva-ait-ben-haddou",
+          heading: "Qué comprobar antes de reservar la visita",
+          paragraphs: [
+            `
+              Una confirmación útil explica el recorrido real: dónde te recogen, cómo se organiza el
+              paseo y dónde termina la jornada. El nombre del destino por sí solo no describe todos
+              esos servicios.
+            `,
+            `
+              Indica cualquier necesidad importante antes de pagar. Pregunta por el recorrido a pie,
+              el idioma del guía y las opciones para adaptar el ritmo a tu grupo. Un transporte
+              privado no implica que también tengas una visita guiada privada incluida.
+            `,
+            `
+              Si continúas al desierto, revisa el alojamiento noche por noche. Dormir en un
+              campamento cerca de Merzouga y dormir en un riad de la zona son experiencias
+              distintas. Confirma también la ciudad final: una ruta que termina en Fez no es la
+              misma que otra que vuelve a Marrakech.
+            `,
+          ],
+          bullets: [
+            "¿La visita al pueblo es guiada, por libre o una parada para fotografías?",
+            "¿Cuánto tiempo se reserva realmente para Ait Ben Haddou?",
+            "¿Qué incluye el paso por Ouarzazate?",
+            "¿Qué comidas, entradas o servicios se pagan aparte?",
+            "¿Dónde termina el recorrido?",
+            "¿Cuáles son las condiciones de pago, cancelación y cambios?",
+          ],
+        },
+        {
+          id: "planificar-visita-ait-ben-haddou",
+          heading: "Prepara tu visita desde Marrakech",
+          paragraphs: [
+            `
+              Empieza por elegir el viaje que necesitas. Una salida centrada en el pueblo puede
+              encajar cuando quieres volver a Marrakech el mismo día. Una ruta de varios días tiene
+              más sentido si también quieres visitar el Dades, las gargantas del Todra y las dunas
+              de Merzouga.
+            `,
+            `
+              Después, reserva tiempo para el paseo. Mirar la arquitectura de cerca, hacer unas
+              fotografías y caminar a un ritmo cómodo aporta más a la visita que añadir otra parada
+              demasiado rápida.
+            `,
+            `
+              Los tours de tres, cuatro y cinco días relacionados con esta guía incluyen Ait Ben
+              Haddou en una ruta de ida y vuelta entre Marrakech y Merzouga. Envía a Moroccan Trip
+              tus fechas, el número de viajeros y el ritmo que prefieres para solicitar un
+              itinerario y un presupuesto adaptados a tu viaje.
+            `,
+          ],
+        },
+      ],
+      relatedTours: [
+        "3-dias-marrakech-merzouga",
+        "excursion-desierto-desde-marrakech-4-dias",
+        "5-dias-marrakech-merzouga",
+      ],
+      relatedDayTrips: [],
+      relatedSpecialOffers: [
+        "viaje-desierto-marruecos",
+      ],
+      faqs: [
+        {
+          question: "¿Merece la pena visitar Ait Ben Haddou desde Marrakech?",
+          answer: "Puede merecer la pena si disfrutas de la arquitectura tradicional, los pueblos históricos y las paradas culturales. Valora el desplazamiento por el Alto Atlas, sobre todo si vas a volver a Marrakech el mismo día. Si ya has reservado un tour a Merzouga, comprueba si incluye la visita.",
+        },
+        {
+          question: "¿Ait Ben Haddou y Ait Benhaddou son el mismo lugar?",
+          answer: "Sí. Son dos formas de escribir el nombre del mismo pueblo fortificado. También puedes encontrar la grafía Aït Ben Haddou y las expresiones ksar de Ait Ben Haddou o kasbah de Ait Ben Haddou al preparar la visita.",
+        },
+        {
+          question: "¿Se puede hacer una excursión de un día a Ait Ben Haddou desde Marrakech?",
+          answer: "Puedes plantear una excursión con regreso a Marrakech, contando con el cruce del Alto Atlas en ambos sentidos. Confirma el programa completo con el proveedor. Si Merzouga también forma parte de tus vacaciones, revisa una ruta de varios días que ya incluya esta parada.",
+        },
+        {
+          question: "¿Qué ver en Ait Benhaddou durante una primera visita?",
+          answer: "El centro de la visita es el pueblo fortificado y su arquitectura tradicional de tierra. Recorre las zonas abiertas a visitantes, observa las fachadas y deja tiempo para fotografías. Puedes solicitar un guía si te interesa una explicación de la historia y las construcciones.",
+        },
+        {
+          question: "¿Cuánto cuesta la entrada a Ait Ben Haddou?",
+          answer: "Esta guía no publica una tarifa de entrada actual verificada. Consulta los cargos de la visita que vas a realizar y pregunta qué está incluido. El transporte, el guía y las entradas a espacios concretos deben distinguirse para conocer el coste total.",
+        },
+        {
+          question: "¿Visitar Ait Ben Haddou incluye llegar a Merzouga?",
+          answer: "No necesariamente. Una excursión al pueblo y una ruta hacia Merzouga son programas distintos. Nuestros tours circulares de tres, cuatro y cinco días desde Marrakech incluyen ambas visitas, con otras paradas y noches de alojamiento entre ellas.",
+        },
+        {
+          question: "¿Dónde se duerme en el tour de cinco días desde Marrakech?",
+          answer: "La primera noche es en un hotel o riad del Dades. La segunda es en un campamento cerca de Merzouga, la tercera en un riad de Merzouga y la cuarta en un hotel o riad de Ouarzazate. Ait Ben Haddou se visita el primer día, pero no es la parada de alojamiento de ese programa.",
+        },
+        {
+          question: "¿Qué ropa llevar para visitar Ait Ben Haddou?",
+          answer: "Usa calzado cómodo y ropa que puedas combinar por capas. Lleva agua, protección solar y una capa adicional para condiciones más frescas. Comprueba el tiempo de todo el recorrido, incluido el Alto Atlas, antes de salir de Marrakech.",
+        },
+      ],
+      seo: {
+        title: "Ait Ben Haddou: qué ver y cómo ir desde Marrakech",
+        description: "Descubre qué ver en Ait Ben Haddou y cómo visitarlo desde Marrakech. Compara una excursión de un día con una ruta por Ouarzazate hacia Merzouga.",
+        // Mapa editorial: términos reales de los CSV de Semrush España.
+        // El texto usa variantes gramaticales. No convertir en una etiqueta meta keywords.
+        keywords: [
+          "ait benhaddou",
+          "aït ben haddou",
+          "kasbah ait ben haddou",
+          "ait ben haddou kasbah",
+          "kasbah de ait ben haddou",
+          "ksar de ait ben haddou",
+          "ait ben haddou marruecos",
+          "que ver en ait ben haddou",
+          "ait ben haddou que ver",
+          "ait ben haddou desde marrakech",
+          "ait ben haddou como llegar",
+          "de marrakech a ait ben haddou",
+          "excursion marrakech ait ben haddou",
+          "ouarzazate y ait ben haddou",
+          "ait ben haddou merzouga",
+          "ait ben haddou precio entrada",
+          "el tiempo ait ben haddou",
+          "ait ben haddou historia",
+        ],
+      },
+    },
+    
   
   ];

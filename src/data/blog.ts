@@ -6913,7 +6913,924 @@ export type BlogPost = {
         },
       
       },
+
+      {
+        id: "11",
+        slug: "merzouga-desert-camp-guide",
       
+        title: "Merzouga Desert Camp: What to Expect on a Trip from Marrakech",
+        excerpt:
+          "Plan your Merzouga desert camp stay from Marrakech. Compare standard and luxury options, one or two nights, camp vs riad, packing and booking details.",
+      
+        image: "/images/blog/merzouga-desert-camp.webp",
+      
+        category: "Morocco Travel Guide",
+        author: "Moroccan Trip",
+        publishedAt: "2026-10-17",
+        readTime: "10 min read",
+        featured: true,
+      
+        introduction: `
+          A Merzouga desert camp gives you a place to stay overnight near the Erg Chebbi dunes
+          in southeastern Morocco. For a trip from Marrakech, the main decision is not only
+          which tent to book. You also need enough time for the journey and a clear plan for
+          your nights in the desert.
+      
+          One night at camp can give you an evening near the dunes before you continue your
+          route. Adding a second night at a riad in Merzouga gives you a full day in the area
+          without another long drive.
+      
+          This guide explains how to compare camps, what to ask about meals and transfers, and
+          how to fit the stay into a three-, four- or five-day trip from Marrakech.
+        `,
+      
+        sections: [
+          {
+            id: "understanding-merzouga-desert-camps",
+            heading: "Merzouga Desert Camps: Start with the Location",
+            paragraphs: [
+              `
+                Merzouga is a village beside the Erg Chebbi dunes. The village, a riad in the
+                area and a Sahara desert camp are different parts of the same trip. A booking
+                in Merzouga does not by itself tell you where you will sleep.
+              `,
+              `
+                When comparing Merzouga desert camps, ask for the camp name, its location and
+                the meeting point. Also ask how you will travel between the meeting point, the
+                dunes and your accommodation.
+              `,
+              `
+                This is especially important when choosing a Morocco desert camp as part of a
+                longer tour. The itinerary should identify your camp night separately from the
+                nights at hotels or riads.
+              `,
+            ],
+          },
+          {
+            id: "standard-vs-luxury-merzouga-camps",
+            heading: "Standard vs Luxury Camps: Compare What You Actually Get",
+            paragraphs: [
+              `
+                Start with the comforts that matter to you rather than the word luxury in a
+                camp name. A Merzouga luxury desert camp may sound like the right choice, but
+                the booking still needs to explain the tent and its facilities.
+              `,
+              `
+                Ask the same questions when comparing standard camps and Merzouga luxury
+                desert camps. Is the bathroom private or shared? What bed arrangement will
+                your group have? Are the photographs of the tent you are booking?
+              `,
+              `
+                Do not assume that air conditioning, heating, hot water, charging points or
+                Wi-Fi are included. Ask the provider to confirm each service that is important
+                to your stay.
+              `,
+              `
+                An upgrade is worth considering when it gives you something you value. For
+                example, a confirmed bathroom arrangement may matter more to you than extra
+                decoration. Compare the details and the full price before deciding.
+              `,
+            ],
+            bullets: [
+              "Confirm the tent type and bed arrangement.",
+              "Ask whether the bathroom is private or shared.",
+              "Check hot water, heating and cooling arrangements.",
+              "Ask about electricity and phone charging.",
+              "Confirm Wi-Fi only if you need it.",
+              "Request photographs of the accommodation being offered.",
+            ],
+          },
+          {
+            id: "arriving-at-your-desert-camp",
+            heading: "Arriving in Merzouga and Reaching the Camp",
+            paragraphs: [
+              `
+                Before leaving Marrakech, save your pickup details and ask how the camp
+                arrival will work. Knowing the meeting point and who will meet you is more
+                useful than simply knowing the name of the desert.
+              `,
+              `
+                Our five-day Marrakech to Merzouga itinerary reaches the area on day two,
+                after a stop at Todra Gorges. A camel trek is included, subject to weather and
+                safety conditions, before the overnight camp stay.
+              `,
+              `
+                A camel ride should not be assumed to be part of every camp-only booking. Ask
+                what your reservation includes. Travelers who prefer not to ride should
+                discuss an alternative before booking, including any extra cost.
+              `,
+              `
+                Ask about luggage as well: what you should take to the camp, how the rest will
+                be handled and when you will have access to it again.
+              `,
+            ],
+          },
+          {
+            id: "evening-and-morning-at-camp",
+            heading: "From Sunset to Breakfast: What to Expect",
+            paragraphs: [
+              `
+                The evening is a chance to enjoy the dunes without immediately leaving for the
+                next city. Depending on the program and conditions, you may have time for a
+                camel ride, sunset views and dinner at camp.
+              `,
+              `
+                Music, tea and time outside are part of the camp experience described in our
+                Merzouga guide. Confirm the arrangements for your booking rather than
+                expecting every evening to follow the same schedule.
+              `,
+              `
+                You can plan an early start for sunrise, but ask when breakfast and departure
+                are scheduled. What happens next depends on your route: you may leave Merzouga
+                that morning or stay for another day.
+              `,
+              `
+                Treat sunset, sunrise and time under the stars as opportunities to enjoy the
+                setting, not as fixed promises in a booking. Keep the evening simple and leave
+                time to rest.
+              `,
+            ],
+          },
+          {
+            id: "one-or-two-nights-in-merzouga",
+            heading: "One Night or Two Nights in Merzouga?",
+            paragraphs: [
+              `
+                One night in the Merzouga desert can suit travelers who want the camp
+                experience and need to continue their journey the next morning. The trade-off
+                is limited time to explore beyond the overnight stay.
+              `,
+              `
+                Two nights in the Merzouga desert area give you a different pace. You can
+                spend the first night at camp and the second at a riad, with a day between
+                them to explore the surroundings.
+              `,
+              `
+                This is the arrangement in our five-day round trip from Marrakech. The camp is
+                on night two of the tour, followed by a Merzouga riad on night three. The
+                daytime program includes Khamlia and the Erg Chebbi area.
+              `,
+              `
+                Two nights in Merzouga does not automatically mean two nights in a tent. Ask
+                for the accommodation plan night by night so it matches the experience you
+                want.
+              `,
+            ],
+            bullets: [
+              "One camp night: a shorter stay before continuing the route.",
+              "One camp night plus one riad night: more time in Merzouga and two different stays.",
+              "Two camp nights: a different arrangement to request and confirm separately.",
+            ],
+          },
+          {
+            id: "planning-from-marrakech",
+            heading: "Planning Your Camp Stay from Marrakech",
+            paragraphs: [
+              `
+                Travel from Marrakech to Merzouga crosses a large part of southern Morocco.
+                The journey includes mountain roads and valleys, so it should not be treated
+                as a quick trip from the city.
+              `,
+              `
+                A Marrakech to Merzouga desert tour can combine the camp with stops such as
+                the High Atlas Mountains, Ait Ben Haddou, Dades Valley and Todra Gorges. The
+                number of days affects how much time you have at each stage.
+              `,
+              `
+                Check where the tour finishes. A route that returns to Marrakech is different
+                from one that continues to Fes, even when both include Merzouga and the same
+                number of days.
+              `,
+              `
+                For a camp-only reservation, do not assume transport from Marrakech is
+                included. Ask for the whole journey to be explained before making separate
+                bookings.
+              `,
+            ],
+          },
+          {
+            id: "compare-three-four-five-day-tours",
+            heading: "Should You Choose a 3-, 4- or 5-Day Desert Tour?",
+            paragraphs: [
+              `
+                Choose your Merzouga desert tour from Marrakech by comparing the overnight
+                stops, not just the total number of days. An extra day might give you more
+                time near the dunes or divide the return drive.
+              `,
+              `
+                Our three options below all start and finish in Marrakech. The main difference
+                is how they divide the journey and the time spent in the Merzouga area.
+              `,
+            ],
+            bullets: [
+              "3 days / 2 nights: one night in the Dades area and one at a desert camp, followed by the return to Marrakech on the final day.",
+              "4 days / 3 nights: one night in Dades, one at camp and one in Ouarzazate, dividing the return journey through the Draa Valley.",
+              "5 days / 4 nights: one night in Dades, one at camp, one at a Merzouga riad and one in Ouarzazate before returning to Marrakech.",
+            ],
+          },
+          {
+            id: "camp-prices-and-inclusions",
+            heading: "Compare the Full Price, Not Only the Tent",
+            paragraphs: [
+              `
+                For desert camping in Morocco, compare quotes that cover the same services. A
+                camp-only price and a multi-day tour price are not a like-for-like comparison.
+              `,
+              `
+                Request a written list of accommodation, meals, transport, transfers and
+                activities. Ask whether the quoted amount is per person, per tent or for your
+                whole group, and which costs remain to be paid.
+              `,
+              `
+                In our five-day Marrakech round trip, the listed services include private
+                transport, four nights of accommodation, breakfasts, dinners and a camel trek
+                subject to weather and safety conditions.
+              `,
+              `
+                Lunches, drinks, entrance fees and optional off-road excursions are not
+                included by default. Check the final quote before booking rather than applying
+                these terms to a different tour or camp.
+              `,
+              `
+                There is no fixed camp price quoted in this guide. Request the total for your
+                dates, group size and preferred accommodation so you can compare the actual
+                offer.
+              `,
+            ],
+          },
+          {
+            id: "packing-for-a-sahara-camp",
+            heading: "What to Pack for Camping in the Sahara",
+            paragraphs: [
+              `
+                Pack for the road journey as well as the camp. Your trip can include
+                Marrakech, mountain stops and Merzouga, with different conditions between
+                daytime and evening.
+              `,
+              `
+                Comfortable layers are more useful than packing for warm weather alone. Keep
+                the items you need for the overnight stay together, after confirming the
+                luggage arrangements.
+              `,
+            ],
+            bullets: [
+              "Comfortable walking shoes.",
+              "Light clothing for daytime.",
+              "A warm layer for evenings and early mornings.",
+              "Sunscreen and sunglasses.",
+              "A small bag for overnight essentials.",
+              "Water for the journey and any personal medication.",
+              "Your phone or camera and its charger.",
+            ],
+          },
+          {
+            id: "choosing-your-camp-dates",
+            heading: "Choosing Your Travel Dates",
+            paragraphs: [
+              `
+                Spring and autumn are useful starting points for planning a Morocco desert
+                camping trip. March to May and September to November are the periods
+                highlighted in our Merzouga travel guide for more comfortable outdoor
+                conditions.
+              `,
+              `
+                Summer requires more preparation for hot days, while winter travelers should
+                prepare for cold desert nights. Ask about the camp arrangements for your dates
+                instead of relying on the season alone.
+              `,
+              `
+                Consider the whole route, including the High Atlas crossing. Check conditions
+                close to departure and keep important timing arrangements flexible.
+              `,
+            ],
+          },
+          {
+            id: "personal-needs-at-camp",
+            heading: "Discuss Your Needs Before You Book",
+            paragraphs: [
+              `
+                Traveling with children, older relatives or someone with limited mobility
+                calls for a more detailed conversation about the journey and accommodation.
+                Share those needs before agreeing to the itinerary.
+              `,
+              `
+                Ask about the sleeping arrangement, access to the bathroom and the way you
+                will reach the camp. A private road tour does not by itself confirm exclusive
+                use of a camp or its shared facilities.
+              `,
+              `
+                Explain food allergies and dietary needs clearly. Ask the provider to confirm
+                what can be arranged rather than assuming every meal can be changed on
+                arrival.
+              `,
+              `
+                For travelers who prefer not to ride camels, agree on the alternative in
+                advance. Do not leave an important transport question until you are about to
+                begin the activity.
+              `,
+            ],
+          },
+          {
+            id: "choosing-the-right-merzouga-camp",
+            heading: "How to Choose the Best Merzouga Desert Camp for Your Trip",
+            paragraphs: [
+              `
+                The best Merzouga desert camp for your trip is the one that fits your comfort
+                needs, budget and route. A tent photograph alone cannot answer those
+                questions.
+              `,
+              `
+                Before paying, request one clear booking summary. It should connect the
+                accommodation you chose with the services, meeting points and overnight stops
+                you agreed on.
+              `,
+              `
+                Compare that summary with your travel priorities. A traveler who wants a
+                private bathroom may choose differently from someone who mainly wants more
+                time around Merzouga. Neither choice needs a long list of extra activities.
+              `,
+            ],
+            bullets: [
+              "Which camp and tent type are confirmed?",
+              "What is included in the total price?",
+              "How will I reach and leave the camp?",
+              "What happens to my luggage?",
+              "Where will I sleep on the following night?",
+              "What are the payment, cancellation and change terms?",
+            ],
+          },
+          {
+            id: "plan-your-marrakech-merzouga-stay",
+            heading: "Plan Your Marrakech to Merzouga Stay",
+            paragraphs: [
+              `
+                Start with the number of days you can give the journey, then choose the
+                overnight arrangement. A camp night and a riad night serve different purposes,
+                and combining them can make room for a full day around Merzouga.
+              `,
+              `
+                Compare the three-, four- and five-day tours below. Send Moroccan Trip your
+                dates, group size and accommodation preferences to request a quote for the
+                route that fits your plans.
+              `,
+            ],
+          },
+        ],
+      
+        relatedTours: [
+          "3-day-desert-tour-marrakech-merzouga",
+          "4-day-sahara-desert-tour-from-marrakech",
+          "5-day-marrakech-merzouga-desert-tour",
+        ],
+      
+        relatedDayTrips: [],
+      
+        relatedSpecialOffers: [
+          "morocco-desert-tour",
+          "morocco-luxury-tours",
+          "morocco-family-tours",
+        ],
+      
+        faqs: [
+          {
+            question: "Can I visit a Merzouga desert camp from Marrakech?",
+            answer: `
+              Yes. Plan it as part of a multi-day journey rather than a quick excursion from
+              Marrakech. Our three-, four- and five-day round trips include a camp stay, with
+              different overnight stops along the route.
+            `,
+          },
+          {
+            question: "Is one night in a Merzouga desert camp enough?",
+            answer: `
+              One night can give you an evening at camp before continuing your route. An extra
+              night in the Merzouga area gives you more time to explore instead of leaving
+              after breakfast.
+            `,
+          },
+          {
+            question: "Does two nights in Merzouga mean two nights at camp?",
+            answer: `
+              Not necessarily. Our five-day tour includes a desert camp on night two and a
+              riad in Merzouga on night three. Two nights at camp would be a different
+              arrangement to request and confirm.
+            `,
+          },
+          {
+            question: "Do all luxury camps include a private bathroom and air conditioning?",
+            answer: `
+              Do not assume either service from the word luxury. Ask for the facilities of the
+              exact tent you are booking, including bathroom access, hot water, heating,
+              cooling and electricity.
+            `,
+          },
+          {
+            question: "Can I book a camp stay without riding a camel?",
+            answer: `
+              Discuss an alternative with the provider before booking. Ask how you would reach
+              the camp, whether the arrangement is available for your dates and whether an
+              additional charge applies.
+            `,
+          },
+          {
+            question: "How much does a Merzouga desert camp stay cost?",
+            answer: `
+              Request a quote for your dates, group size, accommodation and included services.
+              Compare the complete cost, and do not compare a camp-only price directly with a
+              tour that also includes transport from Marrakech and other overnight stays.
+            `,
+          },
+          {
+            question: "Are meals included in the camp stay?",
+            answer: `
+              Check your specific booking. Our five-day Marrakech to Merzouga tour lists
+              breakfasts and dinners as included. Lunches and drinks are excluded unless your
+              final quote confirms otherwise.
+            `,
+          },
+          {
+            question: "What should I bring for a night in the Sahara?",
+            answer: `
+              Bring comfortable shoes, light daytime clothes, a warm layer, sun protection and
+              your personal essentials. Confirm the luggage arrangements and prepare for
+              conditions along the whole route, not only the afternoon in Merzouga.
+            `,
+          },
+        ],
+      
+        seo: {
+          title: "Merzouga Desert Camp Guide: What to Know Before Booking",
+          description:
+            "Plan a Merzouga desert camp stay from Marrakech. Compare standard and luxury options, camp vs riad, one or two nights, and what to ask before booking.",
+      
+          // Internal keyword map from the supplied Semrush exports.
+          // Use grammatical variants in the article; do not render this as a meta keywords tag.
+          keywords: [
+            "merzouga desert camp",
+            "merzouga desert camps",
+            "desert camp merzouga",
+            "merzouga luxury desert camp",
+            "merzouga luxury desert camps",
+            "morocco desert camp",
+            "camping in the sahara",
+            "sahara desert camp",
+            "morocco desert camping",
+            "desert camping morocco",
+            "best merzouga desert camp",
+            "1 night in merzouga desert",
+            "2 nights in merzouga desert",
+            "marrakech to merzouga",
+            "marrakech to merzouga desert tour",
+            "merzouga desert tour from marrakech",
+          ],
+        },
+      },
+      
+      {
+      id: "12",
+      slug: "ait-ben-haddou-guide",
+      title: "Ait Ben Haddou: What to See and How to Visit from Marrakech",
+      excerpt: "Explore Ait Ben Haddou from Marrakech. Plan your village visit, compare a day trip with a Merzouga desert tour, and know what to check before you travel.",
+      image: "/images/blog/ait-ben-haddou-guide.webp",
+      category: "Morocco Travel Guide",
+      author: "Moroccan Trip",
+      publishedAt: "2026-10-17",
+      readTime: "11 min read",
+      featured: false,
+      introduction: `
+        Ait Ben Haddou is a historic fortified village in southern Morocco, known for its
+        traditional earthen buildings. A visit gives you time to explore a different kind of
+        architecture from the medina of Marrakech and adds a cultural stop to a journey through
+        the High Atlas.
+    
+        You can plan your visit around a return to Marrakech or include it on a longer route
+        toward Merzouga. These are different trips. A day focused on Ait Ben Haddou is not the
+        same as a journey to the Sahara dunes.
+    
+        This guide explains what to look for during your visit, how to compare travel options,
+        and how Ait Ben Haddou fits with Ouarzazate and a three-, four- or five-day desert tour.
+      `,
+      sections: [
+        {
+          id: "what-is-ait-ben-haddou",
+          heading: "What Is Ait Ben Haddou?",
+          paragraphs: [
+            `
+              Ait Ben Haddou, also written Ait Benhaddou, is a fortified settlement with
+              traditional buildings made from earth. The Ksar of Ait Ben Haddou is a place to
+              explore on foot, not only a name to tick off while driving south.
+            `,
+            `
+              You may see the destination described as the Ait Ben Haddou kasbah. When planning
+              your visit, think about the whole village and its architecture rather than looking
+              for just one building. A walk gives you a closer view of the setting than a quick
+              photograph from outside.
+            `,
+            `
+              On our Marrakech desert routes, Ait Ben Haddou comes after the High Atlas crossing
+              and before the journey continues through Ouarzazate toward the Dades Valley. It is
+              one part of the road to Merzouga, not the desert camp destination itself.
+            `,
+          ],
+        },
+        {
+          id: "things-to-do-in-ait-benhaddou",
+          heading: "What to See and Do in Ait Ben Haddou",
+          paragraphs: [
+            `
+              Start by taking in the village as a whole. Look at how the earthen buildings fit
+              together and how their shapes relate to the surrounding landscape. Then slow down
+              for the smaller details: the texture of the walls, the building fronts and the
+              spaces between them.
+            `,
+            `
+              Walking through the accessible parts of the old settlement is the main experience
+              to plan for. Choose a route that suits your group, stay in areas open to visitors
+              and leave time to return to your meeting point without rushing.
+            `,
+            `
+              For photographs, take a few wider views as well as closer architectural details.
+              You do not need to climb onto walls or enter a private space to make the visit
+              worthwhile. Ask permission before photographing people closely.
+            `,
+            `
+              A guide can help you focus the visit if you are interested in the village's
+              history or building traditions. Agree on the route, language and fee before
+              starting. A driver bringing you to the village is not automatically the same
+              person as a guide leading the walk.
+            `,
+          ],
+          bullets: [
+            "Take time to see the fortified village as a whole.",
+            "Look closely at the traditional earthen architecture.",
+            "Walk through visitor areas at a comfortable pace.",
+            "Make room for photographs without blocking access.",
+            "Arrange a guided explanation if history is a priority.",
+          ],
+        },
+        {
+          id: "is-ait-ben-haddou-worth-visiting",
+          heading: "Is Ait Ben Haddou Worth Visiting?",
+          paragraphs: [
+            `
+              Ait Ben Haddou is worth considering if you enjoy historic architecture, village
+              walks and journeys that show more than Morocco's large cities. It also fits
+              naturally into the Marrakech-to-Merzouga itineraries described below, where the
+              cultural stops are part of the trip rather than separate excursions.
+            `,
+            `
+              The trade-off is travel time. A visit from Marrakech involves the road through the
+              High Atlas, so do not judge the outing only by the time you expect to spend
+              walking in the village. The journey out, stops and return all belong in your plan.
+            `,
+            `
+              If your main goal is to see the Erg Chebbi dunes and sleep at a desert camp, keep
+              enough days for Merzouga. Ait Ben Haddou can add to that trip, but it does not
+              replace the Sahara part of the journey.
+            `,
+          ],
+        },
+        {
+          id: "marrakech-to-ait-ben-haddou",
+          heading: "How to Visit Ait Ben Haddou from Marrakech",
+          paragraphs: [
+            `
+              Our routes from Marrakech cross the High Atlas Mountains before reaching Ait Ben
+              Haddou. The wider Marrakech-to-Merzouga guide describes the crossing through the
+              Tizi n'Tichka pass, followed by stops in southern Morocco.
+            `,
+            `
+              Compare the full travel plan rather than a single transfer price. A vehicle, a
+              guided village visit, lunch and additional stops are separate services unless the
+              booking clearly combines them. Decide which parts you need before comparing
+              offers.
+            `,
+            `
+              For a private journey, discuss pickup, rest stops, the time set aside for the
+              village and the final destination. For a shared excursion, check the fixed
+              schedule and how much free time it leaves at the main stop.
+            `,
+            `
+              If you arrange transport independently, plan both the outward and onward journeys
+              before leaving. Save the meeting points and contact details. An arrival in
+              Ouarzazate should not be assumed to include a visit to Ait Ben Haddou or a return
+              to Marrakech.
+            `,
+            `
+              No bus timetable or fixed driving time is quoted here. Confirm current transport
+              arrangements and route conditions for your dates, and allow room for the mountain
+              crossing, meals and breaks.
+            `,
+          ],
+        },
+        {
+          id: "ait-ben-haddou-day-trip-from-marrakech",
+          heading: "Day Trip from Marrakech or Stop on a Desert Tour?",
+          paragraphs: [
+            `
+              A Marrakech to Ait Ben Haddou day trip keeps Marrakech as your base before and
+              after the outing. Consider that format when the village is your main goal and you
+              are comfortable making the outward and return journeys in one day.
+            `,
+            `
+              A multi-day desert tour follows a different plan. After visiting the village, you
+              continue through southern Morocco instead of immediately heading back over the
+              mountains. This can make more sense when Merzouga is already part of your holiday.
+            `,
+            `
+              Neither option automatically gives you a longer village visit. Ask how much time
+              the schedule reserves for Ait Ben Haddou. Adding more destinations to the title of
+              a day trip can leave less time at the place you most want to see.
+            `,
+            `
+              Before booking a separate excursion, check any desert tour you have already
+              chosen. Our three-, four- and five-day Marrakech round trips include Ait Ben
+              Haddou, so a second booking may repeat a stop you already have.
+            `,
+          ],
+        },
+        {
+          id: "ait-ben-haddou-and-ouarzazate",
+          heading: "Combining Ait Ben Haddou and Ouarzazate",
+          paragraphs: [
+            `
+              Ait Ben Haddou and Ouarzazate are separate stops in our southern Morocco
+              itineraries. On the first day from Marrakech, the route visits the fortified
+              village and then continues through Ouarzazate toward the Dades Valley.
+            `,
+            `
+              Check what an Ouarzazate stop actually includes. Passing through the city, taking
+              a break and making a planned sightseeing visit are not the same thing. Do not
+              assume that every attraction mentioned elsewhere is included in your itinerary.
+            `,
+            `
+              When planning the stage from Ait Ben Haddou to Ouarzazate, decide where lunch and
+              the next overnight stay fit. A simple day with time to walk and rest can be more
+              useful than a long list of brief stops.
+            `,
+          ],
+        },
+        {
+          id: "ait-ben-haddou-to-merzouga",
+          heading: "From Ait Ben Haddou to Merzouga",
+          paragraphs: [
+            `
+              The journey from Ait Ben Haddou to Merzouga is a continuation through southern
+              Morocco, not a short extension of a village walk. In our round trips from
+              Marrakech, the first night is in the Dades area. The second day includes Todra
+              Gorges before reaching Merzouga.
+            `,
+            `
+              This creates a clear change of scenery and experience. Ait Ben Haddou is the stop
+              for the fortified village and earthen architecture. Merzouga is the base for the
+              Erg Chebbi dunes and the camp stay.
+            `,
+            `
+              Our three options below all return to Marrakech, but they divide the return
+              journey and time around Merzouga differently. The extra days do not automatically
+              mean extra nights at Ait Ben Haddou.
+            `,
+          ],
+          bullets: [
+            "3 days / 2 nights: visit Ait Ben Haddou on day one, sleep in the Dades area, spend night two at a Merzouga camp and return to Marrakech on day three.",
+            "4 days / 3 nights: keep the Dades and camp nights, then spend a night in Ouarzazate during the return through the Draa Valley.",
+            "5 days / 4 nights: add a riad night in Merzouga after the camp, allowing a day in the area before returning via Ouarzazate.",
+          ],
+        },
+        {
+          id: "time-for-your-village-visit",
+          heading: "How Much Time Should You Leave for the Visit?",
+          paragraphs: [
+            `
+              Plan for a village walk rather than only a photo stop. When discussing your
+              itinerary, separate time at Ait Ben Haddou from time spent on the road, eating
+              lunch or visiting another place.
+            `,
+            `
+              For your own visit, a useful order is to take in the wider setting, walk through
+              the visitor areas, pause for architectural details and return to the agreed
+              meeting point. This is a suggested way to organize your time, not a fixed guided
+              route.
+            `,
+            `
+              Photography, a guide's explanation and the pace of your group all affect the time
+              you need. Tell the organizer what matters most to you. Families and travelers who
+              prefer shorter walks should agree on a manageable plan rather than trying to
+              follow someone else's pace.
+            `,
+          ],
+        },
+        {
+          id: "ait-ben-haddou-entrance-fee-and-costs",
+          heading: "Ait Ben Haddou Entrance Fee and Other Costs",
+          paragraphs: [
+            `
+              There is no verified current Ait Ben Haddou entrance fee quoted in this guide.
+              Before your visit, check whether any charge applies to the particular place or
+              service you plan to use. A guided walk and transport are different costs from
+              admission.
+            `,
+            `
+              Ask for a clear breakdown of the booking: vehicle, guide, meals, accommodation
+              where relevant, and any separate entrances. A low advertised transport price does
+              not tell you the final cost of the day.
+            `,
+            `
+              Our five-day Marrakech-to-Merzouga tour lists the Ait Ben Haddou visit in the
+              route, but local guides and entrance fees are not included by default. Lunches,
+              drinks and optional off-road activities are also excluded unless the final quote
+              says otherwise.
+            `,
+            `
+              Carry some small Moroccan dirham notes for purchases and costs that have not been
+              prepaid. Agree on the price before accepting an additional service, and keep an
+              optional tip separate from an agreed fee.
+            `,
+          ],
+        },
+        {
+          id: "weather-and-what-to-pack",
+          heading: "Weather in Ait Ben Haddou and What to Bring",
+          paragraphs: [
+            `
+              Check the weather in Ait Ben Haddou close to departure, as well as conditions
+              along your route. A plan that starts in Marrakech, crosses the High Atlas and
+              continues to Merzouga needs more preparation than checking one city's afternoon
+              forecast.
+            `,
+            `
+              Our Morocco travel guide highlights spring and autumn as useful starting points
+              for multi-region trips. Summer travel calls for planning around heat, while winter
+              routes can involve colder mountain conditions and desert nights. These are
+              seasonal planning points, not a forecast for your visit.
+            `,
+            `
+              Use comfortable layers and carry what you need for the walk in a small bag. Keep
+              water, sun protection and any personal medication accessible rather than buried in
+              your main luggage.
+            `,
+          ],
+          bullets: [
+            "Comfortable shoes for walking.",
+            "Light clothing and an extra layer for cooler conditions.",
+            "A hat, sunglasses and sunscreen.",
+            "Water and personal essentials.",
+            "Small dirham notes for expenses not included in your booking.",
+            "Saved pickup details and a contact number.",
+          ],
+        },
+        {
+          id: "before-booking-your-visit",
+          heading: "What to Confirm Before Booking",
+          paragraphs: [
+            `
+              The most useful booking summary explains the actual day, not just the destination
+              name. Confirm where you start, where you finish and how the village visit fits
+              between those points.
+            `,
+            `
+              Make any important needs clear before paying. Ask about the walking route, the
+              language of a guided visit and whether the plan can suit your group. Private road
+              transport does not by itself mean a private guide is included.
+            `,
+            `
+              For a longer desert trip, review the accommodation night by night. A camp near
+              Merzouga and a riad in the Merzouga area are different stays. Check the end city
+              as well: a route that finishes in Fes is not the same as one that returns to
+              Marrakech.
+            `,
+          ],
+          bullets: [
+            "Is the village visit guided, independent or a short photo stop?",
+            "How much time is set aside at Ait Ben Haddou?",
+            "What does the Ouarzazate part of the route include?",
+            "Which meals, entrances and services cost extra?",
+            "Where will the journey finish?",
+            "What are the payment, cancellation and change terms?",
+          ],
+        },
+        {
+          id: "plan-your-ait-ben-haddou-trip",
+          heading: "Plan Your Ait Ben Haddou Visit",
+          paragraphs: [
+            `
+              Start with the journey you actually want. Choose a village-focused outing if you
+              plan to return to Marrakech that day. Choose a multi-day route if you also want
+              the Dades Valley, Todra Gorges and the Sahara near Merzouga.
+            `,
+            `
+              Then protect time for the visit itself. Looking closely at the earthen
+              architecture and walking at a comfortable pace will give you more from the stop
+              than collecting another destination name.
+            `,
+            `
+              The related three-, four- and five-day tours below include Ait Ben Haddou as part
+              of a Marrakech-to-Merzouga round trip. Send Moroccan Trip your dates, group size
+              and preferred pace to request a route and quote that match your plans.
+            `,
+          ],
+        },
+      ],
+      relatedTours: [
+        "3-day-desert-tour-marrakech-merzouga",
+        "4-day-sahara-desert-tour-from-marrakech",
+        "5-day-marrakech-merzouga-desert-tour",
+      ],
+      relatedDayTrips: [],
+      relatedSpecialOffers: [
+        "morocco-desert-tour",
+        "morocco-family-tours",
+      ],
+      faqs: [
+        {
+          question: "Is Ait Ben Haddou worth visiting?",
+          answer: `
+            It is worth considering if you enjoy historic architecture, village walks and a
+            cultural stop on the road from Marrakech toward southern Morocco. Balance the visit
+            with the travel time, especially when planning a same-day return.
+          `,
+        },
+        {
+          question: "Are Ait Ben Haddou and Ait Benhaddou the same place?",
+          answer: "Yes. These spellings refer to the same fortified village. You may also see it described as the Ksar of Ait Ben Haddou or the Ait Ben Haddou kasbah.",
+        },
+        {
+          question: "Can I plan an Ait Ben Haddou day trip from Marrakech?",
+          answer: `
+            A day-trip plan returns to Marrakech after the visit and needs to allow for the High
+            Atlas crossing in both directions. Confirm the full schedule with your transport
+            provider. If Merzouga is also part of your holiday, check whether your desert tour
+            already includes Ait Ben Haddou.
+          `,
+        },
+        {
+          question: "What are the main things to do in Ait Benhaddou?",
+          answer: `
+            Focus on the fortified village, its traditional earthen architecture and a walk
+            through areas open to visitors. Leave time for photographs and arrange a guide in
+            advance if you would like an explanation of the history and building traditions.
+          `,
+        },
+        {
+          question: "How much is the Ait Ben Haddou entrance fee?",
+          answer: `
+            This guide does not quote a verified current admission price. Check charges for your
+            planned visit before paying, and ask whether guides, transport or particular
+            entrances are included or charged separately.
+          `,
+        },
+        {
+          question: "Does a visit to Ait Ben Haddou include Merzouga?",
+          answer: `
+            Not automatically. A village day trip and a multi-day Merzouga journey are different
+            bookings. Our three-, four- and five-day Marrakech round trips include both, with
+            other stops and overnight stays between them.
+          `,
+        },
+        {
+          question: "Where do we sleep on the five-day Marrakech round trip?",
+          answer: `
+            The itinerary includes a hotel or riad in Dades on night one, a desert camp near
+            Merzouga on night two, a Merzouga riad on night three and a hotel or riad in
+            Ouarzazate on night four. Ait Ben Haddou is visited on the first day; it is not the
+            overnight stop on this itinerary.
+          `,
+        },
+        {
+          question: "What should I wear for a visit from Marrakech?",
+          answer: `
+            Wear comfortable walking shoes and clothing you can layer. Carry sun protection,
+            water and an extra layer for cooler conditions. Check the weather along the whole
+            route, including the High Atlas, before departure.
+          `,
+        },
+      ],
+      seo: {
+        title: "Ait Ben Haddou Guide: Visiting from Marrakech",
+        description: "Plan your visit to Ait Ben Haddou from Marrakech. Discover what to see, day trip options, visiting tips and how to continue toward Merzouga.",
+        // Internal keyword map from the supplied Semrush exports.
+        // Use grammatical variants in the article; do not output as a meta keywords tag.
+        keywords: [
+          "ait ben haddou",
+          "ait benhaddou",
+          "ait benhaddou morocco",
+          "ait ben haddou morocco",
+          "ait ben haddou kasbah",
+          "kasbah ait ben haddou",
+          "ksar of ait ben haddou",
+          "ait benhaddou things to do",
+          "is ait ben haddou worth visiting",
+          "marrakech to ait ben haddou day trip",
+          "ait ben haddou day trip from marrakech",
+          "ait ben haddou entrance fee",
+          "ait ben haddou to merzouga",
+          "ait ben haddou and ouarzazate",
+          "ait ben haddou to ouarzazate",
+          "weather in ait ben haddou",
+        ],
+      },
+    },
+    
   ];
 
 
