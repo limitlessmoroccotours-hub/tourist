@@ -2,7 +2,6 @@
 
 import type { Metadata } from "next";
 import Link from "next/link";
-import { redirect } from "next/navigation";
 import { ArrowUpRight, MessageCircle, Sparkles } from "lucide-react";
 import ContactForm from "@/components/sections/contact/ContactForm";
 
@@ -14,14 +13,8 @@ import ContactForm from "@/components/sections/contact/ContactForm";
 
 const SITE_URL = "https://moroccan-trip.com";
 
-const CONTACT_EMAIL =
-  "contact@moroccan-trip.com";
-
 const WHATSAPP_NUMBER =
   "212607747056";
-
-const WHATSAPP_DISPLAY =
-  "+212 607 747 056";
 
 // ─────────────────────────────
 // SEO
@@ -56,65 +49,6 @@ export const metadata: Metadata = {
       "website",
   },
 };
-
-// ─────────────────────────────
-// SERVER ACTION
-// ─────────────────────────────
-
-async function submitContactForm(
-  formData: FormData
-) {
-  "use server";
-
-  const getValue = (name: string) =>
-    String(
-      formData.get(name) ?? ""
-    ).trim();
-
-  const fullName =
-    getValue("fullName");
-
-  const email =
-    getValue("email");
-
-  const phone =
-    getValue("phone");
-
-  const subject =
-    getValue("subject");
-
-  const message =
-    getValue("message");
-
-  const whatsappMessage = `
-Hello Moroccan Trip,
-
-I would like to contact your team.
-
-CONTACT DETAILS
-
-Name: ${fullName}
-Email: ${email}
-WhatsApp / Phone: ${phone || "Not provided"}
-
-SUBJECT
-
-${subject}
-
-MESSAGE
-
-${message}
-
-Thank you.
-  `.trim();
-
-  const whatsappUrl =
-    `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-      whatsappMessage
-    )}`;
-
-  redirect(whatsappUrl);
-}
 
 // ─────────────────────────────
 // JSON-LD HELPER

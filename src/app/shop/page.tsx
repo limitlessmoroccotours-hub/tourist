@@ -196,7 +196,7 @@ export default function ShopPage() {
             "
           >
 
-            Morocco is one of the world's most famous locations
+Morocco is one of the world&apos;s most famous locations
             for fossil discoveries. The Anti-Atlas Mountains are
             known for exceptional fossil specimens preserved from
             ancient marine environments.

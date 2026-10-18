@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import LanguageSwitcher from "@/components/Layout/LanguageSwitcher";
 
@@ -159,9 +159,12 @@ function Chevron() {
 // ─────────────────────────────
 
 export default function Header() {
-
   const pathname = usePathname();
 
+  return <HeaderContent key={pathname} pathname={pathname} />;
+}
+
+function HeaderContent({ pathname }: { pathname: string }) {
 
   const isSpanish =
     pathname === "/es" ||
@@ -189,19 +192,8 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] =
     useState(false);
 
-
-  const [dropdown, setDropdown] =
+    const [dropdown, setDropdown] =
     useState<string | null>(null);
-
-
-  // Close menus after navigation
-  useEffect(() => {
-
-    setMobileOpen(false);
-    setDropdown(null);
-
-  }, [pathname]);
-
 
   const active = (href: string) => {
 

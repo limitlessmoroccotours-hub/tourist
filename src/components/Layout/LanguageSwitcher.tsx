@@ -108,17 +108,6 @@ export default function LanguageSwitcher({
     };
 
   }, []);
-
-
-  // ─────────────────────────────
-  // CLOSE AFTER NAVIGATION
-  // ─────────────────────────────
-
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
-
-
   // ─────────────────────────────
   // LANGUAGE URL
   // ─────────────────────────────

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { redirect } from "next/navigation";
 
 import {
   ArrowUpRight,
@@ -23,20 +22,8 @@ const SITE_URL =
   "https://moroccan-trip.com";
 
 
-const CONTACT_EMAIL =
-  "contact@moroccan-trip.com";
-
-
-const WHATSAPP_NUMBER =
+  const WHATSAPP_NUMBER =
   "212607747056";
-
-
-const WHATSAPP_DISPLAY =
-  "+212 607 747 056";
-
-
-
-
 
 
 
@@ -114,140 +101,6 @@ export const metadata: Metadata = {
 
 
 };
-
-
-
-
-
-
-
-
-
-// ─────────────────────────────
-// SERVER ACTION
-// ─────────────────────────────
-
-
-async function submitContactForm(
-
-  formData: FormData
-
-) {
-
-
-  "use server";
-
-
-
-  const getValue = (name: string) =>
-
-    String(
-
-      formData.get(name) ?? ""
-
-    ).trim();
-
-
-
-
-  const fullName =
-    getValue("fullName");
-
-
-
-  const email =
-    getValue("email");
-
-
-
-  const phone =
-    getValue("phone");
-
-
-
-  const subject =
-    getValue("subject");
-
-
-
-  const message =
-    getValue("message");
-
-
-
-
-
-
-  const whatsappMessage = `
-
-Hola Moroccan Trip,
-
-Me gustaría contactar con vuestro equipo.
-
-
-DATOS DEL CLIENTE
-
-
-Nombre:
-${fullName}
-
-
-Email:
-${email}
-
-
-WhatsApp / Teléfono:
-${phone || "No indicado"}
-
-
-
-ASUNTO
-
-
-${subject}
-
-
-
-MENSAJE
-
-
-${message}
-
-
-
-Gracias.
-
-`.trim();
-
-
-
-
-
-
-
-  const whatsappUrl =
-
-    `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-
-      whatsappMessage
-
-    )}`;
-
-
-
-
-
-  redirect(whatsappUrl);
-
-
-}
-
-
-
-
-
-
-
 
 
 // ─────────────────────────────

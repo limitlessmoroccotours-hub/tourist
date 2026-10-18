@@ -122,14 +122,7 @@ export default function TourMapClient({
   }, [isRoundTrip, stops]);
 
   useEffect(() => {
-    if (stops.length === 0) {
-      setLoading(false);
-      return;
-    }
-
-    if (stops.length === 1) {
-      setRoute([stops[0].position]);
-      setLoading(false);
+    if (stops.length <= 1) {
       return;
     }
 
@@ -209,9 +202,17 @@ export default function TourMapClient({
   if (stops.length === 0) {
     return null;
   }
-
+  
+  const isSingleStop = stops.length === 1;
+  
+  const displayRoute = isSingleStop ? fallbackRoute : route;
+  
+  const displayLoading = !isSingleStop && loading;
+  
+  const displayError = !isSingleStop && routeError;
+  
   const boundsPositions =
-    route.length > 0 ? route : fallbackRoute;
+    displayRoute.length > 0 ? displayRoute : fallbackRoute;
 
   return (
     <div className="relative">
@@ -233,10 +234,10 @@ export default function TourMapClient({
 
         <FitMapBounds positions={boundsPositions} />
 
-        {/* Route white outline */}
-        {route.length > 1 && (
-          <Polyline
-            positions={route}
+{/* Route white outline */}
+{displayRoute.length > 1 && (
+  <Polyline
+    positions={displayRoute}
             pathOptions={{
               color: "#ffffff",
               weight: 9,
@@ -247,10 +248,10 @@ export default function TourMapClient({
           />
         )}
 
-        {/* Main brand route */}
-        {route.length > 1 && (
-          <Polyline
-            positions={route}
+{/* Main brand route */}
+{displayRoute.length > 1 && (
+  <Polyline
+    positions={displayRoute}
             pathOptions={{
               color: BRAND_COLOR,
               weight: 4.5,
@@ -311,8 +312,8 @@ export default function TourMapClient({
         })}
       </MapContainer>
 
-      {/* Route information badge */}
-      {!loading && !routeError && (
+{/* Route information badge */}
+{!displayLoading && !displayError && (
         <div className="pointer-events-none absolute bottom-6 left-4 z-[500] hidden items-center gap-2.5 rounded-full border border-black/5 bg-white/95 px-4 py-2.5 shadow-lg backdrop-blur-md sm:flex">
           <span
             className="h-2.5 w-2.5 rounded-full"
@@ -327,8 +328,8 @@ export default function TourMapClient({
         </div>
       )}
 
-      {/* Loading */}
-      {loading && (
+{/* Loading */}
+{displayLoading && (
         <div className="pointer-events-none absolute left-1/2 top-4 z-[500] -translate-x-1/2 rounded-full border border-black/5 bg-white/95 px-4 py-2.5 shadow-lg backdrop-blur-md">
           <div className="flex items-center gap-2.5">
             <span
@@ -345,8 +346,8 @@ export default function TourMapClient({
         </div>
       )}
 
-      {/* Fallback message */}
-      {!loading && routeError && (
+{/* Fallback message */}
+{!displayLoading && displayError && (
         <div className="pointer-events-none absolute bottom-6 left-4 z-[500] rounded-full border border-black/5 bg-white/95 px-4 py-2.5 shadow-lg backdrop-blur-md">
           <span className="text-xs font-semibold text-neutral-700">
             Approximate tour route

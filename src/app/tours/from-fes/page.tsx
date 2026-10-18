@@ -199,9 +199,9 @@ export default function ToursFromFesPage() {
           <p className="mt-5 leading-8 text-[hsl(var(--text-secondary))]">
 
 
-            Fes is one of Morocco's most historic cities and an excellent
-            starting point for discovering the country's culture, landscapes
-            and traditions.
+          Fes is one of Morocco&apos;s most historic cities and an excellent
+starting point for discovering the country&apos;s culture, landscapes
+and traditions.
 
 
           </p>
