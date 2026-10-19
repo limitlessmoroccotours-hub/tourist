@@ -16,11 +16,11 @@ import HomeSchema from "@/components/seo/HomeSchema";
 export const metadata: Metadata = {
 
   title:
-    "Morocco Tours | Private Sahara Desert Tours & Authentic Experiences",
+  "Morocco Tours | Private Sahara Tours | Moroccan Trip",
 
 
   description:
-    "Discover Morocco with private tours, Sahara Desert adventures and authentic experiences. Explore Marrakech, Fes, Casablanca and Morocco with local travel experts.",
+  "Explore private Morocco tours, Sahara Desert adventures and custom trips from Marrakech, Fes and Casablanca. Plan your journey with local travel experts.",
 
 
   keywords: [
