@@ -3,6 +3,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Reviews from "@/components/sections/Home/Reviews";
 
 // ─────────────────────────────
 // CONFIG
@@ -785,6 +786,9 @@ export default function AboutUsPage() {
             </div>
           </div>
         </section>
+                {/* CUSTOMER REVIEWS */}
+                <Reviews />
+
 
         {/* ─────────────────────────────
             LOCAL TEAM

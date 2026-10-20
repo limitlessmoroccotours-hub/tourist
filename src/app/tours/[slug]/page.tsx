@@ -5,6 +5,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { tours } from "@/data/tours";
 import TourMap from "@/components/tours/TourMap";
+import Reviews from "@/components/sections/Home/Reviews";
 
 type TourPageProps = {
   params: Promise<{
@@ -1127,6 +1128,9 @@ export default async function TourPage({ params }: TourPageProps) {
           </aside>
         </div>
       </section>
+
+            {/* CUSTOMER REVIEWS */}
+            <Reviews />
 
       {/* ───────────────────────────────────── */}
       {/* MOBILE BOOKING BAR */}

@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, MessageCircle, Sparkles } from "lucide-react";
 import ContactForm from "@/components/sections/contact/ContactForm";
+import Reviews from "@/components/sections/Home/Reviews";
 
 // ─────────────────────────────
 // CONTACT CONFIG
@@ -355,6 +356,8 @@ export default function ContactPage() {
 </div>
       </section>
     </section>
+        {/* CUSTOMER REVIEWS */}
+        <Reviews />
     </>
   );
 }

@@ -8,11 +8,27 @@ import { notFound } from "next/navigation";
 import { tours } from "@/data/tours";
 import { toursEs } from "@/data/tours-es";
 import TourMap from "@/components/tours/TourMap";
+import Reviews from "@/components/sections/Home/Reviews";
 
 type TourPageProps = {
   params: Promise<{
     slug: string;
   }>;
+};
+const reviewsSpanish = {
+  label: "Opiniones de viajeros",
+  title: "Lo que dicen nuestros viajeros",
+  titleHighlight: "sobre nuestro equipo",
+
+  description:
+    "Moroccan Trip está gestionado por el mismo equipo local que Limitless Morocco Tours. Estas opiniones de Tripadvisor fueron compartidas por viajeros que descubrieron Marruecos con nuestro equipo.",
+
+  verifiedText:
+    "Opiniones verificadas en Tripadvisor del perfil de nuestro equipo Limitless Morocco Tours",
+
+  readMore: "Leer opinión completa",
+
+  cta: "Ver las opiniones de nuestro equipo en Tripadvisor",
 };
 
 // ─────────────────────────────────────────────
@@ -1535,6 +1551,9 @@ export default async function SpanishTourPage({
 
           </div>
         </section>
+
+      {/* CUSTOMER REVIEWS */}
+<Reviews content={reviewsSpanish} />
 
         {/* ───────────────────────────────────── */}
         {/* MOBILE BOOKING BAR */}

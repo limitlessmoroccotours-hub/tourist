@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { specialOffers } from "@/data/specialOffers";
 import { tours } from "@/data/tours";
 import FaqSchema from "@/components/seo/FaqSchema";
+import Reviews from "@/components/sections/Home/Reviews";
 
 
 type SpecialOfferPageProps = {
@@ -931,6 +932,8 @@ Request This Offer
 
 
 </section>
+{/* CUSTOMER REVIEWS */}
+<Reviews />
 
 
 </main>

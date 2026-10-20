@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 
 import { shopProducts } from "@/data/shop";
 import FaqSchema from "@/components/seo/FaqSchema";
+import Reviews from "@/components/sections/Home/Reviews";
 
 
 
@@ -1097,6 +1098,9 @@ View Product →
 
 
 )}
+{/* CUSTOMER REVIEWS */}
+<Reviews />
+
 </main>
 
 

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 
 import { specialOffersEs } from "@/data/specialOffers-es";
 import { toursEs } from "@/data/tours-es";
+import Reviews from "@/components/sections/Home/Reviews";
 
 
 
@@ -16,7 +17,21 @@ type SpecialOfferPageProps = {
 
 };
 
+const reviewsSpanish = {
+  label: "Opiniones de viajeros",
+  title: "Lo que dicen nuestros viajeros",
+  titleHighlight: "sobre nuestro equipo",
 
+  description:
+    "Moroccan Trip está gestionado por el mismo equipo local que Limitless Morocco Tours. Estas opiniones de Tripadvisor fueron compartidas por viajeros que descubrieron Marruecos con nuestro equipo.",
+
+  verifiedText:
+    "Opiniones verificadas en Tripadvisor del perfil de nuestro equipo Limitless Morocco Tours",
+
+  readMore: "Leer opinión completa",
+
+  cta: "Ver las opiniones de nuestro equipo en Tripadvisor",
+};
 
 const SITE_URL = "https://moroccan-trip.com";
 
@@ -1777,6 +1792,8 @@ Solicitar esta oferta
 
 
 </section>
+{/* CUSTOMER REVIEWS */}
+<Reviews content={reviewsSpanish} />
 
 
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Reviews from "@/components/sections/Home/Reviews";
 
 const SITE_URL = "https://moroccan-trip.com";
 
@@ -743,6 +744,8 @@ border-[hsl(var(--border))]
 
 
 </section>
+{/* CUSTOMER REVIEWS */}
+<Reviews />
 
 
 

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { dayTrips } from "@/data/dayTrips";
 import FaqSchema from "@/components/seo/FaqSchema";
+import Reviews from "@/components/sections/Home/Reviews";
 
 type DayTripPageProps = {
   params: Promise<{
@@ -684,6 +685,9 @@ export default async function DayTripPage({
             </div>
           </div>
         </section>
+                {/* CUSTOMER REVIEWS */}
+                <Reviews />
+
       </article>
     </main>
   );

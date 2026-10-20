@@ -6,6 +6,7 @@ import "leaflet/dist/leaflet.css";
 
 import Footer from "@/components/Layout/Footer";
 import Header from "@/components/Layout/Header";
+import FloatingContactButtons from "@/components/Layout/FloatingContactButtons";
 import { Toaster } from "sonner";
 import Script from "next/script";
 
@@ -137,6 +138,8 @@ export default function RootLayout({
         </main>
 
         <Footer />
+        <FloatingContactButtons />
+
         <Toaster
   position="bottom-left"
   toastOptions={{

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import FaqSchema from "@/components/seo/FaqSchema";
+import Reviews from "@/components/sections/Home/Reviews";
 
 const SITE_URL = "https://moroccan-trip.com";
 const faqData = [
@@ -42,6 +43,22 @@ const faqData = [
       "Sí. Al ser viajes personalizados, podemos ajustar destinos, actividades y ritmo del itinerario hasta crear la experiencia ideal para ti.",
   },
 ];
+
+const reviewsSpanish = {
+  label: "Opiniones de viajeros",
+  title: "Lo que dicen nuestros viajeros",
+  titleHighlight: "sobre nuestro equipo",
+
+  description:
+    "Moroccan Trip está gestionado por el mismo equipo local que Limitless Morocco Tours. Estas opiniones de Tripadvisor fueron compartidas por viajeros que descubrieron Marruecos con nuestro equipo.",
+
+  verifiedText:
+    "Opiniones verificadas en Tripadvisor del perfil de nuestro equipo Limitless Morocco Tours",
+
+  readMore: "Leer opinión completa",
+
+  cta: "Ver las opiniones de nuestro equipo en Tripadvisor",
+};
 
 export const metadata: Metadata = {
 
@@ -695,6 +712,8 @@ border-[hsl(var(--border))]
 
 
 </section>
+{/* CUSTOMER REVIEWS */}
+<Reviews content={reviewsSpanish} />
 {/* FAQ */} 
 
 
