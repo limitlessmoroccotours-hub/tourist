@@ -503,7 +503,7 @@ export default async function TourPage({ params }: TourPageProps) {
                 {overviewParagraphs.map((paragraph, index) => (
                   <p
                     key={index}
-                    className="text-[16px] leading-8 text-[hsl(var(--heading)/0.78)]"
+  className="text-[16px] leading-8 text-[hsl(var(--heading)/0.92)]"
                   >
                     {paragraph}
                   </p>
@@ -906,7 +906,51 @@ export default async function TourPage({ params }: TourPageProps) {
                 </div>
               </TourSection>
             )}
+{/* TOUR CUSTOMIZATION */}
+{tour.booking.customizable && (
+  <TourSection id="customize">
+    <SectionHeading
+      icon={<RouteIcon />}
+      eyebrow="Flexible Private Tours"
+      title="Make this Morocco tour your own"
+    />
 
+    <p className="mt-6 text-[15px] leading-8 text-[hsl(var(--heading)/0.75)]">
+      This itinerary is a suggested route. We can adjust the
+      duration, destinations, travel pace and accommodation
+      to match your travel plans.
+    </p>
+
+    <div className="mt-6 space-y-4">
+      <div>
+        <h3 className="font-semibold text-[hsl(var(--heading))]">
+          Flexible itinerary
+        </h3>
+        <p className="mt-2 text-sm leading-7 text-[hsl(var(--text-secondary))]">
+          Prefer a shorter or longer journey? We can adapt
+          the number of days and stops to your preferences.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="font-semibold text-[hsl(var(--heading))]">
+          Personalized pricing
+        </h3>
+        <p className="mt-2 text-sm leading-7 text-[hsl(var(--text-secondary))]">
+          Your final quote depends on group size, accommodation
+          preferences and selected services.
+        </p>
+      </div>
+    </div>
+
+    <Link
+      href="/contact"
+      className="mt-7 inline-flex items-center justify-center rounded-full bg-[hsl(var(--primary))] px-7 py-3.5 text-sm font-bold text-[hsl(var(--primary-foreground))] transition-colors hover:bg-[hsl(var(--primary-hover))]"
+    >
+      Request a Custom Itinerary →
+    </Link>
+  </TourSection>
+)}
             {/* ───────────────────────────── */}
 {/* RELATED TOURS */}
 {/* ───────────────────────────── */}
@@ -1070,7 +1114,7 @@ export default async function TourPage({ params }: TourPageProps) {
                   Request your private trip
                 </h2>
 
-                <p className="mt-3 text-sm leading-6 text-[hsl(var(--heading)/0.7)]">
+                <p className="mt-3 text-sm leading-6 text-[hsl(var(--heading)/0.9)]">
                   The final quote depends on group size, accommodation level
                   and the services you choose.
                 </p>

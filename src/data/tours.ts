@@ -163,9 +163,9 @@ export const tours: Tour[] = [
 
   tourType: "Private Tour",
 
-  groupSize: "Up to 4 People",
+  groupSize: "Up to 7 People",
 
-  languages: ["English", "French"],
+  languages: ["English", "Spanish"],
 
   departure: "Marrakech",
 
@@ -585,9 +585,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Marrakech",
   
@@ -1048,9 +1048,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Marrakech",
   
@@ -1583,9 +1583,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Marrakech",
   
@@ -2111,9 +2111,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Marrakech",
   
@@ -2689,9 +2689,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Marrakech",
   
@@ -3310,9 +3310,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Casablanca",
   
@@ -3885,9 +3885,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Casablanca",
   
@@ -4518,9 +4518,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Casablanca",
   
@@ -5207,9 +5207,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Casablanca",
   
@@ -5916,9 +5916,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Casablanca",
   
@@ -6792,9 +6792,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Casablanca",
   
@@ -7854,9 +7854,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Casablanca",
   
@@ -8827,9 +8827,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Tangier",
   
@@ -9349,9 +9349,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Tangier",
   
@@ -10040,9 +10040,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Tangier",
   
@@ -10768,9 +10768,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Tangier",
   
@@ -11645,9 +11645,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Tangier",
   
@@ -12606,9 +12606,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Fes",
   
@@ -13167,9 +13167,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Fes",
   
@@ -13697,9 +13697,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Fes",
   
@@ -14329,9 +14329,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Fes",
   
@@ -15021,9 +15021,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Fes",
   
@@ -15769,9 +15769,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Fes",
   
@@ -16508,9 +16508,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Errachidia",
   
@@ -17012,9 +17012,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Agadir",
   
@@ -17640,9 +17640,9 @@ map: {
   
     tourType: "Private Tour",
   
-    groupSize: "Up to 4 People",
+    groupSize: "Up to 7 People",
   
-    languages: ["English", "French"],
+    languages: ["English", "Spanish"],
   
     departure: "Agadir",
   
@@ -18450,8 +18450,8 @@ map: {
     duration: "5 Days / 4 Nights",
     nights: 4,
     tourType: "Private Tour",
-    groupSize: "Up to 4 People",
-    languages: ["English", "French"],
+    groupSize: "Up to 7 People",
+    languages: ["English", "Spanish"],
     departure: "Marrakech",
     arrival: "Marrakech",
   

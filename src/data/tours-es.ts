@@ -35,9 +35,9 @@ export const toursEs: Tour[] = [
       
         tourType: "Tour privado",
       
-        groupSize: "Hasta 4 personas",
+        groupSize: "Hasta 7 personas",
       
-        languages: ["Inglés", "Francés"],
+        languages: ["Inglés", "Español"],
       
         departure: "Marrakech",
       
@@ -457,10 +457,10 @@ export const toursEs: Tour[] = [
           "Tour privado",
       
         groupSize:
-          "Hasta 4 personas",
+          "Hasta 7 personas",
       
         languages:
-          ["Inglés", "Francés"],
+          ["Inglés", "Español"],
       
         departure:
           "Marrakech",
@@ -905,10 +905,10 @@ export const toursEs: Tour[] = [
           "Tour privado",
       
         groupSize:
-          "Hasta 4 personas",
+          "Hasta 7 personas",
       
         languages:
-          ["Inglés", "Francés"],
+          ["Inglés", "Español"],
       
         departure:
           "Marrakech",
@@ -1461,10 +1461,10 @@ export const toursEs: Tour[] = [
           "Tour privado",
       
         groupSize:
-          "Hasta 4 personas",
+          "Hasta 7 personas",
       
         languages:
-          ["Inglés", "Francés"],
+          ["Inglés", "Español"],
       
         departure:
           "Marrakech",
@@ -1992,10 +1992,10 @@ export const toursEs: Tour[] = [
           "Tour privado",
       
         groupSize:
-          "Hasta 4 personas",
+          "Hasta 7 personas",
       
         languages:
-          ["Inglés", "Francés"],
+          ["Inglés", "Español"],
       
         departure:
           "Marrakech",
@@ -2586,10 +2586,10 @@ export const toursEs: Tour[] = [
           "Tour privado",
       
         groupSize:
-          "Hasta 4 personas",
+          "Hasta 7 personas",
       
         languages:
-          ["Inglés", "Francés"],
+          ["Inglés", "Español"],
       
         departure:
           "Marrakech",
@@ -3262,10 +3262,10 @@ export const toursEs: Tour[] = [
           "Tour privado",
       
         groupSize:
-          "Hasta 4 personas",
+          "Hasta 7 personas",
       
         languages:
-          ["Inglés", "Francés"],
+          ["Inglés", "Español"],
       
         departure:
           "Casablanca",
@@ -3842,10 +3842,10 @@ export const toursEs: Tour[] = [
           "Tour privado",
       
         groupSize:
-          "Hasta 4 personas",
+          "Hasta 7 personas",
       
         languages:
-          ["Inglés", "Francés"],
+          ["Inglés", "Español"],
       
         departure:
           "Casablanca",
@@ -4488,12 +4488,12 @@ export const toursEs: Tour[] = [
           "Tour privado",
       
         groupSize:
-          "Hasta 4 personas",
+          "Hasta 7 personas",
       
         languages:
           [
             "Inglés",
-            "Francés",
+            "Español",
           ],
       
         departure:
@@ -5208,13 +5208,13 @@ export const toursEs: Tour[] = [
           "Tour privado",
       
         groupSize:
-          "Hasta 4 personas",
+          "Hasta 7 personas",
       
       
         languages:
           [
             "Inglés",
-            "Francés",
+            "Español",
           ],
       
       
@@ -5906,13 +5906,13 @@ export const toursEs: Tour[] = [
           "Tour privado",
       
         groupSize:
-          "Hasta 4 personas",
+          "Hasta 7 personas",
       
       
         languages:
           [
             "Inglés",
-            "Francés",
+            "Español",
           ],
       
       
@@ -6911,9 +6911,9 @@ export const toursEs: Tour[] = [
 
   tourType: "Tour privado",
 
-  groupSize: "Hasta 4 personas",
+  groupSize: "Hasta 7 personas",
 
-  languages: ["Inglés", "Francés"],
+  languages: ["Inglés", "Español"],
 
   departure: "Casablanca",
 
@@ -7769,9 +7769,9 @@ export const toursEs: Tour[] = [
 
   tourType: "Tour privado",
 
-  groupSize: "Hasta 4 personas",
+  groupSize: "Hasta 7 personas",
 
-  languages: ["Inglés", "Francés"],
+  languages: ["Inglés", "Español"],
 
   departure: "Casablanca",
 
@@ -8577,9 +8577,9 @@ export const toursEs: Tour[] = [
 
   tourType: "Tour privado",
 
-  groupSize: "Hasta 4 personas",
+  groupSize: "Hasta 7 personas",
 
-  languages: ["Inglés", "Francés"],
+  languages: ["Inglés", "Español"],
 
   departure: "Tánger",
 
@@ -9104,9 +9104,9 @@ export const toursEs: Tour[] = [
 
   tourType: "Tour privado",
 
-  groupSize: "Hasta 4 personas",
+  groupSize: "Hasta 7 personas",
 
-  languages: ["Inglés", "Francés"],
+  languages: ["Inglés", "Español"],
 
   departure: "Tánger",
 
@@ -9782,12 +9782,12 @@ export const toursEs: Tour[] = [
     "Tour privado",
 
   groupSize:
-    "Hasta 4 personas",
+    "Hasta 7 personas",
 
   languages:
     [
       "Inglés",
-      "Francés",
+      "Español",
     ],
 
   departure:
@@ -10419,12 +10419,12 @@ export const toursEs: Tour[] = [
     "Tour privado",
 
   groupSize:
-    "Hasta 4 personas",
+    "Hasta 7 personas",
 
   languages:
     [
       "Inglés",
-      "Francés",
+      "Español",
     ],
 
   departure:
@@ -11363,12 +11363,12 @@ export const toursEs: Tour[] = [
     "Tour privado",
 
   groupSize:
-    "Hasta 4 personas",
+    "Hasta 7 personas",
 
   languages:
     [
       "Inglés",
-      "Francés",
+      "Español",
     ],
 
   departure:
@@ -12280,9 +12280,9 @@ export const toursEs: Tour[] = [
 
   tourType: "Tour privado",
 
-  groupSize: "Hasta 4 personas",
+  groupSize: "Hasta 7 personas",
 
-  languages: ["Inglés", "Francés"],
+  languages: ["Inglés", "Español"],
 
   departure: "Fez",
 
@@ -12787,9 +12787,9 @@ export const toursEs: Tour[] = [
 
   tourType: "Tour privado",
 
-  groupSize: "Hasta 4 personas",
+  groupSize: "Hasta 7 personas",
 
-  languages: ["Inglés", "Francés"],
+  languages: ["Inglés", "Español"],
 
   departure: "Fez",
 
@@ -13319,12 +13319,12 @@ export const toursEs: Tour[] = [
     "Tour privado",
 
   groupSize:
-    "Hasta 4 personas",
+    "Hasta 7 personas",
 
   languages:
     [
       "Inglés",
-      "Francés",
+      "Español",
     ],
 
   departure:
@@ -14102,12 +14102,12 @@ export const toursEs: Tour[] = [
     "Tour privado",
 
   groupSize:
-    "Hasta 4 personas",
+    "Hasta 7 personas",
 
   languages:
     [
       "Inglés",
-      "Francés",
+      "Español",
     ],
 
   departure:
@@ -14866,12 +14866,12 @@ export const toursEs: Tour[] = [
     "Tour privado",
 
   groupSize:
-    "Hasta 4 personas",
+    "Hasta 7 personas",
 
   languages:
     [
       "Inglés",
-      "Francés",
+      "Español",
     ],
 
   departure:
@@ -15690,12 +15690,12 @@ export const toursEs: Tour[] = [
     "Tour privado",
 
   groupSize:
-    "Hasta 4 personas",
+    "Hasta 7 personas",
 
   languages:
     [
       "Inglés",
-      "Francés",
+      "Español",
     ],
 
   departure:
@@ -16561,12 +16561,12 @@ export const toursEs: Tour[] = [
     "Tour privado",
 
   groupSize:
-    "Hasta 4 personas",
+    "Hasta 7 personas",
 
   languages:
     [
       "Inglés",
-      "Francés",
+      "Español",
     ],
 
   departure:
@@ -17217,12 +17217,12 @@ export const toursEs: Tour[] = [
     "Tour privado",
 
   groupSize:
-    "Hasta 4 personas",
+    "Hasta 7 personas",
 
   languages:
     [
       "Inglés",
-      "Francés",
+      "Español",
     ],
 
   departure:
@@ -17922,10 +17922,10 @@ export const toursEs: Tour[] = [
     "Tour privado",
 
   groupSize:
-    "Hasta 4 personas",
+    "Hasta 7 personas",
 
   languages:
-    ["Inglés", "Francés"],
+    ["Inglés", "Español"],
 
   departure:
     "Agadir",
@@ -18692,10 +18692,10 @@ export const toursEs: Tour[] = [
   duration: "5 días / 4 noches",
   nights: 4,
   tourType: "Tour privado",
-  groupSize: "Hasta 4 personas",
+  groupSize: "Hasta 7 personas",
   // Los idiomas corresponden a la ficha inglesa actual; no prometas guía en
   // español salvo que lo ofrezcas realmente.
-  languages: ["Inglés", "Francés"],
+  languages: ["Inglés", "Español"],
   departure: "Marrakech",
   arrival: "Marrakech",
 

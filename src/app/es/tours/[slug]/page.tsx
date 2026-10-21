@@ -1259,6 +1259,59 @@ export default async function SpanishTourPage({
                 </TourSection>
               )}
 
+              
+              {/* TOUR CUSTOMIZATION */}
+              {tour.booking.customizable && (
+                <TourSection id="customize">
+                  <SectionHeading
+                    icon={<RouteIcon />}
+                    eyebrow="Tours privados flexibles"
+                    title="Personaliza este viaje por Marruecos"
+                  />
+
+                  <p className="mt-6 text-[15px] leading-8 text-[hsl(var(--heading)/0.75)]">
+                    Este itinerario es una propuesta flexible.
+                    Podemos adaptar la duración, los destinos,
+                    el ritmo del viaje y el alojamiento según
+                    tus fechas, intereses y preferencias.
+                  </p>
+
+                  <div className="mt-6 space-y-4">
+                    <div>
+                      <h3 className="font-semibold text-[hsl(var(--heading))]">
+                        Itinerario flexible
+                      </h3>
+
+                      <p className="mt-2 text-sm leading-7 text-[hsl(var(--text-secondary))]">
+                        ¿Prefieres un viaje más corto o más largo?
+                        Podemos ajustar el número de días y
+                        las paradas para adaptarnos a tus planes.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 className="font-semibold text-[hsl(var(--heading))]">
+                        Precio personalizado
+                      </h3>
+
+                      <p className="mt-2 text-sm leading-7 text-[hsl(var(--text-secondary))]">
+                        El presupuesto final depende del número
+                        de viajeros, el tipo de alojamiento
+                        y los servicios seleccionados.
+                      </p>
+                    </div>
+                  </div>
+
+                  <Link
+                    href="/es/contacto"
+                    className="mt-7 inline-flex items-center justify-center rounded-full bg-[hsl(var(--primary))] px-7 py-3.5 text-sm font-bold text-[hsl(var(--primary-foreground))] transition-colors hover:bg-[hsl(var(--primary-hover))]"
+                  >
+                    Solicitar un itinerario personalizado →
+                  </Link>
+                </TourSection>
+              )}
+
+
               {/* ───────────────────────────── */}
               {/* RELATED TOURS */}
               {/* ───────────────────────────── */}
