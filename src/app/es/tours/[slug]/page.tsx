@@ -9,6 +9,7 @@ import { tours } from "@/data/tours";
 import { toursEs } from "@/data/tours-es";
 import TourMap from "@/components/tours/TourMap";
 import Reviews from "@/components/sections/Home/Reviews";
+import TourSharedGallery from "@/components/tours/TourSharedGallery";
 
 type TourPageProps = {
   params: Promise<{
@@ -1195,7 +1196,9 @@ export default async function SpanishTourPage({
                   </div>
                 </TourSection>
               )}
-
+              {/* SHARED TRAVEL EXPERIENCES */}
+              <TourSharedGallery language="es" />
+              
               {/* ───────────────────────────── */}
               {/* FAQ */}
               {/* ───────────────────────────── */}

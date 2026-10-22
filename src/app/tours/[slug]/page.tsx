@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { tours } from "@/data/tours";
 import TourMap from "@/components/tours/TourMap";
 import Reviews from "@/components/sections/Home/Reviews";
+import TourSharedGallery from "@/components/tours/TourSharedGallery";
 
 type TourPageProps = {
   params: Promise<{
@@ -863,7 +864,8 @@ export default async function TourPage({ params }: TourPageProps) {
                 </div>
               </TourSection>
             )}
-
+{/* SHARED TRAVEL EXPERIENCES */}
+<TourSharedGallery language="en" />
             {/* ───────────────────────────── */}
             {/* FAQ */}
             {/* ───────────────────────────── */}
