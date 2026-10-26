@@ -8571,6 +8571,221 @@ export const blogPostsEs: BlogPost[] = [
         ],
       },
     },
+    {
+      id: "13",
+      slug: "paquetes-turisticos-marruecos-precios",
+      title: "Paquetes turísticos a Marruecos: precios, rutas y consejos",
+      excerpt: "Compara paquetes turísticos a Marruecos, descubre qué influye en el precio y elige un circuito según tus días disponibles, presupuesto e intereses.",
+      image: "/images/blog/morocco-tour-packages.webp",
+      category: "Guía de viaje de Marruecos",
+      author: "Moroccan Trip",
+      publishedAt: "2026-10-26",
+      readTime: "10 min de lectura",
+      featured: false,
     
+      introduction: `
+        Elegir entre los distintos paquetes turísticos a Marruecos puede resultar complicado.
+        Hay rutas centradas en ciudades históricas, circuitos que llegan al desierto del Sáhara
+        y recorridos que combinan montañas, pueblos tradicionales y costa.
+    
+        La mejor opción no siempre es la que incluye más destinos ni la que anuncia el precio
+        más bajo. Lo importante es encontrar un itinerario que se adapte a tus días disponibles,
+        presupuesto e intereses. Antes de reservar, compara la duración, el transporte, el
+        alojamiento, las comidas y las actividades incluidas.
+      `,
+    
+      sections: [
+        {
+          id: "que-incluye-paquete-turistico-marruecos",
+          heading: "¿Qué incluye un paquete turístico a Marruecos?",
+          paragraphs: [
+            `Un paquete turístico reúne varios servicios de viaje dentro de una misma propuesta. Según el proveedor y el itinerario, puede incluir transporte, alojamiento, recogidas, visitas y determinadas actividades. No todos los paquetes ofrecen los mismos servicios.`,
+            `Antes de confirmar una reserva, comprueba si las comidas, las entradas a monumentos, los guías locales y las actividades opcionales están incluidas o deben pagarse por separado. Así podrás calcular mejor el coste total de tus vacaciones.`
+          ],
+          bullets: [
+            "Transporte entre los destinos previstos.",
+            "Alojamiento y número de noches incluidas.",
+            "Comidas, visitas y actividades especificadas en la oferta.",
+            "Servicios de guía local cuando estén contratados.",
+            "Condiciones de reserva, cancelación y posibles gastos adicionales."
+          ]
+        },
+        {
+          id: "tipos-paquetes-viaje-marruecos",
+          heading: "Tipos de paquetes de viaje a Marruecos",
+          paragraphs: [
+            `Los paquetes de viaje a Marruecos pueden organizarse de distintas maneras. Para elegir bien, piensa en lo que más te interesa: conocer ciudades históricas, descubrir el desierto, disfrutar de la naturaleza o combinar varias experiencias.`,
+            `Los circuitos culturales suelen centrarse en ciudades como Marrakech, Fez, Rabat y Meknes. Los circuitos por el desierto pueden recorrer Ait Ben Haddou, Ouarzazate, el valle del Dades, las gargantas del Todra y Merzouga.`,
+            `También hay rutas que combinan ciudades, montañas, desierto y costa. Si prefieres viajar con más flexibilidad, pregunta si un circuito privado permite modificar paradas o alojamientos y si esos cambios afectan al precio.`
+          ],
+          bullets: [
+            "Circuitos culturales por ciudades imperiales.",
+            "Viajes al desierto de Merzouga y las dunas de Erg Chebbi.",
+            "Rutas que combinan ciudades, montañas y el sur del país.",
+            "Circuitos entre el norte de Marruecos y Marrakech.",
+            "Viajes privados adaptados a las preferencias del grupo."
+          ]
+        },
+        {
+          id: "cuanto-cuesta-paquete-turistico-marruecos",
+          heading: "¿Cuánto cuesta un paquete turístico a Marruecos?",
+          paragraphs: [
+            `El precio de un paquete turístico a Marruecos depende de los servicios contratados y de las características del viaje. No existe una tarifa única: una escapada urbana y una ruta privada de varios días tienen necesidades diferentes.`,
+            `La duración, el transporte, el número de viajeros y el tipo de alojamiento pueden influir en el coste. Un hotel, un riad y un campamento del desierto pueden ofrecer distintos niveles de comodidad y servicios.`,
+            `La temporada, la disponibilidad y las actividades solicitadas también pueden modificar el presupuesto. Si buscas un viaje a Marruecos a buen precio, compara propuestas equivalentes y solicita un desglose antes de decidir.`
+          ],
+          bullets: [
+            "Número de días y noches de alojamiento.",
+            "Cantidad de viajeros y tipo de transporte.",
+            "Categoría de hoteles, riads y campamentos.",
+            "Comidas, entradas, guías y actividades incluidas.",
+            "Fechas del viaje y solicitudes especiales."
+          ]
+        },
+        {
+          id: "como-comparar-precios-circuitos-marruecos",
+          heading: "Cómo comparar precios de circuitos por Marruecos",
+          paragraphs: [
+            `Empieza por revisar el itinerario completo. Dos ofertas pueden durar lo mismo y, aun así, visitar lugares diferentes o dedicar tiempos distintos a cada parada.`,
+            `Comprueba qué servicios cubre el precio anunciado. Una oferta con transporte y alojamiento no es necesariamente comparable con otra que también incluya comidas, actividades o guía local. Calcula qué tendrías que pagar aparte.`,
+            `Revisa las condiciones de reserva, los plazos de pago, las políticas de cancelación y las posibilidades de cambiar las fechas. Solicita por escrito cualquier aclaración importante antes de pagar.`
+          ],
+          bullets: [
+            "Compara itinerarios con duración y paradas similares.",
+            "Comprueba el transporte y el alojamiento incluidos.",
+            "Revisa qué comidas, entradas y actividades se pagan aparte.",
+            "Pregunta por las condiciones de pago, cancelación y cambios.",
+            "Solicita un presupuesto detallado antes de confirmar."
+          ]
+        },
+        {
+          id: "elegir-itinerario-marruecos-segun-dias",
+          heading: "Qué itinerario elegir según los días disponibles",
+          paragraphs: [
+            `La duración de tus vacaciones debería ser uno de los primeros criterios para elegir un circuito. Marruecos tiene regiones muy diferentes y las distancias entre algunos destinos son considerables.`,
+            `Para una estancia corta, puedes concentrarte en una ciudad y sus alrededores o elegir una experiencia concreta. Si quieres llegar al Sáhara desde Marrakech, revisa las horas de carretera y las paradas previstas antes de reservar.`,
+            `Con aproximadamente una semana puedes considerar una ruta centrada en determinadas ciudades o un circuito que incluya el desierto. Con diez días o más tendrás más margen para combinar ciudades históricas, montañas y Sáhara.`,
+            `Antes de reservar, comprueba que las noches de alojamiento coinciden con el programa y que el itinerario explica dónde termina cada jornada.`
+          ],
+          bullets: [
+            "De 2 a 4 días: prioriza una ciudad o experiencia concreta.",
+            "De 5 a 7 días: elige una ruta definida y evita demasiadas regiones.",
+            "De 8 a 10 días: compara circuitos que combinen varias zonas.",
+            "De 12 a 14 días: valora un recorrido más amplio y pausado."
+          ]
+        },
+        {
+          id: "paquetes-turisticos-marruecos-desierto-sahara",
+          heading: "Paquetes turísticos al desierto del Sáhara",
+          paragraphs: [
+            `Para muchos viajeros, conocer el Sáhara es una de las razones principales para visitar Marruecos. Merzouga y las dunas de Erg Chebbi son destinos habituales en los circuitos por el sureste del país.`,
+            `Antes de contratar un paquete al desierto, comprueba cuántos días dura la ruta, desde dónde sale y dónde termina. Revisa también cuántas noches se pasan en el camino y cuánto tiempo tendrás para disfrutar de Merzouga.`,
+            `No des por incluidos el paseo en camello, el campamento, las comidas o las excursiones en 4x4 a menos que estén confirmados en la oferta. Una ruta más larga puede dar más margen para las paradas, pero la opción adecuada depende de tus fechas y prioridades.`
+          ],
+          bullets: [
+            "Confirma las ciudades de salida y llegada.",
+            "Comprueba las noches de alojamiento y el tipo de campamento.",
+            "Pregunta si las comidas y actividades están incluidas.",
+            "Revisa el tiempo de carretera de cada etapa."
+          ]
+        },
+        {
+          id: "viaje-privado-o-circuito-compartido-marruecos",
+          heading: "¿Es mejor un tour privado o un circuito compartido?",
+          paragraphs: [
+            `La elección depende del presupuesto, el tamaño del grupo y la flexibilidad que quieras. Un circuito compartido puede ser adecuado si buscas una salida organizada con fechas y horarios establecidos; revisa el tamaño del grupo y el tiempo disponible en cada parada.`,
+            `Un tour privado suele facilitar la adaptación de ciertas paradas y del ritmo del viaje, dentro de las condiciones acordadas con el proveedor. Confirma qué aspectos se pueden personalizar y si los cambios implican un suplemento.`,
+            `Compara el precio total y los servicios reales de cada opción. La palabra «privado» o «compartido» no sustituye una descripción clara del itinerario.`
+          ]
+        },
+        {
+          id: "elegir-paquete-turistico-marruecos",
+          heading: "Cómo elegir el paquete turístico a Marruecos adecuado",
+          paragraphs: [
+            `Define qué quieres conseguir con el viaje. Si te interesa la historia, prioriza las ciudades y sus medinas. Si quieres conocer las dunas, busca una ruta que incluya Merzouga y comprueba cuánto tiempo tendrás para disfrutar del Sáhara.`,
+            `Después, compara duración, transporte, alojamientos, servicios incluidos y condiciones de reserva. Lee el itinerario día por día y asegúrate de que se ajusta al tiempo del que dispones.`,
+            `En Moroccan Trip puedes consultar circuitos por Marruecos como el viaje de tres días desde Marrakech a Merzouga y las rutas que conectan Marrakech con Fez y el desierto. Revisa la información de cada programa y solicita los detalles actualizados antes de reservar.`
+          ]
+        },
+        {
+          id: "conclusion-paquetes-turisticos-marruecos",
+          heading: "Conclusión: compara antes de reservar tu viaje a Marruecos",
+          paragraphs: [
+            `Los mejores paquetes turísticos a Marruecos son los que se adaptan a tus intereses, al tiempo disponible y al presupuesto, no necesariamente los que incluyen más paradas.`,
+            `Compara el itinerario completo, las noches de alojamiento, el transporte y los servicios incluidos. Si tienes dudas, pide un presupuesto detallado antes de confirmar la reserva.`,
+            `Una planificación realista te ayudará a disfrutar de las ciudades, los paisajes del Atlas y el desierto sin convertir las vacaciones en una sucesión de trayectos. Explora las rutas disponibles de Moroccan Trip y elige la que encaje mejor con tu forma de viajar.`
+          ]
+        }
+      ],
+    
+      relatedTours: [
+        "3-dias-marrakech-merzouga",
+        "marrakech-fez-desierto-3-dias",
+        "marrakech-fez-desierto-4-dias"
+      ],
+    
+      relatedDayTrips: [
+        "valle-de-ourika",
+        "imlil",
+        "cascadas-de-ouzoud-desde-marrakech",
+        "desierto-de-agafay-desde-marrakech"
+      ],
+    
+      relatedSpecialOffers: [
+        "viaje-desierto-marruecos",
+        "viajes-lujo-marruecos",
+        "marruecos-con-ninos"
+      ],
+    
+      faqs: [
+        {
+          question: "¿Qué incluye un paquete turístico a Marruecos?",
+          answer: "Depende del programa. Puede incluir transporte, alojamiento, recogidas, comidas o actividades. Revisa la oferta para saber qué está incluido y qué se paga aparte."
+        },
+        {
+          question: "¿Cuánto cuesta un paquete turístico a Marruecos?",
+          answer: "El precio depende de la duración, el número de viajeros, el transporte, el alojamiento, la temporada y las actividades. Solicita un presupuesto detallado para tus fechas."
+        },
+        {
+          question: "¿Cuántos días necesito para hacer un circuito por Marruecos?",
+          answer: "Depende de los destinos. Una estancia corta puede centrarse en una ciudad o experiencia, mientras que una ruta de una semana o más permite considerar varias regiones. Comprueba siempre los tiempos de carretera."
+        },
+        {
+          question: "¿Es mejor reservar un tour privado por Marruecos?",
+          answer: "Un tour privado puede ofrecer más flexibilidad para adaptar el ritmo y algunas paradas. Confirma qué cambios permite el proveedor y si tienen un coste adicional."
+        },
+        {
+          question: "¿Los paquetes turísticos a Marruecos incluyen el desierto del Sáhara?",
+          answer: "No todos. Comprueba que el itinerario incluya Merzouga o el destino desértico que deseas visitar, así como el alojamiento y las actividades que te interesan."
+        },
+        {
+          question: "¿Cómo puedo comparar circuitos por Marruecos?",
+          answer: "Compara rutas, duración, noches de alojamiento, transporte, comidas, actividades, gastos adicionales y condiciones de cancelación. No elijas únicamente por el precio inicial."
+        }
+      ],
+    
+      seo: {
+        title: "Paquetes turísticos a Marruecos: precios y circuitos",
+        description: "Compara paquetes turísticos a Marruecos, conoce qué influye en el precio y elige circuitos por ciudades, montañas y desierto según tu presupuesto y fechas.",
+        keywords: [
+          "paquetes turísticos marruecos",
+          "paquetes turísticos a marruecos",
+          "paquetes de viaje a marruecos",
+          "viajes organizados a marruecos",
+          "circuitos por marruecos",
+          "circuitos a marruecos",
+          "precios de circuitos por marruecos",
+          "precio viaje a marruecos",
+          "viaje a marruecos precio",
+          "paquete vacaciones marruecos",
+          "tour privado marruecos",
+          "paquete turístico marruecos desierto",
+          "circuito marruecos desierto sahara",
+          "viaje marruecos merzouga",
+          "viaje organizado al desierto de marruecos"
+        ]
+      }
+    }
+    
+    ];
   
-  ];
