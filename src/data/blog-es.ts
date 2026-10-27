@@ -8785,7 +8785,201 @@ export const blogPostsEs: BlogPost[] = [
           "viaje organizado al desierto de marruecos"
         ]
       }
-    }
+    },
+    {
+      id: "14",
+      slug: "viaje-marruecos-5-dias-marrakech-desierto",
+      title: "Viaje a Marruecos en 5 días: Marrakech y el desierto del Sáhara",
+      excerpt:
+        "Organiza un viaje a Marruecos en 5 días con una ruta desde Marrakech hacia Merzouga. Descubre el Atlas, Ait Ben Haddou, las gargantas del Todra y consejos para elegir un circuito.",
+      image: "/images/tours/5-day-marrakech-merzouga-desert-tour.webp",
+      category: "Itinerarios por Marruecos",
+      author: "Moroccan Trip",
+      publishedAt: "2026-10-27",
+      readTime: "9 min de lectura",
+      featured: false,
+    
+      introduction: `
+        Un viaje a Marruecos en 5 días puede ser una buena opción si quieres conocer Marrakech y descubrir los paisajes del sur hasta llegar al desierto del Sáhara. Con una ruta bien organizada, puedes cruzar las montañas del Atlas, visitar Ait Ben Haddou, conocer las gargantas del Todra y pasar tiempo en la zona de Merzouga.
+    
+        La clave está en elegir un itinerario realista. Las distancias por carretera son largas en algunas etapas, por lo que conviene planificar las paradas y los alojamientos antes de salir. Intentar visitar demasiadas ciudades en cinco días puede dejar poco tiempo para disfrutar de cada lugar.
+    
+        En esta guía encontrarás una propuesta de ruta, consejos para preparar el viaje y puntos que debes comprobar antes de reservar un circuito por Marruecos de 5 días. Si prefieres viajar con transporte organizado, puedes consultar nuestros [circuitos por Marruecos](/es/tours) y comparar las opciones disponibles.
+      `,
+    
+      sections: [
+        {
+          id: "cinco-dias-suficientes-marruecos",
+          heading: "¿Son suficientes 5 días para visitar Marruecos?",
+          paragraphs: [
+            `Cinco días permiten hacer una ruta concreta, pero no conocer todas las regiones del país. Si te interesa el desierto, una opción es salir de Marrakech y viajar hacia Merzouga a través de los paisajes del Atlas y el sur de Marruecos.`,
+            `Este tipo de viaje combina cultura, pueblos tradicionales, paisajes de montaña y dunas. Sin embargo, incluye varias horas de carretera en algunos días. Si también quieres visitar Fez, Chefchaouen y la costa atlántica, lo más práctico es añadir más días o reservar esas zonas para otro viaje.`,
+            `En los datos de Semrush para España que has compartido, la palabra “viaje marruecos 5 dias” registra un volumen estimado de 260 búsquedas al mes y una dificultad (KD) del 10 %. “viaje a marruecos 5 dias” registra 170 búsquedas y KD 9 %, mientras que “circuito marruecos 5 dias” registra 110 búsquedas, KD 11 % e intención comercial. Son estimaciones de Semrush, no una garantía de tráfico o reservas.`
+          ],
+          bullets: [
+            "Ideal para centrarse en Marrakech, el sur de Marruecos y el Sáhara.",
+            "Reserva tiempo suficiente para los trayectos por carretera.",
+            "Comprueba las noches de alojamiento y las paradas antes de reservar.",
+            "Añade más días si quieres conocer también el norte o la costa."
+          ]
+        },
+        {
+          id: "dia-1-marrakech-atlas-ait-ben-haddou",
+          heading: "Día 1: Marrakech, las montañas del Atlas y Ait Ben Haddou",
+          paragraphs: [
+            `Sal de Marrakech por la mañana y cruza las montañas del Alto Atlas. Durante el recorrido, el paisaje cambia entre valles, montañas y pueblos tradicionales. Conviene dejar tiempo para hacer paradas seguras y disfrutar de las vistas.`,
+            `Una de las visitas más conocidas de esta ruta es Ait Ben Haddou, un antiguo pueblo fortificado famoso por su arquitectura de tierra. Pasea por las zonas abiertas a los visitantes y disfruta del entorno. Si quieres una visita guiada, confirma si el guía local está incluido o debe contratarse aparte.`,
+            `Según el itinerario contratado y el tiempo disponible, puedes continuar hacia el valle del Dades para pasar la noche. La hora de llegada dependerá de las condiciones de la carretera y de las paradas realizadas.`
+          ],
+          bullets: [
+            "Salida desde Marrakech.",
+            "Cruce de las montañas del Alto Atlas.",
+            "Visita a Ait Ben Haddou si está incluida en la ruta confirmada.",
+            "Continuación hacia el valle del Dades, según el programa."
+          ]
+        },
+        {
+          id: "dia-2-dades-todra-merzouga",
+          heading: "Día 2: Valle del Dades, gargantas del Todra y Merzouga",
+          paragraphs: [
+            `Continúa por el sur de Marruecos hacia las gargantas del Todra. Sus paredes rocosas y el paisaje del valle hacen que sea una parada interesante para caminar un poco y tomar fotografías. El tiempo disponible dependerá del horario del circuito.`,
+            `Después, sigue hacia Merzouga, una de las principales puertas de entrada a las dunas de Erg Chebbi. Al acercarte, el paisaje se vuelve más árido y aparecen las primeras vistas de la zona desértica.`,
+            `Algunos circuitos incluyen una noche en un campamento del desierto. Antes de reservar, confirma el tipo de alojamiento, las comidas, el transporte hasta el campamento y las actividades que forman parte del precio.`
+          ],
+          bullets: [
+            "Recorrido por la zona del valle del Dades.",
+            "Parada en las gargantas del Todra si está incluida.",
+            "Llegada a Merzouga y la zona de Erg Chebbi.",
+            "Confirmación del alojamiento y las actividades del desierto."
+          ]
+        },
+        {
+          id: "dia-3-merzouga-sahara",
+          heading: "Día 3: Merzouga y una experiencia en el Sáhara",
+          paragraphs: [
+            `Dedica tiempo a conocer los alrededores de Merzouga y las dunas de Erg Chebbi. Según el paquete elegido, puedes tener tiempo libre para disfrutar del paisaje o añadir actividades organizadas. Comprueba qué experiencias están incluidas y cuáles tienen un coste adicional.`,
+            `Un paseo en camello al atardecer y una noche en un campamento son experiencias populares, pero no todos los circuitos ofrecen exactamente lo mismo. Si prefieres no montar en camello, pregunta si existe una alternativa para llegar al campamento.`,
+            `Algunos itinerarios combinan una noche en el campamento con otra en un riad u hotel de Merzouga. Revisa el plan de cada noche para saber dónde dormirás y qué servicios ofrece el alojamiento.`
+          ],
+          bullets: [
+            "Disfruta del paisaje de las dunas de Erg Chebbi.",
+            "Confirma si el paseo en camello está incluido.",
+            "Pregunta por las instalaciones del campamento y las comidas.",
+            "Deja tiempo libre para disfrutar del entorno sin prisas."
+          ]
+        },
+        {
+          id: "dias-4-y-5-regreso-marrakech",
+          heading: "Días 4 y 5: regreso a Marrakech por el sur de Marruecos",
+          paragraphs: [
+            `El regreso desde Merzouga puede atravesar paisajes desérticos, valles y zonas montañosas. Según la ruta contratada, el recorrido puede incluir el valle del Draa u Ouarzazate antes de cruzar de nuevo el Alto Atlas hacia Marrakech.`,
+            `Comprueba el itinerario día por día para saber qué paradas se realizan y dónde pasarás cada noche. No todos los circuitos incluyen los mismos pueblos o monumentos, aunque tengan una duración similar.`,
+            `Si tienes un vuelo o una conexión el quinto día, informa al proveedor antes de reservar. El tráfico, el estado de la carretera y las paradas pueden afectar a la hora de llegada, por lo que es mejor evitar conexiones demasiado ajustadas.`
+          ],
+          bullets: [
+            "Confirma la ruta de regreso y las noches de alojamiento.",
+            "Comprueba si Ouarzazate o el valle del Draa forman parte del recorrido.",
+            "Deja margen suficiente antes de un vuelo o traslado.",
+            "Compara la ruta completa con circuitos más cortos o más largos."
+          ]
+        },
+        {
+          id: "precio-circuito-marruecos-cinco-dias",
+          heading: "¿Cuánto cuesta un circuito por Marruecos de 5 días?",
+          paragraphs: [
+            `El precio de un circuito por Marruecos de 5 días depende del número de viajeros, el transporte, el tipo de alojamiento, la temporada y las actividades incluidas. Un viaje privado y uno compartido pueden tener precios y condiciones diferentes.`,
+            `Pide un presupuesto por escrito que indique qué cubre el precio: transporte, noches de alojamiento, comidas, guías, paseo en camello y excursiones opcionales. No des por hecho que todos estos servicios están incluidos.`,
+            `Para recibir una propuesta más precisa, comparte las fechas del viaje, el número de personas, el tipo de alojamiento que prefieres y las actividades que te interesan. Así podrás comparar opciones con los mismos criterios.`
+          ],
+          bullets: [
+            "Número de viajeros y tipo de vehículo.",
+            "Categoría del hotel, riad o campamento.",
+            "Comidas y actividades incluidas.",
+            "Transporte privado o compartido.",
+            "Fechas, disponibilidad y cambios solicitados."
+          ]
+        },
+        {
+          id: "consejos-para-elegir-circuito",
+          heading: "Consejos para elegir un circuito de 5 días por Marruecos",
+          paragraphs: [
+            `Antes de reservar, lee el itinerario completo y revisa los tiempos de carretera. Una ruta bien explicada debe indicar las paradas principales, las noches de alojamiento y el punto donde termina el viaje cada día.`,
+            `Compara los servicios incluidos, las condiciones de cancelación y la posibilidad de adaptar algunas partes del recorrido. Si un servicio no aparece en la descripción, pregunta antes de pagar.`,
+            `Si quieres una ruta parecida, consulta nuestros [circuitos por Marruecos](/es/tours). También puedes explorar una experiencia más corta, como la [excursión al desierto de Agafay desde Marrakech](/es/excursiones/desierto-de-agafay-desde-marrakech), que es diferente de un viaje de varios días hasta Merzouga.`
+          ],
+          bullets: [
+            "Comprueba el recorrido completo antes de pagar.",
+            "Confirma los alojamientos y las actividades incluidas.",
+            "Pregunta por el vehículo, el tamaño del grupo y el punto de recogida.",
+            "Revisa las condiciones de pago, cancelación y cambios.",
+            "Elige un ritmo que se adapte a tus días disponibles."
+          ]
+        },
+        {
+          id: "organiza-viaje-marruecos-cinco-dias",
+          heading: "Organiza tu viaje a Marruecos con Moroccan Trip",
+          paragraphs: [
+            `Un viaje a Marruecos en 5 días puede combinar cultura, montañas y desierto si eliges una ruta realista. La clave es tener claros los trayectos, confirmar los servicios incluidos y reservar tiempo para disfrutar de cada parada.`,
+            `Consulta los [circuitos disponibles en Marruecos](/es/tours) y compara las rutas antes de decidir. Cuando solicites información, indica las fechas, el número de viajeros y tus preferencias para que el equipo pueda orientarte sobre las opciones adecuadas.`
+          ]
+        }
+      ],
+    
+      relatedTours: [],
+      relatedDayTrips: [
+        "valle-de-ourika",
+        "imlil",
+        "cascadas-de-ouzoud-desde-marrakech",
+        "desierto-de-agafay-desde-marrakech"
+      ],
+      relatedSpecialOffers: [],
+    
+      faqs: [
+        {
+          question: "¿Se puede visitar el desierto del Sáhara en 5 días?",
+          answer: "Sí. Un viaje de cinco días puede incluir Merzouga y las dunas de Erg Chebbi si te centras en el sur de Marruecos y organizas los trayectos como parte de una ruta de varios días."
+        },
+        {
+          question: "¿Cuál es una buena ruta por Marruecos en 5 días?",
+          answer: "Si quieres conocer el desierto, puedes valorar una ruta desde Marrakech que pase por Ait Ben Haddou, el valle del Dades, las gargantas del Todra y Merzouga. Confirma las paradas y los alojamientos en el itinerario elegido."
+        },
+        {
+          question: "¿Cuántas horas se tarda de Marrakech a Merzouga?",
+          answer: "Es un trayecto largo por carretera que suele organizarse dentro de un circuito de varios días con paradas y noches intermedias. El tiempo real depende de la ruta, el tráfico y las visitas."
+        },
+        {
+          question: "¿El paseo en camello y el campamento están incluidos?",
+          answer: "Depende del paquete. Revisa la oferta y confirma por escrito si incluye paseo en camello, campamento, comidas y traslados."
+        },
+        {
+          question: "¿Es mejor un circuito privado o compartido?",
+          answer: "Un circuito privado puede ofrecer más flexibilidad, mientras que uno compartido sigue un programa y unas condiciones comunes. Compara el precio total, el tamaño del grupo y los servicios incluidos."
+        },
+        {
+          question: "¿Qué debo llevar para un viaje de cinco días por Marruecos?",
+          answer: "Lleva calzado cómodo, protección solar, agua, documentos personales y ropa por capas. Las temperaturas pueden cambiar entre Marrakech, las montañas y el desierto, especialmente por la noche."
+        }
+      ],
+    
+      seo: {
+        title: "Viaje a Marruecos en 5 días: ruta de Marrakech al Sáhara",
+        description: "Organiza un viaje a Marruecos en 5 días desde Marrakech al desierto. Descubre Ait Ben Haddou, las gargantas del Todra y Merzouga, con consejos para elegir circuito.",
+        keywords: [
+          "viaje marruecos 5 dias",
+          "viaje a marruecos 5 dias",
+          "viaje organizado a marruecos 5 días",
+          "circuito marruecos 5 dias",
+          "ruta por marruecos 5 días",
+          "marrakech y desierto en 5 dias",
+          "viaje al desierto desde marrakech",
+          "excursion al desierto desde marrakech",
+          "desierto marrakech",
+          "merzouga desde marrakech",
+          "circuito por marruecos",
+          "itinerario marruecos 5 días"
+        ]
+      }
+    },
     
     ];
   

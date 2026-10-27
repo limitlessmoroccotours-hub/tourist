@@ -13,6 +13,9 @@ export type DayTrip = {
     duration: string;
     tourType: string;
     groupSize: string;
+    price: number;
+currency: "EUR";
+priceType: "per_group";
     languages: string[];
   
     departure: string;
@@ -75,7 +78,10 @@ export type DayTrip = {
     
       tourType: "Private Day Trip",
     
-      groupSize: "Up to 4 People",
+      groupSize: "Up to 7 People",
+      price: 140,
+currency: "EUR",
+priceType: "per_group",
     
       languages: ["English", "French"],
     
@@ -285,7 +291,10 @@ export type DayTrip = {
 
   tourType: "Private Day Trip",
 
-  groupSize: "Up to 4 People",
+  groupSize: "Up to 7 People",
+  price: 140,
+currency: "EUR",
+priceType: "per_group",
 
   languages: ["English", "French"],
 
@@ -496,7 +505,10 @@ export type DayTrip = {
 
   tourType: "Private Day Trip",
 
-  groupSize: "Up to 4 People",
+  groupSize: "Up to 7 People",
+  price: 140,
+currency: "EUR",
+priceType: "per_group",
 
   languages: ["English", "French"],
 
@@ -706,7 +718,10 @@ export type DayTrip = {
 
   tourType: "Private Day Trip",
 
-  groupSize: "Up to 4 People",
+  groupSize: "Up to 7 People",
+  price: 140,
+currency: "EUR",
+priceType: "per_group",
 
   languages: ["English", "French"],
 

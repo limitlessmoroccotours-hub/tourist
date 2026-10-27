@@ -576,6 +576,25 @@ export default async function ExcursionPage({
 
 
             </p>
+            {trip.price != null && (
+  <div className="mt-6">
+    <p className="text-sm font-medium text-white/75">
+      Precio de la excursión privada
+    </p>
+
+    <p className="mt-1 text-3xl font-bold text-white sm:text-4xl">
+      {new Intl.NumberFormat("es-ES", {
+        style: "currency",
+        currency: trip.currency ?? "EUR",
+        maximumFractionDigits: 0,
+      }).format(trip.price)}
+    </p>
+
+    <p className="mt-1 text-sm text-white/75">
+      Por vehículo privado · {trip.groupSize}
+    </p>
+  </div>
+)}
 
 
 

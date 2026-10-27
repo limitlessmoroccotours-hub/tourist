@@ -30,8 +30,12 @@ export const excursionesEs: DayTrip[] = [
         tourType:
           "Excursión privada",
       
-        groupSize:
-          "Hasta 4 personas",
+
+          groupSize: "Hasta 7 personas",
+          price: 140,
+          currency: "EUR",
+          priceType: "per_group",
+          
       
         languages:
           [
@@ -276,8 +280,12 @@ export const excursionesEs: DayTrip[] = [
           "Excursión privada",
       
       
-        groupSize:
-          "Hasta 4 personas",
+
+          groupSize: "Hasta 7 personas",
+          price: 140,
+          currency: "EUR",
+          priceType: "per_group",
+          
       
       
         languages:
@@ -648,8 +656,12 @@ export const excursionesEs: DayTrip[] = [
         tourType:
           "Excursión privada",
       
-        groupSize:
-          "Hasta 4 personas",
+
+          groupSize: "Hasta 7 personas",
+          price: 140,
+          currency: "EUR",
+          priceType: "per_group",
+          
       
         languages:
           [
@@ -885,8 +897,12 @@ export const excursionesEs: DayTrip[] = [
         tourType:
           "Excursión privada",
       
-        groupSize:
-          "Hasta 4 personas",
+
+          groupSize: "Hasta 7 personas",
+          price: 140,
+          currency: "EUR",
+          priceType: "per_group",
+          
       
         languages:
           [

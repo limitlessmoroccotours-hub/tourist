@@ -137,6 +137,35 @@ export default function DayTripsPage() {
                       </p>
                     </div>
                   </div>
+                  
+                  {/* PRICE */}
+
+                  {trip.price != null && (
+                    <div className="mt-5 rounded-xl bg-[hsl(var(--surface-soft))] p-4">
+                      <p className="text-xs font-medium text-[hsl(var(--text-muted))]">
+                        Price for the entire private trip
+                      </p>
+
+                      <div className="mt-1 flex flex-wrap items-baseline justify-between gap-2">
+                        <p className="text-2xl font-bold text-[hsl(var(--primary))]">
+                          {new Intl.NumberFormat("en-IE", {
+                            style: "currency",
+                            currency: trip.currency ?? "EUR",
+                            maximumFractionDigits: 0,
+                          }).format(trip.price)}
+                        </p>
+
+                        <span className="text-xs font-medium text-[hsl(var(--text-secondary))]">
+                          Up to 7 people
+                        </span>
+                      </div>
+
+                      <p className="mt-1 text-xs text-[hsl(var(--text-muted))]">
+                        Per private vehicle · Not per person
+                      </p>
+                    </div>
+                  )}
+
 
                   {/* BUTTON */}
 

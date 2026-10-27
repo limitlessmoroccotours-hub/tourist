@@ -264,6 +264,34 @@ export default function ExcursionesPage() {
 
 
                   </div>
+                  
+                  {/* PRECIO */}
+
+                  {trip.price != null && (
+                    <div className="mt-5 rounded-xl bg-[hsl(var(--surface-soft))] p-4">
+                      <p className="text-xs font-medium text-[hsl(var(--text-muted))]">
+                        Precio de la excursión privada
+                      </p>
+
+                      <div className="mt-1 flex flex-wrap items-baseline justify-between gap-2">
+                        <p className="text-2xl font-bold text-[hsl(var(--primary))]">
+                          {new Intl.NumberFormat("es-ES", {
+                            style: "currency",
+                            currency: trip.currency ?? "EUR",
+                            maximumFractionDigits: 0,
+                          }).format(trip.price)}
+                        </p>
+
+                        <span className="text-xs font-medium text-[hsl(var(--text-secondary))]">
+                          Hasta 7 personas
+                        </span>
+                      </div>
+
+                      <p className="mt-1 text-xs text-[hsl(var(--text-muted))]">
+                        Por vehículo privado · No por persona
+                      </p>
+                    </div>
+                  )}
 
 
 

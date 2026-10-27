@@ -230,6 +230,25 @@ export default async function DayTripPage({
             <p className="mt-6 max-w-2xl text-base leading-8 text-white/80 sm:text-lg">
               {trip.shortDescription}
             </p>
+            
+<div className="mt-6">
+  <p className="text-sm font-medium text-white/75">
+    Price for your private trip
+  </p>
+
+  <p className="mt-1 text-3xl font-bold text-white sm:text-4xl">
+    {new Intl.NumberFormat("en-IE", {
+      style: "currency",
+      currency: trip.currency,
+      maximumFractionDigits: 0,
+    }).format(trip.price)}
+  </p>
+
+  <p className="mt-1 text-sm text-white/75">
+    Per private vehicle · Up to 7 people
+  </p>
+</div>
+
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
