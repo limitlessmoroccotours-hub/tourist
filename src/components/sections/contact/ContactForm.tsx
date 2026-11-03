@@ -38,13 +38,24 @@ function ContactForm() {
 
       const data = await response.json();
 
+
       if (data.success) {
+        // Track successful form submission in GA4
+        const gtag = (window as Window & {
+          gtag?: (...args: unknown[]) => void;
+        }).gtag;
+      
+        if (typeof gtag === "function") {
+          gtag("event", "generate_lead");
+        }
+      
         toast.success("Your request has been sent successfully!", {
           description: "Our Morocco travel team will contact you shortly.",
         });
-
+      
         setForm(INITIAL_FORM);
       }
+      
     } catch {
   toast.error("Something went wrong", {
     description: "Please try again later.",
@@ -143,13 +154,16 @@ function ContactForm() {
         />
       </div>
 
+
       <button
-        type="submit"
-        className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 font-bold text-primary-foreground transition hover:bg-primary-hover"
-      >
-        {loading ? "Sending..." : "Send Message"}
-        <Send className="h-4 w-4" />
-      </button>
+  type="submit"
+  disabled={loading}
+  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 font-bold text-primary-foreground transition hover:bg-primary-hover disabled:opacity-60 disabled:cursor-not-allowed"
+>
+  {loading ? "Sending..." : "Send Message"}
+  <Send className="h-4 w-4" />
+</button>
+
     </form>
   );
 }
